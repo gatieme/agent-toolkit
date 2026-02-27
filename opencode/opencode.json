@@ -84,6 +84,15 @@
   //"model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
   "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
   "plugin": [
-    "oh-my-opencode@latest"
-  ]
+    "oh-my-opencode@latest",
+    "oh-my-opencode-slim@latest"
+  ],
+  "agent": {
+    "explore": {
+      "disable": true
+    },
+    "general": {
+      "disable": true
+    }
+  }
 }
