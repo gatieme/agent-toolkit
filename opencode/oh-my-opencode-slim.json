@@ -3,13 +3,13 @@
   "presets": {
     "dynamic": {
       "oracle": {
-        "model": "opencode/gpt-5-nano",
+        "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
         "variant": "high",
         "skills": [],
         "mcps": []
       },
       "orchestrator": {
-        "model": "opencode/gpt-5-nano",
+        "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
         "skills": [
           "*"
         ],
@@ -24,7 +24,7 @@
         "mcps": []
       },
       "designer": {
-        "model": "opencode/gpt-5-nano",
+        "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
         "variant": "medium",
         "skills": [
           "agent-browser"
@@ -32,7 +32,7 @@
         "mcps": []
       },
       "librarian": {
-        "model": "opencode/minimax-m2.5-free",
+        "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
         "variant": "low",
         "skills": [],
         "mcps": [
