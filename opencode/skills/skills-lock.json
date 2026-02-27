@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "excalidraw": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "5bbd88e287582f106beb1db21c64e48ba70e4a9bedf7690b80fa6c418f3add71"
+    }
+  }
+}
