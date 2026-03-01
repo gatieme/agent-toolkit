@@ -6,45 +6,79 @@
       "temperature": 0.3,
       // "maxTokens": 4096,
       "concurrency": 1,
-      "description": "主协调器: 最强推理能力, 负责整体规划"
+      "description": "主协调器: 最强推理能力, 负责整体规划",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/brainstorming",
+        "superpowers/dispatching-parallel-agents",
+        "superpowers/verification-before-completion"
+      ]
     },
     "hephaestus": {
       "model": "opencode/kimi-k2.5-free",
       "variant": "medium",
-      "description": "锻造之神: 代码构建与编译专家"
+      "description": "锻造之神: 代码构建与编译专家",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/subagent-driven-development",
+        "superpowers/executing-plans",
+        "superpowers/verification-before-completion"
+      ]
     },
     "oracle": {
       "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
       "variant": "high",
-      "description": "先知: 架构设计专家, 深度分析能力"
+      "description": "先知: 架构设计专家, 深度分析能力",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     },
     "librarian": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-      "description": "图书管理员: 代码理解与文档搜索专家"
+      "description": "图书管理员: 代码理解与文档搜索专家",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     },
     "explore": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-      "description": "探索者: 快速响应, 代码库探索"
+      "description": "探索者: 快速响应, 代码库探索",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     },
     "multimodal-looker": {
       "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
-      "description": "多模态观察者: 图像与多媒体内容分析"
+      "description": "多模态观察者: 图像与多媒体内容分析",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     }
   },
   "prometheus": {
     "model": "opencode/glm-4.7-free",
     "variant": "max",
-    "description": "普罗米修斯: 任务规划与分解专家"
+    "description": "普罗米修斯: 任务规划与分解专家",
+    "skills": [
+      "superpowers/using-superpowers",
+      "superpowers/writing-plans"
+    ]
   },
   "metis": {
     "model": "opencode/glm-4.7-free",
     "variant": "max",
-    "description": "智慧女神: 需求分析与预规划专家"
+    "description": "智慧女神: 需求分析与预规划专家",
+    "skills": [
+      "superpowers/using-superpowers"
+    ]
   },
   "momus": {
     "model": "opencode/glm-4.7-free",
     "variant": "medium",
-    "description": "批评家: 代码审查与质量保证专家"
+    "description": "批评家: 代码审查与质量保证专家",
+    "skills": [
+      "superpowers/using-superpowers"
+    ]
   },
   "atlas": {
     "model": "opencode/kimi-k2.5-free",
@@ -75,39 +109,68 @@
   "categories": {
     "visual-engineering": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-      "description": "视觉工程: 前端、UI/UX、设计、样式、动画"
+      "description": "视觉工程: 前端、UI/UX、设计、样式、动画",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/subagent-driven-development"
+      ]
     },
     "ultrabrain": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
       "variant": "high",
-      "description": "超级大脑: 逻辑密集型复杂任务, 仅给出目标而非步骤"
+      "description": "超级大脑: 逻辑密集型复杂任务, 仅给出目标而非步骤",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/subagent-driven-development"
+      ]
     },
     "deep": {
       "model": "opencode/big-pickle",
       "variant": "medium",
-      "description": "深度探索: 目标导向的自主问题解决, 深入理解后行动"
+      "description": "深度探索: 目标导向的自主问题解决, 深入理解后行动",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/subagent-driven-development"
+      ]
     },
     "artistry": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
       "variant": "high",
-      "description": "艺术创造: 非常规创造性方法解决复杂问题"
+      "description": "艺术创造: 非常规创造性方法解决复杂问题",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/brainstorming"
+      ]
     },
     "quick": {
       "model": "opencode/gpt-5-nano",
-      "description": "快速任务: 简单任务 - 单文件修改、拼写修复、简单变更"
+      "description": "快速任务: 简单任务 - 单文件修改、拼写修复、简单变更",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     },
     "unspecified-low": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-      "description": "未分类低耗: 不符合其他类别、低工作量任务"
+      "description": "未分类低耗: 不符合其他类别、低工作量任务",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     },
     "unspecified-high": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
       "variant": "max",
-      "description": "未分类高耗: 不符合其他类别、高工作量任务"
+      "description": "未分类高耗: 不符合其他类别、高工作量任务",
+      "skills": [
+        "superpowers/using-superpowers",
+        "superpowers/subagent-driven-development"
+      ]
     },
     "writing": {
       "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-      "description": "写作任务: 文档、散文、技术写作"
+      "description": "写作任务: 文档、散文、技术写作",
+      "skills": [
+        "superpowers/using-superpowers"
+      ]
     }
   },
   "defaults": {

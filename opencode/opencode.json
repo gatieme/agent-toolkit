@@ -77,7 +77,7 @@
       "build": "deny"
     },
     "edit": {
-      "*": "allow",
+      "*": "ask",
       "commit.msg": "allow"
     }
   },
