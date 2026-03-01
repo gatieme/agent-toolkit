@@ -1,0 +1,20 @@
+# ~/.oh-my-opencode/config.yaml （确认生效后再修改）
+# 核心配置：默认加载 Superpowers 技能
+defaults:
+  skills:
+    auto_load:
+      - name: "Superpowers"       # 必须和你的 Superpowers 技能名完全一致
+        enabled: true             # 开启自动加载
+        enforce: true             # 强制所有智能体使用该技能
+  agent:
+    pre_hooks:                    # 智能体调度前执行的钩子指令
+      - "use skill Superpowers"   # 自动注入加载指令
+      - "apply superpowers standards" # 应用 Superpowers 工程规范
+
+# Sisyphus 任务分解配置（按 Superpowers 流程执行）
+sisyphus:
+  ultraworker:
+    task_decomposition:
+      workflow: "superpowers"     # 指定 Superpowers 流程
+      enforce_standards: true     # 强制执行规范
+      auto_apply: true            # 自动应用，无需手动触发
