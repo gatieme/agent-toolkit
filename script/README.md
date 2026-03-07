@@ -57,10 +57,14 @@ python script/sync.py backup
 
 **Workflow:**
 1. Select configuration files from `~/.config/opencode` (multiple selection)
-    - Options include all `oh-my-opencode-*.jsonc` files in the installation directory
-2. Review the diff preview for each selected file
-3. Confirm the operation
-4. Selected files are copied to the repository `opencode/` directory
+    - Options include all `oh-my-opencode-*.jsonc` files in installation directory
+2. For each selected file, customize target target filename:
+    - Option 1: Keep original filename (default)
+    - Option 2: Use suggested variants (e.g., case corrections: INTERACTIVE → interactive)
+    - Option 3: Enter custom filename
+3. Review diff preview for each file with chosen target name
+4. Confirm operation
+5. Selected files are copied to repository `opencode/` directory with chosen names
 
 ##### Help
 
