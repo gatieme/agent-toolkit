@@ -4,3 +4,6 @@
 [submodule "skills/oh-my-opencode-config"]
 	path = skills/oh-my-opencode-config
 	url = git@github.com:includewudi/oh-my-opencode-config.git
+[submodule "skills/excalidraw-diagram-skill"]
+	path = skills/excalidraw-diagram-skill
+	url = git@github.com:coleam00/excalidraw-diagram-skill.git
