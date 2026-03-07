@@ -276,6 +276,154 @@ class ConfigSync:
 
         return result
 
+    def customize_filename(self, src_file: Path, default_name: str) -> Optional[str]:
+        """
+        允许用户自定义目标文件名
+
+        Args:
+            src_file: 源文件
+            default_name: 默认目标文件名
+
+        Returns:
+            用户选择的目标文件名，如果取消则返回 None
+        """
+        from prompt_toolkit.shortcuts import input_dialog
+
+        suggestions = []
+        original_name = src_file.name
+
+        suggestions.append((default_name, f"{default_name} (保持原文件名)"))
+
+        if original_name != default_name:
+            suggestions.append((original_name, f"{original_name} (原文件名)"))
+
+        name_without_ext = src_file.stem
+        ext = src_file.suffix
+
+        variants = []
+        if 'INTERACTIVE' in name_without_ext.upper():
+            variants.append(name_without_ext.upper().replace('INTERACTIVE', 'interactive') + ext)
+        if 'ULTRAWORKER' in name_without_ext.upper():
+            variants.append(name_without_ext.upper().replace('ULTRAWORKER', 'ultraworker') + ext)
+        if 'ULTRAWORK' in name_without_ext.upper():
+            variants.append(name_without_ext.upper().replace('ULTRAWORK', 'ultrawork') + ext)
+
+        for variant in variants:
+            if variant not in [s[0] for s in suggestions]:
+                suggestions.append((variant, f"{variant} (建议名称)"))
+
+        choices = []
+        for idx, (name, desc) in enumerate(suggestions, 1):
+            choices.append(f"{idx}. {desc}")
+
+        print(f"\n{'='*80}")
+        print(f"📝 自定义目标文件名")
+        print(f"{'='*80}")
+        print(f"源文件: {src_file}")
+        print(f"\n可选目标文件名:")
+        for choice in choices:
+            print(f"  {choice}")
+        print(f"\n  0. 输入自定义文件名")
+        print(f"  Q. 取消")
+        print(f"{'='*80}\n")
+
+        user_input = input("请选择选项 (0-{}) 或输入自定义文件名: ".format(len(suggestions))).strip()
+
+        if user_input.upper() == 'Q':
+            return None
+
+        if user_input == '0':
+            custom_name = input("请输入自定义文件名: ").strip()
+            if not custom_name:
+                print("❌ 文件名不能为空")
+                return None
+
+            if '/' in custom_name or '\\' in custom_name:
+                print("❌ 文件名不能包含路径分隔符")
+                return None
+
+            if not custom_name.endswith(ext):
+                custom_name += ext
+
+            return custom_name
+
+        try:
+            choice_num = int(user_input)
+            if 1 <= choice_num <= len(suggestions):
+                selected_name = suggestions[choice_num - 1][0]
+
+                target_path = self.opencode_repo / selected_name
+                if target_path.exists():
+                    print(f"⚠️  警告: 文件 {selected_name} 已存在，将被覆盖")
+
+                confirm = yes_no_dialog(
+                    title="确认文件名",
+                    text=f"目标文件名: {selected_name}\n\n确定使用此文件名吗？"
+                ).run()
+
+                if confirm:
+                    return selected_name
+                else:
+                    return None
+            else:
+                print(f"❌ 无效的选择: {user_input}")
+                return None
+        except ValueError:
+            custom_name = user_input
+            if not custom_name:
+                print("❌ 文件名不能为空")
+                return None
+
+            if '/' in custom_name or '\\' in custom_name:
+                print("❌ 文件名不能包含路径分隔符")
+                return None
+
+            if not custom_name.endswith(ext):
+                custom_name += ext
+
+            return custom_name
+
+        # 处理数字选择
+        try:
+            choice_num = int(user_input)
+            if 1 <= choice_num <= len(suggestions):
+                selected_name = suggestions[choice_num - 1][0]
+
+                # 检查是否覆盖现有文件
+                target_path = self.opencode_repo / selected_name
+                if target_path.exists():
+                    print(f"⚠️  警告: 文件 {selected_name} 已存在，将被覆盖")
+
+                confirm = yes_no_dialog(
+                    title="确认文件名",
+                    text=f"目标文件名: {selected_name}\n\n确定使用此文件名吗？"
+                ).run()
+
+                if confirm:
+                    return selected_name
+                else:
+                    return None
+            else:
+                print(f"❌ 无效的选择: {user_input}")
+                return None
+        except ValueError:
+            # 可能用户直接输入了文件名
+            custom_name = user_input
+            if not custom_name:
+                print("❌ 文件名不能为空")
+                return None
+
+            # 验证文件名
+            if '/' in custom_name or '\\' in custom_name:
+                print("❌ 文件名不能包含路径分隔符")
+                return None
+
+            # 添加扩展名（如果用户没有输入）
+            if not custom_name.endswith(ext):
+                custom_name += ext
+
+            return custom_name
+
     def sync_file(self, src: Path, dst: Path) -> bool:
         """
         同步文件
@@ -315,7 +463,6 @@ class ConfigSync:
         if not self.validate_paths():
             return False
 
-        # 显示选择界面
         src_file = self.show_update_selector()
         if src_file is None:
             print("❌ 操作已取消")
@@ -329,13 +476,11 @@ class ConfigSync:
             print("✅ 文件已是最新的，无需更新")
             return True
 
-        # 确认操作
         action_desc = f"将 {src_file.name} 更新到 {dst_file}"
         if not self.confirm_action(action_desc):
             print("❌ 操作已取消")
             return False
 
-        # 执行更新
         print(f"\n📋 正在更新...")
         if self.sync_file(src_file, dst_file):
             print(f"✅ 更新成功!")
@@ -361,21 +506,29 @@ class ConfigSync:
         if not self.validate_paths():
             return False
 
-        # 显示选择界面
         src_files = self.show_backup_selector()
         if src_files is None or len(src_files) == 0:
             print("❌ 操作已取消")
             return False
 
-        # 显示差异
-        print(f"\n📊 检查 {len(src_files)} 个文件的差异...\n")
+        print(f"\n📊 配置 {len(src_files)} 个文件的备份目标...\n")
         files_to_backup = []
 
         for src_file in src_files:
-            dst_file = self.opencode_repo / src_file.name
+            custom_name = self.customize_filename(src_file, src_file.name)
+
+            if custom_name is None:
+                print(f"⏭  跳过 {src_file.name}")
+                continue
+
+            dst_file = self.opencode_repo / custom_name
+
+            # 显示差异
             has_diff = self.show_diff(src_file, dst_file)
             if has_diff:
                 files_to_backup.append((src_file, dst_file))
+            else:
+                print(f"⏭  跳过 {src_file.name} (无差异)")
 
         if not files_to_backup:
             print("\n✅ 所有文件都已是最新的，无需备份")
@@ -393,7 +546,7 @@ class ConfigSync:
         print(f"\n📋 正在备份...")
         for src_file, dst_file in files_to_backup:
             if self.sync_file(src_file, dst_file):
-                print(f"✅ {src_file.name} 备份成功")
+                print(f"✅ {src_file.name} → {dst_file.name} 备份成功")
             else:
                 print(f"❌ {src_file.name} 备份失败")
                 success = False
