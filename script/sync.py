@@ -292,7 +292,7 @@ class ConfigSync:
             dst.parent.mkdir(parents=True, exist_ok=True)
 
             # 复制文件
-            shutil.copy2(src(src), dst)
+            shutil.copy2(src, dst)
             return True
 
         except Exception as e:
