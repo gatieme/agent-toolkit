@@ -32,7 +32,8 @@ skills/
     └── claudeception/
 ```
 
-## 分类说明
+
+## Skills 清单
 -------
 
 ### 📊 图表与可视化
@@ -188,7 +189,40 @@ skills/
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
-| [`pua-debugging`](https://skills.sh/tanweai/pua/pua-debugging) | [`tanweai/pua/pua-debugging`](https://github.com/tanweai/pua/tree/main/skills/pua-debugging) | 以大厂 P8 级工程师要求为核心, 融合大厂 PUA 激励话术、标准化调试方法论和强制化主动执行规则, 倒逼 AI 以工程化 Owner 视角端到端解决调试问题, 彻底规避被动排查、浅尝辄止的问题, 同时配套压力升级、抗合理化、自检清单等机制保障调试效果. 由[探微安全实验室](https://github.com/tanweai)出品. 官网 [pua-skills](https://pua-skill.pages.dev) | `npx skills add https://github.com/tanweai/pua --skill pua-debugging` |
+| [`pua-debugging`](https://skills.sh/tanweai/pua/pua-debugging) | [`tanweai/pua/pua-debugging`](https://github.com/tanweai/pua/tree/main/skills/pua-debugging) | 以大厂 P8 级工程师要求为核心, 融合大厂 PUA 激励话术、标准化调试方法论和强制化主动执行规则, 倒逼 AI 以工程化 Owner 视角端到端解决调试问题, 彻底规避被动排查、浅尝辄止的问题, 同时配套压力升级、抗合理化、自检清单等机制保障调试效果. 由[探微安全实验室](https://github.com/tanweai)出品. 官网 [pua-skills](https://pua-skill.pages.dev). @passluo 受此启发, [给你的 AI 一套大厂 P8 的 Soul，让它的 Coding 表现提高 30%](https://x.com/passluo/status/2030908109145903310) | `npx skills add https://github.com/tanweai/pua --skill pua-debugging` |
+
+
+## Skills 集合
+-------
+
+
+### Skills 市场
+-------
+
+
+| 市场 | 描述 |
+|:---:|:----:|
+| [skill.sh](https://skills.sh) | 由 Vercel 推出的开源 AI 智能体开放技能生态系统, 被称作「AI 智能体界的 npm」, 核心定位是为各类 AI Agent(智能体)提供可复用、标准化的技能能力库, 通过分离智能体的「推理」与「执行」环节, 解决 AI 智能体执行任务时不可靠、能力分散的痛点, 让开发者和使用者能通过简单命令为 AI 智能体快速扩展专业能力, 推动 AI 智能体从通用对话工具向专业执行伙伴升级. |
+| [SkillsMP](https://skillsmp.com) | 全球最大的 AI Agent 技能聚合与分发平台(Agent Skills Marketplace), 定位为 AI 编码助手的「应用商店」, 是独立于 Anthropic、OpenAI 的社区型开源项目. 该平台爬取并聚合 GitHub 上符合 SKILL.md 开放标准的 Agent 技能资源, 通过智能搜索、精细化分类、质量筛选, 解决了 AI 技能资源分散、查找困难、使用繁琐的痛点, 为 Claude Code、OpenAI Codex CLI、ChatGPT 等主流 AI 编码助手提供一站式的技能发现、获取与使用服务, 覆盖开发、AI、商业、运维等全场景需求. |
+| [SkillStore](https://skillstore.io/zh-hans) | 面向中文用户的 AI Agent 技能商店, 主打安全审计、质量验证、一键安装, 是适配 Claude、Codex、Claude Code 等主流 AI 编码助手的技能分发平台. 该平台区别于其他技能聚合站的核心特点是人工审核 + 中文友好, 所有技能均经过安全检测和质量验证, 同时提供全中文化的使用体验, 适配团队协作、企业合规等对技能安全性和稳定性要求较高的场景, 也适合中文开发者/普通用户快速获取可直接使用的 AI 模块化能力. |
+| [agent-skills.md](https://agent-skills.md) | agent-skills.md 是一款轻量型 AI Agent 技能市集, 核心定位为 AI 智能体模块化能力的发现与检索平台, 所有技能均遵循 SKILL.md 开放标准, 适配 Claude、OpenClaw、Codex 等主流 AI 智能体/编码助手, 主打技能场景化标注、快速检索、轻量化使用, 聚焦开发调试、终端工具调用、办公自动化、本地软硬件控制等实操性场景, 是偏向开发者和技术型用户的 AI 技能实用工具库. |
+| [SkillsDirectory](https://skillsdirectory.com) | Reddit 社区推荐的 SKILLs 集合, 由社区驱动的大型 AI Agent 技能目录平台, 核心定位为一站式的技能发现、安装与交流平台, 覆盖编码、研究、写作等全场景, 主打 Reddit 社区真实推荐、用户验证、终端一键安装, 区别于其他平台的算法推荐或官方审核, 该平台的技能价值由真实用户使用体验背书, 更贴合实际使用需求. |
+| [agentskills](https://agentskills.me) | 开源 AI 智能体技能平台, 核心定位是为 Claude Code、Cursor、OpenCode、Codex CLI、Gemini CLI 等主流 AI 开发工具提供精选技能库, 帮助 AI 智能体快速掌握特定任务能力, 覆盖开发、设计、营销、办公等多场景需求. |
+| [AgentSkillsHub](https://agentskillshub.top) | [@zhuyansen](https://github.com/zhuyansen) 搭建的 [AgentSkillsHub](https://github.com/ZhuYansen/agent-skills-hub) || [SkillsFast](https://skills.fast/zh) | 面向中文用户的 AI Agent 技能快速分发与社区协作平台, 核心定位为 "AI 技能的高效流通枢纽" —— 以 "秒速发现、一键集成、社区共建" 为核心优势, 聚焦数据分析、内容创作、自动化等高频场景, 为 AI 开发者、爱好者及办公人群提供高质量 Agent 技能的查找、分享与复用服务, 完美适配 Claude Code、Cursor、Gemini CLI 等主流 AI 工具, 是连接技能创作者与使用者的轻量化桥梁. |
+
+
+### Skills 集合仓库
+-------
+
+| 仓库 | 描述 |
+|:---:|:----:|
+| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方推出的 AI Agent 技能核心仓库, 是 SKILL.md 开放标准的源头, 收录了 PPTX 处理、代码调试、文档解析等标准化技能模板, 所有技能均经过官方验证, 适配 Claude 系列 AI 工具, 是构建合规、稳定 AI 技能的基础参考库. |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Vercel 实验室主导的 AI Agent 技能库, 聚焦前端开发、云部署、自动化运维等场景, 技能与 Vercel 生态深度融合, 支持 Next.js、Vercel Deploy 等工具的自动化流程, 同时兼容主流 AI 编码助手, 主打开发效率提升. |
+| [JackyST0/awesome-agent-skills](https://github.com/JackyST0/awesome-agent-skills) | 社区驱动的 AI Agent 技能精选清单, 汇总了全球优质的开源 Agent 技能, 按开发、办公、创意、科研等场景分类整理, 附带技能使用示例和适配工具说明, 是快速发现小众优质技能的一站式导航库. |
+| [antfu/skills](https://github.com/antfu/skills) | 由 Vue/Vite 核心贡献者 Anthony Fu 打造的 前端生态专属 AI Agent 技能集合, 核心定位是为 AI 编程助手提供标准化的前端技术知识与最佳实践, 解决 AI 因训练数据滞后、不懂生态 "行规" 导致的代码不规范问题, 适配 Cursor、Claude Code 等主流 AI 工具, 是前端开发者提升 AI 辅助编程效率的核心工具库. |
+| [ZhanlinCui/Agent-Skills-Hunter](https://github.com/ZhanlinCui/Agent-Skills-Hunter) | 聚焦 AI Agent 技能的检索与管理工具库, 提供技能自动爬取、分类、安全审计功能, 支持批量导入/导出技能, 可快速筛选符合 SKILL.md 标准的优质技能, 适配多平台 AI 工具的技能管理需求. |
+
+
 
 
 ## 安装 Skills
