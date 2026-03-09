@@ -63,8 +63,8 @@ skills/
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`mermaid-diagrams`](https://skills.sh/softaworks/agent-toolkit/mermaid-diagrams) | [`softaworks/agent-toolkit`](https://github.com/softaworks/agent-toolkit) | 使用 Mermaidia 语法创建软件图表，支持类图、时序图、流程图、ER 图等 | `npx skills add https://github.com/softaworks/agent-toolkit --skill mermaid-diagrams` |
-| [`pretty-mermaid`](https://skills.sh/imxv/pretty-mermaid-skills/pretty-mermaid) | [`imxv/pretty-mermaid-skills`](https://github.com/imxv/pretty-mermaid-skills) |对 beautiful-mermaid, 使用 beautiful-mermaid 库渲染 Mermaid 图表为 SVG 或 ASCII, 支持 15+ 主题. | `npx skills add https://github.com/imxv/pretty-mermaid-skills --skill pretty-mermaid` |
-| [`beautiful-mermaid`](https://skills.sh/imxv/pretty-mermaid-skills/pretty-mermaid) | 借助 `beautiful-mermaid` SKILLS 来渲染 Mermaid 图表为 SVG 和 PNG. | `npx skills add https://github.com/imxv/pretty-mermaid-skills --skill pretty-mermaid` |
+| [`pretty-mermaid`](https://skills.sh/imxv/pretty-mermaid-skills/pretty-mermaid) | [`imxv/pretty-mermaid-skills`](https://github.com/imxv/pretty-mermaid-skills) |对 beautiful-mermaid 进一步封装, 使用 beautiful-mermaid 库渲染 Mermaid 图表为 SVG 或 ASCII, 支持 15+ 主题. | `npx skills add https://github.com/imxv/pretty-mermaid-skills --skill pretty-mermaid` |
+| [`beautiful-mermaid`]https://skills.sh/intellectronica/agent-skills/beautiful-mermaid) | [`intellectronica/agent-skills`](https://github.com/intellectronica/agent-skills) | 借助 `beautiful-mermaid` SKILLS 来渲染 Mermaid 图表为 SVG 和 PNG. | `npx skills add https://github.com/intellectronica/agent-skills --skill beautiful-mermaid` |
 | [`smart-illustrator`](https://skills.sh/axtonliu/smart-illustrator/smart-illustrator) | [`axtonliu/smart-illustrator`](https://github.com/axtonliu/smart-illustrator) | 智能配图与 PPT 信息图生成器, 支持文章配图、PPT 批量生成、封面图. | `npx skills add https://github.com/axtonliu/smart-illustrator --skill smart-illustrator` |
 
 ### 🌐 浏览器自动化
@@ -86,8 +86,14 @@ skills/
 | [`skill-creator`](https://skills.sh/anthropics/skills/skill-creator) | [`anthropics/skills`](https://github.com/anthropics/skills) | 创建有效 Skills 的指南, 用于扩展 Claude 的特定领域知识、工作流程或工具集成. | `npx skills add https://github.com/anthropics/skills --skill skill-creator` |
 | [`simplify`](https://skills.sh/brianlovin/claude-config/simplify) | simplify 是一款代码专业简化与优化技能, 核心定位为「代码清晰度专家」, 专注于在完全保留代码原有功能的前提下, 按照项目标准化规范优化代码的结构、命名、格式, 提升代码的可读性、一致性和可维护性, 拒绝过度精简的「炫技式」代码, 适配开发全流程的代码优化、规范统一需求, 目前已在 opencode、GitHub Copilot、gemini-cli 等主流开发工具中落地. | `npx skills add https://github.com/brianlovin/claude-config --skill simplify` |
 
+### 代码检视
+-------
 
-### ✍️ 文本处理
+[Mieluoxxx/code-review](https://github.com/Mieluoxxx/opcd/tree/opencode/.opencode/skill/code-review)
+[sanyuan0704/sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills/tree/main/skills/code-review-expert)
+
+
+### ✍️ 写作/文本处理
 -------
 
 
@@ -107,10 +113,33 @@ skills/
 ### 🔍 技能发现与管理
 -------
 
+
+#### Skills 查找
+-------
+
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`find-skills`](https://skills.sh/vercel-labs/skills/find-skills) | [`vercel-labs/skills`](https://github.com/vercel-labs/skills) | 帮助用户发现和安装 agent skills, 当用户询问如何做某事或查找技能时使用. | `npx skills add https://github.com/vercel-labs/skills --skill find-skills` |
+
+#### Skills 创建
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| []() |
 | [`claudeception`](https://skills.sh/blader/claudeception/claudeception) | [`blader/claudeception`](https://github.com/blader/claudeception) | 持续学习系统, 从工作会话中提取可重用知识并创建新的 Claude Code Skills. | `npx skills add https://github.com/blader/claudeception --skill claudeception` |
+
+
+#### Skills 路由
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [skill-router](https://skills.sh/charon-fan/agent-playbook/skill-router) | [charon-fan/agent-playbook](https://github.com/charon-fan/agent-playbook) | 通用 AI 技能智能路由器, 一站式解决「不知道该用哪个技能完成任务」的核心痛点. 是所有 AI 开发工具的基础通用型技能(安装量最高，普适性最强). | NA | `npx skills add https://github.com/charon-fan/agent-playbook --skill skill-router` |
+| [recur-help](https://skills.sh/recur-tw/skills/recur-help) | [recur-tw/skills](https://github.com/recur-tw/skills) | Recur 整合入门, Recur 的专属技能导航， 聚焦 Recur 支付/订阅系统的整合开发, 是垂直技术工具的专属使用指南技能. 核心使用场景. 开发者需要在项目中接入 Recur 金流系统, 不清楚从哪开始, 通过该技能快速获取从 SDK 安装到基础配置」的一站式指引. | `npx skills add https://github.com/recur-tw/skills --skill recur-help` |
+| [skill-marketplace](https://skills.sh/cityfish91159/maihouses/skill-marketplace) | [cityfish91159/maihouses](https://github.com/cityfish91159/maihouses) | AI 技能市集智能挖掘与集成工具, 突破本地技能库限制, 从 38000+ 外部技能市集中自动找、装、用适配技能, 是本地技能库的延伸补充型技能. | `npx skills add https://github.com/cityfish91159/maihouses --skill skill-marketplace` |
+| skill-ten-prompt-generator | [liangdabiao/skill-ten-prompt-generator](https://github.com/liangdabiao/skill-ten-prompt-generator) | 基于 Claude Code Agent Skills 的 AI 提示词工程系统 - 10个场景化专家, 自动路由, 精准生成优秀提示词. 通过自然语言请求, 系统会自动路由到对应的专业 Skill, 帮助用户写出高质量的 AI 提示词. |
+
 
 ### 科研相关
 -------
@@ -195,3 +224,13 @@ xcopy skill-name %USERPROFILE%\.claude\skills\
 ## 许可
 
 各 Skill 的许可请参考其各自的 LICENSE 文件。
+
+
+## 参考
+-------
+
+
+
+| 集合 | 简要描述 | 安装方式 |
+|:---:|:-------:|:-------:|
+| [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 宝玉分享的 Claude Code 技能集, 提升日常工作效率. | `npx skills add jimliu/baoyu-skills` |
