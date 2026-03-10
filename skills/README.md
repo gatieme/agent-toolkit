@@ -208,7 +208,9 @@ skills/
 | [agent-skills.md](https://agent-skills.md) | agent-skills.md 是一款轻量型 AI Agent 技能市集, 核心定位为 AI 智能体模块化能力的发现与检索平台, 所有技能均遵循 SKILL.md 开放标准, 适配 Claude、OpenClaw、Codex 等主流 AI 智能体/编码助手, 主打技能场景化标注、快速检索、轻量化使用, 聚焦开发调试、终端工具调用、办公自动化、本地软硬件控制等实操性场景, 是偏向开发者和技术型用户的 AI 技能实用工具库. |
 | [SkillsDirectory](https://skillsdirectory.com) | Reddit 社区推荐的 SKILLs 集合, 由社区驱动的大型 AI Agent 技能目录平台, 核心定位为一站式的技能发现、安装与交流平台, 覆盖编码、研究、写作等全场景, 主打 Reddit 社区真实推荐、用户验证、终端一键安装, 区别于其他平台的算法推荐或官方审核, 该平台的技能价值由真实用户使用体验背书, 更贴合实际使用需求. |
 | [agentskills](https://agentskills.me) | 开源 AI 智能体技能平台, 核心定位是为 Claude Code、Cursor、OpenCode、Codex CLI、Gemini CLI 等主流 AI 开发工具提供精选技能库, 帮助 AI 智能体快速掌握特定任务能力, 覆盖开发、设计、营销、办公等多场景需求. |
-| [AgentSkillsHub](https://agentskillshub.top) | [@zhuyansen](https://github.com/zhuyansen) 搭建的 [AgentSkillsHub](https://github.com/ZhuYansen/agent-skills-hub) || [SkillsFast](https://skills.fast/zh) | 面向中文用户的 AI Agent 技能快速分发与社区协作平台, 核心定位为 "AI 技能的高效流通枢纽" —— 以 "秒速发现、一键集成、社区共建" 为核心优势, 聚焦数据分析、内容创作、自动化等高频场景, 为 AI 开发者、爱好者及办公人群提供高质量 Agent 技能的查找、分享与复用服务, 完美适配 Claude Code、Cursor、Gemini CLI 等主流 AI 工具, 是连接技能创作者与使用者的轻量化桥梁. |
+| [AgentSkillsHub](https://agentskillshub.top) | [@zhuyansen](https://github.com/zhuyansen) 搭建的 [AgentSkillsHub](https://github.com/ZhuYansen/agent-skills-hub). 设计了一套评价指标, 参考了 skillsbench, github 活跃度等对 skills 进行总和评价. |
+| [SkillsFast](https://skills.fast/zh) | 面向中文用户的 AI Agent 技能快速分发与社区协作平台, 核心定位为 "AI 技能的高效流通枢纽" —— 以 "秒速发现、一键集成、社区共建" 为核心优势, 聚焦数据分析、内容创作、自动化等高频场景, 为 AI 开发者、爱好者及办公人群提供高质量 Agent 技能的查找、分享与复用服务, 完美适配 Claude Code、Cursor、Gemini CLI 等主流 AI 工具, 是连接技能创作者与使用者的轻量化桥梁. |
+
 
 
 ### Skills 集合仓库
@@ -221,9 +223,12 @@ skills/
 | [JackyST0/awesome-agent-skills](https://github.com/JackyST0/awesome-agent-skills) | 社区驱动的 AI Agent 技能精选清单, 汇总了全球优质的开源 Agent 技能, 按开发、办公、创意、科研等场景分类整理, 附带技能使用示例和适配工具说明, 是快速发现小众优质技能的一站式导航库. |
 | [antfu/skills](https://github.com/antfu/skills) | 由 Vue/Vite 核心贡献者 Anthony Fu 打造的 前端生态专属 AI Agent 技能集合, 核心定位是为 AI 编程助手提供标准化的前端技术知识与最佳实践, 解决 AI 因训练数据滞后、不懂生态 "行规" 导致的代码不规范问题, 适配 Cursor、Claude Code 等主流 AI 工具, 是前端开发者提升 AI 辅助编程效率的核心工具库. |
 | [ZhanlinCui/Agent-Skills-Hunter](https://github.com/ZhanlinCui/Agent-Skills-Hunter) | 聚焦 AI Agent 技能的检索与管理工具库, 提供技能自动爬取、分类、安全审计功能, 支持批量导入/导出技能, 可快速筛选符合 SKILL.md 标准的优质技能, 适配多平台 AI 工具的技能管理需求. |
-
-
-
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 一份精选的 Claude 技能、资源和工具列表, 用于定制 Claude AI 工作流程. |
+| [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills) | 涵盖语言、后端/前端框架、基础设施、API、测试、DevOps、安全、数据/机器学习和平台专家的 12 个类别共 66 项专业技能. |
+| [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) |
+| [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) |
+| [](https://github.com/johannesjo/parallel-code)
 
 ## 安装 Skills
 -------
