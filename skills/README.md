@@ -33,13 +33,13 @@ skills/
 ```
 
 
-## Skills 清单
+# Skills 清单
 -------
 
-### 📊 图表与可视化
+## 📊 图表与可视化
 -------
 
-#### excalidraw
+### excalidraw
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -50,14 +50,14 @@ skills/
 | [`excalidraw-diagram-skill/excalidraw-diagram`](https://skills.sh/coleam00/excalidraw-diagram-skill/excalidraw-diagram) | [`coleam00/excalidraw-diagram-skill`](https://github.com/coleam00/excalidraw-diagram-skill) | 一款面向 `Excalidraw` 绘图工具的专业制图能力包, 核心是生成能实现视觉论证的. `excalidraw` 格式 `json` 文件, 而非简单的信息展示型图表, 同时定义了一套标准化、高专业性的 `Excalidraw` 制图方法论、设计规范和工作流, 适配技术、产品、教学等多场景的专业绘图需求, 集成在 `kimi-cli、gemini-cli、GitHub Copilot` 等主流开发工具中. | `npx skills add https://github.com/coleam00/excalidraw-diagram-skill --skill excalidraw-diagram` |
 
 
-#### draw-io
+### draw-io
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`drawio`](https://skills.sh/bahayonghang/drawio-skills/drawio) | [`bahayonghang/drawio-skills`](https://github.com/bahayonghang/drawio-skills) | AI 驱动的 Draw.io 图表生成, 支持设计系统、实时浏览器预览. | `npx skills add https://github.com/bahayonghang/drawio-skills --skill drawio` |
 
-#### mermaid
+### mermaid
 -------
 
 
@@ -68,7 +68,7 @@ skills/
 | [`beautiful-mermaid`]https://skills.sh/intellectronica/agent-skills/beautiful-mermaid) | [`intellectronica/agent-skills`](https://github.com/intellectronica/agent-skills) | 借助 `beautiful-mermaid` SKILLS 来渲染 Mermaid 图表为 SVG 和 PNG. | `npx skills add https://github.com/intellectronica/agent-skills --skill beautiful-mermaid` |
 | [`smart-illustrator`](https://skills.sh/axtonliu/smart-illustrator/smart-illustrator) | [`axtonliu/smart-illustrator`](https://github.com/axtonliu/smart-illustrator) | 智能配图与 PPT 信息图生成器, 支持文章配图、PPT 批量生成、封面图. | `npx skills add https://github.com/axtonliu/smart-illustrator --skill smart-illustrator` |
 
-### 🌐 浏览器自动化
+## 🌐 浏览器自动化
 -------
 
 
@@ -76,10 +76,11 @@ skills/
 |:-------:|:------:|:-------:|:-------:|
 | [`agent-browser`](https://skills.sh/vercel-labs/agent-browser/agent-browser) | [`vercel-labs/agent-browser`](https://github.com/vercel-labs/agent-browser) | 浏览器自动化 CLI, 用于 AI agents 与网站交互、导航、填写表单、截图、提取数据. | `npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser` |
 
-### 🔧 代码与开发工具
+## 🔧 代码与开发工具
 -------
 
-#### 代码提交
+### 代码提交
+-------
 
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -94,8 +95,7 @@ skills/
 [sanyuan0704/sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills/tree/main/skills/code-review-expert)
 
 
-
-#### 代码重构
+### 代码重构
 -------
 
 
@@ -105,11 +105,11 @@ skills/
 
 
 
-### ✍️ 办公
+## ✍️ 办公
 -------
 
 
-#### 文本写作
+### 文本写作
 -------
 
 
@@ -119,7 +119,7 @@ skills/
 | [`humanizer`](https://skills.sh/softaworks/agent-toolkit/humanizer) | [`softaworks/agent-toolkit`](https://github.com/softaworks/agent-toolkit) | 去除文本中的 AI 生成痕迹, 使文本听起来更自然、更像人类书写. | `npx skills add https://github.com/softaworks/agent-toolkit --skill humanizer` |
 
 
-#### PPT/Office
+### PPT/Office
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -129,7 +129,7 @@ skills/
 | [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
 
 
-### ⚙️ 配置管理
+## ⚙️ 配置管理
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -138,27 +138,28 @@ skills/
 
 
 
-### 🔍 技能发现与管理
+## 🔍 技能发现与管理
 -------
 
 
-#### Skills 查找
+### Skills 查找
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`find-skills`](https://skills.sh/vercel-labs/skills/find-skills) | [`vercel-labs/skills`](https://github.com/vercel-labs/skills) | 帮助用户发现和安装 agent skills, 当用户询问如何做某事或查找技能时使用. | `npx skills add https://github.com/vercel-labs/skills --skill find-skills` |
 
-#### Skills 创建
+### Skills 创建
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`skill-creator`](https://skills.sh/anthropics/skills/skill-creator) | [`anthropics/skills`](https://github.com/anthropics/skills) | 创建有效 Skills 的指南, 用于扩展 Claude 的特定领域知识、工作流程或工具集成. | `npx skills add https://github.com/anthropics/skills --skill skill-creator` |
 | [`claudeception`](https://skills.sh/blader/claudeception/claudeception) | [`blader/claudeception`](https://github.com/blader/claudeception) | 持续学习系统, 从工作会话中提取可重用知识并创建新的 Claude Code Skills. | `npx skills add https://github.com/blader/claudeception --skill claudeception` |
+| [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) |
+| [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) |
 
-
-#### Skills 路由
+### Skills 路由
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -169,11 +170,11 @@ skills/
 | skill-ten-prompt-generator | [liangdabiao/skill-ten-prompt-generator](https://github.com/liangdabiao/skill-ten-prompt-generator) | 基于 Claude Code Agent Skills 的 AI 提示词工程系统 - 10个场景化专家, 自动路由, 精准生成优秀提示词. 通过自然语言请求, 系统会自动路由到对应的专业 Skill, 帮助用户写出高质量的 AI 提示词. |
 
 
-### 科研相关
+## 科研相关
 -------
 
 
-#### 论文精读
+### 论文精读
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -183,7 +184,7 @@ skills/
 | [`ljg-skill-xray-paper/ljg-xray-paper`](https://skills.sh/lijigang/ljg-skill-xray-paper/ljg-xray-paper) | [`lijigang/ljg-skill-xray-paper`](https://github.com/lijigang/ljg-skill-xray-paper) | 论文解读. | `npx skills add https://github.com/lijigang/ljg-skill-xray-paper --skill ljg-xray-paper` |
 
 
-### PUA
+## PUA
 -------
 
 
@@ -192,11 +193,20 @@ skills/
 | [`pua-debugging`](https://skills.sh/tanweai/pua/pua-debugging) | [`tanweai/pua/pua-debugging`](https://github.com/tanweai/pua/tree/main/skills/pua-debugging) | 以大厂 P8 级工程师要求为核心, 融合大厂 PUA 激励话术、标准化调试方法论和强制化主动执行规则, 倒逼 AI 以工程化 Owner 视角端到端解决调试问题, 彻底规避被动排查、浅尝辄止的问题, 同时配套压力升级、抗合理化、自检清单等机制保障调试效果. 由[探微安全实验室](https://github.com/tanweai)出品. 官网 [pua-skills](https://pua-skill.pages.dev). @passluo 受此启发, [给你的 AI 一套大厂 P8 的 Soul，让它的 Coding 表现提高 30%](https://x.com/passluo/status/2030908109145903310) | `npx skills add https://github.com/tanweai/pua --skill pua-debugging` |
 
 
-## Skills 集合
+## 交互
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [op7418/Claude-to-IM-skill](https://github.com/op7418/Claude-to-IM-skill) | | | `npx skills add https://github.com/op7418/claude-to-im-skill --skill claude-to-im` |
+
+
+
+# Skills 集合
 -------
 
 
-### Skills 市场
+## Skills 市场
 -------
 
 
@@ -213,7 +223,7 @@ skills/
 
 
 
-### Skills 集合仓库
+## Skills 集合仓库
 -------
 
 | 仓库 | 描述 |
@@ -228,12 +238,14 @@ skills/
 | [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) |
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) |
 | [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) |
-| [](https://github.com/johannesjo/parallel-code)
+| [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | 一套全面且开放的智能体技能集合, 专注于构建生产级人工智能智能体系统的上下文工程原理. 这些技能传授了策划上下文的艺术与科学, 以在任何智能体平台上最大限度地提高智能体的效率. |
+| [andysingal/llm-course](https://github.com/andysingal/llm-course/blob/main/claude/skills.md) | NA |
+| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
 
-## 安装 Skills
+# 安装 Skills
 -------
 
-### 方式一：使用 npx skills（推荐）
+## 方式一：使用 npx skills（推荐）
 -------
 
 ```bash
@@ -249,7 +261,7 @@ npx skills add includewudi/oh-my-opencode-config@oh-my-opencode-config
 npx skills add blader/claudeception@claudeception
 ```
 
-### 方式二：使用 Git 克隆
+## 方式二：使用 Git 克隆
 
 ```bash
 # 克隆到 Claude Code 的 skills 目录
@@ -264,7 +276,7 @@ git clone https://github.com/includewudi/oh-my-opencode-config.git ~/.claude/ski
 git clone https://github.com/blader/claudeception.git ~/.claude/skills/claudeception
 ```
 
-### 方式三：手动复制
+## 方式三：手动复制
 
 将 skill 目录复制到 Claude Code 的 skills 目录：
 
@@ -276,7 +288,7 @@ cp -r skill-name ~/.claude/skills/
 xcopy skill-name %USERPROFILE%\.claude\skills\
 ```
 
-## 使用 Skills
+# 使用 Skills
 
 安装后，重启 Claude Code 或重新加载 skills。Skills 会根据以下条件自动触发：
 
@@ -284,7 +296,7 @@ xcopy skill-name %USERPROFILE%\.claude\skills\
 2. **触发词** - 在 SKILL.md 的 description 中定义的关键词
 3. **命令触发** - 使用 `/skill-name` 命令手动触发
 
-## 技能开发
+# 技能开发
 
 如果你想创建自己的 Skill，可以参考以下资源：
 
@@ -292,16 +304,16 @@ xcopy skill-name %USERPROFILE%\.claude\skills\
 - **claudeception** - 从工作会话中提取可重用知识的示例
 - [Claude Code Skills 文档](https://docs.anthropic.com/en/docs/claude-code/skills)
 
-## 贡献
+# 贡献
 
 欢迎提交 PR 添加新的 Skills 或改进现有 Skills。
 
-## 许可
+# 许可
 
 各 Skill 的许可请参考其各自的 LICENSE 文件。
 
 
-## 参考
+# 参考
 -------
 
 

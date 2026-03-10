@@ -2,14 +2,35 @@
 
 
 
-## 状态栏
+## 平台
 -------
 
 
-| 技能 | 描述 | 支持 | 安装 |
-|:---:|:----:|:---:|:----:|
-| ccstatusline |
+### Claw 系列
 
+| 平台 | 团队 | 描述 | 推荐星级 |
+|:---:|:----:|:---:|:-------:|
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | |
+| [8421bit/MiniClaw](https://github.com/8421bit/MiniClaw)
+
+
+## Cowork 系列
+-------
+
+| 平台 | 团队 | 描述 | 推荐星级 |
+|:---:|:----:|:---:|:-------:|
+| [QoderWork]()
+
+
+### 其他
+
+| 平台 | 团队 | 描述 | 推荐星级 |
+|:---:|:----:|:---:|:-------:|
+| [openakita/openakita](https://github.com/openakita/openakita) |
+| [op7418/CodePilot](https://github.com/op7418/CodePilot)
+| [RightNow-AI/openfang`](https://github.com/RightNow-AI/openfang)
+| [lukilabs/craft-agents-oss](https://github.com/lukilabs/craft-agents-oss)
+| [](https://github.com/bytedance/deer-flow)
 
 # 参考
 -------
