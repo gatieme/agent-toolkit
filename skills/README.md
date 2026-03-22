@@ -104,6 +104,17 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`simplify`](https://skills.sh/brianlovin/claude-config/simplify) | simplify 是一款代码专业简化与优化技能, 核心定位为「代码清晰度专家」, 专注于在完全保留代码原有功能的前提下, 按照项目标准化规范优化代码的结构、命名、格式, 提升代码的可读性、一致性和可维护性, 拒绝过度精简的「炫技式」代码, 适配开发全流程的代码优化、规范统一需求, 目前已在 opencode、GitHub Copilot、gemini-cli 等主流开发工具中落地. | `npx skills add https://github.com/brianlovin/claude-config --skill simplify` |
 
 
+### 领域开发
+-------
+
+#### 内核开发
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [lore-mirror](https://github.com/pengdonglin137/lore-mirror/tree/master/docs/skills) | [pengdonglin137/lore-mirror](https://github.com/pengdonglin137/lore-mirror) | `lore-mirror`: 搜索内核邮件列表 API — inbox 发现、搜索语法、邮件/线程读取<br>`kernel-dev`: 内核开发辅助 — 代码阅读、特性演进、补丁回移 (backport)、动态跟踪. |
+| [linux-kernel-development](https://github.com/oywjun/opencode-skills/tree/main/skills/linux-kernel-development) |
+
 
 ## ✍️ 办公
 -------
@@ -177,6 +188,10 @@ https://github.com/win4r/agent-skills-code-review-router
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [huifer/skill-security-scan](https://github.com/huifer/skill-security-scan) |
+| [Skill Analyzer](https://glitchward.com/skill-analyzer) | NA | 用于分析 GitHub 仓库的技能, 可获取仓库信息、问题统计和提交历史 | 需配置 GitHub API Token, 通过 SKILL.md 定义使用方法 |
+| [Skill Security Scan](https://github.com/huifer/skill-security-scan) | [huifer/skill-security-scan](https://github.com/huifer/skill-security-scan) | 扫描和检测 Claude Skills 的安全风险, 防止恶意代码窃取数据或破坏系统 | `pip install skill-security-scan` 或 `pip install -e .` |
+| [Context Hub](https://github.com/andrewyng/context-hub) | https://github.com/andrewyng/context-hub | 为编码代理提供经过整理的、版本化的文档, 使其能够在每个任务中变得更智能 | `npm install -g @aisuite/chub` |
+
 
 ## 科研相关
 -------
@@ -212,19 +227,14 @@ https://github.com/win4r/agent-skills-code-review-router
 -------
 
 
-https://github.com/SunX-DEX/sunx-skills-hub
-marketing-skills
-https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills
-
-## 安全
--------
-
-
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
-| [Skill Analyzer](https://glitchward.com/skill-analyzer) | NA | 用于分析 GitHub 仓库的技能, 可获取仓库信息、问题统计和提交历史 | 需配置 GitHub API Token, 通过 SKILL.md 定义使用方法 |
-| [Skill Security Scan](https://github.com/huifer/skill-security-scan) | [huifer/skill-security-scan](https://github.com/huifer/skill-security-scan) | 扫描和检测 Claude Skills 的安全风险, 防止恶意代码窃取数据或破坏系统 | `pip install skill-security-scan` 或 `pip install -e .` |
-| [Context Hub](https://github.com/andrewyng/context-hub) | https://github.com/andrewyng/context-hub | 为编码代理提供经过整理的、版本化的文档, 使其能够在每个任务中变得更智能 | `npm install -g @aisuite/chub` |
+| Day1Global-Skills | [star23/Day1Global-Skills](https://github.com/star23/Day1Global-Skills) | 科技股财报深度分析与多视角投资备忘录系统, 覆盖16大分析模块、6大投资哲学视角、多方法估值矩阵、反偏见框架和可执行决策体系.  | `npx skills add https://github.com/star23/Day1Global-Skills --all` |
+| sunx-skills-hub | [SunX-DEX/sunx-skills-hub](https://github.com/SunX-DEX/sunx-skills-hub) | SunX DEX 永续合约交易技能, 支持仓位管理、杠杆管理、订单操作和止盈止损策略.  | `npx skills add https://github.com/SunX-DEX/sunx-skills-hub` |
+| MagicSkills | [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) | 本地优先的技能基础设施, 用于多代理项目, 将分散的SKILL.md目录转变为可重用、可组合、可同步、可调用的共享能力库.  | `pip install MagicSkills` |
+| hyperskills | [hyperbrowserai/hyperbrowser-app-examples](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills) | 自动生成AI编码代理的SKILL.md文件, 使用实时网络数据, 通过搜索、抓取和生成综合技能文档.  | `git clone <repo-url> && cd skills-generator && npm install` |
+
+
 
 
 
@@ -247,7 +257,8 @@ https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskill
 | [AgentSkillsHub](https://agentskillshub.top) | [@zhuyansen](https://github.com/zhuyansen) 搭建的 [AgentSkillsHub](https://github.com/ZhuYansen/agent-skills-hub). 设计了一套评价指标, 参考了 skillsbench, github 活跃度等对 skills 进行总和评价. |
 | [SkillsFast](https://skills.fast/zh) | 面向中文用户的 AI Agent 技能快速分发与社区协作平台, 核心定位为 "AI 技能的高效流通枢纽" —— 以 "秒速发现、一键集成、社区共建" 为核心优势, 聚焦数据分析、内容创作、自动化等高频场景, 为 AI 开发者、爱好者及办公人群提供高质量 Agent 技能的查找、分享与复用服务, 完美适配 Claude Code、Cursor、Gemini CLI 等主流 AI 工具, 是连接技能创作者与使用者的轻量化桥梁. |
 | [skills.homes](https://skills.homes/zh-CN) | 多语言 AI Agent 技能平台, 提供生产力工具、LLM & AI、自动化工具、调试、架构和测试等分类, 拥有大量技能资源. |
-
+| [SkillHub](https://skillhub.club) | 统一的 AI Agent 技能包管理系统, 提供中央仓库概念, 支持 18+ 个 AI Agents(Claude Code、Codex、Cursor、Windsurf、Gemini 等), 实现技能的统一安装、管理和同步. 核心功能包括交互式搜索、跨项目技能管理、批量同步等, 提供类似 pip 的技能管理体验, 解决多 Agent 技能重复安装和版本不一致的问题.  |
+| [AITmpl Skills](https://www.aitmpl.com/skills) | AI 技能模板平台, 提供各类 AI Agent 技能模板和资源.  |
 
 ## Skills 集合仓库
 -------
@@ -278,7 +289,7 @@ https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskill
 | [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | Anthropics 官方开源的 Claude 金融服务专属插件库, 基于 Claude for Enterprise 打造, 核心目标是将通用大模型 Claude 转化为精通投行、行研、私募、财富管理等领域的专业金融分析师. |
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | 代理技能集合, 扩展规划、开发和工具能力. 主要包括: 规划与设计(write-a-prd、prd-to-plan、prd-to-issues、grill-me、design-an-interface、request-refactor-plan)、开发(tdd、triage-issue、improve-codebase-architecture、migrate-to-shoehorn、scaffold-exercises)、工具与设置(setup-pre-commit、git-guardrails-claude-code)、写作与知识(write-a-skill、edit-article、ubiquitous-language、obsidian-vault) 等技能. | ⭐⭐⭐ |
-| [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill) | 基于 12,307 条推文提炼的商业诊断工具箱, 用 Claude Code skill 实现. 核心工具包括: 商业模式诊断(dbs-diagnosis)、对标分析(dbs-benchmark)、内容创作诊断(dbs-content)、执行力诊断(dbs-unblock)、概念拆解(dbs-deconstruct). 提供完整的工作流: diagnosis → benchmark → content → unblock, deconstruct 可随时使用. 每个 SKILL.md 包含完整的方法论框架、诊断流程和说话风格定义, 开箱即用. 同时提供了进行 [dbs](https://github.com/dontbesilent2025/dbskill/tree/main/skills/dbs) 路由. |
+| [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill) | 基于 12,307 条推文提炼的商业诊断工具箱. [@dontbesilent](https://x.com/dontbesilent) 把自己发过的一万多条(12307)商业思考推文, 提炼成了一套 Claude Code Skills, 专门帮创业者和个体户做商业诊断. 核心工具包括: 商业模式诊断(dbs-diagnosis)、对标分析(dbs-benchmark)、内容创作诊断(dbs-content)、执行力诊断(dbs-unblock)、概念拆解(dbs-deconstruct). 提供完整的工作流: diagnosis → benchmark → content → unblock, deconstruct 可随时使用. 每个 SKILL.md 包含完整的方法论框架、诊断流程和说话风格定义, 开箱即用. 同时提供了进行 [dbs](https://github.com/dontbesilent2025/dbskill/tree/main/skills/dbs) 路由. 提供了类似 [garrytan/gstack](https://github.com/garrytan/gstack) 的功能, 但是更严苛. |
 | [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | 为 pi-coding-agent 提供的技能集合, 兼容 Claude Code、Codex CLI、Amp 和 Droid. 包含多个技能: Brave 搜索、浏览器工具、Google 日历/ Drive/ Gmail CLI、语音转文本、VS Code 集成、YouTube 转录等.  | 支持多种平台安装 | ⭐⭐⭐ |
 
 # 安装 Skills
@@ -357,6 +368,7 @@ xcopy skill-name %USERPROFILE%\.claude\skills\
 
 
 
-| 集合 | 简要描述 | 安装方式 |
-|:---:|:-------:|:-------:|
+| 集合 | 简要描述 |
+|:---:|:-------:|
 | [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 宝玉分享的 Claude Code 技能集, 提升日常工作效率. | `npx skills add jimliu/baoyu-skills` |
+| [Top 50 Claude Skills & GitHub  Repos for AI — The Only List You  Need.](https://x.com/zodchiii/status/2034924354337714642) | Claude AI 技能与 GitHub 仓库 50 大——你唯一需要的清单. |

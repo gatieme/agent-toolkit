@@ -20,6 +20,9 @@
 ## 巨头
 -------
 
+
+https://github.com/superagent-ai/grok-cli
+
 ### 主流 AI Agent 框架
 
 | 框架 | 描述 | Star 数 |
