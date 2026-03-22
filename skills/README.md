@@ -281,7 +281,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) | 一个专为 Azure 云开发设计的高质量代理技能集合, 基于 Microsoft Learn 文档编译而成. 包含 193 个技能, 涵盖计算、集成、数据与分析、AI 与机器学习、安全与身份、网络、基础设施、管理和专业领域等 19 个类别. 兼容 Claude Code、Gemini CLI、Codex CLI、Antigravity IDE、GitHub Copilot、Cursor、OpenCode 和 AdaL CLI 等多个平台. 提供了基于角色的技能包, 帮助开发者快速上手.  |
 
 
-## 专用产经 SKills 合集
+## 专用场景 Skills 合集
 -------
 
 | 项目 | 描述 | 支持 | 推荐星级 |
@@ -291,6 +291,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [mattpocock/skills](https://github.com/mattpocock/skills) | 代理技能集合, 扩展规划、开发和工具能力. 主要包括: 规划与设计(write-a-prd、prd-to-plan、prd-to-issues、grill-me、design-an-interface、request-refactor-plan)、开发(tdd、triage-issue、improve-codebase-architecture、migrate-to-shoehorn、scaffold-exercises)、工具与设置(setup-pre-commit、git-guardrails-claude-code)、写作与知识(write-a-skill、edit-article、ubiquitous-language、obsidian-vault) 等技能. | ⭐⭐⭐ |
 | [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill) | 基于 12,307 条推文提炼的商业诊断工具箱. [@dontbesilent](https://x.com/dontbesilent) 把自己发过的一万多条(12307)商业思考推文, 提炼成了一套 Claude Code Skills, 专门帮创业者和个体户做商业诊断. 核心工具包括: 商业模式诊断(dbs-diagnosis)、对标分析(dbs-benchmark)、内容创作诊断(dbs-content)、执行力诊断(dbs-unblock)、概念拆解(dbs-deconstruct). 提供完整的工作流: diagnosis → benchmark → content → unblock, deconstruct 可随时使用. 每个 SKILL.md 包含完整的方法论框架、诊断流程和说话风格定义, 开箱即用. 同时提供了进行 [dbs](https://github.com/dontbesilent2025/dbskill/tree/main/skills/dbs) 路由. 提供了类似 [garrytan/gstack](https://github.com/garrytan/gstack) 的功能, 但是更严苛. |
 | [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | 为 pi-coding-agent 提供的技能集合, 兼容 Claude Code、Codex CLI、Amp 和 Droid. 包含多个技能: Brave 搜索、浏览器工具、Google 日历/ Drive/ Gmail CLI、语音转文本、VS Code 集成、YouTube 转录等.  | 支持多种平台安装 | ⭐⭐⭐ |
+| [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills) | MiniMax 官方推出的 AI Agent 技能集合, 涵盖全栈开发、移动应用、视觉效果和办公文档处理等多个领域. 核心技能包括: 前端开发(React/Next.js、Tailwind CSS、动画效果)、全栈开发(API 设计、认证流程、实时功能)、Android/iOS 原生开发、GLSL 着色器开发、GIF 贴纸制作、PDF/PPTX/XLSX/DOCX 文档处理等. 技术栈集成了 MiniMax API 用于 AI 生成媒体资产, 支持多平台开发需求, 适用于从前端设计到后端架构的全流程开发场景.  | ⭐⭐⭐⭐ |
+| [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 一个拥有 340+ 全栈能力矩阵的技能集合, 由 VCO 运行时统一治理. 核心目标是通过领域矩阵分类, 在正确的上下文节点自动唤起正确的工具, 无需手动遍历调用. 涵盖多个领域: 需求规划与产品管理、软件工程与架构设计、调试测试与质量保证、数据分析与统计建模、机器学习与 AI 工程、生命科学与生信计算、科学计算与数学逻辑、科研文献与学术写作、多媒体可视化与文档、外部集成与自动化部署. 技术上通过用户命令触发, AI 辅助治理发掘用户意图关键词, 再由关键词触发技能路由. 适用于从需求分析、代码开发到部署运维的全流程场景, 特别适合需要跨领域协作的复杂项目.  | ⭐⭐⭐ |
 
 # 安装 Skills
 -------
