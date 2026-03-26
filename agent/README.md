@@ -22,6 +22,8 @@
 
 
 https://github.com/superagent-ai/grok-cli
+https://cc.storyfox.cz
+https://cchistory.mariozechner.at
 
 ### 主流 AI Agent 框架
 

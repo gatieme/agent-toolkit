@@ -138,7 +138,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`pptx`](https://skills.sh/anthropics/skills/pptx) | Anthropic 旗下 Claude Skills 体系的 PPTX 处理技能, 借助 [python markitdown 库](https://pypi.org/project/markitdown) 封装了 PPTX 读取、编辑、从零创建的脚本指令, 同时提供专业的 PPT 设计规范和严格的内容/视觉质检流程, 让大模型可标准化制作、处理 PPTX 文件. | `npx skills add https://github.com/anthropics/skills --skill pptx` |
 | [`ppt-generation`](https://skills.sh/bytedance/deer-flow/ppt-generation) | [`bytedance/deer-flow`](https://github.com/bytedance/deer-flow) | 字节跳动 deer-flow 生态下的自动化 PPT 生成技能, 支持自然语言/结构化数据输入, 内置字节设计规范, 一键生成可编辑的 PPTX 格式文件, 适配汇报、技术分享、产品宣讲等多场景. | `npx skills add https://github.com/bytedance/deer-flow --skill ppt-generation` |
 | [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
-
+| [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
 
 ## ⚙️ 配置管理
 -------
@@ -216,7 +216,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`pua-debugging`](https://skills.sh/tanweai/pua/pua-debugging) | [`tanweai/pua/pua-debugging`](https://github.com/tanweai/pua/tree/main/skills/pua-debugging) | 以大厂 P8 级工程师要求为核心, 融合大厂 PUA 激励话术、标准化调试方法论和强制化主动执行规则, 倒逼 AI 以工程化 Owner 视角端到端解决调试问题, 彻底规避被动排查、浅尝辄止的问题, 同时配套压力升级、抗合理化、自检清单等机制保障调试效果. 由[探微安全实验室](https://github.com/tanweai)出品. 官网 [pua-skills](https://pua-skill.pages.dev). @passluo 受此启发, [给你的 AI 一套大厂 P8 的 Soul, 让它的 Coding 表现提高 30%](https://x.com/passluo/status/2030908109145903310) | `npx skills add https://github.com/tanweai/pua --skill pua-debugging` |
 
 
-## 交互
+## 互联
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -235,6 +235,13 @@ https://github.com/win4r/agent-skills-code-review-router
 | hyperskills | [hyperbrowserai/hyperbrowser-app-examples](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills) | 自动生成AI编码代理的SKILL.md文件, 使用实时网络数据, 通过搜索、抓取和生成综合技能文档.  | `git clone <repo-url> && cd skills-generator && npm install` |
 
 
+## 热点
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [last30days](https://skills.sh/mvanhorn/last30days-skill/last30days) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 实时研究工具, 扫描Reddit、X、Bluesky、YouTube、TikTok、Instagram、Hacker News、Polymarket等平台近30天的内容, 分析社区讨论并生成结构化报告 | `npx skills add mvanhorn/last30days-skill --skill last30days` |
+| [markdown-proxy](https://skills.sh/joeseesun/markdown-proxy/markdown-proxy) | [joeseesun/markdown-proxy](https://github.com/joeseesun/markdown-proxy) | Markdown代理工具 | `npx skills add joeseesun/markdown-proxy --skill markdown-proxy` |
 
 
 
