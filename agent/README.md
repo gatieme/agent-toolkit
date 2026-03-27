@@ -17,6 +17,12 @@
 
 [龙虾导航](https://www.claw123.com/)
 
+
+ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式。
+Plan-and-Solve: 先规划再执行的解耦式架构，适合需要长远规划的复杂任务。
+Reflection：执行→反思→优化的三步循环，适合追求高精度的关键任务。
+
+
 ## 巨头
 -------
 
@@ -24,6 +30,7 @@
 https://github.com/superagent-ai/grok-cli
 https://cc.storyfox.cz
 https://cchistory.mariozechner.at
+https://banwagong1.com/claude-code.html
 
 ### 主流 AI Agent 框架
 

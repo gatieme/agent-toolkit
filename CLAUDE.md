@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 agent-toolkit/
 ├── opencode/              # OpenCode 配置文件目录
 │   ├── oh-my-opencode-*.jsonc  # Oh-My-OpenCode 配置文件
-│   ├── superpowers/        # Superpowers 集成（软链接）
+│   ├── superpowers/        # Superpowers 集成（Git 子模块）
 │   └── skills/            # Superpowers 技能（软链接）
 ├── skills/                # 自定义技能仓库（300+ 技能）
 │   ├── agent-browser/      # 浏览器自动化
@@ -22,14 +22,36 @@ agent-toolkit/
 │   ├── drawio/            # Draw.io 图表生成
 │   ├── excalidraw/        # Excalidraw 绘图
 │   ├── mermaid-diagrams/  # Mermaid 图表
+│   ├── oh-my-opencode-config/  # Oh-My-OpenCode 配置管理（Git 子模块）
+│   ├── excalidraw-diagram-skill/  # Excalidraw 专业绘图（Git 子模块）
 │   └── ...
 ├── script/                # 实用脚本
-│   └── sync.py           # 配置同步工具
+│   └── sync.py           # 配置同步工具（TUI 界面）
 ├── plugin/                # 插件相关文档
-└── prompt/                # Prompt 模板（用于会话交接）
-    ├── AGENTS.MD/         # Agent 配置模板
-    └── SUCCESSOR.MD/      # 会话交接模板
+├── prompt/                # Prompt 模板（用于会话交接）
+│   ├── AGENTS.MD/         # Agent 配置模板
+│   └── SUCCESSOR.MD/      # 会话交接模板
+├── sync.sh               # 快速同步脚本（覆盖式）
+├── .gitmodules           # Git 子模块配置
+└── CLAUDE.md            # Claude Code 项目指南
 ```
+
+## Git 子模块
+
+项目使用 Git 子模块管理外部依赖：
+
+```bash
+# 初始化和更新子模块
+git submodule update --init --recursive
+
+# 拉取子模块最新更新
+git submodule update --remote --merge
+```
+
+当前子模块：
+- `opencode/superpowers` - Superpowers 框架
+- `skills/oh-my-opencode-config` - Oh-My-OpenCode 配置管理
+- `skills/excalidraw-diagram-skill` - Excalidraw 专业绘图技能
 
 ## 常用命令
 
@@ -64,6 +86,22 @@ bunx oh-my-opencode doctor
 # 查看可用的技能
 /skills
 ```
+
+### 配置模式切换
+
+根据不同工作场景，可以使用不同的 Sisyphus 工作模式：
+
+```bash
+# 使用切换脚本（需要单独安装）
+~/switch-opencode-config.sh omo      # 切换到交互式模式
+~/switch-opencode-config.sh            # 切换到完全自动化模式（Ultraworker）
+~/switch-opencode-config.sh native    # 切换到原生配置
+~/switch-opencode-config.sh status    # 查看当前配置状态
+```
+
+**模式说明：**
+- **交互式模式**：每个步骤完成后询问用户，允许调整流程、变更计划
+- **完全自动化模式**：按照 Superpowers 工作流程自动执行所有步骤，不询问用户
 
 ## 配置文件
 
