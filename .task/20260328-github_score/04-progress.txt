@@ -1,0 +1,25 @@
+# Ralph Progress Log
+Started: Sat 28 Mar 2026 07:27:48 PM CST
+---
+
+## 2026-03-28 - US-001
+- 实现了阈值评分算法，添加了 _score_component() 方法
+- 修改了 calculate_score() 方法，使用新的权重阈值评分
+- Stars 权重 60%，阈值 [0, 50, 200, 1000, 5000]
+- Forks 权重 15%，阈值 [0, 10, 50, 200, 1000]
+- Watchers 权重 10%，阈值 [0, 10, 30, 100, 300]
+- Issues 权重 15%，阈值 [0, 5, 20, 50, 100]
+- Typecheck passed
+- Files changed: script/get_github_stars.py
+- **Learnings for future iterations:**
+  - 使用 Python 的内置 py_compile 进行 typecheck
+  - 项目使用中文注释和文档
+
+## 2026-03-28 - US-002
+- 添加了 --export 命令行参数
+- 实现了导出格式输出逻辑，包含 stars, forks, watchers, issues, rating, rating_display
+- Typecheck passed
+- Files changed: script/get_github_stars.py
+- **Learnings for future iterations:**
+  - 无新发现
+---
