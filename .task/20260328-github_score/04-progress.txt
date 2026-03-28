@@ -54,4 +54,25 @@
 
 **Learnings for future iterations:**
 - 在设计框架时考虑完整功能需求可以减少迭代次数
+
+## 2026-03-28 - US-008
+- 创建 16 个集成测试用例
+- 修复测试用例与实际表格格式的对齐问题
+- 所有测试通过
+
+**Learnings for future iterations:**
+- 测试用例必须反映实际使用场景的表格格式
+- update_table_row() 需要正确处理 5 列表格格式
+
+## 2026-03-28 - US-010
+- 执行 dry-run 预览更新
+- 成功扫描 plugin/README.md，找到 205 个 GitHub 仓库
+- 无 API token 时显示速率限制警告，但不影响 dry-run 功能
+- dry-run 模式正确地不修改任何文件
+
+**Learnings for future iterations:**
+- GitHub API 无认证时，速率限制为每小时 60 次请求
+- 205 个仓库需要提供 API token 才能完整获取数据
+- dry-run 模式是安全的预览方式，不会修改原始文件
+
 ---
