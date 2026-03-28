@@ -132,8 +132,8 @@
         "Typecheck passes"
       ],
       "priority": 8,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "核心逻辑覆盖率 63%，main 函数部分未覆盖（包含 dry-run、备份等）"
     },
     {
       "id": "US-009",
