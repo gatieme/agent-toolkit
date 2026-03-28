@@ -151,29 +151,31 @@ class MarkdownTableParser:
         rating_display = repo_data.get('rating_display', '⭐')
         stars = repo_data.get('stars', 0)
 
-        # 查找第一个 | 并在该列后更新
-        # 假设格式：| 项目名 | 推荐 | Stars | ...
-        # 简单策略：更新包含数字的 Stars 列
+        # 按列解析表格行
         parts = original_line.split('|')
 
-        # 寻找可能的 Stars 列（包含数字）
-        for i, part in enumerate(parts):
-            stripped = part.strip()
-            # 查找现有的 Star 数量格式（如 1,234 或 1234）
-            if re.search(r'\d[, ]?\d', stripped):
-                # 替换为新的 Star 数量
-                parts[i] = f' {stars:,} '
-                break
+        # 去除首尾空元素（表格行以 | 开头和结尾）
+        # 格式：| 列1 | 列2 | 列3 | 列4 | 列5 |
+        # split 结果: ['', ' 列1 ', ' 列2 ', ' 列3 ', ' 列4 ', ' 列5 ', '']
+        cols = [part.strip() for part in parts[1:-1]] if len(parts) > 2 else []
 
-        # 寻找可能的推荐列（包含 ⭐ 或空白）
-        for i, part in enumerate(parts):
-            stripped = part.strip()
-            if stripped == '' or re.match(r'^⭐+$', stripped):
-                # 替换为新的星级
-                parts[i] = f' {rating_display} '
-                break
+        # 查找并更新推荐星级列（列索引 3）
+        # 表格格式：| 项目 | 描述 | 支持 | 推荐星级 |
+        if len(cols) >= 4:
+            # 第 4 列是推荐星级
+            cols[3] = rating_display
 
-        return '|'.join(parts)
+        # 查找并更新 Star 数量列（列索引 4，如果存在）
+        # 扩展表格格式：| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+        if len(cols) >= 5:
+            # 第 5 列是 Star 数量
+            cols[4] = f'{stars:,}'
+        elif len(cols) == 4:
+            # 只有 4 列，追加 Star 数量列
+            cols.append(f'{stars:,}')
+
+        # 重新组装表格行
+        return '| ' + ' | '.join(cols) + ' |'
 
 
 class GitHubRepoFetcher:
