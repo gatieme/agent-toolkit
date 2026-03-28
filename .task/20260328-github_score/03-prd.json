@@ -188,8 +188,8 @@
         "确认评分分布合理（3星及以上占多数）"
       ],
       "priority": 12,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "表格格式正确，182/194 行有星级和 Star 数量（Linfee/spec-kit 返回 404），评分分布合理"
     },
     {
       "id": "US-013",
@@ -202,8 +202,8 @@
         "Typecheck passes"
       ],
       "priority": 13,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "文档已在 US-001 中同步更新，包含阈值评分标准和 --export 选项"
     },
     {
       "id": "US-014",
@@ -218,8 +218,8 @@
         "文档格式清晰，易于阅读"
       ],
       "priority": 14,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "创建了完整的使用指南，包含工具概述、使用方法、评分规则、FAQ 和故障排查"
     }
   ]
 }
