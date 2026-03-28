@@ -20,10 +20,10 @@ class TestMarkdownTableParser:
     def test_extract_github_repos_basic(self):
         """测试提取基本的 GitHub 仓库链接"""
         content = """
-| 项目 | Stars |
-|-------|-------|
-| [Test](https://github.com/test/repo) | 100 |
-| [Demo](https://github.com/user/demo) | 50 |
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|-------|--------|--------|----------|----------|
+| [Test](https://github.com/test/repo) | 描述 | 支持 | ⭐⭐ | 100 |
+| [Demo](https://github.com/user/demo) | 描述 | 支持 | ⭐ | 50 |
 """
         parser = MarkdownTableParser(content)
         repos = parser.extract_github_repos()
@@ -69,9 +69,9 @@ class TestMarkdownTableParser:
         """测试查找表格行"""
         content = """# 标题
 
-| 项目 | 推荐 | Stars | 描述 |
-|-------|--------|-------|--------|
-| [Test](https://github.com/test/repo) | ⭐⭐⭐ | 1,234 | 这是一个测试项目 |
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|-------|--------|--------|----------|----------|
+| [Test](https://github.com/test/repo) | 描述 | 支持 | ⭐⭐⭐ | 1,234 |
 
 其他内容。
 """
@@ -87,15 +87,15 @@ class TestMarkdownTableParser:
         """测试查找多个表格"""
         content = """# 表格 1
 
-| 项目 | Stars |
-|-------|-------|
-| [Test1](https://github.com/test/repo1) | 100 |
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|-------|--------|--------|----------|----------|
+| [Test1](https://github.com/test/repo1) | 描述 | 支持 | ⭐⭐ | 100 |
 
 # 表格 2
 
-| 项目 | Stars |
-|-------|-------|
-| [Test2](https://github.com/test/repo2) | 200 |
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|-------|--------|--------|----------|----------|
+| [Test2](https://github.com/test/repo2) | 描述 | 支持 | ⭐⭐⭐ | 200 |
 """
         parser = MarkdownTableParser(content)
         rows = parser.find_table_rows()
@@ -105,8 +105,8 @@ class TestMarkdownTableParser:
         assert rows[1]['full_name'] == 'test/repo2'
 
     def test_update_table_row_stars(self):
-        """测试更新 Stars 列"""
-        content = """| [Test](https://github.com/test/repo) | ⭐⭐ | 1,000 | 描述 |"""
+        """测试更新 Stars 列（第 5 列）"""
+        content = """| [Test](https://github.com/test/repo) | 描述 | 支持 | ⭐⭐ | 1,000 |"""
         parser = MarkdownTableParser(content)
 
         repo_data = {
@@ -118,24 +118,28 @@ class TestMarkdownTableParser:
 
         assert '5,678' in updated
         assert '⭐⭐⭐⭐' in updated
+        # 确保描述和支持列保持不变
+        assert '描述' in updated
+        assert '支持' in updated
 
     def test_update_table_row_rating(self):
-        """测试更新星级"""
-        content = """| [Test](https://github.com/test/repo) | | 1,000 | 描述 |"""
+        """测试更新星级（第 4 列）"""
+        content = """| [Test](https://github.com/test/repo) | 描述 | 支持 | ⭐⭐ | 1,000 |"""
         parser = MarkdownTableParser(content)
 
         repo_data = {
             'rating_display': '⭐⭐⭐',
-            'stars': 1000,
+            'stars': 1500,
         }
 
         updated = parser.update_table_row(0, repo_data)
 
         assert '⭐⭐⭐' in updated
+        assert '1,500' in updated
 
     def test_update_table_row_preserve_format(self):
         """测试保持 Markdown 格式"""
-        content = """| [Test](https://github.com/test/repo) | ⭐⭐ | 1,234 | 这是一个描述 |"""
+        content = """| [Test](https://github.com/test/repo) | 描述 | 支持 | ⭐⭐ | 1,234 |"""
         parser = MarkdownTableParser(content)
 
         repo_data = {
@@ -149,10 +153,13 @@ class TestMarkdownTableParser:
         assert '|' in updated
         assert 'https://github.com/test/repo' in updated
         assert '99,999' in updated
+        # 验证表格格式正确（以 | 开头和结尾）
+        assert updated.startswith('|')
+        assert updated.endswith('|')
 
     def test_update_table_row_empty_stars(self):
-        """测试处理空的 Stars 列"""
-        content = """| [Test](https://github.com/test/repo) | | | 描述 |"""
+        """测试处理空的星级列"""
+        content = """| [Test](https://github.com/test/re/repo) | 描述 | 支持 | | |"""
         parser = MarkdownTableParser(content)
 
         repo_data = {
@@ -163,6 +170,22 @@ class TestMarkdownTableParser:
         updated = parser.update_table_row(0, repo_data)
 
         assert '⭐' in updated
+        assert '50' in updated
+
+    def test_update_table_row_add_stars_column(self):
+        """测试更新 Star 数量列"""
+        content = """| [Test](https://github.com/test/repo) | 描述 | 支持 | ⭐⭐ | 100 |"""
+        parser = MarkdownTableParser(content)
+
+        repo_data = {
+            'rating_display': '⭐⭐⭐',
+            'stars': 1234,
+        }
+
+        updated = parser.update_table_row(0, repo_data)
+
+        assert '1,234' in updated
+        assert '⭐⭐⭐' in updated
 
 
 class TestGitHubRepoFetcher:
@@ -236,10 +259,10 @@ class TestIntegration:
 
 ## 项目列表
 
-| 项目 | 推荐 | Stars |
-|-------|--------|-------|
-| [Project A](https://github.com/user/project-a) | ⭐⭐ | 100 |
-| [Project B](https://github.com/user/project-b) | | 200 |
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|-------|--------|--------|----------|----------|
+| [Project A](https://github.com/user/project-a) | 描述 A | 支持 A | ⭐⭐ | 100 |
+| [Project B](https://github.com/user/project-b) | 描述 B | 支持 B | | 200 |
 
 其他内容。
 """
