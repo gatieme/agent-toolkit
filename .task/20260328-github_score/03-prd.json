@@ -83,8 +83,8 @@
         "Typecheck passes"
       ],
       "priority": 5,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "功能已在 US-004 中实现"
     },
     {
       "id": "US-006",
@@ -98,8 +98,8 @@
         "Typecheck passes"
       ],
       "priority": 6,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "功能更新已集成到 US-004"
     },
     {
       "id": "US-007",
@@ -113,8 +113,8 @@
         "Typecheck passes"
       ],
       "priority": 7,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "备份、原子写入、变更报告已在 US-004 中实现"
     },
     {
       "id": "US-008",
