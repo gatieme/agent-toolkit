@@ -245,7 +245,6 @@ https://github.com/win4r/agent-skills-code-review-router
 | MagicSkills | [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) | 本地优先的技能基础设施, 用于多代理项目, 将分散的SKILL.md目录转变为可重用、可组合、可同步、可调用的共享能力库.  | `pip install MagicSkills` |
 | hyperskills | [hyperbrowserai/hyperbrowser-app-examples](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills) | 自动生成AI编码代理的SKILL.md文件, 使用实时网络数据, 通过搜索、抓取和生成综合技能文档.  | `git clone <repo-url> && cd skills-generator && npm install` |
 
-
 ## 热点
 -------
 
@@ -253,7 +252,7 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [last30days](https://skills.sh/mvanhorn/last30days-skill/last30days) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 实时研究工具, 扫描Reddit、X、Bluesky、YouTube、TikTok、Instagram、Hacker News、Polymarket等平台近30天的内容, 分析社区讨论并生成结构化报告 | `npx skills add mvanhorn/last30days-skill --skill last30days` |
 | [markdown-proxy](https://skills.sh/joeseesun/markdown-proxy/markdown-proxy) | [joeseesun/markdown-proxy](https://github.com/joeseesun/markdown-proxy) | Markdown代理工具 | `npx skills add joeseesun/markdown-proxy --skill markdown-proxy` |
-| [follow-builders](https://github.com/zarazhangrui/follow-builders) | [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) | AI驱动的摘要工具，跟踪AI领域的顶级构建者（研究人员、创始人、产品经理和工程师），并提供他们所说内容的精选摘要，支持多语言和多种交付方式 | `git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders && cd ~/.claude/skills/follow-builders/scripts && npm install` |
+| [follow-builders](https://github.com/zarazhangrui/follow-builders) | [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) | AI驱动的摘要工具, 跟踪AI领域的顶级构建者(研究人员、创始人、产品经理和工程师), 并提供他们所说内容的精选摘要, 支持多语言和多种交付方式 | `git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders && cd ~/.claude/skills/follow-builders/scripts && npm install` |
 
 
 # Skills 集合
@@ -278,6 +277,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [SkillHub](https://skillhub.club) | 统一的 AI Agent 技能包管理系统, 提供中央仓库概念, 支持 18+ 个 AI Agents(Claude Code、Codex、Cursor、Windsurf、Gemini 等), 实现技能的统一安装、管理和同步. 核心功能包括交互式搜索、跨项目技能管理、批量同步等, 提供类似 pip 的技能管理体验, 解决多 Agent 技能重复安装和版本不一致的问题.  |
 | [AITmpl Skills](https://www.aitmpl.com/skills) | AI 技能模板平台, 提供各类 AI Agent 技能模板和资源.  |
 | [SkillsGate](https://skillsgate.ai) | 一站式 AI Agent 技能管理平台, 核心定位为「AI 技能的统一管理枢纽」, 支持 18+ 个 AI 编码代理(Claude Code、Cursor、Windsurf、GitHub Copilot、Codex CLI 等), 提供桌面应用、终端 UI 和 CLI 三种接口. 平台索引了 80,000+ 技能, 支持 AI 驱动的语义搜索, 实现跨代理技能管理、远程服务器连接、设置同步等核心功能. 安全方面提供技能扫描功能, 可检测提示注入、数据泄露等 8 类威胁, 并支持社区共享扫描结果, 是一个集发现、安装、管理、安全于一体的综合性 AI 技能平台. |
+| [Claude Marketplaces](https://claudemarketplaces.com/) | 为 Claude Code 提供精选的插件、技能和 MCP 服务器的手工挑选目录, 通过安装次数、GitHub 星标和社区投票来维护质量, 确保只列出活跃使用的扩展. 核心功能包括: 提供可重用的 Claude Code 技能指令集(可通过单命令安装), 以及通过工具、API 和外部服务集成扩展代理的 MCP 服务器. 完全免费和开放, 即将支持社区投票和评论功能. |
 
 
 ## Skills 集合仓库
@@ -299,7 +299,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | 一个精选的 Claude Code 相关资源列表, 包含技能、代理、插件、钩子和其他增强 Claude Code 工作流程的工具. 涵盖了代理技能、工作流与知识指南、工具、状态栏、钩子、斜杠命令、CLAUDE.md 文件、替代客户端和官方文档等多个类别. 包含来自 Trail of Bits、Anthropic 等知名团队的专业技能, 以及社区贡献的各种工具和资源.  |
 | [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) | 一个遵循少而精原则的优质 Skills 资源集合, 致力于收集和分享最优质的 Skills 教程、案例和实践, 帮助更多人轻松迈出搭建 Agent 的第一步. 包含技能标准介绍、安装方法、创建指南、优质教程和精选技能等内容, 涵盖编程辅助、技术开发、内容创作、产品使用等多个领域. 提供了增强插件 Agent Skills Toolkit, 帮助快速创建和改进 Agent Skills.  |
 | [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) | 一个专为 Azure 云开发设计的高质量代理技能集合, 基于 Microsoft Learn 文档编译而成. 包含 193 个技能, 涵盖计算、集成、数据与分析、AI 与机器学习、安全与身份、网络、基础设施、管理和专业领域等 19 个类别. 兼容 Claude Code、Gemini CLI、Codex CLI、Antigravity IDE、GitHub Copilot、Cursor、OpenCode 和 AdaL CLI 等多个平台. 提供了基于角色的技能包, 帮助开发者快速上手.  |
-
+| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)
 
 ## 专用场景 Skills 合集
 -------
@@ -317,8 +317,10 @@ https://github.com/win4r/agent-skills-code-review-router
 | [NTCoding/claude-skillz](https://github.com/NTCoding/claude-skillz) | 为Claude Code提供可重用的技能和可组合的系统提示, 包含Claude Launcher和OpenCode Launcher. 核心功能: Claude Launcher(交互式系统提示和模型选择器, 支持两步选择和直接快捷方式)、OpenCode Launcher(从相同角色生成OpenCode代理)、12个预构建角色、可通过@引用加载的可重用技能(如独立研究、简洁输出、TDD流程等). 技术上支持基于前端matter的快捷方式、自动技能加载、冲突检测等. 适用于快速启动不同角色的Claude会话, 生成OpenCode代理, 应用各种专业技能到不同场景.  | ⭐⭐⭐⭐ |
 | [zubair-trabzada/ai-marketing-claude](https://github.com/zubair-trabzada/ai-marketing-claude) | 为Claude Code提供全面的营销分析和自动化技能系统, 可审计网站营销、生成文案、构建电子邮件序列、创建内容日历、分析竞争对手并生成客户端就绪的PDF报告. 核心功能: 6维度营销审计(内容与消息传递、转化优化、SEO与可发现性、竞争定位、品牌与信任、增长与战略)、5个并行代理分析、14个子技能、PDF报告支持等. 技术上通过Python脚本辅助页面分析、竞争对手扫描、PDF生成等. 适用于营销机构、个体创业者和内容创作者, 可用于销售前分析、客户提案、优化自有网站等场景.  | ⭐⭐⭐⭐ |
 | [huxiang1126/amass-roundtable](https://github.com/huxiang1126/amass-roundtable) | 一个基于 Claude Code 的圆桌会议工具, 三位集团高管(HR总监、总顾问、COO)围绕问题展开多视角讨论、博弈与决策. v1.1 新特性: Agent Teams 驱动 — 每位高管运行在独立上下文中, 真正的多角色独立思考, 不共享记忆, 避免观点趋同. 核心功能: 支持跨会话记忆、会议纪要自动归档、行动项追踪、可视化图表输出、动态角色扩展. 技术上通过安装脚本自动配置 Agent Teams 功能, 创建角色库和数据目录. 使用场景: 企业管理决策、问题分析、战略规划等需要多视角思考的复杂场景, 可用于讨论绩效考核、组织架构调整、业绩下滑原因分析、预算分配等议题.  | ⭐⭐⭐⭐ |
-| [](https://github.com/199-biotechnologies/claude-deep-research-skill)
-| [](https://github.com/himself65/finance-skills)
+| [199-biotechnologies/claude-deep-research-skill](https://github.com/199-biotechnologies/claude-deep-research-skill) | 企业级研究引擎, 为Claude Code生成有引用支持的报告, 具有来源可信度评分、多提供商搜索和自动验证功能. 核心功能: 4种研究模式(Quick/Standard/Deep/UltraDeep)、8阶段研究流程、并行检索(5-10个并发搜索+2-3个专注子代理)、多提供商搜索集成(Brave/Serper/Exa/Jina/Firecrawl)、自动验证和引用检查、多格式输出(Markdown/HTML/PDF). 技术架构: 模块化设计, 包含SKILL.md入口点、参考文档、模板和脚本目录. 适用于需要深度研究和引用支持的场景, 如学术研究、市场分析、技术评估等.  | ⭐⭐⭐⭐⭐ |
+| [himself65/finance-skills](https://github.com/himself65/finance-skills) | 一个为金融分析和交易提供的代理技能集合, 包含多种金融相关功能. 核心功能: 期权收益曲线图表生成(支持多种期权策略)、股票相关性分析(发现相关公司和配对交易 candidate)、金融数据获取(通过yfinance获取股票价格、财务报表等)、霍尔木兹海峡实时监控(航运、油价影响等)、社交媒体金融信息读取(Discord、Telegram、Twitter). 技术上遵循Agent Skills开放标准, 支持多种平台(Claude.ai、Claude Code等), 模块化设计, 支持交互式UI. 适用于金融分析、交易策略制定、市场情绪分析、地缘政治风险监控、投资决策支持等场景.  | ⭐⭐⭐ |
+| [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) | 一个为AI代理提供金融分析能力的即插即用技能集合, 包含实时新闻、股票数据、情感分析、逻辑可视化和市场预测功能. 核心功能: 实时财经新闻聚合(10+信源)、逻辑链路可视化(传导链路图)、AI智能预测(Kronos模型)、股票数据查询(A股/港股/美股)、情感分析(FinBERT/LLM)、投资信号追踪、专业研报生成、全网搜索与本地RAG. 技术上支持多种Agent框架(Antigravity、OpenCode、OpenClaw、Claude Code等), 模块化设计, 每个技能包含SKILL.md文件. 适用于金融市场分析、投资决策支持、市场趋势预测、财经新闻监控等场景.  | ⭐⭐⭐⭐ |
+
 
 # 安装 Skills
 -------

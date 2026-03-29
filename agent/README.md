@@ -98,6 +98,9 @@ https://banwagong1.com/claude-code.html
 | [hyperspaceai/agi](https://github.com/hyperspaceai/agi) | Hyperspace AI | AGI 研究项目, 包含 [matrix](https://matrix.hyper.space) 和 [agents](https://agents.hyper.space) 等. | ⭐⭐⭐ |
 | [](https://github.com/TauricResearch/TradingAgents)
 | [](https://github.com/allen-hsu/agent-os)
+| [](https://github.com/charmbracelet/crush)
+| [](https://github.com/yologdev/yoyo-evolve)
+| [](https://github.com/walkinglabs/awesome-harness-engineering)
 
 ## 参考
 -------
