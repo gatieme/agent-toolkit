@@ -157,6 +157,7 @@ anthropics 官方的 [claude-plugins-official/ralph-loop](https://github.com/ant
 | [HazAT/pi-interactive-subagents](https://github.com/HazAT/pi-interactive-subagents) | 为 pi 提供交互式子代理功能, 支持在多路复用器面板中生成、编排和管理子代理会话, 内置多种代理角色(planner、scout、worker、reviewer、visual-tester), 实现完整的规划到实现工作流. | Pi | ⭐ | 223 |
 | [AI Team OS](https://github.com/CronusL-1141/AI-company) | 将 Claude Code 转变为自动驾驶的 AI 公司, 实现自主运行、学习和进化. 核心功能包括自主操作引擎、自我改进系统、26 个专业 Agent 模板、8 个结构化会议模板、决策透明度和 4 层防御规则系统. 技术架构采用 5 层设计, 包括 Web 仪表板、CLI + REST API、团队编排器、记忆管理器和存储. 适用于自主软件开发、持续集成、团队协作和项目管理等场景. | 多 Agent 支持 | ⭐ | 142 |
 | [Citadel](https://github.com/SethGammon/Citadel) | 运行自主编码活动的工具, 根据任务规模路由到合适的工具. 提供 18 个技能(代码审查、测试生成、文档生成等)、3 个自主代理、8 个生命周期钩子、活动持久性和 fleet 协调. 编排阶梯分为四个层次, 从简单技能到复杂舰队协调. 适用于从单行修复到多天并行活动的各种编码任务. | Claude Code | ⭐ | 375 |
+| [DeerFlow](https://github.com/bytedance/deer-flow) | 字节跳动开源的超级智能体框架, 基于 LangGraph 和 LangChain 构建, 支持子智能体编排、沙箱执行、持久记忆和技能扩展, 可完成从深度研究到内容生成的多种复杂任务 | 多 Agent 支持 | ⭐⭐⭐⭐ | 16,837 |
 
 ### 2.2.3 Agent Teams Workflow
 -------
@@ -235,6 +236,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [runesleo/claude-code-workflow](https://github.com/runesleo/claude-code-workflow) | 为 Claude Code 提供的经过实战测试的工作流模板, 包含记忆管理、上下文工程和任务路由功能. 采用三层架构设计: 自动加载的规则、按需加载的文档和热数据. 核心功能包括: 记忆管理、上下文管理、任务路由、完成前验证和自动保存. | Claude Code | ⭐ | 539 |
 | [nhevers/MoltBrain](https://github.com/nhevers/MoltBrain) | 为 OpenClaw、MoltBook 和 Claude Code 提供的长期记忆层, 自动学习和回忆项目上下文. 核心功能包括: 自动捕获发现和决策、语义搜索、Web 查看器、分析跟踪、标签和过滤器、收藏功能、导出功能等. 技术架构基于 SQLite 数据库、ChromaDB 向量搜索和 Web 查看器 UI, 支持多平台集成和 x402 微支付存储服务. | OpenClaw<br>MoltBook<br>Claude Code | ⭐ | 395 |
 | [memvid/claude-brain](https://github.com/memvid/claude-brain) | 为 Claude Code 提供持久化记忆的插件, 解决会话间无记忆的问题. 核心目标是让 Claude Code 能够记住之前的对话、决策和解决方案, 实现类似人类的记忆能力. 技术上通过单个文件(.claude/mind.mv2)存储记忆, 无需数据库或云服务, 基于 Rust 核心实现亚毫秒级搜索速度. 主要功能包括: 会话上下文自动捕获、记忆搜索、自然语言查询、记忆统计等. 使用场景包括: 跨会话的项目开发、持续的调试过程、团队协作中的知识共享等. 特点是 100% 本地存储、支持版本控制、可轻松传输和共享. | Claude Code | ⭐ | 336 |
+| [agentic-box/memora](https://github.com/agentic-box/memora) | 为AI智能体提供持久化记忆的轻量级MCP服务器, 支持语义记忆存储、知识图谱、会话回忆和跨会话上下文. 核心功能包括: 持久化存储(SQLite+云同步S3/R2/D1)、语义搜索(TF-IDF、sentence-transformers、OpenAI)、LLM去重、记忆链接、知识图谱可视化、实时图表服务器、基于RAG的记忆聊天等. 技术架构基于Python实现, 支持Claude Code和Codex CLI集成.  | Claude Code<br>Codex CLI | ⭐ | 364 |
+| [ContextKeep](https://github.com/mordang7/ContextKeep) | 为 AI 智能体(Claude、Cursor、Gemini、OpenCode 等)提供持久化、可搜索的记忆系统, 解决会话间无记忆的问题. 核心功能包括: 无限上下文存储(无过期、无大小限制)、节省 Token 和 API 成本、通用兼容性(支持任何 MCP 合规客户端)、Memory Index Protocol(两步检索系统)、现代化 Web 仪表盘(网格、列表、日历视图)、100% 本地存储(注重隐私)、智能搜索(关键词和语义搜索)、Linux 服务支持. 技术架构基于 SQLite 存储, 支持多种传输方式: Stdio(本地)、SSE(远程/家庭实验室)、SSH. 核心 MCP 工具包括: list_all_memories()、retrieve_memory()、store_memory()、search_memories()、list_recent_memories(). 使用场景包括: 跨会话的项目开发、持续的调试过程、团队协作中的知识共享等.  | Claude<br>Cursor<br>Gemini<br>OpenCode | ⭐ | 428 |
 
 
 ### 3.1.2 Embedding 向量化
@@ -320,6 +323,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 |:---:|:----:|:---:|:-------:|:--------:|
 | [BayramAnnakov/claude-reflect](https://github.com/BayramAnnakov/claude-reflect) | 一个为 Claude Code 设计的自学习系统, 能够捕获用户的纠正并发现工作流模式, 将它们转化为永久记忆和可重用技能. 核心功能包括从纠正中学习、发现工作流模式、多语言支持和技能改进. 通过两阶段流程(自动捕获和手动处理)实现, 使用混合检测方法(正则表达式和语义 AI 验证)确保准确性. 支持将学习内容同步到多个目标文件, 并能从会话历史中发现重复模式生成可重用技能. 适用于提高 Claude Code 的准确性和自动化程度. | Claude Code | ⭐ | 861 |
 | [primeline-ai/evolving-lite](https://github.com/primeline-ai/evolving-lite) | 一个为 Claude Code 设计的自学习系统, 能够从用户的纠正中学习, 记住有效的解决方案, 并在后续会话中自动应用这些知识. 采用四层反馈循环(学习、上下文、自我修复、进化)和分层激活机制, 从安全监控到深度记忆逐步提升. | Claude Code | ⭐ | 34 |
+| [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) | 一个为 AI 代理设计的自进化引擎, 能够让所有 AI 代理(如 OpenClaw、nanobot、Claude Code、Codex、Cursor 等)从实际经验中学习、适应和进化, 并相互分享知识. 核心功能包括: 自我进化(技能自动修复、改进和学习)、集体代理智能(一个代理的改进成为所有代理的升级)、令牌效率(重复使用成功解决方案, 减少 46% 的令牌消耗). 支持通过 MCP 服务器与任何支持技能的代理集成, 提供本地仪表板跟踪技能进化, 并拥有云技能社区用于共享进化后的技能. 在 GDPVal 基准测试中, 使用相同的 LLM 基础模型, OpenSpace 代理的收入是基线代理的 4.2 倍, 同时减少 46% 的令牌消耗. 适用于构建复杂系统、处理合规工作、工程项目、文档生成等多种专业任务.  | 多平台支持 | ⭐ | 1,200 |
+
 
 # 🎨 4 状态监控
 -------
@@ -364,6 +369,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [FlorianBruniaux/ccboard](https://github.com/FlorianBruniaux/ccboard) | 一个开源的 TUI/Web 仪表盘, 用于 Claude Code 会话监控、成本跟踪和配置管理. 核心功能包括 11 个交互式标签页(仪表盘、会话、配置、钩子、代理、成本、历史、MCP、分析、活动、搜索)、实时监控、SQLite 缓存(89x 启动速度提升)、跨平台支持和零配置. 技术栈: Rust、Ratatui、Axum、Leptos WASM. | Claude Code | ⭐ | 35 |
 | [conductor.build](https://conductor.build) | 用于创建并行 Codex 和 Claude Code 智能体的工具, 在隔离的工作区中运行. 主要功能包括: 添加仓库(Conductor 克隆并在 Mac 上工作)、部署智能体(每个 Claude Code 获得隔离工作区)、管理(查看谁在工作、需要注意什么、审查代码). 技术栈: 基于 git worktree, 支持 Claude Code 和 Codex. 适用于多智能体并行开发、代码审查、团队协作等场景 | 多 Agent 支持 | ⭐⭐ |
 | [Markus](https://www.markus.global/) | 开源平台, 用于设计、部署和管理自主 AI 代理和团队, 具有任务治理、知识系统和多渠道通信能力. 主要特点包括: 自主代理(带角色、技能、记忆和心跳驱动的主动工作)、多代理团队(角色分配和治理策略)、任务治理(看板、审批工作流、交付审查)、技能和工具(符合 Agent Skills 开放标准)、外部代理集成(通过 A2A 协议)、通信中心(Web UI 聊天和多渠道集成)、知识系统(三层记忆)、信任和治理(渐进式信任级别)、项目管理、代理构建器、GUI 自动化和社区中心. 技术栈: TypeScript、React、SQLite/PostgreSQL、本地优先、LLM 无关. 许可证: AGPL-3.0. 适用于构建、管理和扩展 AI 工作队伍、多代理协作项目、任务治理和审批工作流、跨渠道 AI 通信等场景 | 多 Agent 支持 | ⭐⭐ |
+| [codex-mcp-server](https://github.com/tuannvm/codex-mcp-server) | Claude Code 和 OpenAI's Codex CLI 之间的桥梁, 在编辑器中提供 AI 驱动的代码分析、生成和审查功能. 核心功能包括: codex(AI 编码助手, 支持会话、模型选择和结构化输出)、review(AI 驱动的代码审查)、websearch(使用 Codex CLI 进行网络搜索)、listSessions(查看活动对话会话)、ping(测试服务器连接)和 help(获取 Codex CLI 帮助). 技术栈: Node.js、MCP 协议、OpenAI Codex CLI. 适用于代码分析、重构、审查、多轮对话和网络搜索等场景 | Claude Code | ⭐ | 142 |
+
 
 ### 4.2.2 会话画布/终端
 -------
@@ -383,6 +390,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [zellij-org/zellij](https://github.com/zellij-org/zellij) | 面向开发人员、运维人员和终端爱好者的工作区, 是一个终端多路复用器. 主要特点包括: 开箱即用的良好体验、深度可定制性、通过布局实现个人自动化、真正的多人协作、独特的 UX 功能(如浮动和堆叠窗格)、插件系统(支持任何编译为 WebAssembly 的语言)、内置 Web 客户端(使终端成为可选). 技术栈: Rust. 适用于终端工作区管理、多路复用终端会话、多人协作开发、定制化终端环境等场景 | 多平台支持 | ⭐⭐⭐ | 30,527 |
 | [ai-genius-automations/octoally](https://github.com/ai-genius-automations/octoally) | 为 Claude Code 提供的本地优先编排仪表盘, 支持多智能体蜂巢思维会话、单智能体工作流和交互式终端, 提供实时流式输出的美观 Web UI. 主要功能包括: 活动会话网格、蜂巢思维会话、智能体会话、交互式终端、内置 Web 浏览器、Git 源代码控制、文件浏览器、会话持久性、实时流式传输、多项目支持、语音听写和桌面应用. 技术栈: 前端(React 19, Vite, Tailwind CSS 4)、后端(Fastify, TypeScript, SQLite)、桌面应用(Electron)、会话管理(tmux, Claude Code + RuFlo). 适用于多智能体并行开发、AI 编码会话管理、项目管理、Git 操作等场景. | Claude Code/RuFlo | ⭐ | 67 |
 | [collaborator-ai/collab-public](https://github.com/collaborator-ai/collab-public) | 协作者是一个端到端的代理开发环境. 终端、上下文文件和运行中的代码——全部集中在无限画布上. 没有上下文切换, 没有找标签. 只有你的经纪人和你的工作, 并肩而立. | 多 Agent 支持 | ⭐ | 1,886 |
+| [batiai/batipanel](https://github.com/batiai/batipanel) | AI 驱动的终端工作区管理器, 一键设置完整开发环境, 包括 Claude Code、lazygit、btop、yazi 等工具, 支持 8 种布局和 8 种主题, 提供会话持久化和跨平台支持. 主要功能: 全功能安装、会话管理、多种布局选择、多主题支持、智能回退机制、跨平台兼容. 技术栈: tmux、Claude Code、lazygit、btop、yazi. 适用于开发环境快速搭建、多面板终端管理、AI 编码会话管理等场景 | 多平台支持 | ⭐ | 1,200+ |
 
 
 ### 4.2.3 会话分析
@@ -421,7 +429,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [tweakcc](https://github.com/Piebald-AI/tweakcc) | CLI 工具, 用于升级 Claude Code 体验, 支持自定义系统提示、主题、工具集和 UI, 提供 API 接口和自定义补丁功能, 支持多种安装方式(npm、原生二进制)<br>Claude Code 原生版本在开发者使用中存在系统提示词不可修改、工具集全量加载占用上下文以及终端交互体验单一等限制. 开源工具 tweakcc通 过切入底层 cli.js, 提供了重写系统提示词、按需动态加载工具集、实现 Opus 混合模式处理超大项目以及优化终端视觉与性能的能力. 该工具核心代码不到 500 行, 旨在帮助开发者夺回对 AI 助手的控制权. | Claude Code | ⭐ | 1,462 |
 | [cc-enhanced](https://github.com/melonicecream/cc-enhanced) | 非官方的 Claude Code 项目管理 TUI 仪表盘, 支持实时项目监控、使用分析、智能待办系统和现代 UI 主题, 基于 Rust 开发, 提供性能优化的用户体验. | Claude Code | ⭐ | 19 |
 | [777genius/claude_agent_teams_ui](https://github.com/777genius/claude_agent_teams_ui) | AI 代理团队任务管理工具, 让代理自主工作、相互通信、互相审查, 用户只需查看看板. 支持跨团队通信、代理间消息传递、任务附件、代码审查、实时进程监控等功能, 100% 免费开源, 完全本地运行 | Claude Code | ⭐ | 194 |
-
+| [OrbitDock](https://github.com/Robdel12/OrbitDock) | 一个用于管理和协调AI编码代理的工具, 允许从任何地方运行、审查和编排AI编码代理. 核心是一个Rust服务器, 连接到macOS和iOS应用, 支持Claude Code和Codex. 主要功能包括: Mission Control(指向Linear项目, 代理自动处理问题)、双向控制(发送消息、指导、分叉对话等)、代码审查(magit风格的差异视图, 支持内联评论)、多服务器支持(可以连接多个设备上的服务器)等.  | Claude Code<br>Codex | ⭐ | 1,245 |
 
 ## 4.4 配置管理
 -------
@@ -432,6 +440,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [tylergraydev/claude-code-tool-manager](https://github.com/tylergraydev/claude-code-tool-manager) | 一款桌面应用程序, 用于管理多个AI编码助手的MCP服务器、命令、技能、子代理和钩子. 支持Claude Code、OpenCode、Codex CLI、GitHub Copilot CLI、Cursor和Gemini CLI, 提供可视化界面、MCP测试、AI可控性、配置文件管理、状态行构建器、使用分析等功能. | 多 Agent 支持 | ⭐ | 269 |
 | [DatafyingTech/Claude-Agent-Team-Manager](https://github.com/DatafyingTech/Claude-Agent-Team-Manager) | 一款基于 Claude Code 打造的 AI 代理团队管理桌面应用(简称 ATM), 核心解决 Claude 代理散落在 markdown 文件中难以管理、部署、自动化的痛点, 通过可视化组织架构、一键部署、任务调度等能力, 让用户快速搭建并运行可自动化的 AI 代理团队. | 多 Agent 支持 | ⭐ | 111 |
 | [cc-mirror](https://github.com/numman-ali/cc-mirror) | Claude Code 多分身隔离环境, 带有自定义提供商、提示包和经过实战测试的增强功能. 无需切换, 直接分身. 每个分身一套目录, 一套会话,一套模型映射. 主要功能包括: 将 Claude Code 克隆到隔离实例、配置提供商端点、模型映射和环境默认值、应用提示包和 tweakcc 主题、安装可选技能、将所有内容打包到单个命令中. 支持多种提供商: Mirror Claude、Kimi、MiniMax、Z.ai、OpenRouter、Vercel、Ollama、NanoGPT、CCRouter、GatewayZ 等. | Claude Code | ⭐ | 2,149 |
+| [doccker/cc-use-exp](https://github.com/doccker/cc-use-exp) | 一套可维护的 AI 协作配置系统, 为 Claude Code、Gemini CLI、Codex、Cursor 提供统一配置管理, 实现一次维护多工具同步. 核心功能包括分层加载(Rules 常驻 + Skills 按需 + Workflow 显式调用)、防御性规则、一键同步部署、ToolSearch 支持等. 适用于同时使用多种 AI 编码工具的开发者、需要统一编码规范的团队协作场景.  | 多 Agent 支持 | ⭐⭐⭐ | 1,256 |
 
 ## 4.5 互联
 -------
@@ -441,8 +450,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [chenhg5/cc-connect](https://github.com/chenhg5/cc-connect) | 控制本地AI代理从任何聊天应用, 桥接运行在用户机器上的AI代理到消息平台. 支持7个AI代理(Claude Code、Codex、Cursor Agent等)和9个聊天平台(Feishu、DingTalk、Slack、Telegram等), 提供多代理编排、完整聊天控制、持久内存、智能调度、多模态支持等功能. | 多 Agent 支持 | ⭐ | 3,377 |
 | [Claude-Code-Remote](https://github.com/JessyTsui/Claude-Code-Remote) | 远程控制Claude Code通过多个消息平台, 支持Email、Telegram、LINE和桌面通知. 提供双向控制、安全验证、群组支持、智能命令、多行支持、智能监控、tmux集成和执行跟踪等功能. | 多平台支持 | ⭐ | 1,189 |
 | [claude-plugin-weixin](https://github.com/m1heng/claude-plugin-weixin) | 为Claude Code提供微信通道插件, 允许在终端中直接接收和回复微信消息. 使用微信iLink Bot API和HTTP长轮询, 无需公共webhook. 支持二维码登录、本地MCP服务器运行、微信账号配对等功能. | 微信集成 | ⭐ | 540 |
-
-
+| [louislva/claude-peers-mcp](https://github.com/louislva/claude-peers-mcp) | 让多个Claude Code实例相互发现并通信的MCP插件, 当在不同项目中运行多个会话时, 任何Claude都能发现其他实例并即时发送消息. 核心功能包括: 列出本地所有Claude实例、通过ID发送即时消息、设置工作摘要、手动检查消息等. 技术实现基于Bun运行时、MCP服务器、localhost broker守护进程和SQLite数据库, 支持通过OpenAI API自动生成工作摘要. | 多实例通信 | ⭐ | 126 |
 
 ## 4.6 交互
 -------
@@ -452,7 +460,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [Masko](https://masko.ai) | AI 驱动的品牌平台, 可快速创建和动画化吉祥物. 支持从单张图片生成姿势、动画和交互, 提供全球托管和透明背景. 包含多种风格预设、徽标生成等功能, 即将推出开发者 API 和 MCP 集成.  | 多平台支持 | ⭐⭐⭐⭐ |
 | [Confirmo](https://confirmo.love) | 桌面 AI 编码助手, 可在多种平台上运行, 包括 macOS (Apple Silicon 和 Intel)、Windows 和 Linux. 提供直观的界面和精灵画廊, 为开发者提供实时编码支持.  | 多平台支持 | ⭐⭐⭐ |
 | [lil-agents](https://github.com/ryanstephen/lil-agents) | macOS 应用程序, 在 dock 上显示动画角色, 点击即可打开 AI 终端. 支持 Claude Code、OpenAI Codex 和 GitHub Copilot CLIs, 提供主题切换、思考气泡和音效等功能. 所有数据本地运行, 不发送个人数据. | macOS | ⭐ | 586 |
-
+| [coe](https://github.com/quailyquaily/coe) | Linux 桌面语音输入工具, 致敬 missuo/koe 项目. 按下热键, 说话, 让 LLM 清理转录内容, 然后将文本放回活动应用程序. 支持 fcitx 和 desktop 两种集成模式, 支持 OpenAI、SenseVoice 和本地 whisper.cpp 作为 ASR 提供商, 使用 YAML 配置文件, 提供系统通知和焦点感知粘贴等功能.  | Linux 桌面 | ⭐ | 1,245 |
 
 # 🔌 5 Agent Full Stack 配置
 -------
@@ -521,6 +529,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 [Claude-Code-Everything-You-Need-to-Know](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know)
 
 [2025Emma/vibe-coding-cn](https://github.com/2025Emma/vibe-coding-cn), Vibe Coding 指南
+
+[ 鱼皮的 AI 知识库](https://github.com/liyupi/ai-guide),  完全免费开放 的 AI 知识共享平台, 汇总整合目前热门的 AI 工具相关信息, 包括产品介绍、使用指南、工具测评、技巧分享、应用场景、AI 变现、行业资讯、教程资源等一系列内容.
 
 [ykdojo/claude-code-tips](https://github.com/ykdojo/claude-code-tips),
 

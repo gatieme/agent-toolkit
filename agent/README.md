@@ -17,6 +17,7 @@
 
 [龙虾导航](https://www.claw123.com/)
 
+[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto), 一份可视化、以示例驱动的 Claude Code 指南——从基础概念到高级代理, 配有复制粘贴模板，立即带来价值.
 
 ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式。
 Plan-and-Solve: 先规划再执行的解耦式架构，适合需要长远规划的复杂任务。
@@ -96,7 +97,7 @@ https://banwagong1.com/claude-code.html
 | [plandex-ai/plandex](https://github.com/plandex-ai/plandex) | Plandex AI | 代码智能助手 | ⭐⭐⭐ |
 | [hyperspaceai/agi](https://github.com/hyperspaceai/agi) | Hyperspace AI | AGI 研究项目, 包含 [matrix](https://matrix.hyper.space) 和 [agents](https://agents.hyper.space) 等. | ⭐⭐⭐ |
 | [](https://github.com/TauricResearch/TradingAgents)
-
+| [](https://github.com/allen-hsu/agent-os)
 
 ## 参考
 -------

@@ -140,6 +140,14 @@ https://github.com/win4r/agent-skills-code-review-router
 | [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
 | [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
 
+
+### 视频创作
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [`seedance-prompt-skill`](https://github.com/songguoxs/seedance-prompt-skill) | [`songguoxs/seedance-prompt-skill`](https://github.com/songguoxs/seedance-prompt-skill) | 专业的 Seedance 2.0(即梦)视频提示词生成技能, 支持纯文本生成、一致性控制、相机动作复制、创意模板复制、故事补全、视频延长、声音控制、一镜到底长镜头、视频编辑和音乐节拍同步等十大核心能力, 提供多模态参考系统和场景特定提示策略, 生成可直接粘贴到 Seedance 2.0 平台的专业级中文提示词.  | `git clone https://github.com/songguoxs/seedance-prompt-skill.git && cp /path/to/seedance-prompt-skill/.claude/skills/seedance/SKILL.md ~/.claude/skills/seedance/SKILL.md`
+
 ## ⚙️ 配置管理
 -------
 
@@ -167,8 +175,11 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [`skill-creator`](https://skills.sh/anthropics/skills/skill-creator) | [`anthropics/skills`](https://github.com/anthropics/skills) | 创建有效 Skills 的指南, 用于扩展 Claude 的特定领域知识、工作流程或工具集成. | `npx skills add https://github.com/anthropics/skills --skill skill-creator` |
 | [`claudeception`](https://skills.sh/blader/claudeception/claudeception) | [`blader/claudeception`](https://github.com/blader/claudeception) | 持续学习系统, 从工作会话中提取可重用知识并创建新的 Claude Code Skills. | `npx skills add https://github.com/blader/claudeception --skill claudeception` |
-| [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) |
-| [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) |
+| [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | 让 AI 技能自己会长的系统——创建、反思、评测、发布、搜索、安装、Fork、合并、评审、卸载, 全自动. 核心功能离线可用, 支持技能变体系统和渐进式加载.  | `git clone https://github.com/hao-cyber/skill-evolution.git .claude/skills/skill-dev` |
+| [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) | [`KKKKhazix/Khazix-Skills`](https://github.com/KKKKhazix/Khazix-Skills) | 技能进化管理器 | NA |
+| [skills-best-practices](https://github.com/mgechev/skills-best-practices) | [`mgechev/skills-best-practices`](https://github.com/mgechev/skills-best-practices) | 技能最佳实践指南 | NA |
+| [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
+
 
 ### Skills 路由
 -------
@@ -242,7 +253,7 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [last30days](https://skills.sh/mvanhorn/last30days-skill/last30days) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 实时研究工具, 扫描Reddit、X、Bluesky、YouTube、TikTok、Instagram、Hacker News、Polymarket等平台近30天的内容, 分析社区讨论并生成结构化报告 | `npx skills add mvanhorn/last30days-skill --skill last30days` |
 | [markdown-proxy](https://skills.sh/joeseesun/markdown-proxy/markdown-proxy) | [joeseesun/markdown-proxy](https://github.com/joeseesun/markdown-proxy) | Markdown代理工具 | `npx skills add joeseesun/markdown-proxy --skill markdown-proxy` |
-
+| [follow-builders](https://github.com/zarazhangrui/follow-builders) | [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) | AI驱动的摘要工具，跟踪AI领域的顶级构建者（研究人员、创始人、产品经理和工程师），并提供他们所说内容的精选摘要，支持多语言和多种交付方式 | `git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders && cd ~/.claude/skills/follow-builders/scripts && npm install` |
 
 
 # Skills 集合
@@ -266,6 +277,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [skills.homes](https://skills.homes/zh-CN) | 多语言 AI Agent 技能平台, 提供生产力工具、LLM & AI、自动化工具、调试、架构和测试等分类, 拥有大量技能资源. |
 | [SkillHub](https://skillhub.club) | 统一的 AI Agent 技能包管理系统, 提供中央仓库概念, 支持 18+ 个 AI Agents(Claude Code、Codex、Cursor、Windsurf、Gemini 等), 实现技能的统一安装、管理和同步. 核心功能包括交互式搜索、跨项目技能管理、批量同步等, 提供类似 pip 的技能管理体验, 解决多 Agent 技能重复安装和版本不一致的问题.  |
 | [AITmpl Skills](https://www.aitmpl.com/skills) | AI 技能模板平台, 提供各类 AI Agent 技能模板和资源.  |
+| [SkillsGate](https://skillsgate.ai) | 一站式 AI Agent 技能管理平台, 核心定位为「AI 技能的统一管理枢纽」, 支持 18+ 个 AI 编码代理(Claude Code、Cursor、Windsurf、GitHub Copilot、Codex CLI 等), 提供桌面应用、终端 UI 和 CLI 三种接口. 平台索引了 80,000+ 技能, 支持 AI 驱动的语义搜索, 实现跨代理技能管理、远程服务器连接、设置同步等核心功能. 安全方面提供技能扫描功能, 可检测提示注入、数据泄露等 8 类威胁, 并支持社区共享扫描结果, 是一个集发现、安装、管理、安全于一体的综合性 AI 技能平台. |
+
 
 ## Skills 集合仓库
 -------
@@ -300,6 +313,12 @@ https://github.com/win4r/agent-skills-code-review-router
 | [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | 为 pi-coding-agent 提供的技能集合, 兼容 Claude Code、Codex CLI、Amp 和 Droid. 包含多个技能: Brave 搜索、浏览器工具、Google 日历/ Drive/ Gmail CLI、语音转文本、VS Code 集成、YouTube 转录等.  | 支持多种平台安装 | ⭐⭐⭐ |
 | [MiniMax-AI/skills](https://github.com/MiniMax-AI/skills) | MiniMax 官方推出的 AI Agent 技能集合, 涵盖全栈开发、移动应用、视觉效果和办公文档处理等多个领域. 核心技能包括: 前端开发(React/Next.js、Tailwind CSS、动画效果)、全栈开发(API 设计、认证流程、实时功能)、Android/iOS 原生开发、GLSL 着色器开发、GIF 贴纸制作、PDF/PPTX/XLSX/DOCX 文档处理等. 技术栈集成了 MiniMax API 用于 AI 生成媒体资产, 支持多平台开发需求, 适用于从前端设计到后端架构的全流程开发场景.  | ⭐⭐⭐⭐ |
 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 一个拥有 340+ 全栈能力矩阵的技能集合, 由 VCO 运行时统一治理. 核心目标是通过领域矩阵分类, 在正确的上下文节点自动唤起正确的工具, 无需手动遍历调用. 涵盖多个领域: 需求规划与产品管理、软件工程与架构设计、调试测试与质量保证、数据分析与统计建模、机器学习与 AI 工程、生命科学与生信计算、科学计算与数学逻辑、科研文献与学术写作、多媒体可视化与文档、外部集成与自动化部署. 技术上通过用户命令触发, AI 辅助治理发掘用户意图关键词, 再由关键词触发技能路由. 适用于从需求分析、代码开发到部署运维的全流程场景, 特别适合需要跨领域协作的复杂项目.  | ⭐⭐⭐ |
+| [staruhub/ClaudeSkills](https://github.com/staruhub/ClaudeSkills) | 基于 Claude Code Skills 2.0 格式构建的高质量技能集合, 提升日常工作效率. 涵盖多个领域: 开发与架构(pair-programming 结对编程、security-audit 代码安全审计、solution-architect 系统设计、threejs-performance Three.js 性能优化)、产品与内容(product-manager PRD 写作、wechat-article-writer 微信文章创作、ppt-designer PPT 设计)、工具(a-share-analyst A 股分析等 | ⭐ |
+| [NTCoding/claude-skillz](https://github.com/NTCoding/claude-skillz) | 为Claude Code提供可重用的技能和可组合的系统提示, 包含Claude Launcher和OpenCode Launcher. 核心功能: Claude Launcher(交互式系统提示和模型选择器, 支持两步选择和直接快捷方式)、OpenCode Launcher(从相同角色生成OpenCode代理)、12个预构建角色、可通过@引用加载的可重用技能(如独立研究、简洁输出、TDD流程等). 技术上支持基于前端matter的快捷方式、自动技能加载、冲突检测等. 适用于快速启动不同角色的Claude会话, 生成OpenCode代理, 应用各种专业技能到不同场景.  | ⭐⭐⭐⭐ |
+| [zubair-trabzada/ai-marketing-claude](https://github.com/zubair-trabzada/ai-marketing-claude) | 为Claude Code提供全面的营销分析和自动化技能系统, 可审计网站营销、生成文案、构建电子邮件序列、创建内容日历、分析竞争对手并生成客户端就绪的PDF报告. 核心功能: 6维度营销审计(内容与消息传递、转化优化、SEO与可发现性、竞争定位、品牌与信任、增长与战略)、5个并行代理分析、14个子技能、PDF报告支持等. 技术上通过Python脚本辅助页面分析、竞争对手扫描、PDF生成等. 适用于营销机构、个体创业者和内容创作者, 可用于销售前分析、客户提案、优化自有网站等场景.  | ⭐⭐⭐⭐ |
+| [huxiang1126/amass-roundtable](https://github.com/huxiang1126/amass-roundtable) | 一个基于 Claude Code 的圆桌会议工具, 三位集团高管(HR总监、总顾问、COO)围绕问题展开多视角讨论、博弈与决策. v1.1 新特性: Agent Teams 驱动 — 每位高管运行在独立上下文中, 真正的多角色独立思考, 不共享记忆, 避免观点趋同. 核心功能: 支持跨会话记忆、会议纪要自动归档、行动项追踪、可视化图表输出、动态角色扩展. 技术上通过安装脚本自动配置 Agent Teams 功能, 创建角色库和数据目录. 使用场景: 企业管理决策、问题分析、战略规划等需要多视角思考的复杂场景, 可用于讨论绩效考核、组织架构调整、业绩下滑原因分析、预算分配等议题.  | ⭐⭐⭐⭐ |
+| [](https://github.com/199-biotechnologies/claude-deep-research-skill)
+| [](https://github.com/himself65/finance-skills)
 
 # 安装 Skills
 -------
