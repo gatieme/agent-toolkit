@@ -35,6 +35,10 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+.coverage
+
+# Env
+.env
 
 # Claude Code
 .claude/
