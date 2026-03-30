@@ -83,6 +83,16 @@ https://banwagong1.com/claude-code.html
 |:---:|:----:|:---:|:-------:|
 | [QoderWork]() | QoderWork 团队 | 协作开发平台 | ⭐⭐⭐ |
 
+
+###
+-------
+
+| 平台 | 团队 | 描述 | 推荐星级 |
+|:---:|:----:|:---:|:-------:|
+| [牛马 AI](https://niuma.limyai.com) | NA | 让 AI 当牛做马, 而我们终成牛人. |
+| [BitFun](https://openbitfun.com) | NA | 工作交给它, 生活留给你. |
+
+
 ### 其他
 
 | 平台 | 团队 | 描述 | 推荐星级 |

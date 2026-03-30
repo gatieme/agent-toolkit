@@ -1,0 +1,133 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://ark.cn-beijing.volces.com/api/compatible",
+    "ANTHROPIC_AUTH_TOKEN": "f8a53326-d4b6-47d2-8fc3-e7d61eda0860",
+    "API_TIMEOUT_MS": "3000000",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "ep-20260212143352-vtb7j",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "ep-20260212143352-vtb7j",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "ep-20260212143352-vtb7j",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "ep-20260212143352-vtb7j",
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
+    "DISABLE_TELEMETRY": "1",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "50",
+    "ENABLE_LSP_TOOL": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Skill(codex-skill)",
+      "Skill(claude-code-settings:codex-skill)",
+      "Skill(nanobanana-skill)",
+      "Skill(claude-code-settings:nanobanana-skill)",
+      "Skill(youtube-transcribe-skill)",
+      "Skill(claude-code-settings:youtube-transcribe-skill)",
+      "Skill(autonomous-skill)",
+      "Skill(claude-code-settings:autonomous-skill)",
+      "Bash(codex:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(rm -fr:*)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(**/*credential*)",
+      "Read(**/*secret*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)"
+    ],
+    "ask": [
+      "Bash(sudo:*)",
+      "Bash(chmod 777:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean -fd:*)",
+      "Bash(npm publish:*)",
+      "Bash(eval:*)"
+    ]
+  },
+  "model": "haiku",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/chengjian/.claude/hooks/rtk-rewrite.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ${CLAUDE_CONFIG_DIR:-$HOME/.claude}/plugins/merged-statusline.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "claude-hud@claude-hud": true,
+    "ralph-loop@claude-plugins-official": false,
+    "last30days@last30days-skill": true,
+    "ralph-skills@ralph-marketplace": true,
+    "everything-claude-code@everything-claude-code": false,
+    "financial-analysis@financial-services-plugins": true,
+    "investment-banking@financial-services-plugins": true,
+    "equity-research@financial-services-plugins": true,
+    "private-equity@financial-services-plugins": true,
+    "wealth-management@financial-services-plugins": true
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "claude-hud": {
+      "source": {
+        "source": "github",
+        "repo": "jarrodwatts/claude-hud"
+      }
+    },
+    "everything-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/everything-claude-code"
+      }
+    },
+    "last30days-skill": {
+      "source": {
+        "source": "github",
+        "repo": "mvanhorn/last30days-skill"
+      }
+    },
+    "ralph-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "snarktank/ralph"
+      }
+    },
+    "financial-services-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/financial-services-plugins"
+      }
+    }
+  },
+  "autoMemoryEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
+  "skillsEnabled": [
+    "git-commit",
+    "python-review",
+    "code-review"
+  ],
+  "teammateMode": "tmux"
+}
