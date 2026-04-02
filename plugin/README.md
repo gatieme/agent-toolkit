@@ -1,5 +1,11 @@
 [Harness Engineering 深度解析: AI Agent 时代的工程范式革命](https://zhuanlan.zhihu.com/p/2014014859164026634)
 
+[Awesome Harness Engineering](https://github.com/walkinglabs/awesome-harness-engineering) - 精选的 Harness Engineering 资源列表, 涵盖文章、指南、基准测试、规范和开源项目, 专注于使 AI 代理在实际工作流程中更可靠.
+
+[你不知道的 Claude Code: 架构、治理与工程实践](https://x.com/HiTw93/status/2032091246588518683)
+
+[微信公众号--机器之心--全网疯传fork！刚刚, Claude Code源代码泄露被开源了](https://mp.weixin.qq.com/s/G9Az9csTs6_WLKt6uu4q_Q)
+
 
 | 支柱 | 概述 | 描述 |
 |:---:|:----:|:----:|
@@ -16,6 +22,10 @@
 1. 通过 Spec 驱动约束 Agent 按照既定规范执行
 2. 通过 Rlaph-Loop 实现 Agent 长时无人值守运行.
 
+
+[微信公众号--被AI榨干的--AI 编程不需要 10x 工程师, 需要 10x 产品经理](https://mp.weixin.qq.com/s/Q2O1j9NRQStCi7HAbv-kRQ) 则**建议用户应该作为 PM, 通过 Harness Engineering 和 Ralph Loop 来规范化 AI 的行为**, Harness Engineering 5 条原则来约束 AI 行为: 所有决策推进代码仓库、问"缺什么能力"而不是"为什么出错"、用代码强制约束、构建反馈闭环、写地图不写说明书. 借助 7 份文档来规划任务 story.md, user-journey.md, uiux-review.md, visual-system.md, architecture.md, design-assets.md, test-plan.md 来规划和工作, Ralph Loop 通过约定的 7 条迭代规则来保障 AI 按照预期行为工作.
+
+
 ## 1.1 Specification-Driven
 -------
 
@@ -24,6 +34,7 @@
 
 [OpenCode 配置 OpenSpec + Superpowers + Oh-My-OpenCode 指南](https://github.com/wentietie/tools-config/blob/main/OpenCode-%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97-OpenSpec-Superpowers.md)
 
+[@Voxyz_ai, 2026/3/29, I Compared gstack, Superpowers, and Compound Engineering. They Solve Three Completely Different Prob](https://x.com/Voxyz_ai/status/2038237755654783107)
 
 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
 |:---:|:----:|:---:|:-------:|:--------:|
@@ -45,37 +56,46 @@
 ## 1.2 Ralph-Loop
 -------
 
-Ralph 是一个基于 Geoffrey Huntley 提出的 Ralph 循环模式设计的 AI 编程工具, 旨在解决从 PRD 到可直接上线代码的自动化流程问题. 它通过 Bash 循环脚本不断启动新的 AI 实例(Amp 或 Claude Code), 逐条处理 PRD 中的任务, 直到所有事项完成为止. 核心设计每轮迭代使用全新上下文窗口, 通过外部存储(Git 历史、progress.txt、prd.json)来获取状态, 避免了上下文累积的限制.
+Ralph 是一个基于 Geoffrey Huntley 提出的 Ralph 循环模式设计的 AI 编程工具, 旨在解决从 PRD 到可直接上线代码的自动化流程问题, 达成 Long-Running 开发. 它通过 Bash 循环脚本不断启动新的 AI 实例(Amp 或 Claude Code), 逐条处理 PRD 中的任务, 直到所有事项完成为止. 核心设计每轮迭代使用全新上下文窗口, 通过外部存储(Git 历史、progress.txt、prd.json)来获取状态, 避免了上下文累积的限制.
 
-[微信公众号--被AI榨干的--AI 编程不需要 10x 工程师, 需要 10x 产品经理](https://mp.weixin.qq.com/s/Q2O1j9NRQStCi7HAbv-kRQ) 则**建议用户应该作为 PM, 通过 Harness Engineering 和 Ralph Loop 来规范化 AI 的行为**, Harness Engineering 5 条原则来约束 AI 行为: 所有决策推进代码仓库、问"缺什么能力"而不是"为什么出错"、用代码强制约束、构建反馈闭环、写地图不写说明书. 借助 7 份文档来规划任务 story.md, user-journey.md, uiux-review.md, visual-system.md, architecture.md, design-assets.md, test-plan.md 来规划和工作, Ralph Loop 通过约定的 7 条迭代规则来保障 AI 按照预期行为工作.
-
-[Ralph Wiggum as a "software engineer"](https://ghuntley.com/ralph)
+[Ralph Wiggum as a "software engineer"](https://ghuntley.com/ralph), 关于 Ralph (Ralph Wiggum) 技术的介绍.
 
 [snwfdhmp/awesome-ralph](https://github.com/snwfdhmp/awesome-ralph), 关于 Ralph (Ralph Wiggum) 技术的精选资源列表, 包括官方资源、实践指南、实现、教程、文章、视频和社区资源等.
 
-[如何让 Claude Code 长时间工作](https://datawhalechina.github.io/easy-vibe/zh-cn/stage-3/core-skills/long-running-tasks/)
-
-立党大佬的插件 [lidangzzz/goal-driven](https://github.com/lidangzzz/goal-driven) 是 Ralph 的最简(提示词)实现, **通过一套标准的目标驱动(Goal-Driven)的提示词, 组合 subAgent 来保持 Ralph 运行**. 其要求 Ralph ① 目标(Goal): 必须以 goal 作为 alignment 的唯一目标, ② 成功标准(Criteria): 必须设计一个以大量 test 作为唯一评判标准的 criteria, ③ 主智能体(Master Agent)和子智能体(Subagent): 必须设置一个 master agent 来 supervise 你的真正执行任务的 subagent, 时刻确保向着 goal 方向推进. 核心理念非常简单: 当 Goal-Driven 流程启动时, 主智能体创建一个子智能体, 并指示它持续致力于解决问题并达成目标.<br>主智能体定期检查子智能体是否活跃. 如果子智能体变得不活跃、声称完成或进入空闲状态, 主智能体必须根据标准评估当前结果. 如果结果未能满足标准, 它会命令子智能体继续工作, 重复这个循环直到标准被满足. 一旦子智能体的输出满足标准, 系统停止并宣布成功完成.
-
-anthropics 官方的 [claude-plugins-official/ralph-loop](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop) 插件是 Ralph 的最简(脚本/插件)实现, 通过 [`/ralph-loop/ralph-loop` 的 Claude Code commands](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/ralph-loop/commands/ralph-loop.md)来主导 Ralph 运行, 其**核心机制是 [Stop Hook](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/ralph-loop/hooks). 当 Claude 想要退出时, Stop Hook 会拦截这个退出信号. 然后系统会检查: 输出了特定的完成标记吗? 如果没有找到完成标记, 就重新注入原始 prompt, 开始下一轮迭代. 如果找到了完成标记, 才允许 Claude 退出**. 但是其每次迭代并不是一个干净的上下文, 只是把原始 prompt 和迭代计数重新喂给 Claude, 因此可能会浪费 Token.
-
-[微信公众号--技术极简主义--从 PRD 到代码: Ralph 驱动的自治 AI 智能体执行循环](https://mp.weixin.qq.com/s/iVfaAJx4DuFuzihf0TouHA) 通过一次对 [snarktank/ralph](https://github.com/snarktank/ralph) 的工程实践案例, 这个工具提供了一个 [ralph skills](https://github.com/snarktank/ralph/blob/main/skills/ralph/SKILL.md), 可以**将 prd.md 转换为 Ralph 能理解的 prd.json. 最后 [ralph.sh](https://github.com/snarktank/ralph/blob/main/ralph.sh) 会按照 prd.json 中制定的计划和任务来执行: 创建功能分支 -> 选择下一个任务 -=> 专注于单个任务的实现 -> 提交代码 -> 更新任务状态 -> 记录学习内容 -> 循环或退出**. 作者提供了一个[交互式的流程图](https://snarktank.github.io/ralph) 来了解 Ralph 的执行流. 这个工具并不是 Cluade 内置插件, 而是通过 [ralph.sh](https://github.com/snarktank/ralph/blob/main/ralph.sh) 启动 claude code 来运行, 每次迭代都是一个干净的上下文, 工作进度和状态通过文件系统传递, 而非对话上下文. 这样可以有效防止上下文窗口膨胀, 任务可重启, 方便调试. 脚本中缺乏 Orchestrator, 因此建议每次迭代的任务尽可能单一, 更适合串行任务. 当然可以在 Claude Code 中配置 Orchestrator 来组合使用.
+[微信公众号--Amaker--AI 时代的软件开发新范式: Anthropic《Harness design for long-running application development》深度解读](https://mp.weixin.qq.com/s/yDf10mwBRfIZLOHcITZ3Iw)
 
 [微信公众号--CIT云原生--手搓了个 long-running-skill 和 Agent 开源教程网站](https://mp.weixin.qq.com/s/MKYwEIuWEJiKCbIaHhGiAw)
 
+[微信公众号--TecNote技术思维--长时间运行任务的实践方案](https://mp.weixin.qq.com/s/rThX118rOuAOjkZY_GZHxw) 介绍了 3 种 Ralph 达成 Long-Running 的实现思路. 三个层次: 架构层(Initializer + Coding)、流程层(Todo List 循环)、工具层(Background + Scheduled). 选择哪个取决于任务规模. 参见 [Autonomous Coding Agent Demo, anthropics](https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding), 主体思路就是把连续的大任务拆成离散的小任务, 每个小任务都能独立完成、独立验证、独立回滚. 不管用哪个方案, 记住两点: 给 Claude 验证能力, 每次只做一件事.
+
+| 方案 | 层级 | 描述 | 对应实现 |适用场景 | 复杂度️ | 持续时间 |
+|:---:|:----:|:---:|:-------:|:-----:|:-----:|:-------:|
+| Initializer + Coding Agent | 架构层 | Anthropic 官方推荐的架构, 把任务拆成两种 agent, Initializer 初始化任务列表, 通过 progress 文档跟踪任务状态, Coding Agent 负责循环运行, 每次 session 只做一件事, 完成之后, 更新 progress 状态, 所有任务都完成后停止. | [snarktank/ralph](https://github.com/snarktank/ralph)<br>[frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code)<br>[claude-quickstarts/autonomous-coding](https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding) | 大型重构 | 高 | 数天 |
+| Todo List 循环 | 流程层 | NA | NA | 中等任务 | 中 | 数小时 |
+| Background Tasks | 工具层 | NA | NA | 监控类 | 低 | 持续运行 |
+
+[datawhalechina 博客--如何让 Claude Code 长时间工作](https://datawhalechina.github.io/easy-vibe/zh-cn/stage-3/core-skills/long-running-tasks) 采用循序渐进的方式, 由浅入深讲解了五种让 Claude Code Ralph-Loop/Long-Running 的方法. 依次是: ① While True Bash Loop(最原始的方法) Promp 方式, 类似于 [lidangzzz/goal-driven](https://github.com/lidangzzz/goal-driven), ② 极简插件 [anthropics/claude-plugins-official/ralph-loop](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop), ③ 增强插件 [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code), ④ Agent Teams(多 Agent 并行), ⑤ 后台任务(Ctrl+B).
+
+1. 立党大佬的插件 [lidangzzz/goal-driven](https://github.com/lidangzzz/goal-driven) 是 Ralph 的最简(提示词)实现, **通过一套标准的目标驱动(Goal-Driven)的提示词, 组合 subAgent 来保持 Ralph 运行**. 其要求 Ralph ① 目标(Goal): 必须以 goal 作为 alignment 的唯一目标, ② 成功标准(Criteria): 必须设计一个以大量 test 作为唯一评判标准的 criteria, ③ 主智能体(Master Agent)和子智能体(Subagent): 必须设置一个 master agent 来 supervise 你的真正执行任务的 subagent, 时刻确保向着 goal 方向推进. 核心理念非常简单: 当 Goal-Driven 流程启动时, 主智能体创建一个子智能体, 并指示它持续致力于解决问题并达成目标.<br>主智能体定期检查子智能体是否活跃. 如果子智能体变得不活跃、声称完成或进入空闲状态, 主智能体必须根据标准评估当前结果. 如果结果未能满足标准, 它会命令子智能体继续工作, 重复这个循环直到标准被满足. 一旦子智能体的输出满足标准, 系统停止并宣布成功完成.
+
+2. anthropics 官方的 [claude-plugins-official/ralph-loop](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop) 插件是 Ralph 的最简(脚本/插件)实现, 通过 [`/ralph-loop/ralph-loop` 的 Claude Code commands](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/ralph-loop/commands/ralph-loop.md)来主导 Ralph 运行, 其**核心机制是 [Stop Hook](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/ralph-loop/hooks). 当 Claude 想要退出时, Stop Hook 会拦截这个退出信号. 然后系统会检查: 输出了特定的完成标记吗? 如果没有找到完成标记, 就重新注入原始 prompt, 开始下一轮迭代. 如果找到了完成标记, 才允许 Claude 退出**. 但是其每次迭代并不是一个干净的上下文, 只是把原始 prompt 和迭代计数重新喂给 Claude, 因此可能会浪费 Token.
+
+3. [微信公众号--技术极简主义--从 PRD 到代码: Ralph 驱动的自治 AI 智能体执行循环](https://mp.weixin.qq.com/s/iVfaAJx4DuFuzihf0TouHA) 通过一次对 [snarktank/ralph](https://github.com/snarktank/ralph) 的工程实践案例, 这个工具提供了一个 [ralph skills](https://github.com/snarktank/ralph/blob/main/skills/ralph/SKILL.md), 可以**将 prd.md 转换为 Ralph 能理解的 prd.json. 最后 [ralph.sh](https://github.com/snarktank/ralph/blob/main/ralph.sh) 会按照 prd.json 中制定的计划和任务来执行: 创建功能分支 -> 选择下一个任务 -=> 专注于单个任务的实现 -> 提交代码 -> 更新任务状态 -> 记录学习内容 -> 循环或退出**. 作者提供了一个[交互式的流程图](https://snarktank.github.io/ralph) 来了解 Ralph 的执行流. 这个工具并不是 Cluade 内置插件, 而是通过 [ralph.sh](https://github.com/snarktank/ralph/blob/main/ralph.sh) 启动 claude code 来运行, 每次迭代都是一个干净的上下文, 工作进度和状态通过文件系统传递, 而非对话上下文. 这样可以有效防止上下文窗口膨胀, 任务可重启, 方便调试. 脚本中缺乏 Orchestrator, 因此建议每次迭代的任务尽可能单一, 更适合串行任务. 当然可以在 Claude Code 中配置 Orchestrator 来组合使用.
 
 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
 |:---:|:----:|:---:|:-------:|:--------:|
 | [lidangzzz/goal-driven](https://github.com/lidangzzz/goal-driven) | 立党大佬的插件, 通过 Prompt 来实现目标驱动的多智能体系统, 通过主代理+子代理架构实现超过300小时的复杂问题解决能力. 采用循环验证机制: 主代理创建子代理执行任务, 每5分钟检查进度, 根据预定义标准评估结果, 未达标则继续循环直至成功. 适用于编译器设计、数学定理证明、数据库架构等高度复杂、逻辑抽象的系统级任务. 已实践项目包括 C++ 实现的 TypeScript 编译器、Rust 实现的 SQLite 等. | Claude Code<br>Codex<br>OpenClaw | ⭐ | 583 |
+| [autonomous-loops@everything-claude-code](https://github.com/affaan-m/everything-claude-code/blob/main/skills/autonomous-loops/SKILL.md) | 来自 everything-claude-code 项目的自主循环执行技能, 实现 Claude Code 的持续任务执行能力. 该项目是一个强大的 agent harness 性能优化系统, 包含 28 个子智能体、116 个技能包、59 个斜杠命令, 支持 12 种语言生态. autonomous-loops 技能可能类似于 Ralph Loop 机制, 通过循环执行确保任务完成, 结合项目的 continuous-learning-v2 系统实现技能的持续优化和跨项目复用.  | Claude Code | ⭐⭐ | 101,852 |
+| [code-yeongyu/oh-my-openagent/ralph-loop](https://github.com/code-yeongyu/oh-my-openagent/tree/dev/src/hooks/ralph-loop) | oh-my-openagent 项目中的 Ralph Loop 实现, 提供自引用开发循环功能. 基于 Geoffrey Huntley 的 Ralph Wiggum 技术, 通过 `/ralph-loop` 命令启动循环, 持续迭代直到代理发出 `<promise>DONE</promise>` 信号或达到最大迭代次数. 核心功能包括: 状态持久化到 `.sisyphus/ralph-loop.local.md`、会话崩溃恢复、自定义完成信号、最大迭代次数控制等. 技术实现基于 TypeScript, 集成到 OpenCode 插件系统中, 适用于长时间运行的 AI 开发任务、需要迭代改进的任务以及可以离开的新项目.  | OpenCode | ⭐⭐ | 44,319 |
 | [anthropics/claude-plugins-official/ralph-loop](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop) | 官方 Ralph Wiggum 技术实现, 通过 Stop hook 创建自引用反馈循环, 实现 Claude Code 的迭代开发. 核心功能: 使用 `/ralph-loop` 命令启动循环, 自动拦截退出尝试并重复执行相同提示, 直到完成任务. 支持设置最大迭代次数和完成承诺短语. 适用于有明确成功标准的任务、需要迭代改进的任务(如测试通过)、可以离开的新项目. | Claude Code | ⭐⭐⭐ | 15,092 |
 | [snarktank/ralph](https://github.com/snarktank/ralph) | 基于 Geoffrey Huntley 的 Ralph 模式实现自主 AI 代理循环系统, 运行 AI 编码工具(Amp 或 Claude Code)重复执行直到所有 PRD 项目完成. 提供 [snarktank/ralph/prd](https://skills.sh/snarktank/ralph/prd) 和 [snarktank/ralph/ralph](https://skills.sh/snarktank/ralph/ralph) 两个 skills 和一套 ralph 脚本 [ralph.sh](https://github.com/snarktank/ralph/blob/main/ralph.sh). 每次迭代都是一个具有干净上下文的新实例, 记忆通过 git 历史、progress.txt 和 prd.json 持久化. 核心功能包括: 支持 Amp 和 Claude Code、PRD 生成和转换、自动分支创建、质量检查、提交管理和进度跟踪. | Amp CLI<br>Claude Code | ⭐⭐⭐ | 13,918 |
 | [frankbria/ralph-claude-code](https://github.com/frankbria/ralph-claude-code) | Ralph Loop 的 Claude Code 增强实现, 提供 ralph 命令来实现迭代开发能力, 后端对接 Claude Code, 在官方插件的基础上增加了更多安全机制.<br>1. 双重退出条件. 官方 Ralph 只需要检查完成标记, 但增强版需要同时满足完成标记和显式 EXIT_SIGNAL 才会真正停止. 这意味着即使 Claude 输出了完成标记, 如果它没有明确表示要退出, 循环还会继续, 可以进一步验证和改进.<br>2. 速率限制功能. 默认设置为 100 次/小时, 防止因为某种 bug 导致无限循环时, API 账单爆炸. 你可以根据需要调整这个限制. <br>3. 智能熔断器. 如果系统连续 5 次检测到完成标记, 会强制退出. 这是为了防止某种边缘情况导致循环无法正常结束. <br>5. 实时仪表盘. 增强版提供了一个命令行界面, 可以显示当前迭代次数、任务进度、预估成本等信息, 让你随时掌握状态.<br>只是每次并不重置上下文, 因此可能会造成累积上下文, 爆掉. | Claude Code | ⭐⭐ | 8,234 |
 | [subsy/ralph-tui](https://github.com/subsy/ralph-tui) | Ralph 循环的 TUI 界面实现, 提供可视化的循环管理和监控功能. | 多平台 | ⭐ | 2,181 |
 | [michaelshimeles/ralphy](https://github.com/michaelshimeles/ralphy) | 自主 AI 编码循环系统, 运行 AI 代理直到任务完成. 支持单一任务和任务列表两种模式, 多种 AI 引擎, 并行执行, 浏览器自动化等功能. 核心特点包括: 多引擎支持(Claude Code、OpenCode、Cursor、Codex、Qwen-Code、Factory Droid、GitHub Copilot、Gemini CLI)、并行执行(git worktrees 或 sandbox 模式)、多种任务源(Markdown、YAML、JSON、GitHub Issues)、项目配置和规则管理、webhook 通知等. | 多 Agent 支持 | ⭐ | 2,674 |
 | [Th0rgal/open-ralph-wiggum](https://github.com/Th0rgal/open-ralph-wiggum) | 自主代理循环工具, 支持 Claude Code、Codex、Copilot CLI 和 OpenCode. 基于 Geoffrey Huntley 的 Ralph Wiggum 技术, 实现自主代理循环, 让 AI 编码代理重复接收相同的提示直到完成任务. 核心特点包括: 多代理支持、自我纠正循环、自主执行、任务跟踪、实时监控、中间循环提示注入等. 支持 Tasks Mode 进行结构化任务管理, 以及代理轮换功能. 技术实现基于 Bun 运行时, 状态存储在 `.ralph/` 目录中, 提供完整的 CLI 命令集和任务管理功能. | 多 Agent 支持 | ⭐ | 1,357 |
-| [hamelsmu/claude-review-loop](https://github.com/hamelsmu/claude-review-loop) | 一个Claude Code插件, 可将自动代码审查循环添加到您的工作流程中. 使用 `/review-loop` 时, 该插件会创建一个两阶段生命周期.<br>任务阶段: 你描述一项任务, Claude 负责执行<br>2. 审查阶段: 当 Claude 完成后, 会自动运行 Codex 进行独立代码审查, 然后要求 Claude 处理反馈意见<br>结果: 在您接受更改之前, 每项任务都会得到独立的二次审核意见. | Claude Code/Codex | ⭐ | 620 |
 | [AnandChowdhary/continuous-claude](https://github.com/AnandChowdhary/continuous-claude) | 自动化工作流, 在连续循环中编排 Claude Code, 自主创建 PR、等待检查并合并, 使多步骤项目在你睡觉时完成. 核心功能包括持续循环执行、PR 生命周期自动化、上下文连续性、并行执行支持等. | Claude Code | ⭐ | 1,274 |
 | [mikeyobrien/ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) | Ralph Orchestrator 是一款轻量级、开源的 AI 工作流编排工具, 核心定位是「为提示词工程和 AI 任务协作提供结构化编排能力」, 主打极简部署、无代码/低代码操作、多 AI 模型适配. | 多 Agent 支持 | ⭐ | 2,397 |
+| [superpowers@FradSer/dotclaude](https://github.com/FradSer/dotclaude) | dotclaude 是 Frad LEE 开发的一套专为 Claude Code 打造的插件合集, 其中对 superpowers 做了深度改造, 引入了 Superpowers Ralph-Loop 和 Work Verification 能力. 通过 hooks 来保证 Ralph 运行, task-start.sh 保存任务状态, stop-hook.sh 循环检查 + 验证, track-changes.sh 追踪修改文件.<br>1. Superpower Loop(循环模式), 通过 `/superpower-loop`(slash command) 启动, setup-superpower-loop.sh 启动后 LOOP_ACTIVE 被设置, 由于使用自引用循环, stop-hook.sh 每次讲相同的 prompt 被反复喂给模型, 每次迭代都能看到前次工作的文件变化, 因此可能存在上下文污染的问题. 当满足 <promise>文本</promise> OR max_iterations 时循环结束.<br>参见 [feat(sp): add ralph loop to superpowers v1.6.0](https://github.com/FradSer/dotclaude/commit/0171eb07e5aee98ef661abae397dd4c95590f82f) 和 [refactor(sp): rename ralph-loop to superpower-loop](https://github.com/FradSer/dotclaude/commit/b81fcb098cc4e54048c38e060480eefab32095ee).<br>2. Work Verification(验证模式), 通过 `/need-vet`(skills) 来启动, task-start.sh 启动后 NEED_VET 被置位, 任务完成后会启动验证流程, Stop hook 中则会等验证完成后输出 `<verified>Fully Vetted.</verifie>` 才允许退出. 参见 [feat(sp): add vet skill and update plugin metadata](https://github.com/FradSer/dotclaude/commit/d6013818a6395e90eb8b93b2d9f437959bfe7b2a) | Claude Code | ⭐ | 510 |
 
 
 # 💻 2 Agent 专业化(Agent Specialization)
@@ -270,11 +290,12 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 上下文模式管理工具, 帮助优化和管理 AI 代理的上下文使用, 减少 Token 消耗. | 多 Agent 支持 | ⭐⭐ | 6,089 |
 | [open-compress/claw-compactor](https://github.com/open-compress/claw-compactor) | **OpenClaw 上下文压缩优化工具** - 专为 OpenClaw 设计的 Token 消耗优化解决方案, 通过智能上下文压缩算法减少 45% 的 Token 使用量. 核心功能包括:<br>1). 激进式上下文修剪: 将 TTL 从默认 1 小时缩短至 5 分钟, 配合 0.5 的 hardClearRatio 及时清理过期工具结果;<br>2). 智能缓存保活: 针对 Anthropic Claude 系列模型, 通过 55 分钟心跳机制保持缓存温热状态, 避免昂贵的重写成本;<br>3). 本地化记忆搜索: 集成本地 Embedding 模型替代云端 API 调用, 将 Embedding 成本降至零;<br>4). 多层压缩策略: 结合 micro-compact、auto-compact 和 manual compact 三层压缩机制, 实现上下文的无损压缩与持久化存储.<br>实测数据显示: 平均上下文长度从 128k 降至 70k, 缓存写入频率降低 90%, 特别适用于长对话场景和复杂任务处理. | OpenClaw | ⭐ | 2,100 |
 | [SocratiCode](https://github.com/giancarloerra/SocratiCode) | 为 AI 助手提供整个代码库的深度语义理解, 零配置、完全私有、免费, 支持大规模代码库(超过4000万行代码). 核心功能包括混合搜索(语义搜索 + BM25 词汇搜索)、AST 感知的代码分块、多语言代码依赖图、可搜索的上下文工件等. 基于 Qdrant 向量数据库, 支持多种嵌入提供商(Ollama、OpenAI、Google Gemini), 实现了增量索引、批处理、实时文件监控和多代理支持. 适用于代码库探索、架构分析、跨文件和跨语言推理等场景. | 多 Agent 支持 | ⭐ | 653 |
-| [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) |
-| [tokf](https://github.com/mpecan/tokf) |
-| [.claudeignore]()
-| [CompactMode]()
-| [PTC]()
+| [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) | 北京大学开源的 AI Agent 技能管理系统, 类似 npm 的角色, 实现 Skill 的统一管理、安装、组合和同步, 支持 "写一次、到处用" 的能力复用. 核心功能包括: 统一共享 skill 池、为不同 Agent 创建技能集合、同步到 AGENTS.md 或暴露为 tool/function. 支持 26+ 平台, 可从 Anthropic 官方仓库安装 Skill. 适用于多 Agent 项目、Agent Engineering、可复用 Skill 库等场景.  | 多 Agent 支持 | ⭐⭐⭐ | 0 |
+| [drona23/claude-token-efficient](https://github.com/drona23/claude-token-efficient) | 专注于优化 Claude 模型的 Token 使用效率, 通过实现 Token 高效的工具调用、提供节省 Token 的最佳实践和工具, 帮助开发者减少 Claude API 的 Token 消耗, 降低使用成本. 支持通过配置优化、工具调用策略调整等方式, 平均节省 14% 的输出 Token, 最高可达 70%, 同时减少 API 调用延迟. 适用于使用 Claude Code 进行日常开发、代码生成和调试的场景, 特别适合需要控制 API 成本的团队和个人开发者.  | 多 Agent 支持 | ⭐⭐ | 1,200 |
+| [mpecan/tokf](https://github.com/mpecan/tokf) | Token 优化工具, 专注于提高 AI 代理的 Token 使用效率, 通过智能上下文管理和 Token 消耗优化, 帮助开发者减少 API 成本. 核心功能可能包括上下文压缩、Token 使用分析、智能提示词优化等.  | 多 Agent 支持 | ⭐ | 0 |
+| `.claudeignore` | 用于指定 Claude 应忽略的文件和目录, 减少不必要的上下文加载, 优化 Token 使用.  | 多 Agent 支持 | ⭐ | 0 |
+| [CompactMode]() | 上下文压缩模式, 通过智能压缩算法减少上下文大小, 提高 Token 使用效率.  | 多 Agent 支持 | ⭐ | 0 |
+| [PTC]() | 可能是 Prompt Token Control 的缩写, 用于控制提示词的 Token 使用, 优化提示词结构.  | 多 Agent 支持 | ⭐ | 0 |
 
 ### 3.2.2 Prompt
 -------
@@ -305,6 +326,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 |:---:|:----:|:---:|:-------:|:--------:|
 | [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) | 一款为 Claude Code 打造的本地代码知识图谱工具, 核心解决 Claude Code 在代码审查时重复读取整个代码库、token 消耗过高、审查效率低的问题, 通过构建代码结构化图谱实现增量更新和精准的上下文提取, 大幅降低 token 消耗同时提升审查质量. | Claude Code | ⭐ | 3,739 |
 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 一款为 Claude Code 打造的语义代码智能工具, 通过构建本地代码知识图谱, 实现 30% 更少的 token 消耗和 25% 更少的工具调用. 支持 19+ 种编程语言, 提供语义搜索、影响分析、智能上下文构建等功能, 100% 本地运行, 无需外部服务. 可通过 MCP 服务器与 Claude Code 集成, 大幅提升代码探索和分析效率. | Claude Code | ⭐ | 343 |
+| [ix-infrastructure/Ix](https://github.com/ix-infrastructure/Ix) | 一个系统映射工具, 为开发者和 AI 提供系统级理解能力. 通过构建代码库的结构化地图, 捕获系统关系和流程, 实现持久化的系统记忆. 支持 TypeScript/JavaScript、Python、Go、Java 等多种语言, 可大幅减少开发任务中的 token 消耗(30-99.7%), 提高 LLM 使用效率(至少 43%). 提供 Claude、Codex、OpenClaw 等插件集成, 核心功能包括系统映射、流程追踪、影响分析和 AI 辅助推理.  | 通用 | ⭐⭐⭐⭐ | -
 
 #### 3.2.3.3 Context
 -------
@@ -368,7 +390,6 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [FlorianBruniaux/ccboard](https://github.com/FlorianBruniaux/ccboard) | 一个开源的 TUI/Web 仪表盘, 用于 Claude Code 会话监控、成本跟踪和配置管理. 核心功能包括 11 个交互式标签页(仪表盘、会话、配置、钩子、代理、成本、历史、MCP、分析、活动、搜索)、实时监控、SQLite 缓存(89x 启动速度提升)、跨平台支持和零配置. 技术栈: Rust、Ratatui、Axum、Leptos WASM. | Claude Code | ⭐ | 35 |
 | [conductor.build](https://conductor.build) | 用于创建并行 Codex 和 Claude Code 智能体的工具, 在隔离的工作区中运行. 主要功能包括: 添加仓库(Conductor 克隆并在 Mac 上工作)、部署智能体(每个 Claude Code 获得隔离工作区)、管理(查看谁在工作、需要注意什么、审查代码). 技术栈: 基于 git worktree, 支持 Claude Code 和 Codex. 适用于多智能体并行开发、代码审查、团队协作等场景 | 多 Agent 支持 | ⭐⭐ |
 | [Markus](https://www.markus.global) | 开源平台, 用于设计、部署和管理自主 AI 代理和团队, 具有任务治理、知识系统和多渠道通信能力. 主要特点包括: 自主代理(带角色、技能、记忆和心跳驱动的主动工作)、多代理团队(角色分配和治理策略)、任务治理(看板、审批工作流、交付审查)、技能和工具(符合 Agent Skills 开放标准)、外部代理集成(通过 A2A 协议)、通信中心(Web UI 聊天和多渠道集成)、知识系统(三层记忆)、信任和治理(渐进式信任级别)、项目管理、代理构建器、GUI 自动化和社区中心. 技术栈: TypeScript、React、SQLite/PostgreSQL、本地优先、LLM 无关. 许可证: AGPL-3.0. 适用于构建、管理和扩展 AI 工作队伍、多代理协作项目、任务治理和审批工作流、跨渠道 AI 通信等场景 | 多 Agent 支持 | ⭐⭐ |
-| [tuannvm/codex-mcp-server](https://github.com/tuannvm/codex-mcp-server) | Claude Code 和 OpenAI's Codex CLI 之间的桥梁, 在编辑器中提供 AI 驱动的代码分析、生成和审查功能. 核心功能包括: codex(AI 编码助手, 支持会话、模型选择和结构化输出)、review(AI 驱动的代码审查)、websearch(使用 Codex CLI 进行网络搜索)、listSessions(查看活动对话会话)、ping(测试服务器连接)和 help(获取 Codex CLI 帮助). 技术栈: Node.js、MCP 协议、OpenAI Codex CLI. 适用于代码分析、重构、审查、多轮对话和网络搜索等场景 | Claude Code | ⭐ | 142 |
 | [nyanko3141592/tmuxcc](https://github.com/nyanko3141592/tmuxcc) | AI Agent Dashboard for tmux - 监控和管理多个 AI 编码代理的 TUI 应用, 支持 Claude Code、OpenCode、Codex CLI 和 Gemini CLI. 主要功能包括: 多代理监控、实时状态显示、审批管理、批量操作、层次视图、子代理跟踪、上下文感知、窗格预览、焦点集成和可定制性. 适用于在 tmux 环境中管理多个 AI 编码代理、实时监控代理状态、快速处理审批请求等场景 | 多 Agent 支持 | ⭐⭐ | 55 |
 
 ### 4.2.2 会话画布/终端
@@ -390,7 +411,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [ai-genius-automations/octoally](https://github.com/ai-genius-automations/octoally) | 为 Claude Code 提供的本地优先编排仪表盘, 支持多智能体蜂巢思维会话、单智能体工作流和交互式终端, 提供实时流式输出的美观 Web UI. 主要功能包括: 活动会话网格、蜂巢思维会话、智能体会话、交互式终端、内置 Web 浏览器、Git 源代码控制、文件浏览器、会话持久性、实时流式传输、多项目支持、语音听写和桌面应用. 技术栈: 前端(React 19, Vite, Tailwind CSS 4)、后端(Fastify, TypeScript, SQLite)、桌面应用(Electron)、会话管理(tmux, Claude Code + RuFlo). 适用于多智能体并行开发、AI 编码会话管理、项目管理、Git 操作等场景. | Claude Code/RuFlo | ⭐ | 67 |
 | [collaborator-ai/collab-public](https://github.com/collaborator-ai/collab-public) | 协作者是一个端到端的代理开发环境. 终端、上下文文件和运行中的代码——全部集中在无限画布上. 没有上下文切换, 没有找标签. 只有你的经纪人和你的工作, 并肩而立. | 多 Agent 支持 | ⭐ | 1,886 |
 | [batiai/batipanel](https://github.com/batiai/batipanel) | AI 驱动的终端工作区管理器, 一键设置完整开发环境, 包括 Claude Code、lazygit、btop、yazi 等工具, 支持 8 种布局和 8 种主题, 提供会话持久化和跨平台支持. 主要功能: 全功能安装、会话管理、多种布局选择、多主题支持、智能回退机制、跨平台兼容. 技术栈: tmux、Claude Code、lazygit、btop、yazi. 适用于开发环境快速搭建、多面板终端管理、AI 编码会话管理等场景 | 多平台支持 | ⭐ | 1,200+ |
-
+| [smux](https://github.com/ShawnPana/smux) | 一个一键式 tmux 设置工具, 提供终端自动化功能, 专为 AI 代理设计. 主要特点包括: Option 键绑定、鼠标支持、窗格标签、tmux-bridge CLI 用于跨窗格代理通信, 支持代理到代理的交互(如 Claude Code 可以与 Codex 交互). 技术栈: tmux. 适用于 AI 代理终端管理、多窗格终端操作、代理间通信等场景 | 多平台支持 | ⭐ | 996 |
 
 ### 4.2.3 会话分析
 -------
@@ -413,6 +434,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [AwesomeJun/awesome-claude-plugins](https://github.com/AwesomeJun/awesome-claude-plugins) | 一个为 Claude Code 打造的插件市场, 核心提供 Awesome Statusline 插件, 具有美观的 Catppuccin 主题状态栏、实时 API 监控、多显示模式等功能 | Claude Code | ⭐ | 46 |
 | [NoobyGains/claude-pulse](https://github.com/NoobyGains/claude-pulse) | 一个为 Claude Code 打造的实时使用监控工具, 提供彩色编码进度条、10 种内置主题、彩虹动画、自动更新通知等功能, 实时显示会话使用情况、剩余时间、每周使用情况等 | Claude Code | ⭐ | 278 |
 | [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) | 一个高性能的 CLI 工具和可视化仪表板, 用于跟踪多个 AI 编码代理的令牌使用情况和成本, 支持 OpenCode、Claude Code、Codex CLI、Cursor IDE 等多种平台, 提供交互式 TUI、实时定价计算、详细的令牌使用分解、原生 Rust 核心(10倍更快处理)、Web 可视化和社交平台等功能 | 多平台 | ⭐ | 1,387 |
+| [claude-esp](https://github.com/phiat/claude-esp) | 实时监控 Claude Code 的隐藏输出(思考、工具调用、子代理)到单独终端, 支持多会话、层次树视图、实时流、子代理跟踪、令牌使用跟踪等功能. | Claude Code | ⭐ | 92 |
 
 ### 4.3.2 状态管理
 -------
@@ -449,9 +471,9 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [chenhg5/cc-connect](https://github.com/chenhg5/cc-connect) | 控制本地AI代理从任何聊天应用, 桥接运行在用户机器上的AI代理到消息平台. 支持7个AI代理(Claude Code、Codex、Cursor Agent等)和9个聊天平台(Feishu、DingTalk、Slack、Telegram等), 提供多代理编排、完整聊天控制、持久内存、智能调度、多模态支持等功能. | 多 Agent 支持 | ⭐ | 3,377 |
 | [Claude-Code-Remote](https://github.com/JessyTsui/Claude-Code-Remote) | 远程控制Claude Code通过多个消息平台, 支持Email、Telegram、LINE和桌面通知. 提供双向控制、安全验证、群组支持、智能命令、多行支持、智能监控、tmux集成和执行跟踪等功能. | 多平台支持 | ⭐ | 1,189 |
 | [claude-plugin-weixin](https://github.com/m1heng/claude-plugin-weixin) | 为Claude Code提供微信通道插件, 允许在终端中直接接收和回复微信消息. 使用微信iLink Bot API和HTTP长轮询, 无需公共webhook. 支持二维码登录、本地MCP服务器运行、微信账号配对等功能. | 微信集成 | ⭐ | 540 |
-| [louislva/claude-peers-mcp](https://github.com/louislva/claude-peers-mcp) | 让多个Claude Code实例相互发现并通信的MCP插件, 当在不同项目中运行多个会话时, 任何Claude都能发现其他实例并即时发送消息. 核心功能包括: 列出本地所有Claude实例、通过ID发送即时消息、设置工作摘要、手动检查消息等. 技术实现基于Bun运行时、MCP服务器、localhost broker守护进程和SQLite数据库, 支持通过OpenAI API自动生成工作摘要. | 多实例通信 | ⭐ | 126 |
-| [kevinelliott/agentpipe](https://github.com/kevinelliott/agentpipe) | 强大的 CLI 和 TUI 应用, 用于编排多个 AI 代理之间的对话, 支持 Claude、Cursor、Gemini、Qwen、Ollama 等多种 AI CLI 工具. 主要功能包括: 多代理对话、多种对话模式(轮询、反应式、自由形式)、灵活配置、增强 TUI 界面、Prometheus 指标、对话管理、可靠性和性能优化、中间件管道、Docker 支持、健康检查、代理检测和可定制代理. 技术栈: Go、TUI 库、Prometheus、Docker. 适用于多代理协作、辩论、头脑风暴、代码审查等场景 | 多 Agent 支持 | ⭐ | 104 |
-| [CC Pocket](https://github.com/K9i-0/ccpocket) | A mobile app that lets you start and run Codex and Claude Code sessions entirely from your phone. It consists of a Bridge Server (TypeScript, WebSocket) and a Flutter mobile app, designed for developers who rely on coding agents and want to stay in the loop when away from the keyboard. Key features include touch-first approval handling, live streaming output, syntax-highlighted diff reviews, Markdown prompt editing, push notifications, and multiple connection methods (QR codes, mDNS, manual). Ideal for solo developers, indie hackers, and AI-native engineers running sessions on Mac minis, Raspberry Pis, or Linux servers. | Mobile-first agent management, remote session control, self-hosted architecture | Managing coding agent sessions on the go, monitoring long-running tasks, parallel session management
+| [CC Pocket](https://github.com/K9i-0/ccpocket) | 让你完全从手机上启动和运行 Codex 和 Claude Code 会话, 无需笔记本电脑. 主要功能包括: 从手机启动或恢复会话、触摸优先的 UI 处理批准、实时观看流输出、语法高亮的代码变更和图像差异支持、Markdown 提示编写、多个会话的跟踪、推送通知、多种连接方式(QR 码、保存的机器、mDNS 发现、手动 URL)、通过 SSH 管理远程主机. 技术栈: Bridge Server (TypeScript, WebSocket)、Flutter 移动应用、支持 Tailscale 远程访问、支持 git worktree 隔离. 适用于: 远程监控和管理 AI 编码代理、在通勤或离开办公桌时继续工作、管理多个会话和频繁的批准请求、自托管环境.  | 移动应用 | ⭐ | 460 |
+| [Claude Watch](https://github.com/shobhit99/claude-watch) | 允许从 Apple Watch 控制 Claude Code, 实时查看终端输出、批准权限请求、通过语音命令控制 Claude Code. 系统包含三个组件: 桥接服务器(Mac 上的 Node.js HTTP 服务器)、iPhone 应用(SwiftUI iOS 应用)和 Apple Watch 应用(SwiftUI watchOS 应用). 核心功能包括: 实时终端输出、权限提示处理、动态问题回答、语音命令输入、iPhone 配对界面和连接状态监控. 技术栈: Node.js 桥接服务器、SwiftUI、WCSession、HTTP、SSE、Bonjour/mDNS.  | 多平台支持 | ⭐ | 341 |
+
 
 ## 4.6 交互
 -------
@@ -462,6 +484,19 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [Confirmo](https://confirmo.love) | 桌面 AI 编码助手, 可在多种平台上运行, 包括 macOS (Apple Silicon 和 Intel)、Windows 和 Linux. 提供直观的界面和精灵画廊, 为开发者提供实时编码支持.  | 多平台支持 | ⭐⭐⭐ |
 | [lil-agents](https://github.com/ryanstephen/lil-agents) | macOS 应用程序, 在 dock 上显示动画角色, 点击即可打开 AI 终端. 支持 Claude Code、OpenAI Codex 和 GitHub Copilot CLIs, 提供主题切换、思考气泡和音效等功能. 所有数据本地运行, 不发送个人数据. | macOS | ⭐ | 586 |
 | [coe](https://github.com/quailyquaily/coe) | Linux 桌面语音输入工具, 致敬 missuo/koe 项目. 按下热键, 说话, 让 LLM 清理转录内容, 然后将文本放回活动应用程序. 支持 fcitx 和 desktop 两种集成模式, 支持 OpenAI、SenseVoice 和本地 whisper.cpp 作为 ASR 提供商, 使用 YAML 配置文件, 提供系统通知和焦点感知粘贴等功能.  | Linux 桌面 | ⭐ | 1,245 |
+
+## 4.7 多 Agent 通信/协同
+-------
+
+
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:---:|:----:|:---:|:-------:|:--------:|
+| [louislva/claude-peers-mcp](https://github.com/louislva/claude-peers-mcp) | 让多个Claude Code实例相互发现并通信的MCP插件, 当在不同项目中运行多个会话时, 任何Claude都能发现其他实例并即时发送消息. 核心功能包括: 列出本地所有Claude实例、通过ID发送即时消息、设置工作摘要、手动检查消息等. 技术实现基于Bun运行时、MCP服务器、localhost broker守护进程和SQLite数据库, 支持通过OpenAI API自动生成工作摘要. | 多实例通信 | ⭐ | 126 |
+| [kevinelliott/agentpipe](https://github.com/kevinelliott/agentpipe) | 强大的 CLI 和 TUI 应用, 用于编排多个 AI 代理之间的对话, 支持 Claude、Cursor、Gemini、Qwen、Ollama 等多种 AI CLI 工具. 主要功能包括: 多代理对话、多种对话模式(轮询、反应式、自由形式)、灵活配置、增强 TUI 界面、Prometheus 指标、对话管理、可靠性和性能优化、中间件管道、Docker 支持、健康检查、代理检测和可定制代理. 技术栈: Go、TUI 库、Prometheus、Docker. 适用于多代理协作、辩论、头脑风暴、代码审查等场景 | 多 Agent 支持 | ⭐ | 104 |
+| [hamelsmu/claude-review-loop](https://github.com/hamelsmu/claude-review-loop) | 一个Claude Code插件, 可将自动代码审查循环添加到您的工作流程中. 使用 `/review-loop` 时, 该插件会创建一个两阶段生命周期.<br>任务阶段: 你描述一项任务, Claude 负责执行<br>2. 审查阶段: 当 Claude 完成后, 会自动运行 Codex 进行独立代码审查, 然后要求 Claude 处理反馈意见<br>结果: 在您接受更改之前, 每项任务都会得到独立的二次审核意见. | Claude Code/Codex | ⭐ | 620 |
+| [tuannvm/codex-mcp-server](https://github.com/tuannvm/codex-mcp-server) | Claude Code 和 OpenAI's Codex CLI 之间的桥梁, 在编辑器中提供 AI 驱动的代码分析、生成和审查功能. 核心功能包括: codex(AI 编码助手, 支持会话、模型选择和结构化输出)、review(AI 驱动的代码审查)、websearch(使用 Codex CLI 进行网络搜索)、listSessions(查看活动对话会话)、ping(测试服务器连接)和 help(获取 Codex CLI 帮助). 技术栈: Node.js、MCP 协议、OpenAI Codex CLI. 适用于代码分析、重构、审查、多轮对话和网络搜索等场景 | Claude Code | ⭐ | 142 |
+| [Codex Plugin for Claude Code](https://github.com/openai/codex-plugin-cc) | 为Claude Code用户提供在现有工作流中使用Codex的能力, 支持代码审查、任务委托等功能 | Claude Code<br>OpenAI | ⭐⭐⭐ | 3507 |
+
 
 # 🔌 5 Agent Full Stack 配置
 -------
@@ -491,7 +526,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [full-stack-ai-agent-template](https://github.com/vstorm-co/full-stack-ai-agent-template) | 生产级AI/LLM应用模板, 提供FastAPI后端、Next.js前端、PydanticAI/LangChain集成、WebSocket流式响应、会话持久化、多数据库支持、认证、可观测性等20+企业级集成, 让您在几分钟内构建生产就绪的AI应用 | 多平台 | ⭐ | 955 |
 | [aiagentskit/claude-agents-library](https://github.com/aiagentskit/claude-agents-library) | 34 个生产就绪的 Claude AI 代理配置库, 分为 7 个专业类别(工程、产品、营销、设计、项目管理、工作室运营、测试). 每个代理包含详细的目的、核心职责、关键技能、沟通风格、示例提示和相关代理信息. 支持 MCP 集成(7 种集成模式), 提供成本优化策略(最多节省 82% 的 Claude API 成本), 包含模型选择矩阵和代理选择指南. 适用于各种专业角色, 可复制、粘贴并针对具体需求定制. | 多平台 | ⭐ | 699 |
 | [vibeeval/vibecosystem](https://github.com/vibeeval/vibecosystem) | 将 Claude Code 转变为完整的 AI 软件团队, 包含 119 个专业代理、202 个技能、48 个钩子和 17 个规则, 能够规划、构建、审查、测试并从错误中学习. 支持 5 个阶段的工作流程, 包括发现、开发、审查、QA 循环和最终学习. 具有自学习管道、跨项目学习、Canavar 交叉训练和自适应钩子加载等核心功能. | Claude Code | ⭐ | 307 |
-
+| [awesome-opencode/awesome-opencode](https://github.com/awesome-opencode/awesome-opencode) | 一个精心策划的 OpenCode 生态系统资源合集, 包含插件、主题、代理、项目和相关资源. 该仓库旨在为 OpenCode 用户提供全面的优质资源导航, 帮助开发者快速找到与 OpenCode 相关的工具和解决方案. 仓库采用社区驱动模式, 持续更新和维护. | OpenCode | ⭐⭐ | 4,323 |
 
 ## 5.2 专用工作流
 -------
@@ -514,7 +549,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 |:---:|:----:|:---:|:-------:|:--------:|
 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | ⭐⭐ |
 | [TraderAlice/OpenAlice](https://github.com/TraderAlice/OpenAlice) | AI 交易 Agent, 集成顶尖调研, 量化团队, 风控中心, 交易中心. | ⭐⭐ |
-| [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 为金融服务(投资银行、股票研究、私募股权和财富管理)打造的 Claude 插件集合, 提供端到端工作流程, 包括研究到报告、财务建模、交易材料等. 支持 11 个 MCP 集成, 41 个技能和 38 个命令, 基于文件结构无需代码.  | ⭐⭐⭐ | 7048 |
+| [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | 为金融服务(投资银行、股票研究、私募股权和财富管理)打造的 Claude 插件集合, 提供端到端工作流程, 包括研究到报告、财务建模、交易材料等. 支持 11 个 MCP 集成, 41 个技能和 38 个命令, 基于文件结构无需代码. | ⭐⭐⭐ | 7048 |
 
 ### 5.2.3 完整工作流
 -------
@@ -550,6 +585,9 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 [Claude Code 实战课程](https://note.mowen.cn/detail/1_ZEnLT5BCYVsix54iB77)
 
 [joeseesun/lennys-podcast-newsletter](https://github.com/joeseesun/lennys-podcast-newsletter), Lenny Rachitsky 播客与 Newsletter 知识库 — 用自然语言搜索、阅读和学习 638 篇硅谷顶级产品内容. [产品大神Lenny所有Newsletter和Podcast文字版](https://xiangyangqiaomu.feishu.cn/wiki/S97awc7EeiyjNdkJsM4czn71nxb)
+
+
+[awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis), 永久免费 LLM API 列表(API 密钥)
 
 https://github.com/199-biotechnologies/claude-deep-research-skill
 https://github.com/uditgoenka/autoresearch

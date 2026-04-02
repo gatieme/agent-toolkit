@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "agents": {
     "sisyphus": {
-      "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
+      "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
       "temperature": 0.3,
       // "maxTokens": 4096,
       "concurrency": 1,
@@ -27,7 +27,7 @@
       ]
     },
     "oracle": {
-      "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
+      "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
       "variant": "high",
       "description": "先知: 架构设计专家, 深度分析能力",
       "skills": [

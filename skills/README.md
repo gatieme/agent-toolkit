@@ -86,7 +86,6 @@ skills/
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`git-commit`](https://skills.sh/github/awesome-copilot/git-commit) | [`github/awesome-copilot`](https://github.com/github/awesome-copilot) | 使用约定式提交信息分析、智能暂存和消息生成执行 git commit. | `npx skills add https://github.com/github/awesome-copilot --skill git-commit` |
-| [`repo2skill`](https://skills.sh/zhangyanxs/repo2skill/repo2skill) | [`zhangyanxs/repo2skill`](https://github.com/zhangyanxs/repo2skill) | 将 GitHub/GitLab/Gitee 仓库转换为综合的 OpenCode Skills, 支持多镜像和速率限制处理 | `npx skills add https://github.com/zhangyanxs/repo2skill --skill repo2skill` |
 
 ### 代码检视
 -------
@@ -135,11 +134,11 @@ https://github.com/win4r/agent-skills-code-review-router
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
-| [`pptx`](https://skills.sh/anthropics/skills/pptx) | Anthropic 旗下 Claude Skills 体系的 PPTX 处理技能, 借助 [python markitdown 库](https://pypi.org/project/markitdown) 封装了 PPTX 读取、编辑、从零创建的脚本指令, 同时提供专业的 PPT 设计规范和严格的内容/视觉质检流程, 让大模型可标准化制作、处理 PPTX 文件. | `npx skills add https://github.com/anthropics/skills --skill pptx` |
+| [`pptx`](https://skills.sh/anthropics/skills/pptx) | [`anthropics/skills`](https://github.com/anthropics/skills) |Anthropic 旗下 Claude Skills 体系的 PPTX 处理技能, 借助 [python markitdown 库](https://pypi.org/project/markitdown) 封装了 PPTX 读取、编辑、从零创建的脚本指令, 同时提供专业的 PPT 设计规范和严格的内容/视觉质检流程, 让大模型可标准化制作、处理 PPTX 文件. | `npx skills add https://github.com/anthropics/skills --skill pptx` |
 | [`ppt-generation`](https://skills.sh/bytedance/deer-flow/ppt-generation) | [`bytedance/deer-flow`](https://github.com/bytedance/deer-flow) | 字节跳动 deer-flow 生态下的自动化 PPT 生成技能, 支持自然语言/结构化数据输入, 内置字节设计规范, 一键生成可编辑的 PPTX 格式文件, 适配汇报、技术分享、产品宣讲等多场景. | `npx skills add https://github.com/bytedance/deer-flow --skill ppt-generation` |
-| [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
+| [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [`jimliu/baoyu-skills`](https://github.com/jimliu/baoyu-skills) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
 | [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
-
+| [`pdf`](https://skills.sh/anthropics/skills/pdf) | [`anthropics/skills`](https://github.com/anthropics/skills) | Anthropic 旗下 Claude Skills 体系的 PDF 处理技能. 介绍了使用 Python 库和命令行工具进行基本 PDF 处理操作. | `npx skills add https://github.com/anthropics/skills --skill pdf` |
 
 ### 视频创作
 -------
@@ -178,7 +177,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | 让 AI 技能自己会长的系统——创建、反思、评测、发布、搜索、安装、Fork、合并、评审、卸载, 全自动. 核心功能离线可用, 支持技能变体系统和渐进式加载.  | `git clone https://github.com/hao-cyber/skill-evolution.git .claude/skills/skill-dev` |
 | [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) | [`KKKKhazix/Khazix-Skills`](https://github.com/KKKKhazix/Khazix-Skills) | 技能进化管理器 | NA |
 | [skills-best-practices](https://github.com/mgechev/skills-best-practices) | [`mgechev/skills-best-practices`](https://github.com/mgechev/skills-best-practices) | 技能最佳实践指南 | NA |
-| [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
+| [`repo2skill`](https://skills.sh/zhangyanxs/repo2skill/repo2skill) | [`zhangyanxs/repo2skill`](https://github.com/zhangyanxs/repo2skill) | 将 GitHub/GitLab/Gitee 仓库转换为综合的 OpenCode Skills, 支持多镜像和速率限制处理 | `npx skills add https://github.com/zhangyanxs/repo2skill --skill repo2skill` |
 
 
 ### Skills 路由
@@ -203,6 +202,14 @@ https://github.com/win4r/agent-skills-code-review-router
 | [Skill Security Scan](https://github.com/huifer/skill-security-scan) | [huifer/skill-security-scan](https://github.com/huifer/skill-security-scan) | 扫描和检测 Claude Skills 的安全风险, 防止恶意代码窃取数据或破坏系统 | `pip install skill-security-scan` 或 `pip install -e .` |
 | [Context Hub](https://github.com/andrewyng/context-hub) | https://github.com/andrewyng/context-hub | 为编码代理提供经过整理的、版本化的文档, 使其能够在每个任务中变得更智能 | `npm install -g @aisuite/chub` |
 
+### Skills 管理
+-------
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
+
 
 ## 科研相关
 -------
@@ -215,7 +222,10 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [`read-arxiv-paper`](https://skills.sh/karpathy/nanochat/read-arxiv-paper) | [`karpathy/nanochat`](https://github.com/karpathy/nanochat) | 从 ArXiv 论文 URL 到 nanochat 项目化总结的全自动化流程, 无需人工干预 TeX 源码下载、解包、解析, 最终输出贴合 nanochat 项目的论文应用参考, 解决了 AI 助手处理学术论文时「流程繁琐、与项目脱节」的问题. |`npx skills add https://github.com/karpathy/nanochat --skill read-arxiv-paper` |
 | [`paper-craft-skills/paper-analyzer`](https://skills.sh/zsyggg/paper-craft-skills/paper-analyzer) | [`zsyggg/paper-craft-skills`](https://github.com/zsyggg/paper-craft-skills) | 学术论文深度解析自动化工具, 核心基于 MinerU Cloud API 实现高精度 PDF 论文解析, 能自动提取图片、表格、LaTeX 公式等核心元素, 并支持按多种风格生成结构化的解析文章, 还可按需结合公式详解、开源代码分析, 最终输出可直接使用的 Markdown/HTML 格式内容, 大幅降低学术论文阅读、解读和分享的门槛,  适配科研、学习、技术科普等多类场景. | `npx skills add https://github.com/zsyggg/paper-craft-skills --skill paper-analyzer` |
-| [`ljg-skill-xray-paper/ljg-xray-paper`](https://skills.sh/lijigang/ljg-skill-xray-paper/ljg-xray-paper) | [`lijigang/ljg-skill-xray-paper`](https://github.com/lijigang/ljg-skill-xray-paper) | 论文解读. | `npx skills add https://github.com/lijigang/ljg-skill-xray-paper --skill ljg-xray-paper` |
+| [`ljg-skill-xray-paper/ljg-xray-paper`](https://skills.sh/lijigang/ljg-skill-xray-paper/ljg-xray-paper) | [`lijigang/ljg-skill-xray-paper`](https://github.com/lijigang/ljg-skill-xray-paper) | 李继刚大佬的论文解读 skills. | `npx skills add https://github.com/lijigang/ljg-skill-xray-paper --skill ljg-xray-paper` |
+| [`ljg-skills/ljg-paper`](https://skills.sh/lijigang/ljg-skills/ljg-paper) | [`lijigang/ljg-skills/ljg-paper`](https://github.com/lijigang/ljg-skills/tree/master/skills/ljg-paper) | [`ljg-skill-xray-paper/ljg-xray-paper`](https://skills.sh/lijigang/ljg-skill-xray-paper/ljg-xray-paper) 的新版本, 读论文读论文不是做学术, 是猎取思想. 把别人的发现拆解成自己能用的认知. | `npx skills add https://github.com/lijigang/ljg-skills --skill ljg-paper` |
+| [`awesome-claude-skills/ai-paper-reader`](https://skills.sh/frostant/awesome-claude-skills/ai-paper-reader) | [`frostant/awesome-claude-skills/ai-paper-reader`](https://github.com/frostant/awesome-claude-skills/tree/master/ai-paper-reader) | 论文阅读助手. | `npx skills add https://github.com/frostant/awesome-claude-skills --skill ai-paper-reader` |
+| [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
 
 
 ## PUA
@@ -253,7 +263,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | [last30days](https://skills.sh/mvanhorn/last30days-skill/last30days) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 实时研究工具, 扫描Reddit、X、Bluesky、YouTube、TikTok、Instagram、Hacker News、Polymarket等平台近30天的内容, 分析社区讨论并生成结构化报告 | `npx skills add mvanhorn/last30days-skill --skill last30days` |
 | [markdown-proxy](https://skills.sh/joeseesun/markdown-proxy/markdown-proxy) | [joeseesun/markdown-proxy](https://github.com/joeseesun/markdown-proxy) | Markdown代理工具 | `npx skills add joeseesun/markdown-proxy --skill markdown-proxy` |
 | [follow-builders](https://github.com/zarazhangrui/follow-builders) | [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) | AI驱动的摘要工具, 跟踪AI领域的顶级构建者(研究人员、创始人、产品经理和工程师), 并提供他们所说内容的精选摘要, 支持多语言和多种交付方式 | `git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders && cd ~/.claude/skills/follow-builders/scripts && npm install` |
-
+| [`erduo-skills/daily-news-report`](https://skills.sh/rookie-ricardo/erduo-skills/daily-news-report) | [`rookie-ricardo/erduo-skills`](https://github.com/rookie-ricardo/erduo-skills/tree/main/skills/daily-news-report) | 基于 sources.json 预设 URL 列表抓取内容, 筛选高质量技术信息并生成每日 Markdown 报告. 对应 skills 的英文版在 [antigravity-awesome-skills/](https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/daily-news-report) | `npx skills add https://github.com/rookie-ricardo/erduo-skills --skill daily-news-report` |
+| [`claude-meta-skill/daily-ai-news`](https://skills.sh/yyh211/claude-meta-skill/daily-ai-news) | 每日 AI 新闻简报: 汇总来自多个来源的最新 AI 新闻, 提供带有直接链接的简明摘要. | `npx skills add https://github.com/yyh211/claude-meta-skill --skill daily-ai-news` |
+| [opencli](https://github.com/jackwener/opencli) | [jackwener/opencli](https://github.com/jackwener/opencli) | 一个将任何网站、Electron 应用或本地工具转变为命令行界面的工具, 支持 50+ 站点(包括 B 站、知乎、小红书、Twitter/X、Reddit 等), 提供 66+ 适配器, 内置反检测措施, 支持 AI 代理自动发现和调用工具, 还可以作为 CLI 中心管理外部工具 | `npm install -g @jackwener/opencli` |
 
 # Skills 集合
 -------
@@ -299,15 +311,14 @@ https://github.com/win4r/agent-skills-code-review-router
 | [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | 一个精选的 Claude Code 相关资源列表, 包含技能、代理、插件、钩子和其他增强 Claude Code 工作流程的工具. 涵盖了代理技能、工作流与知识指南、工具、状态栏、钩子、斜杠命令、CLAUDE.md 文件、替代客户端和官方文档等多个类别. 包含来自 Trail of Bits、Anthropic 等知名团队的专业技能, 以及社区贡献的各种工具和资源.  |
 | [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) | 一个遵循少而精原则的优质 Skills 资源集合, 致力于收集和分享最优质的 Skills 教程、案例和实践, 帮助更多人轻松迈出搭建 Agent 的第一步. 包含技能标准介绍、安装方法、创建指南、优质教程和精选技能等内容, 涵盖编程辅助、技术开发、内容创作、产品使用等多个领域. 提供了增强插件 Agent Skills Toolkit, 帮助快速创建和改进 Agent Skills.  |
 | [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) | 一个专为 Azure 云开发设计的高质量代理技能集合, 基于 Microsoft Learn 文档编译而成. 包含 193 个技能, 涵盖计算、集成、数据与分析、AI 与机器学习、安全与身份、网络、基础设施、管理和专业领域等 19 个类别. 兼容 Claude Code、Gemini CLI、Codex CLI、Antigravity IDE、GitHub Copilot、Cursor、OpenCode 和 AdaL CLI 等多个平台. 提供了基于角色的技能包, 帮助开发者快速上手.  |
-| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)
+| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | 一个精心策划的 Claude Skills 精选列表, 包含官方技能、社区技能、工具、教程和资源, 用于自定义 Claude AI 工作流程. 涵盖文档处理(docx、pdf、pptx、xlsx)、设计创意(算法艺术、画布设计、Slack GIF 创建器)、开发(前端设计、Web 构件构建、MCP 构建器)、通信(品牌指南、内部通信)等多个领域的官方技能, 以及社区贡献的各种技能如 iOS 模拟器、ffuf 网络模糊测试、Playwright 自动化等. 提供了详细的技能创建指南、最佳实践、安全建议和故障排除方法, 是 Claude Skills 生态系统的综合参考资源. |
 
 ## 专用场景 Skills 合集
 -------
 
-| 项目 | 描述 | 支持 | 推荐星级 |
-|:---:|:----:|:---:|:-------:|
-| [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | Anthropics 官方开源的 Claude 金融服务专属插件库, 基于 Claude for Enterprise 打造, 核心目标是将通用大模型 Claude 转化为精通投行、行研、私募、财富管理等领域的专业金融分析师. |
-| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) |
+| 项目 | 描述 | 推荐星级 |
+|:---:|:----:|:-------:|
+| [anthropics/financial-services-plugins](https://github.com/anthropics/financial-services-plugins) | Anthropics 官方开源的 Claude 金融服务专属插件库, 基于 Claude for Enterprise 打造, 核心目标是将通用大模型 Claude 转化为精通投行、行研、私募、财富管理等领域的专业金融分析师. | ⭐⭐⭐⭐ |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | 代理技能集合, 扩展规划、开发和工具能力. 主要包括: 规划与设计(write-a-prd、prd-to-plan、prd-to-issues、grill-me、design-an-interface、request-refactor-plan)、开发(tdd、triage-issue、improve-codebase-architecture、migrate-to-shoehorn、scaffold-exercises)、工具与设置(setup-pre-commit、git-guardrails-claude-code)、写作与知识(write-a-skill、edit-article、ubiquitous-language、obsidian-vault) 等技能. | ⭐⭐⭐ |
 | [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill) | 基于 12,307 条推文提炼的商业诊断工具箱. [@dontbesilent](https://x.com/dontbesilent) 把自己发过的一万多条(12307)商业思考推文, 提炼成了一套 Claude Code Skills, 专门帮创业者和个体户做商业诊断. 核心工具包括: 商业模式诊断(dbs-diagnosis)、对标分析(dbs-benchmark)、内容创作诊断(dbs-content)、执行力诊断(dbs-unblock)、概念拆解(dbs-deconstruct). 提供完整的工作流: diagnosis → benchmark → content → unblock, deconstruct 可随时使用. 每个 SKILL.md 包含完整的方法论框架、诊断流程和说话风格定义, 开箱即用. 同时提供了进行 [dbs](https://github.com/dontbesilent2025/dbskill/tree/main/skills/dbs) 路由. 提供了类似 [garrytan/gstack](https://github.com/garrytan/gstack) 的功能, 但是更严苛. |
 | [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | 为 pi-coding-agent 提供的技能集合, 兼容 Claude Code、Codex CLI、Amp 和 Droid. 包含多个技能: Brave 搜索、浏览器工具、Google 日历/ Drive/ Gmail CLI、语音转文本、VS Code 集成、YouTube 转录等.  | 支持多种平台安装 | ⭐⭐⭐ |
@@ -320,6 +331,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | [199-biotechnologies/claude-deep-research-skill](https://github.com/199-biotechnologies/claude-deep-research-skill) | 企业级研究引擎, 为Claude Code生成有引用支持的报告, 具有来源可信度评分、多提供商搜索和自动验证功能. 核心功能: 4种研究模式(Quick/Standard/Deep/UltraDeep)、8阶段研究流程、并行检索(5-10个并发搜索+2-3个专注子代理)、多提供商搜索集成(Brave/Serper/Exa/Jina/Firecrawl)、自动验证和引用检查、多格式输出(Markdown/HTML/PDF). 技术架构: 模块化设计, 包含SKILL.md入口点、参考文档、模板和脚本目录. 适用于需要深度研究和引用支持的场景, 如学术研究、市场分析、技术评估等.  | ⭐⭐⭐⭐⭐ |
 | [himself65/finance-skills](https://github.com/himself65/finance-skills) | 一个为金融分析和交易提供的代理技能集合, 包含多种金融相关功能. 核心功能: 期权收益曲线图表生成(支持多种期权策略)、股票相关性分析(发现相关公司和配对交易 candidate)、金融数据获取(通过yfinance获取股票价格、财务报表等)、霍尔木兹海峡实时监控(航运、油价影响等)、社交媒体金融信息读取(Discord、Telegram、Twitter). 技术上遵循Agent Skills开放标准, 支持多种平台(Claude.ai、Claude Code等), 模块化设计, 支持交互式UI. 适用于金融分析、交易策略制定、市场情绪分析、地缘政治风险监控、投资决策支持等场景.  | ⭐⭐⭐ |
 | [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) | 一个为AI代理提供金融分析能力的即插即用技能集合, 包含实时新闻、股票数据、情感分析、逻辑可视化和市场预测功能. 核心功能: 实时财经新闻聚合(10+信源)、逻辑链路可视化(传导链路图)、AI智能预测(Kronos模型)、股票数据查询(A股/港股/美股)、情感分析(FinBERT/LLM)、投资信号追踪、专业研报生成、全网搜索与本地RAG. 技术上支持多种Agent框架(Antigravity、OpenCode、OpenClaw、Claude Code等), 模块化设计, 每个技能包含SKILL.md文件. 适用于金融市场分析、投资决策支持、市场趋势预测、财经新闻监控等场景.  | ⭐⭐⭐⭐ |
+| [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 一个为Claude Code提供的同事技能生成工具, 可将同事的原材料(飞书消息、钉钉文档、邮件、截图等)转化为能替他工作的AI Skill. 核心功能: 支持多种数据来源(飞书、钉钉、PDF、图片、邮件、Markdown等)、生成包含Work Skill(工作能力)和Persona(性格)的完整Skill、支持多种个性标签和企业文化、具有进化机制(增量分析、对话纠正、版本管理). 技术上遵循AgentSkills开放标准, 包含飞书/钉钉自动采集工具、邮件解析、Skill文件管理和版本管理等功能. 适用于同事离职后知识传承、项目交接、经验积累等场景, 可生成具有同事技术规范和语气的AI Skill.  | ⭐⭐ |
+| [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) | 为营销和销售团队提供开源的Claude Code技能, 包括完整的工作流程、脚本、评分算法、专家面板和自动化管道 | ericosiu | 营销实验、销售线索转化、内容质量评分、自动化外呼、SEO优化、财务分析 | ⭐⭐ |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | PM Skills Marketplace: 为产品经理提供AI操作系统, 用于做出更好的产品决策. 包含65个PM技能和36个链式工作流, 分布在8个插件中, 涵盖从发现、策略、执行、发布到增长的完整产品管理流程. 基于Teresa Torres、Marty Cagan、Alberto Savoia等的proven PM框架, 为Claude Code和Cowork设计, 同时技能兼容其他AI助手.  | ⭐⭐ |
 
 
 # 安装 Skills
