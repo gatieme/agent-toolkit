@@ -128,6 +128,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`humanizer-zh`](https://skills.sh/op7418/humanizer-zh/humanizer-zh) | [`op7418/humanizer-zh`](https://github.com/op7418/humanizer-zh) | 去除中文文本中的 AI 生成痕迹, 使文本听起来更自然、更像人类书写. | `npx skills add https://github.com/op7418/humanizer-zh --skill humanizer-zh` |
 | [`humanizer`](https://skills.sh/softaworks/agent-toolkit/humanizer) | [`softaworks/agent-toolkit`](https://github.com/softaworks/agent-toolkit) | 去除文本中的 AI 生成痕迹, 使文本听起来更自然、更像人类书写. | `npx skills add https://github.com/softaworks/agent-toolkit --skill humanizer` |
 | [stop-slop](https://skills.sh/hardikpandya/stop-slop/stop-slop) | [`hardikpandya/stop-slop`](https://github.com/hardikpandya/stop-slop) | 系统性消除 AI 写作中刻板、模板化的表达模式(被称为 Slop), 让 AI 生成的文本摆脱机器感, 更贴近人类自然、真实的写作风格, 同时也能指导人类作者规避同类写作陋习, 提升文本质量. | `npx skills add https://github.com/hardikpandya/stop-slop --skill stop-slop` |
+| [`translate-book`](https://github.com/deusyu/translate-book) | [`deusyu/translate-book`](https://github.com/deusyu/translate-book) | 整本书全自动翻译工具, 支持 PDF、DOCX、EPUB 等格式, 使用并行子代理处理长文本, 支持断点续译, 翻译完可一键导出带目录的 HTML、Word、EPUB、打印版 PDF.  | `git clone https://github.com/deusyu/translate-book.git && cd translate-book && npm install`
 
 ### PPT/Office
 -------
@@ -228,13 +229,41 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
 
 
-## PUA
+## 数字员工
 -------
 
+
+### PUA
+-------
+
+[微信公众号--刘聪NLP--PUA vs NoPUA: AI 到底该被骂着干活, 还是学会拒绝？](https://mp.weixin.qq.com/s/sLMbOALiKt779afx0Sy8lQ)
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`pua-debugging`](https://skills.sh/tanweai/pua/pua-debugging) | [`tanweai/pua/pua-debugging`](https://github.com/tanweai/pua/tree/main/skills/pua-debugging) | 以大厂 P8 级工程师要求为核心, 融合大厂 PUA 激励话术、标准化调试方法论和强制化主动执行规则, 倒逼 AI 以工程化 Owner 视角端到端解决调试问题, 彻底规避被动排查、浅尝辄止的问题, 同时配套压力升级、抗合理化、自检清单等机制保障调试效果. 由[探微安全实验室](https://github.com/tanweai)出品. 官网 [pua-skills](https://pua-skill.pages.dev). @passluo 受此启发, [给你的 AI 一套大厂 P8 的 Soul, 让它的 Coding 表现提高 30%](https://x.com/passluo/status/2030908109145903310) | `npx skills add https://github.com/tanweai/pua --skill pua-debugging` |
+| [`nopua`](https://skills.sh/wuji-labs/nopua/nopua) | [`wuji-labs/nopua`](https://github.com/wuji-labs/nopua) | NoPUA - 用爱与信任释放AI的无限潜能, 反对PUA式方法, 通过信任和鼓励提升AI表现, 隐藏bug发现能力提升104% | `npx skills add https://github.com/wuji-labs/nopua --skill nopua` |
+
+
+### 同事 Skills
+-------
+
+[微信公众号--刘聪NLP--各种Skill向你袭来, 同事Skill、前任Skill、导师Skill、老板Skill、永生SKill等, 已经十多个了~](https://mp.weixin.qq.com/s/gWVkx07UPaliuWv6yUOPvg)
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [同事 Skill](https://github.com/titanwings/colleague-skill) | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 将同事的工作方式、说话风格、技术规范训练成 AI Skill, 实现数字分身 | `git clone https://github.com/titanwings/colleague-skill .claude/skills/create-colleague` |
+| [老板Skill](https://github.com/vogtsw/boss-skills) | [vogtsw/boss-skills](https://github.com/vogtsw/boss-skills) | 模拟老板的管理风格和决策方式 | 待补充 |
+| [前任Skill](https://github.com/perkfly/ex-skill) | [perkfly/ex-skill](https://github.com/perkfly/ex-skill) | 模拟前任的性格特点和互动方式 | 待补充 |
+| [暗恋对象SKill](https://github.com/xiaoheizi8/crush-skills) | [xiaoheizi8/crush-skills](https://github.com/xiaoheizi8/crush-skills) | 模拟暗恋对象的性格和互动风格 | 待补充 |
+| [自己Skill](https://github.com/notdog1998/yourself-skill) | [notdog1998/yourself-skill](https://github.com/notdog1998/yourself-skill) | 模拟自己的思维方式和行为习惯 | 待补充 |
+| [父母SKill](https://github.com/xiaoheizi8/parents-skills) | [xiaoheizi8/parents-skills](https://github.com/xiaoheizi8/parents-skills) | 模拟父母的性格和沟通方式 | 待补充 |
+| [导师Skill](https://github.com/ybq22/supervisor) | [ybq22/supervisor](https://github.com/ybq22/supervisor) | 模拟导师的指导风格和专业知识 | 待补充 |
+| [师兄SKill](https://github.com/zhanghaichao520/senpai-skill) | [zhanghaichao520/senpai-skill](https://github.com/zhanghaichao520/senpai-skill) | 模拟师兄的经验分享和指导方式 | 待补充 |
+| [永生SKill](https://github.com/agenmod/immortal-skill) | [agenmod/immortal-skill](https://github.com/agenmod/immortal-skill) | 实现个人数字永生, 保存个人特征和记忆 | 待补充 |
+| [数字人生Skill](https://github.com/wildbyteai/digital-life) | [wildbyteai/digital-life](https://github.com/wildbyteai/digital-life) | 模拟数字世界中的人生体验 | 待补充 |
+| [重逢SKill](https://github.com/yangdongchen66-boop/reunion-skill) | [yangdongchen66-boop/reunion-skill](https://github.com/yangdongchen66-boop/reunion-skill) | 模拟与旧识重逢的场景和互动 | 待补充 |
+
 
 
 ## 互联
@@ -266,6 +295,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`erduo-skills/daily-news-report`](https://skills.sh/rookie-ricardo/erduo-skills/daily-news-report) | [`rookie-ricardo/erduo-skills`](https://github.com/rookie-ricardo/erduo-skills/tree/main/skills/daily-news-report) | 基于 sources.json 预设 URL 列表抓取内容, 筛选高质量技术信息并生成每日 Markdown 报告. 对应 skills 的英文版在 [antigravity-awesome-skills/](https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/daily-news-report) | `npx skills add https://github.com/rookie-ricardo/erduo-skills --skill daily-news-report` |
 | [`claude-meta-skill/daily-ai-news`](https://skills.sh/yyh211/claude-meta-skill/daily-ai-news) | 每日 AI 新闻简报: 汇总来自多个来源的最新 AI 新闻, 提供带有直接链接的简明摘要. | `npx skills add https://github.com/yyh211/claude-meta-skill --skill daily-ai-news` |
 | [opencli](https://github.com/jackwener/opencli) | [jackwener/opencli](https://github.com/jackwener/opencli) | 一个将任何网站、Electron 应用或本地工具转变为命令行界面的工具, 支持 50+ 站点(包括 B 站、知乎、小红书、Twitter/X、Reddit 等), 提供 66+ 适配器, 内置反检测措施, 支持 AI 代理自动发现和调用工具, 还可以作为 CLI 中心管理外部工具 | `npm install -g @jackwener/opencli` |
+| [Horizon](https://github.com/Thysrael/Horizon) | [Thysrael/Horizon](https://github.com/Thysrael/Horizon) | 多源信息聚合与 AI 评分工具, 收集 Hacker News、RSS、Reddit、Telegram、GitHub 等平台的内容, 使用 AI 评分过滤噪音, 生成双语摘要报告, 支持静态网站部署和邮件订阅 | `git clone https://github.com/Thysrael/Horizon.git && cd horizon && uv sync` 或 `docker-compose run --rm horizon` |
+
 
 # Skills 集合
 -------

@@ -65,6 +65,7 @@ https://banwagong1.com/claude-code.html
 | [dhanji/g3](https://github.com/dhanji/g3) | 智能代码生成和分析工具 | 代码 | ⭐⭐⭐ |
 | [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | 构建系统和工具链 | 开发 | ⭐⭐⭐ |
 | [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | 多智能体协作平台 | 协作 | ⭐⭐⭐ |
+| [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Claude Code 20260401 代码泄露后, 增长最快的重写版本. | 协作 | ⭐⭐⭐ |
 
 ## 平台
 -------

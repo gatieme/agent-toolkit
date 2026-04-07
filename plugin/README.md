@@ -276,6 +276,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 |:---:|:----:|:---:|:-------:|:--------:|
 | [mem0ai/mem0-mcp](https://github.com/mem0ai/mem0-mcp) | Mem0 MCP 服务器, 将 Mem0 Memory API 包装为 Model Context Protocol (MCP) 服务器, 支持添加、搜索、更新和删除长期记忆, 适用于 MCP 兼容客户端(Claude Desktop、Cursor、自定义代理) | 多 Agent 支持 | ⭐ | 642 |
 | [cctrace](https://github.com/jimmc414/cctrace) | Claude Code会话导出和导入工具, 支持将会话提取为可移植格式用于归档、分析或共享. 提供两种导出模式: 经典导出(到~/claude_sessions/exports/)和可移植导出(到仓库内的.claude-sessions/), 支持导入会话继续工作, 包含文件历史、待办事项、计划和配置的完整迁移 | Claude Code | ⭐ | 172 |
+| [arisvas4/codified-context-infrastructure](https://github.com/arisvas4/codified-context-infrastructure) | 为AI编码代理提供结构化的上下文基础设施, 解决大型代码库中AI代理缺乏持久记忆的问题. 实现三层上下文架构: 热内存(Constitution)、专业代理(Specialized Agents)和冷内存(Knowledge Base + MCP), 支持按需加载上下文, 提高token使用效率, 适用于复杂代码库的AI辅助开发 | 多 Agent 支持 | ⭐ | 108 |
+
 
 ## 3.2 上下文工程
 -------
@@ -291,7 +293,7 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [open-compress/claw-compactor](https://github.com/open-compress/claw-compactor) | **OpenClaw 上下文压缩优化工具** - 专为 OpenClaw 设计的 Token 消耗优化解决方案, 通过智能上下文压缩算法减少 45% 的 Token 使用量. 核心功能包括:<br>1). 激进式上下文修剪: 将 TTL 从默认 1 小时缩短至 5 分钟, 配合 0.5 的 hardClearRatio 及时清理过期工具结果;<br>2). 智能缓存保活: 针对 Anthropic Claude 系列模型, 通过 55 分钟心跳机制保持缓存温热状态, 避免昂贵的重写成本;<br>3). 本地化记忆搜索: 集成本地 Embedding 模型替代云端 API 调用, 将 Embedding 成本降至零;<br>4). 多层压缩策略: 结合 micro-compact、auto-compact 和 manual compact 三层压缩机制, 实现上下文的无损压缩与持久化存储.<br>实测数据显示: 平均上下文长度从 128k 降至 70k, 缓存写入频率降低 90%, 特别适用于长对话场景和复杂任务处理. | OpenClaw | ⭐ | 2,100 |
 | [SocratiCode](https://github.com/giancarloerra/SocratiCode) | 为 AI 助手提供整个代码库的深度语义理解, 零配置、完全私有、免费, 支持大规模代码库(超过4000万行代码). 核心功能包括混合搜索(语义搜索 + BM25 词汇搜索)、AST 感知的代码分块、多语言代码依赖图、可搜索的上下文工件等. 基于 Qdrant 向量数据库, 支持多种嵌入提供商(Ollama、OpenAI、Google Gemini), 实现了增量索引、批处理、实时文件监控和多代理支持. 适用于代码库探索、架构分析、跨文件和跨语言推理等场景. | 多 Agent 支持 | ⭐ | 653 |
 | [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) | 北京大学开源的 AI Agent 技能管理系统, 类似 npm 的角色, 实现 Skill 的统一管理、安装、组合和同步, 支持 "写一次、到处用" 的能力复用. 核心功能包括: 统一共享 skill 池、为不同 Agent 创建技能集合、同步到 AGENTS.md 或暴露为 tool/function. 支持 26+ 平台, 可从 Anthropic 官方仓库安装 Skill. 适用于多 Agent 项目、Agent Engineering、可复用 Skill 库等场景.  | 多 Agent 支持 | ⭐⭐⭐ | 0 |
-| [drona23/claude-token-efficient](https://github.com/drona23/claude-token-efficient) | 专注于优化 Claude 模型的 Token 使用效率, 通过实现 Token 高效的工具调用、提供节省 Token 的最佳实践和工具, 帮助开发者减少 Claude API 的 Token 消耗, 降低使用成本. 支持通过配置优化、工具调用策略调整等方式, 平均节省 14% 的输出 Token, 最高可达 70%, 同时减少 API 调用延迟. 适用于使用 Claude Code 进行日常开发、代码生成和调试的场景, 特别适合需要控制 API 成本的团队和个人开发者. [微信公众号--AI工程化--8行代码让Claude Code闭嘴：输出token直降63%，废话全砍](https://mp.weixin.qq.com/s/DrPUykwCwIEryUDwYBxucQ) | 多 Agent 支持 | ⭐⭐ | 1,200 |
+| [drona23/claude-token-efficient](https://github.com/drona23/claude-token-efficient) | 专注于优化 Claude 模型的 Token 使用效率, 通过实现 Token 高效的工具调用、提供节省 Token 的最佳实践和工具, 帮助开发者减少 Claude API 的 Token 消耗, 降低使用成本. 支持通过配置优化、工具调用策略调整等方式, 平均节省 14% 的输出 Token, 最高可达 70%, 同时减少 API 调用延迟. 适用于使用 Claude Code 进行日常开发、代码生成和调试的场景, 特别适合需要控制 API 成本的团队和个人开发者. [微信公众号--AI工程化--8行代码让Claude Code闭嘴: 输出token直降63%, 废话全砍](https://mp.weixin.qq.com/s/DrPUykwCwIEryUDwYBxucQ) | 多 Agent 支持 | ⭐⭐ | 1,200 |
 | [mpecan/tokf](https://github.com/mpecan/tokf) | Token 优化工具, 专注于提高 AI 代理的 Token 使用效率, 通过智能上下文管理和 Token 消耗优化, 帮助开发者减少 API 成本. 核心功能可能包括上下文压缩、Token 使用分析、智能提示词优化等.  | 多 Agent 支持 | ⭐ | 0 |
 | `.claudeignore` | 用于指定 Claude 应忽略的文件和目录, 减少不必要的上下文加载, 优化 Token 使用.  | 多 Agent 支持 | ⭐ | 0 |
 | [CompactMode]() | 上下文压缩模式, 通过智能压缩算法减少上下文大小, 提高 Token 使用效率.  | 多 Agent 支持 | ⭐ | 0 |
@@ -391,6 +393,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [conductor.build](https://conductor.build) | 用于创建并行 Codex 和 Claude Code 智能体的工具, 在隔离的工作区中运行. 主要功能包括: 添加仓库(Conductor 克隆并在 Mac 上工作)、部署智能体(每个 Claude Code 获得隔离工作区)、管理(查看谁在工作、需要注意什么、审查代码). 技术栈: 基于 git worktree, 支持 Claude Code 和 Codex. 适用于多智能体并行开发、代码审查、团队协作等场景 | 多 Agent 支持 | ⭐⭐ |
 | [Markus](https://www.markus.global) | 开源平台, 用于设计、部署和管理自主 AI 代理和团队, 具有任务治理、知识系统和多渠道通信能力. 主要特点包括: 自主代理(带角色、技能、记忆和心跳驱动的主动工作)、多代理团队(角色分配和治理策略)、任务治理(看板、审批工作流、交付审查)、技能和工具(符合 Agent Skills 开放标准)、外部代理集成(通过 A2A 协议)、通信中心(Web UI 聊天和多渠道集成)、知识系统(三层记忆)、信任和治理(渐进式信任级别)、项目管理、代理构建器、GUI 自动化和社区中心. 技术栈: TypeScript、React、SQLite/PostgreSQL、本地优先、LLM 无关. 许可证: AGPL-3.0. 适用于构建、管理和扩展 AI 工作队伍、多代理协作项目、任务治理和审批工作流、跨渠道 AI 通信等场景 | 多 Agent 支持 | ⭐⭐ |
 | [nyanko3141592/tmuxcc](https://github.com/nyanko3141592/tmuxcc) | AI Agent Dashboard for tmux - 监控和管理多个 AI 编码代理的 TUI 应用, 支持 Claude Code、OpenCode、Codex CLI 和 Gemini CLI. 主要功能包括: 多代理监控、实时状态显示、审批管理、批量操作、层次视图、子代理跟踪、上下文感知、窗格预览、焦点集成和可定制性. 适用于在 tmux 环境中管理多个 AI 编码代理、实时监控代理状态、快速处理审批请求等场景 | 多 Agent 支持 | ⭐⭐ | 55 |
+| [AnganSamadder/opentmux](https://github.com/AnganSamadder/opentmux) | OpenCode 插件, 提供智能 tmux 集成, 用于实时查看代理执行情况. 自动生成窗格、流式传输输出、管理终端工作区. 主要特点包括: 自动 tmux 窗格生成、实时流式传输、自动清理、可配置布局、多端口支持、智能包装器(自动检测是否在 tmux 中). 技术栈: TypeScript、Node.js (NPM 包)、tmux、Shell 脚本 (Bash/Zsh/Fish/PowerShell). 适用于实时查看多个代理执行情况、管理多个代理会话、自动管理 tmux 窗格等场景 | 多平台支持 | ⭐ | 63 |
+
 
 ### 4.2.2 会话画布/终端
 -------
@@ -540,6 +544,8 @@ Agent Parallel Workflow 致力于组合多个 Agent 协同工作, 通过 Paralle
 | [garrytan/gstack](https://github.com/garrytan/gstack) | 核心理想是将 AI 智能体转换为虚拟软件开发团队, 通过自定义指令让 AI 扮演不同角色, 为 Claude Code 提供 9种 工作流技能, 包括产品规划、计划审查、代码审查、一键部署、浏览器自动化、QA测试和工程回顾等, 支持多会话并行运行. [gstack: YC CEO开源的工具集中各角色分工](https://x.com/Gorden_Sun/status/2034937498020061486), 其中文翻译版本参见 [XLearnity/gstack](https://github.com/XLearnity/gstack/tree/feat/zh-cn-skill-prompts). | Claude Code | ⭐⭐⭐⭐ | 53,321 |
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | PM 技能市场: AI 操作系统, 助力产品决策更佳. 65 项项目管理技能和 36 个链式工作流程, 分布在 8 个插件中. Claude Code、Cowork 等. 从发现到战略、执行、启动和增长. | ⭐⭐ |
 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Anthropic 为 Claude Cowork(兼容 Claude Code)打造的开源知识工作插件集合, 核心目标是将通用 AI 助手 Claude 转化为适配不同职业角色、企业团队的专业型助手, 实现 AI 与企业实际工作流程的深度融合. 其设计理念和架构甚至引发了传统办公软件领域的市值波动. 以下从仓库基础信息、核心价值与定位、11 款核心插件详情、插件架构设计、使用与定制方式、技术亮点、生态与贡献七大维度展开详细分析. | ⭐⭐ |
+| [carlvellotti/claude-code-pm-course](https://github.com/carlvellotti/claude-code-pm-course) | Claude Code PM Course 是一个专注于教授如何使用 Claude 进行代码项目管理的课程仓库. 该仓库提供了完整的课程内容, 包括理论知识、实践案例和工具使用指南. 技术上, 它涵盖了 Claude 在代码审查、项目规划、团队协作等方面的应用, 同时提供了详细的教程和示例代码. 使用场景包括软件项目管理、代码质量提升、团队协作优化等, 适合项目经理、开发人员和团队领导使用.  |
+
 
 ### 5.2.2 金融工作流
 -------
