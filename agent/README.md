@@ -32,6 +32,7 @@ https://github.com/superagent-ai/grok-cli
 https://cc.storyfox.cz
 https://cchistory.mariozechner.at
 https://banwagong1.com/claude-code.html
+https://github.com/chatgptprojects/clear-code
 
 ### 主流 AI Agent 框架
 
@@ -112,6 +113,8 @@ https://banwagong1.com/claude-code.html
 | [](https://github.com/charmbracelet/crush)
 | [](https://github.com/yologdev/yoyo-evolve)
 | [](https://github.com/walkinglabs/awesome-harness-engineering)
+| [career-ops]()
+| [](https://github.com/kingskuan/Claudebot-vibe)
 
 ## 参考
 -------

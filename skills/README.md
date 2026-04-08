@@ -48,7 +48,7 @@ skills/
 | [`excalidraw-diagram`](https://skills.sh/axtonliu/axton-obsidian-visual-skills/excalidraw-diagram) | [`axtonliu/axton-obsidian-visual-skills`](https://github.com/axtonliu/axton-obsidian-visual-skills) | 从文本内容生成 Excalidraw 图表, 支持三种输出模式(Obsidian、Standard、Animated). | `npx skills add https://github.com/axtonliu/axton-obsidian-visual-skills --skill excalidraw-diagram` |
 | [`excalidraw`](https://skills.sh/davila7/claude-code-templates/excalidraw) | [`davila7/claude-code-templates`](https://github.com/davila7/claude-code-templates) | `Excalidraw` 文件操作代理, 通过子代理委托防止上下文耗尽. | `npx skills add https://github.com/davila7/claude-code-templates --skill excalidraw` |
 | [`excalidraw-diagram-skill/excalidraw-diagram`](https://skills.sh/coleam00/excalidraw-diagram-skill/excalidraw-diagram) | [`coleam00/excalidraw-diagram-skill`](https://github.com/coleam00/excalidraw-diagram-skill) | 一款面向 `Excalidraw` 绘图工具的专业制图能力包, 核心是生成能实现视觉论证的. `excalidraw` 格式 `json` 文件, 而非简单的信息展示型图表, 同时定义了一套标准化、高专业性的 `Excalidraw` 制图方法论、设计规范和工作流, 适配技术、产品、教学等多场景的专业绘图需求, 集成在 `kimi-cli、gemini-cli、GitHub Copilot` 等主流开发工具中. | `npx skills add https://github.com/coleam00/excalidraw-diagram-skill --skill excalidraw-diagram` |
-
+| [`yctimlin/mcp_excalidraw`](https://github.com/yctimlin/mcp_excalidraw) | [`yctimlin/mcp_excalidraw`](https://github.com/yctimlin/mcp_excalidraw) | 运行一个实时的 Excalidraw 画布, 并由 AI 代理控制. 该仓库提供 MCP Server 和 Agent Skill. | NA |
 
 ### draw-io
 -------
@@ -129,6 +129,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`humanizer`](https://skills.sh/softaworks/agent-toolkit/humanizer) | [`softaworks/agent-toolkit`](https://github.com/softaworks/agent-toolkit) | 去除文本中的 AI 生成痕迹, 使文本听起来更自然、更像人类书写. | `npx skills add https://github.com/softaworks/agent-toolkit --skill humanizer` |
 | [stop-slop](https://skills.sh/hardikpandya/stop-slop/stop-slop) | [`hardikpandya/stop-slop`](https://github.com/hardikpandya/stop-slop) | 系统性消除 AI 写作中刻板、模板化的表达模式(被称为 Slop), 让 AI 生成的文本摆脱机器感, 更贴近人类自然、真实的写作风格, 同时也能指导人类作者规避同类写作陋习, 提升文本质量. | `npx skills add https://github.com/hardikpandya/stop-slop --skill stop-slop` |
 | [`translate-book`](https://github.com/deusyu/translate-book) | [`deusyu/translate-book`](https://github.com/deusyu/translate-book) | 整本书全自动翻译工具, 支持 PDF、DOCX、EPUB 等格式, 使用并行子代理处理长文本, 支持断点续译, 翻译完可一键导出带目录的 HTML、Word、EPUB、打印版 PDF.  | `git clone https://github.com/deusyu/translate-book.git && cd translate-book && npm install`
+| [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | 用 Markdown 写公众号文章, 像发朋友圈一样简单 | NA |
 
 ### PPT/Office
 -------
@@ -179,7 +180,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) | [`KKKKhazix/Khazix-Skills`](https://github.com/KKKKhazix/Khazix-Skills) | 技能进化管理器 | NA |
 | [skills-best-practices](https://github.com/mgechev/skills-best-practices) | [`mgechev/skills-best-practices`](https://github.com/mgechev/skills-best-practices) | 技能最佳实践指南 | NA |
 | [`repo2skill`](https://skills.sh/zhangyanxs/repo2skill/repo2skill) | [`zhangyanxs/repo2skill`](https://github.com/zhangyanxs/repo2skill) | 将 GitHub/GitLab/Gitee 仓库转换为综合的 OpenCode Skills, 支持多镜像和速率限制处理 | `npx skills add https://github.com/zhangyanxs/repo2skill --skill repo2skill` |
-
+| [github-skill-forge](https://github.com/YuJunZhiXue/github-skill-forge) | [`YuJunZhiXue/github-skill-forge`](https://github.com/YuJunZhiXue/github-skill-forge) | 将 GitHub 仓库一键转换为 AI 助手可直接理解和调用的技能包, 支持云端扫描、核心提取、镜像加速和质量初筛 | NA |
 
 ### Skills 路由
 -------
@@ -227,7 +228,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`ljg-skills/ljg-paper`](https://skills.sh/lijigang/ljg-skills/ljg-paper) | [`lijigang/ljg-skills/ljg-paper`](https://github.com/lijigang/ljg-skills/tree/master/skills/ljg-paper) | [`ljg-skill-xray-paper/ljg-xray-paper`](https://skills.sh/lijigang/ljg-skill-xray-paper/ljg-xray-paper) 的新版本, 读论文读论文不是做学术, 是猎取思想. 把别人的发现拆解成自己能用的认知. | `npx skills add https://github.com/lijigang/ljg-skills --skill ljg-paper` |
 | [`awesome-claude-skills/ai-paper-reader`](https://skills.sh/frostant/awesome-claude-skills/ai-paper-reader) | [`frostant/awesome-claude-skills/ai-paper-reader`](https://github.com/frostant/awesome-claude-skills/tree/master/ai-paper-reader) | 论文阅读助手. | `npx skills add https://github.com/frostant/awesome-claude-skills --skill ai-paper-reader` |
 | [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
-
+| [](https://github.com/sellerbubble/paper-mentor-skill)
 
 ## 数字员工
 -------
@@ -265,6 +266,22 @@ https://github.com/win4r/agent-skills-code-review-router
 | [重逢SKill](https://github.com/yangdongchen66-boop/reunion-skill) | [yangdongchen66-boop/reunion-skill](https://github.com/yangdongchen66-boop/reunion-skill) | 模拟与旧识重逢的场景和互动 | 待补充 |
 
 
+### 女娲 Skills
+-------
+
+[2026/04/06, 花叔 @AlchainHust, 蒸馏出「乔布斯」之后, 他说苹果AI完全是SHIT](https://x.com/AlchainHust/status/2041118529508798846)
+
+|
+| [](https://github.com/alchaincyf/nuwa-skill)
+| [](https://github.com/alchaincyf/x-mentor-skill)
+| [](https://github.com/alchaincyf/steve-jobs-skill)
+
+
+### 反蒸馏
+-------
+
+| [](https://github.com/Trailblazer-Aha/vengeful-ghost-skill)
+
 
 ## 互联
 -------
@@ -283,6 +300,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | sunx-skills-hub | [SunX-DEX/sunx-skills-hub](https://github.com/SunX-DEX/sunx-skills-hub) | SunX DEX 永续合约交易技能, 支持仓位管理、杠杆管理、订单操作和止盈止损策略.  | `npx skills add https://github.com/SunX-DEX/sunx-skills-hub` |
 | MagicSkills | [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) | 本地优先的技能基础设施, 用于多代理项目, 将分散的SKILL.md目录转变为可重用、可组合、可同步、可调用的共享能力库.  | `pip install MagicSkills` |
 | hyperskills | [hyperbrowserai/hyperbrowser-app-examples](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills) | 自动生成AI编码代理的SKILL.md文件, 使用实时网络数据, 通过搜索、抓取和生成综合技能文档.  | `git clone <repo-url> && cd skills-generator && npm install` |
+| 巴菲特神谕分析师 | [BruceLanLan/buffett-oracle-analyzer](https://github.com/BruceLanLan/buffett-oracle-analyzer) | AI驱动上市公司深度分析Skill, 融合巴菲特投资智慧与12模块分析框架, 覆盖美股/港股/A股. 目标: 为投资者提供像巴菲特一样思考的深度投资分析报告. 技术: 12大分析模块(公司概览、管理层评估、商业模式、经济护城河、财务深度、电话会分析、多模型估值、竞争与行业、技术面分析、增长与催化剂、风险矩阵、投资决策)、8种估值模型、多市场适配、技术面分析、电话会深度解读、巴菲特计分卡. 使用场景: 对上市公司进行深度投资分析、快速批量对比多只股票、从巴菲特视角分析公司、评估股票是否值得投资 | 复制SKILL.md内容到Claude自定义指令 |
+| [investment](https://github.com/cyfcyfff/investment) | [cyfcyfff/investment](https://github.com/cyfcyfff/investment) | 基于哈利·布朗永久组合(Permanent Portfolio)策略的投资组合管理工具, 支持实时行情监控、自动再平衡建议、绩效追踪、Telegram 通知提醒和数据备份恢复. 四大资产类别: 股票、长期国债、黄金、现金/短债. 多市场支持: 中国、香港、美国三个市场. 技术栈: React 19 + TypeScript + Ant Design 6, Zustand, Dexie (IndexedDB), Recharts, Vite, Vitest | `npm install && npm run dev` |
+| [tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | [tradesdontlie/tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | 个人 AI 助手, 用于 TradingView 桌面图表, 通过 Chrome DevTools Protocol 连接 Claude Code 到本地运行的 TradingView 应用, 支持 AI 辅助图表分析、Pine Script 开发和工作流自动化.  | `git clone https://github.com/tradesdontlie/tradingview-mcp.git && cd tradingview-mcp && npm install`, 然后添加到 MCP 配置中 | NA |
 
 ## 热点
 -------
