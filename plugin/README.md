@@ -37,7 +37,10 @@
 
 [OpenCode 配置 OpenSpec + Superpowers + Oh-My-OpenCode 指南](https://github.com/wentietie/tools-config/blob/main/OpenCode-%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97-OpenSpec-Superpowers.md)
 
-[@Voxyz_ai, 2026/3/29, I Compared gstack, Superpowers, and Compound Engineering. They Solve Three Completely Different Prob](https://x.com/Voxyz_ai/status/2038237755654783107)
+[2026/3/29, @Voxyz_ai, I Compared gstack, Superpowers, and Compound Engineering. They Solve Three Completely Different Prob](https://x.com/Voxyz_ai/status/2038237755654783107)
+
+[2026/04/08, 微信公众号--产品化AI--codex+superpowers太重了, 我把 AGENTS.md 拆成了两个版本](https://mp.weixin.qq.com/s/f85KjZD8DH3JjTa6TKv1WA)
+
 
 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
 |:---:|:----:|:---:|:-------:|:--------:|
