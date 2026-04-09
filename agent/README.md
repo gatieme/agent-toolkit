@@ -19,6 +19,8 @@
 
 [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto), 一份可视化、以示例驱动的 Claude Code 指南——从基础概念到高级代理, 配有复制粘贴模板，立即带来价值.
 
+[2026/04/07, Will Yang @Will_Yang_, Hermes Agent 完全指南：从 OpenClaw 转投的自我进化 AI Agent](https://x.com/Will_Yang_/status/2041507883876233312)
+
 ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式。
 Plan-and-Solve: 先规划再执行的解耦式架构，适合需要长远规划的复杂任务。
 Reflection：执行→反思→优化的三步循环，适合追求高精度的关键任务。

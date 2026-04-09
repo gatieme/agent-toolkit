@@ -68,6 +68,14 @@ skills/
 | [`beautiful-mermaid`]https://skills.sh/intellectronica/agent-skills/beautiful-mermaid) | [`intellectronica/agent-skills`](https://github.com/intellectronica/agent-skills) | 借助 `beautiful-mermaid` SKILLS 来渲染 Mermaid 图表为 SVG 和 PNG. | `npx skills add https://github.com/intellectronica/agent-skills --skill beautiful-mermaid` |
 | [`smart-illustrator`](https://skills.sh/axtonliu/smart-illustrator/smart-illustrator) | [`axtonliu/smart-illustrator`](https://github.com/axtonliu/smart-illustrator) | 智能配图与 PPT 信息图生成器, 支持文章配图、PPT 批量生成、封面图. | `npx skills add https://github.com/axtonliu/smart-illustrator --skill smart-illustrator` |
 
+### 其他绘图
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [`yofine/skills/blueprinter`](https://skills.sh/yofine/skills/blueprinter) | [`yofine/skills`](https://github.com/yofine/skills) | 按照"平面工程蓝图"风格指南, 使用 HTML/CSS 生成技术图表. | `npx skills add https://github.com/yofine/skills --skill blueprinter` |
+
+
 ## 🌐 浏览器自动化
 -------
 
@@ -141,6 +149,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [`jimliu/baoyu-skills`](https://github.com/jimliu/baoyu-skills) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
 | [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
 | [`pdf`](https://skills.sh/anthropics/skills/pdf) | [`anthropics/skills`](https://github.com/anthropics/skills) | Anthropic 旗下 Claude Skills 体系的 PDF 处理技能. 介绍了使用 Python 库和命令行工具进行基本 PDF 处理操作. | `npx skills add https://github.com/anthropics/skills --skill pdf` |
+| [](https://github.com/mucsbr/ppt-agent-workflow-san)
+
 
 ### 视频创作
 -------
@@ -234,6 +244,11 @@ https://github.com/win4r/agent-skills-code-review-router
 -------
 
 
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:---:|:----:|:---:|:-------:|:--------:|
+| [awesome-human-distillation](https://github.com/mliu98/awesome-human-distillation) | 收集一切将真实的人蒸馏成 AI Skill 的项目, 支持从聊天记录、文字、声音等材料中提炼人格, 涵盖职场、学术、亲密关系、家庭关系和公众人物等多种场景 | 支持多种蒸馏工具和方法, 部分支持本地运行和隐私保护 | ⭐⭐ | 281 |
+| [xixu-me/awesome-persona-distill-skills](https://github.com/xixu-me/awesome-persona-distill-skills) | 围绕人物、关系、纪念性场景与方法论视角的 Agent Skills 收录列表, 通过"人格蒸馏"从对话、作品、资料或数字痕迹中提炼表达风格、决策框架与交互方式, 包含自我蒸馏、职场关系、亲密关系、公众人物方法论等多个类别 | ⭐⭐ | 359 |
+
 ### PUA
 -------
 
@@ -275,6 +290,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [](https://github.com/alchaincyf/nuwa-skill)
 | [](https://github.com/alchaincyf/x-mentor-skill)
 | [](https://github.com/alchaincyf/steve-jobs-skill)
+| [](https://github.com/Janlaywss/hu-chenfeng-skill)
+| [](https://github.com/tukuaiai/cz-skill)
 
 
 ### 反蒸馏
@@ -300,7 +317,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | sunx-skills-hub | [SunX-DEX/sunx-skills-hub](https://github.com/SunX-DEX/sunx-skills-hub) | SunX DEX 永续合约交易技能, 支持仓位管理、杠杆管理、订单操作和止盈止损策略.  | `npx skills add https://github.com/SunX-DEX/sunx-skills-hub` |
 | MagicSkills | [Narwhal-Lab/MagicSkills](https://github.com/Narwhal-Lab/MagicSkills) | 本地优先的技能基础设施, 用于多代理项目, 将分散的SKILL.md目录转变为可重用、可组合、可同步、可调用的共享能力库.  | `pip install MagicSkills` |
 | hyperskills | [hyperbrowserai/hyperbrowser-app-examples](https://github.com/hyperbrowserai/hyperbrowser-app-examples/tree/main/hyperskills) | 自动生成AI编码代理的SKILL.md文件, 使用实时网络数据, 通过搜索、抓取和生成综合技能文档.  | `git clone <repo-url> && cd skills-generator && npm install` |
-| 巴菲特神谕分析师 | [BruceLanLan/buffett-oracle-analyzer](https://github.com/BruceLanLan/buffett-oracle-analyzer) | AI驱动上市公司深度分析Skill, 融合巴菲特投资智慧与12模块分析框架, 覆盖美股/港股/A股. 目标: 为投资者提供像巴菲特一样思考的深度投资分析报告. 技术: 12大分析模块(公司概览、管理层评估、商业模式、经济护城河、财务深度、电话会分析、多模型估值、竞争与行业、技术面分析、增长与催化剂、风险矩阵、投资决策)、8种估值模型、多市场适配、技术面分析、电话会深度解读、巴菲特计分卡. 使用场景: 对上市公司进行深度投资分析、快速批量对比多只股票、从巴菲特视角分析公司、评估股票是否值得投资 | 复制SKILL.md内容到Claude自定义指令 |
+| 巴菲特神谕分析师 | [BruceLanLan/buffett-oracle-analyzer](https://github.com/BruceLanLan/buffett-oracle-analyzer) | AI驱动上市公司深度分析Skill, 融合巴菲特投资智慧与12模块分析框架, 覆盖美股/港股/A股. 目标: 为投资者提供像巴菲特一样思考的深度投资分析报告. 技术: 12大分析模块(公司概览、管理层评估、商业模式、经济护城河、财务深度、电话会分析、多模型估值、竞争与行业、技术面分析、增长与催化剂、风险矩阵、投资决策)、8种估值模型、多市场适配、技术面分析、电话会深度解读、巴菲特计分卡. 使用场景: 对上市公司进行深度投资分析、快速批量对比多只股票、从巴菲特视角分析公司、评估股票是否值得投资 | 复制SKILL.md内容到Claude自定义指令, 还可以参考 [巴菲特致股东信知识库](https://buffett-letters-eir.pages.dev) | NA |
 | [investment](https://github.com/cyfcyfff/investment) | [cyfcyfff/investment](https://github.com/cyfcyfff/investment) | 基于哈利·布朗永久组合(Permanent Portfolio)策略的投资组合管理工具, 支持实时行情监控、自动再平衡建议、绩效追踪、Telegram 通知提醒和数据备份恢复. 四大资产类别: 股票、长期国债、黄金、现金/短债. 多市场支持: 中国、香港、美国三个市场. 技术栈: React 19 + TypeScript + Ant Design 6, Zustand, Dexie (IndexedDB), Recharts, Vite, Vitest | `npm install && npm run dev` |
 | [tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | [tradesdontlie/tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | 个人 AI 助手, 用于 TradingView 桌面图表, 通过 Chrome DevTools Protocol 连接 Claude Code 到本地运行的 TradingView 应用, 支持 AI 辅助图表分析、Pine Script 开发和工作流自动化.  | `git clone https://github.com/tradesdontlie/tradingview-mcp.git && cd tradingview-mcp && npm install`, 然后添加到 MCP 配置中 | NA |
 
