@@ -167,7 +167,6 @@ https://github.com/win4r/agent-skills-code-review-router
 | `oh-my-opencode-config` | [`includewudi/oh-my-opencode-config`](https://github.com/includewudi/oh-my-opencode-config) | Oh My OpenCode 插件的 agent 模型配置管理, 查看和修改 agent 模型配置. | `git clone https://github.com/includewudi/oh-my-opencode-config.git ~/.agents/skills/oh-my-opencode-config` |
 
 
-
 ## 🔍 技能发现与管理
 -------
 
@@ -221,7 +220,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
-
+| `OpenSkills` | [`numman-ali/openskills`](https://github.com/numman-ali/openskills) | 为所有 AI 编码代理(Claude Code、Cursor、Windsurf、Aider、Codex 等)提供通用的技能加载器, 采用与 Claude Code 相同的 SKILL.md 格式, 支持技能的按需加载和管理. | `npx openskills install <source>` (如 `npx openskills install anthropics/skills`) |
 
 ## 科研相关
 -------
@@ -238,7 +237,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`ljg-skills/ljg-paper`](https://skills.sh/lijigang/ljg-skills/ljg-paper) | [`lijigang/ljg-skills/ljg-paper`](https://github.com/lijigang/ljg-skills/tree/master/skills/ljg-paper) | [`ljg-skill-xray-paper/ljg-xray-paper`](https://skills.sh/lijigang/ljg-skill-xray-paper/ljg-xray-paper) 的新版本, 读论文读论文不是做学术, 是猎取思想. 把别人的发现拆解成自己能用的认知. | `npx skills add https://github.com/lijigang/ljg-skills --skill ljg-paper` |
 | [`awesome-claude-skills/ai-paper-reader`](https://skills.sh/frostant/awesome-claude-skills/ai-paper-reader) | [`frostant/awesome-claude-skills/ai-paper-reader`](https://github.com/frostant/awesome-claude-skills/tree/master/ai-paper-reader) | 论文阅读助手. | `npx skills add https://github.com/frostant/awesome-claude-skills --skill ai-paper-reader` |
 | [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
-| [](https://github.com/sellerbubble/paper-mentor-skill)
+| [`paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | [`sellerbubble/paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | 用于深入理解学术论文的 Claude Code Skill, 基于多 Agent 架构, 从 HuggingFace Papers 搜索相似论文, 提取研究方向和核心概念, 基于 Bloom 分类法生成问题, 提供交互式学习体验 | `npx paper-mentor-skill install` 或 `git clone https://github.com/sellerbubble/paper-mentor-skill.git ~/.claude/skills/paper-mentor` |
 
 ## 数字员工
 -------
@@ -246,7 +245,7 @@ https://github.com/win4r/agent-skills-code-review-router
 
 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
 |:---:|:----:|:---:|:-------:|:--------:|
-| [awesome-human-distillation](https://github.com/mliu98/awesome-human-distillation) | 收集一切将真实的人蒸馏成 AI Skill 的项目, 支持从聊天记录、文字、声音等材料中提炼人格, 涵盖职场、学术、亲密关系、家庭关系和公众人物等多种场景 | 支持多种蒸馏工具和方法, 部分支持本地运行和隐私保护 | ⭐⭐ | 281 |
+| [awesome-human-distillation](https://github.com/mliu98/awesome-human-distillation) | 收集一切将真实的人蒸馏成 AI Skill 的项目, 支持从聊天记录、文字、声音等材料中提炼人格, 涵盖职场、学术、亲密关系、家庭关系和公众人物等多种场景 | 支持多种蒸馏工具和方法, 部分支持本地运行和隐私保护 | ⭐⭐ | 362 |
 | [xixu-me/awesome-persona-distill-skills](https://github.com/xixu-me/awesome-persona-distill-skills) | 围绕人物、关系、纪念性场景与方法论视角的 Agent Skills 收录列表, 通过"人格蒸馏"从对话、作品、资料或数字痕迹中提炼表达风格、决策框架与交互方式, 包含自我蒸馏、职场关系、亲密关系、公众人物方法论等多个类别 | ⭐⭐ | 359 |
 
 ### PUA
@@ -358,7 +357,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [AITmpl Skills](https://www.aitmpl.com/skills) | AI 技能模板平台, 提供各类 AI Agent 技能模板和资源.  |
 | [SkillsGate](https://skillsgate.ai) | 一站式 AI Agent 技能管理平台, 核心定位为「AI 技能的统一管理枢纽」, 支持 18+ 个 AI 编码代理(Claude Code、Cursor、Windsurf、GitHub Copilot、Codex CLI 等), 提供桌面应用、终端 UI 和 CLI 三种接口. 平台索引了 80,000+ 技能, 支持 AI 驱动的语义搜索, 实现跨代理技能管理、远程服务器连接、设置同步等核心功能. 安全方面提供技能扫描功能, 可检测提示注入、数据泄露等 8 类威胁, 并支持社区共享扫描结果, 是一个集发现、安装、管理、安全于一体的综合性 AI 技能平台. |
 | [Claude Marketplaces](https://claudemarketplaces.com/) | 为 Claude Code 提供精选的插件、技能和 MCP 服务器的手工挑选目录, 通过安装次数、GitHub 星标和社区投票来维护质量, 确保只列出活跃使用的扩展. 核心功能包括: 提供可重用的 Claude Code 技能指令集(可通过单命令安装), 以及通过工具、API 和外部服务集成扩展代理的 MCP 服务器. 完全免费和开放, 即将支持社区投票和评论功能. |
-
+| [YangSir Skills - Persona](https://skills.yangsir.net/domains/persona) | 专注于人格蒸馏与角色扮演的 AI Agent 技能平台, 核心定位为「人物认知操作系统的数字蒸馏器」. 该平台收录了 50+ 个人格相关技能, 涵盖决策制定、专家协作、创新思维、数字永生等多个维度, 支持将名人、导师、亲人、同事等各类人物的思维模式、决策框架、表达风格蒸馏成可运行的 AI 技能. 核心技术包括: 多源数据蒸馏(聊天记录、社交媒体、著作访谈等)、心智模型提取、人格特征建模、持续学习进化等. 典型使用场景包括: 模拟名人思维方式分析问题(如巴菲特投资视角、乔布斯产品思维)、数字永生与亲情陪伴、向上管理与职场沟通、个人决策质量提升、学术导师指导等. 平台技能普遍采用评分机制, 部分热门技能如「求是 Skill」(17.2K 使用)、「童锦程 Skill」(12.3K 使用)等已获得广泛用户认可. |
 
 ## Skills 集合仓库
 -------
