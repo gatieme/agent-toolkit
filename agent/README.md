@@ -35,6 +35,7 @@ https://cc.storyfox.cz
 https://cchistory.mariozechner.at
 https://banwagong1.com/claude-code.html
 https://github.com/chatgptprojects/clear-code
+https://github.com/aaif-goose/goose
 
 ### 主流 AI Agent 框架
 
@@ -45,6 +46,7 @@ https://github.com/chatgptprojects/clear-code
 | [AutoGen](https://github.com/microsoft/autogen) | 用于创建多智能体 AI 应用的框架, 支持自主行动或与人类协同工作 | 53.2K+ |
 | [LlamaIndex](https://github.com/run-llama/llama-index) | 为 LLM 应用程序设计的数据框架 | 46.2K+ |
 | [CrewAI](https://github.com/crewAIInc/crewai) | 用于编排角色扮演自主智能体的框架 | 42.3K+ |
+| [](https://github.com/xiaotonng/pikiclaw)
 
 ## 热闹
 -------

@@ -74,6 +74,7 @@ skills/
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`yofine/skills/blueprinter`](https://skills.sh/yofine/skills/blueprinter) | [`yofine/skills`](https://github.com/yofine/skills) | 按照"平面工程蓝图"风格指南, 使用 HTML/CSS 生成技术图表. | `npx skills add https://github.com/yofine/skills --skill blueprinter` |
+| [`yizhiyanhua-ai/fireworks-tech-graph`](https://github.com/yizhiyanhua-ai/fireworks-tech-graph) | 专为 Claude Code 打造的技术图生成 Skill, 一句话就能出图, 效果直接起飞: ✅ 自动识别图类型, ✅ 智能语义形状 + 颜色编码(流程蓝、控制橙、数据绿…)✅ 支持玻璃态、Neon 等高级风格✅ 高清 SVG + PNG 一键导出 8 种图类型 + 5 种视觉风格, AI/Agent 常见 Pattern 全覆盖！ |
 
 
 ## 🌐 浏览器自动化
@@ -184,12 +185,19 @@ https://github.com/win4r/agent-skills-code-review-router
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`skill-creator`](https://skills.sh/anthropics/skills/skill-creator) | [`anthropics/skills`](https://github.com/anthropics/skills) | 创建有效 Skills 的指南, 用于扩展 Claude 的特定领域知识、工作流程或工具集成. | `npx skills add https://github.com/anthropics/skills --skill skill-creator` |
-| [`claudeception`](https://skills.sh/blader/claudeception/claudeception) | [`blader/claudeception`](https://github.com/blader/claudeception) | 持续学习系统, 从工作会话中提取可重用知识并创建新的 Claude Code Skills. | `npx skills add https://github.com/blader/claudeception --skill claudeception` |
-| [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | 让 AI 技能自己会长的系统——创建、反思、评测、发布、搜索、安装、Fork、合并、评审、卸载, 全自动. 核心功能离线可用, 支持技能变体系统和渐进式加载.  | `git clone https://github.com/hao-cyber/skill-evolution.git .claude/skills/skill-dev` |
-| [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) | [`KKKKhazix/Khazix-Skills`](https://github.com/KKKKhazix/Khazix-Skills) | 技能进化管理器 | NA |
 | [skills-best-practices](https://github.com/mgechev/skills-best-practices) | [`mgechev/skills-best-practices`](https://github.com/mgechev/skills-best-practices) | 技能最佳实践指南 | NA |
 | [`repo2skill`](https://skills.sh/zhangyanxs/repo2skill/repo2skill) | [`zhangyanxs/repo2skill`](https://github.com/zhangyanxs/repo2skill) | 将 GitHub/GitLab/Gitee 仓库转换为综合的 OpenCode Skills, 支持多镜像和速率限制处理 | `npx skills add https://github.com/zhangyanxs/repo2skill --skill repo2skill` |
 | [github-skill-forge](https://github.com/YuJunZhiXue/github-skill-forge) | [`YuJunZhiXue/github-skill-forge`](https://github.com/YuJunZhiXue/github-skill-forge) | 将 GitHub 仓库一键转换为 AI 助手可直接理解和调用的技能包, 支持云端扫描、核心提取、镜像加速和质量初筛 | NA |
+
+### Skills 进化
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [`claudeception`](https://skills.sh/blader/claudeception/claudeception) | [`blader/claudeception`](https://github.com/blader/claudeception) | 持续学习系统, 从工作会话中提取可重用知识并创建新的 Claude Code Skills. | `npx skills add https://github.com/blader/claudeception --skill claudeception` |
+| [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | 让 AI 技能自己会长的系统——创建、反思、评测、发布、搜索、安装、Fork、合并、评审、卸载, 全自动. 核心功能离线可用, 支持技能变体系统和渐进式加载.  | `git clone https://github.com/hao-cyber/skill-evolution.git .claude/skills/skill-dev` |
+| [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) | [`KKKKhazix/Khazix-Skills`](https://github.com/KKKKhazix/Khazix-Skills) | 技能进化管理器 | NA |
+| [`AgentHandover`](https://github.com/sandroandric/AgentHandover) | [`sandroandric/AgentHandover`](https://github.com/sandroandric/AgentHandover) | 观察用户, 学习并教导代理具有自我改进的技能, 让AI能够在无需明确指示的情况下完成工作 | NA |
 
 ### Skills 路由
 -------
@@ -221,6 +229,8 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
 | `OpenSkills` | [`numman-ali/openskills`](https://github.com/numman-ali/openskills) | 为所有 AI 编码代理(Claude Code、Cursor、Windsurf、Aider、Codex 等)提供通用的技能加载器, 采用与 Claude Code 相同的 SKILL.md 格式, 支持技能的按需加载和管理. | `npx openskills install <source>` (如 `npx openskills install anthropics/skills`) |
+| [midudev/autoskills](https://github.com/midudev/autoskills) | [midudev/autoskills](https://github.com/midudev/autoskills) | 扫描你的项目, 检测你的技术栈, 并自动安装 skills.sh 中最优秀的 AI 代理技能. [官网](https://www.autoskills.sh) |
+
 
 ## 科研相关
 -------
@@ -285,12 +295,15 @@ https://github.com/win4r/agent-skills-code-review-router
 
 [2026/04/06, 花叔 @AlchainHust, 蒸馏出「乔布斯」之后, 他说苹果AI完全是SHIT](https://x.com/AlchainHust/status/2041118529508798846)
 
-|
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
 | [](https://github.com/alchaincyf/nuwa-skill)
 | [](https://github.com/alchaincyf/x-mentor-skill)
 | [](https://github.com/alchaincyf/steve-jobs-skill)
 | [](https://github.com/Janlaywss/hu-chenfeng-skill)
 | [](https://github.com/tukuaiai/cz-skill)
+| [forrestchang/andrej-karpathy-skills)](https://github.com/forrestchang/andrej-karpathy-skills) | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)) | 一位开发者基于 AI 大神 Andrej Karpathy 的编程经验总结, 开源了 andrej-karpathy-skills 这个 Claude Code 实用插件. 本质上是一个专门优化 Claude Code 行为的系统指南, 提炼了四大编程原则. 帮我们在动手前强制 AI 理清思路, 遇到不确定的地方主动提问, 而不是盲目猜测. 严格限制了 AI 的发散思维, 要求用最少的代码解决问题, 杜绝过度设计和无用的抽象封装. 同时约束了代码修改范围, 只允许像外科手术一样精准改动目标, 绝不碰无关的注释和格式. | NA |
 
 
 ### 反蒸馏
@@ -319,6 +332,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | 巴菲特神谕分析师 | [BruceLanLan/buffett-oracle-analyzer](https://github.com/BruceLanLan/buffett-oracle-analyzer) | AI驱动上市公司深度分析Skill, 融合巴菲特投资智慧与12模块分析框架, 覆盖美股/港股/A股. 目标: 为投资者提供像巴菲特一样思考的深度投资分析报告. 技术: 12大分析模块(公司概览、管理层评估、商业模式、经济护城河、财务深度、电话会分析、多模型估值、竞争与行业、技术面分析、增长与催化剂、风险矩阵、投资决策)、8种估值模型、多市场适配、技术面分析、电话会深度解读、巴菲特计分卡. 使用场景: 对上市公司进行深度投资分析、快速批量对比多只股票、从巴菲特视角分析公司、评估股票是否值得投资 | 复制SKILL.md内容到Claude自定义指令, 还可以参考 [巴菲特致股东信知识库](https://buffett-letters-eir.pages.dev) | NA |
 | [investment](https://github.com/cyfcyfff/investment) | [cyfcyfff/investment](https://github.com/cyfcyfff/investment) | 基于哈利·布朗永久组合(Permanent Portfolio)策略的投资组合管理工具, 支持实时行情监控、自动再平衡建议、绩效追踪、Telegram 通知提醒和数据备份恢复. 四大资产类别: 股票、长期国债、黄金、现金/短债. 多市场支持: 中国、香港、美国三个市场. 技术栈: React 19 + TypeScript + Ant Design 6, Zustand, Dexie (IndexedDB), Recharts, Vite, Vitest | `npm install && npm run dev` |
 | [tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | [tradesdontlie/tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | 个人 AI 助手, 用于 TradingView 桌面图表, 通过 Chrome DevTools Protocol 连接 Claude Code 到本地运行的 TradingView 应用, 支持 AI 辅助图表分析、Pine Script 开发和工作流自动化.  | `git clone https://github.com/tradesdontlie/tradingview-mcp.git && cd tradingview-mcp && npm install`, 然后添加到 MCP 配置中 | NA |
+| [](https://github.com/runesleo/polymarket-toolkit)
+
 
 ## 热点
 -------
@@ -379,6 +394,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) | 一个遵循少而精原则的优质 Skills 资源集合, 致力于收集和分享最优质的 Skills 教程、案例和实践, 帮助更多人轻松迈出搭建 Agent 的第一步. 包含技能标准介绍、安装方法、创建指南、优质教程和精选技能等内容, 涵盖编程辅助、技术开发、内容创作、产品使用等多个领域. 提供了增强插件 Agent Skills Toolkit, 帮助快速创建和改进 Agent Skills.  |
 | [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) | 一个专为 Azure 云开发设计的高质量代理技能集合, 基于 Microsoft Learn 文档编译而成. 包含 193 个技能, 涵盖计算、集成、数据与分析、AI 与机器学习、安全与身份、网络、基础设施、管理和专业领域等 19 个类别. 兼容 Claude Code、Gemini CLI、Codex CLI、Antigravity IDE、GitHub Copilot、Cursor、OpenCode 和 AdaL CLI 等多个平台. 提供了基于角色的技能包, 帮助开发者快速上手.  |
 | [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | 一个精心策划的 Claude Skills 精选列表, 包含官方技能、社区技能、工具、教程和资源, 用于自定义 Claude AI 工作流程. 涵盖文档处理(docx、pdf、pptx、xlsx)、设计创意(算法艺术、画布设计、Slack GIF 创建器)、开发(前端设计、Web 构件构建、MCP 构建器)、通信(品牌指南、内部通信)等多个领域的官方技能, 以及社区贡献的各种技能如 iOS 模拟器、ffuf 网络模糊测试、Playwright 自动化等. 提供了详细的技能创建指南、最佳实践、安全建议和故障排除方法, 是 Claude Skills 生态系统的综合参考资源. |
+| [](https://github.com/zai-org/GLM-skills) |
+| []()
+
 
 ## 专用场景 Skills 合集
 -------
@@ -401,7 +419,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 一个为Claude Code提供的同事技能生成工具, 可将同事的原材料(飞书消息、钉钉文档、邮件、截图等)转化为能替他工作的AI Skill. 核心功能: 支持多种数据来源(飞书、钉钉、PDF、图片、邮件、Markdown等)、生成包含Work Skill(工作能力)和Persona(性格)的完整Skill、支持多种个性标签和企业文化、具有进化机制(增量分析、对话纠正、版本管理). 技术上遵循AgentSkills开放标准, 包含飞书/钉钉自动采集工具、邮件解析、Skill文件管理和版本管理等功能. 适用于同事离职后知识传承、项目交接、经验积累等场景, 可生成具有同事技术规范和语气的AI Skill.  | ⭐⭐ |
 | [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) | 为营销和销售团队提供开源的Claude Code技能, 包括完整的工作流程、脚本、评分算法、专家面板和自动化管道 | ericosiu | 营销实验、销售线索转化、内容质量评分、自动化外呼、SEO优化、财务分析 | ⭐⭐ |
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | PM Skills Marketplace: 为产品经理提供AI操作系统, 用于做出更好的产品决策. 包含65个PM技能和36个链式工作流, 分布在8个插件中, 涵盖从发现、策略、执行、发布到增长的完整产品管理流程. 基于Teresa Torres、Marty Cagan、Alberto Savoia等的proven PM框架, 为Claude Code和Cowork设计, 同时技能兼容其他AI助手.  | ⭐⭐ |
-
+| [](https://github.com/coreyhaines31/marketingskills)
 
 # 安装 Skills
 -------
