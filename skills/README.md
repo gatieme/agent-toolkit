@@ -49,6 +49,8 @@ skills/
 | [`excalidraw`](https://skills.sh/davila7/claude-code-templates/excalidraw) | [`davila7/claude-code-templates`](https://github.com/davila7/claude-code-templates) | `Excalidraw` 文件操作代理, 通过子代理委托防止上下文耗尽. | `npx skills add https://github.com/davila7/claude-code-templates --skill excalidraw` |
 | [`excalidraw-diagram-skill/excalidraw-diagram`](https://skills.sh/coleam00/excalidraw-diagram-skill/excalidraw-diagram) | [`coleam00/excalidraw-diagram-skill`](https://github.com/coleam00/excalidraw-diagram-skill) | 一款面向 `Excalidraw` 绘图工具的专业制图能力包, 核心是生成能实现视觉论证的. `excalidraw` 格式 `json` 文件, 而非简单的信息展示型图表, 同时定义了一套标准化、高专业性的 `Excalidraw` 制图方法论、设计规范和工作流, 适配技术、产品、教学等多场景的专业绘图需求, 集成在 `kimi-cli、gemini-cli、GitHub Copilot` 等主流开发工具中. | `npx skills add https://github.com/coleam00/excalidraw-diagram-skill --skill excalidraw-diagram` |
 | [`yctimlin/mcp_excalidraw`](https://github.com/yctimlin/mcp_excalidraw) | [`yctimlin/mcp_excalidraw`](https://github.com/yctimlin/mcp_excalidraw) | 运行一个实时的 Excalidraw 画布, 并由 AI 代理控制. 该仓库提供 MCP Server 和 Agent Skill. | NA |
+| [`bruc3van/bruce-drawio`](https://github.com/bruc3van/bruce-drawio) | [`bruc3van/bruce-drawio`](https://github.com/bruc3van/bruce-drawio) | 图表生成技能, 适用于 OpenClaw. 用自然语言生成流程图、架构图等, 并发回文件给你. | NA |
+
 
 ### draw-io
 -------
@@ -75,7 +77,11 @@ skills/
 |:-------:|:------:|:-------:|:-------:|
 | [`yofine/skills/blueprinter`](https://skills.sh/yofine/skills/blueprinter) | [`yofine/skills`](https://github.com/yofine/skills) | 按照"平面工程蓝图"风格指南, 使用 HTML/CSS 生成技术图表. | `npx skills add https://github.com/yofine/skills --skill blueprinter` |
 | [`yizhiyanhua-ai/fireworks-tech-graph`](https://github.com/yizhiyanhua-ai/fireworks-tech-graph) | 专为 Claude Code 打造的技术图生成 Skill, 一句话就能出图, 效果直接起飞: ✅ 自动识别图类型, ✅ 智能语义形状 + 颜色编码(流程蓝、控制橙、数据绿…)✅ 支持玻璃态、Neon 等高级风格✅ 高清 SVG + PNG 一键导出 8 种图类型 + 5 种视觉风格, AI/Agent 常见 Pattern 全覆盖！ |
-
+| [ZeroZ-lab/gmdiagram]()
+| [](https://github.com/openclaw/skills/tree/main/skills/matthewyin/diagram-generator)
+| [](https://github.com/Cocoon-AI/architecture-diagram-generator)
+| [](https://github.com/markdown-viewer/skills)
+| [](https://github.com/yzlnew/infra-skills/blob/main/tikz-flowchart/SKILL.md)
 
 ## 🌐 浏览器自动化
 -------
@@ -95,6 +101,8 @@ skills/
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`git-commit`](https://skills.sh/github/awesome-copilot/git-commit) | [`github/awesome-copilot`](https://github.com/github/awesome-copilot) | 使用约定式提交信息分析、智能暂存和消息生成执行 git commit. | `npx skills add https://github.com/github/awesome-copilot --skill git-commit` |
+| [`gh-stack`](https://github.github.com/gh-stack) | 将大型变更拆分成小型、可审查的拉取请求, 这些请求相互构建——结合原生 GitHub 支持和 gh stack CLI. |
+
 
 ### 代码检视
 -------
@@ -151,7 +159,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
 | [`pdf`](https://skills.sh/anthropics/skills/pdf) | [`anthropics/skills`](https://github.com/anthropics/skills) | Anthropic 旗下 Claude Skills 体系的 PDF 处理技能. 介绍了使用 Python 库和命令行工具进行基本 PDF 处理操作. | `npx skills add https://github.com/anthropics/skills --skill pdf` |
 | [](https://github.com/mucsbr/ppt-agent-workflow-san)
-
+| [](https://github.com/hugohe3/ppt-master) |
 
 ### 视频创作
 -------
@@ -304,7 +312,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [](https://github.com/Janlaywss/hu-chenfeng-skill)
 | [](https://github.com/tukuaiai/cz-skill)
 | [forrestchang/andrej-karpathy-skills)](https://github.com/forrestchang/andrej-karpathy-skills) | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)) | 一位开发者基于 AI 大神 Andrej Karpathy 的编程经验总结, 开源了 andrej-karpathy-skills 这个 Claude Code 实用插件. 本质上是一个专门优化 Claude Code 行为的系统指南, 提炼了四大编程原则. 帮我们在动手前强制 AI 理清思路, 遇到不确定的地方主动提问, 而不是盲目猜测. 严格限制了 AI 的发散思维, 要求用最少的代码解决问题, 杜绝过度设计和无用的抽象封装. 同时约束了代码修改范围, 只允许像外科手术一样精准改动目标, 绝不碰无关的注释和格式. | NA |
-
+| [](https://github.com/alchaincyf/darwin-skill)
 
 ### 反蒸馏
 -------
@@ -332,21 +340,29 @@ https://github.com/win4r/agent-skills-code-review-router
 | 巴菲特神谕分析师 | [BruceLanLan/buffett-oracle-analyzer](https://github.com/BruceLanLan/buffett-oracle-analyzer) | AI驱动上市公司深度分析Skill, 融合巴菲特投资智慧与12模块分析框架, 覆盖美股/港股/A股. 目标: 为投资者提供像巴菲特一样思考的深度投资分析报告. 技术: 12大分析模块(公司概览、管理层评估、商业模式、经济护城河、财务深度、电话会分析、多模型估值、竞争与行业、技术面分析、增长与催化剂、风险矩阵、投资决策)、8种估值模型、多市场适配、技术面分析、电话会深度解读、巴菲特计分卡. 使用场景: 对上市公司进行深度投资分析、快速批量对比多只股票、从巴菲特视角分析公司、评估股票是否值得投资 | 复制SKILL.md内容到Claude自定义指令, 还可以参考 [巴菲特致股东信知识库](https://buffett-letters-eir.pages.dev) | NA |
 | [investment](https://github.com/cyfcyfff/investment) | [cyfcyfff/investment](https://github.com/cyfcyfff/investment) | 基于哈利·布朗永久组合(Permanent Portfolio)策略的投资组合管理工具, 支持实时行情监控、自动再平衡建议、绩效追踪、Telegram 通知提醒和数据备份恢复. 四大资产类别: 股票、长期国债、黄金、现金/短债. 多市场支持: 中国、香港、美国三个市场. 技术栈: React 19 + TypeScript + Ant Design 6, Zustand, Dexie (IndexedDB), Recharts, Vite, Vitest | `npm install && npm run dev` |
 | [tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | [tradesdontlie/tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | 个人 AI 助手, 用于 TradingView 桌面图表, 通过 Chrome DevTools Protocol 连接 Claude Code 到本地运行的 TradingView 应用, 支持 AI 辅助图表分析、Pine Script 开发和工作流自动化.  | `git clone https://github.com/tradesdontlie/tradingview-mcp.git && cd tradingview-mcp && npm install`, 然后添加到 MCP 配置中 | NA |
-| [](https://github.com/runesleo/polymarket-toolkit)
+| polymarket-toolkit | [runesleo/polymarket-toolkit](https://github.com/runesleo/polymarket-toolkit) | AI驱动的Polymarket预测市场分析工具, 为AI代理设计, 提供地址分析、策略检测、盈亏分解、类别映射和Brier Score预测准确性评估. 核心功能: 1) polymarket-profile: 完整交易分析(PnL概览、胜率、未平仓头寸、活动细分、类别分布、最佳/最差头寸、策略模式检测); 2) polymarket-brier: 预测准确性评分. 技术: 使用Polymarket公共API, 无需API密钥, 通过AI代理运行curl命令. 使用场景: 分析交易者表现和策略、评估预测准确性、市场情报分析、跟踪和警报.  | 复制skills目录下对应SKILL.md内容到AI代理对话中 | NA |
 
 
-## 热点
+## 🔗 热点
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [last30days](https://skills.sh/mvanhorn/last30days-skill/last30days) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 实时研究工具, 扫描Reddit、X、Bluesky、YouTube、TikTok、Instagram、Hacker News、Polymarket等平台近30天的内容, 分析社区讨论并生成结构化报告 | `npx skills add mvanhorn/last30days-skill --skill last30days` |
+| [last30days-cn](https://skills.sh/jesseovo/last30days-skill-cn/last30days-cn) | [`Jesseovo/last30days-skill-cn`](https://github.com/Jesseovo/last30days-skill-cn) | 能够自动搜索中国互联网 8 大主流平台最近 30 天的内容, 综合分析后生成有据可查的研究报告. 本项目基于 mvanhorn/last30days-skill 进行深度本土化改造, 完全面向中国用户和中文互联网平台. | `npx skills add https://github.com/jesseovo/last30days-skill-cn --skill last30days-cn`
 | [markdown-proxy](https://skills.sh/joeseesun/markdown-proxy/markdown-proxy) | [joeseesun/markdown-proxy](https://github.com/joeseesun/markdown-proxy) | Markdown代理工具 | `npx skills add joeseesun/markdown-proxy --skill markdown-proxy` |
 | [follow-builders](https://github.com/zarazhangrui/follow-builders) | [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) | AI驱动的摘要工具, 跟踪AI领域的顶级构建者(研究人员、创始人、产品经理和工程师), 并提供他们所说内容的精选摘要, 支持多语言和多种交付方式 | `git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders && cd ~/.claude/skills/follow-builders/scripts && npm install` |
 | [`erduo-skills/daily-news-report`](https://skills.sh/rookie-ricardo/erduo-skills/daily-news-report) | [`rookie-ricardo/erduo-skills`](https://github.com/rookie-ricardo/erduo-skills/tree/main/skills/daily-news-report) | 基于 sources.json 预设 URL 列表抓取内容, 筛选高质量技术信息并生成每日 Markdown 报告. 对应 skills 的英文版在 [antigravity-awesome-skills/](https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/daily-news-report) | `npx skills add https://github.com/rookie-ricardo/erduo-skills --skill daily-news-report` |
 | [`claude-meta-skill/daily-ai-news`](https://skills.sh/yyh211/claude-meta-skill/daily-ai-news) | 每日 AI 新闻简报: 汇总来自多个来源的最新 AI 新闻, 提供带有直接链接的简明摘要. | `npx skills add https://github.com/yyh211/claude-meta-skill --skill daily-ai-news` |
 | [opencli](https://github.com/jackwener/opencli) | [jackwener/opencli](https://github.com/jackwener/opencli) | 一个将任何网站、Electron 应用或本地工具转变为命令行界面的工具, 支持 50+ 站点(包括 B 站、知乎、小红书、Twitter/X、Reddit 等), 提供 66+ 适配器, 内置反检测措施, 支持 AI 代理自动发现和调用工具, 还可以作为 CLI 中心管理外部工具 | `npm install -g @jackwener/opencli` |
 | [Horizon](https://github.com/Thysrael/Horizon) | [Thysrael/Horizon](https://github.com/Thysrael/Horizon) | 多源信息聚合与 AI 评分工具, 收集 Hacker News、RSS、Reddit、Telegram、GitHub 等平台的内容, 使用 AI 评分过滤噪音, 生成双语摘要报告, 支持静态网站部署和邮件订阅 | `git clone https://github.com/Thysrael/Horizon.git && cd horizon && uv sync` 或 `docker-compose run --rm horizon` |
+
+## 设计
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [Chinese Tech Doc Style](https://github.com/Fenng/tech-doc-style-chinese) |
 
 
 # Skills 集合
@@ -394,8 +410,10 @@ https://github.com/win4r/agent-skills-code-review-router
 | [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) | 一个遵循少而精原则的优质 Skills 资源集合, 致力于收集和分享最优质的 Skills 教程、案例和实践, 帮助更多人轻松迈出搭建 Agent 的第一步. 包含技能标准介绍、安装方法、创建指南、优质教程和精选技能等内容, 涵盖编程辅助、技术开发、内容创作、产品使用等多个领域. 提供了增强插件 Agent Skills Toolkit, 帮助快速创建和改进 Agent Skills.  |
 | [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills) | 一个专为 Azure 云开发设计的高质量代理技能集合, 基于 Microsoft Learn 文档编译而成. 包含 193 个技能, 涵盖计算、集成、数据与分析、AI 与机器学习、安全与身份、网络、基础设施、管理和专业领域等 19 个类别. 兼容 Claude Code、Gemini CLI、Codex CLI、Antigravity IDE、GitHub Copilot、Cursor、OpenCode 和 AdaL CLI 等多个平台. 提供了基于角色的技能包, 帮助开发者快速上手.  |
 | [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | 一个精心策划的 Claude Skills 精选列表, 包含官方技能、社区技能、工具、教程和资源, 用于自定义 Claude AI 工作流程. 涵盖文档处理(docx、pdf、pptx、xlsx)、设计创意(算法艺术、画布设计、Slack GIF 创建器)、开发(前端设计、Web 构件构建、MCP 构建器)、通信(品牌指南、内部通信)等多个领域的官方技能, 以及社区贡献的各种技能如 iOS 模拟器、ffuf 网络模糊测试、Playwright 自动化等. 提供了详细的技能创建指南、最佳实践、安全建议和故障排除方法, 是 Claude Skills 生态系统的综合参考资源. |
-| [](https://github.com/zai-org/GLM-skills) |
-| []()
+| [zai-org/GLM-skills](https://github.com/zai-org/GLM-skills) | GLM 系列模型的官方技能集合, 设计用于包括 Claude Code、OpenCode、OpenClaw、AutoClaw 等代理架构. 整合了原本分布在各个模型仓库中的技能到一个统一的集合, 包含 GLM-V(多模态)、GLM-OCR、GLM-Image 等技能类别. 大多数技能需要 ZHIPU_API_KEY 环境变量. |
+| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 一个可安装的 GitHub 库, 包含 1,400+ 个代理技能, 适用于 Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity 等多个平台. 包含安装器 CLI、技能包、工作流和官方/社区技能集合, 提供了丰富的技能资源. |
+| [Nanford/Nanford-skills](https://github.com/Nanford/Nanford-skills) | 个人技能工程集合, 持续沉淀个人高频工作流与实战方法论的 Skill 资产仓库. 通过 Git Submodule 引入了 Anthropic Official Skills 的核心规范与模板, 包含公众号爆款文章分析、PPT 生成、架构图生成、AI 信息差日报生成、原型设计等多种原创技能. |
+| [helloianneo/awesome-claude-code-skills](https://github.com/helloianneo/awesome-claude-code-skills) | Claude Code 最实用的 Skills/Agents/Plugins 精选合集, 按场景分类, 带安装命令. 50+ 精选 Skills, 按场景分类, 带推荐等级, 持续更新. |
 
 
 ## 专用场景 Skills 合集

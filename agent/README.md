@@ -97,7 +97,7 @@ https://github.com/aaif-goose/goose
 |:---:|:----:|:---:|:-------:|
 | [牛马 AI](https://niuma.limyai.com) | NA | 让 AI 当牛做马, 而我们终成牛人. |
 | [BitFun](https://openbitfun.com) | NA | 工作交给它, 生活留给你. |
-
+| [AQBot](https://github.com/AQBot-Desktop/AQBot) | 轻量级高性能跨平台 AI 对话 + AI 网关桌面客户端. |
 
 ### 其他
 
@@ -119,6 +119,8 @@ https://github.com/aaif-goose/goose
 | [](https://github.com/walkinglabs/awesome-harness-engineering)
 | [career-ops]()
 | [](https://github.com/kingskuan/Claudebot-vibe)
+| [](https://open.longbridge.com/docs/cli/)
+
 
 ## 参考
 -------
