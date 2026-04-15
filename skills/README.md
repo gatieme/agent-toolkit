@@ -79,7 +79,7 @@ skills/
 | [`yizhiyanhua-ai/fireworks-tech-graph`](https://github.com/yizhiyanhua-ai/fireworks-tech-graph) | 专为 Claude Code 打造的技术图生成 Skill, 一句话就能出图, 效果直接起飞: ✅ 自动识别图类型, ✅ 智能语义形状 + 颜色编码(流程蓝、控制橙、数据绿…)✅ 支持玻璃态、Neon 等高级风格✅ 高清 SVG + PNG 一键导出 8 种图类型 + 5 种视觉风格, AI/Agent 常见 Pattern 全覆盖！ |
 | [ZeroZ-lab/gmdiagram]()
 | [](https://github.com/openclaw/skills/tree/main/skills/matthewyin/diagram-generator)
-| [](https://github.com/Cocoon-AI/architecture-diagram-generator)
+| [`architecture-diagram`](https://skills.sh/cocoon-ai/architecture-diagram-generator/architecture-diagram) | [Cocoon-AI/architecture-diagram-generator](https://github.com/Cocoon-AI/architecture-diagram-generator) |
 | [](https://github.com/markdown-viewer/skills)
 | [](https://github.com/yzlnew/infra-skills/blob/main/tikz-flowchart/SKILL.md)
 
@@ -120,6 +120,14 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`simplify`](https://skills.sh/brianlovin/claude-config/simplify) | simplify 是一款代码专业简化与优化技能, 核心定位为「代码清晰度专家」, 专注于在完全保留代码原有功能的前提下, 按照项目标准化规范优化代码的结构、命名、格式, 提升代码的可读性、一致性和可维护性, 拒绝过度精简的「炫技式」代码, 适配开发全流程的代码优化、规范统一需求, 目前已在 opencode、GitHub Copilot、gemini-cli 等主流开发工具中落地. | `npx skills add https://github.com/brianlovin/claude-config --skill simplify` |
 
 
+### 代码分析
+------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [yzddmr6/repo-analyzer](https://github.com/yzddmr6/repo-analyzer) |
+
+
 ### 领域开发
 -------
 
@@ -130,7 +138,7 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [lore-mirror](https://github.com/pengdonglin137/lore-mirror/tree/master/docs/skills) | [pengdonglin137/lore-mirror](https://github.com/pengdonglin137/lore-mirror) | `lore-mirror`: 搜索内核邮件列表 API — inbox 发现、搜索语法、邮件/线程读取<br>`kernel-dev`: 内核开发辅助 — 代码阅读、特性演进、补丁回移 (backport)、动态跟踪. |
 | [linux-kernel-development](https://github.com/oywjun/opencode-skills/tree/main/skills/linux-kernel-development) |
-
+| [](https://github.com/h0x0er/ebpf-skill) | | [An eBPF skill for coding agents](https://www.reddit.com/r/eBPF/comments/1sjd34d/an_ebpf_skill_for_coding_agents/)
 
 ## ✍️ 办公
 -------
@@ -146,7 +154,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`humanizer`](https://skills.sh/softaworks/agent-toolkit/humanizer) | [`softaworks/agent-toolkit`](https://github.com/softaworks/agent-toolkit) | 去除文本中的 AI 生成痕迹, 使文本听起来更自然、更像人类书写. | `npx skills add https://github.com/softaworks/agent-toolkit --skill humanizer` |
 | [stop-slop](https://skills.sh/hardikpandya/stop-slop/stop-slop) | [`hardikpandya/stop-slop`](https://github.com/hardikpandya/stop-slop) | 系统性消除 AI 写作中刻板、模板化的表达模式(被称为 Slop), 让 AI 生成的文本摆脱机器感, 更贴近人类自然、真实的写作风格, 同时也能指导人类作者规避同类写作陋习, 提升文本质量. | `npx skills add https://github.com/hardikpandya/stop-slop --skill stop-slop` |
 | [`translate-book`](https://github.com/deusyu/translate-book) | [`deusyu/translate-book`](https://github.com/deusyu/translate-book) | 整本书全自动翻译工具, 支持 PDF、DOCX、EPUB 等格式, 使用并行子代理处理长文本, 支持断点续译, 翻译完可一键导出带目录的 HTML、Word、EPUB、打印版 PDF.  | `git clone https://github.com/deusyu/translate-book.git && cd translate-book && npm install`
-| [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | 用 Markdown 写公众号文章, 像发朋友圈一样简单 | NA |
+| [`geekjourneyx/md2wechat-skill`](https://github.com/geekjourneyx/md2wechat-skill) | [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | 用 Markdown 写公众号文章, 像发朋友圈一样简单 | NA |
+| [`Fenng/tech-doc-style-chinese`](https://github.com/Fenng/tech-doc-style-chinese) | [`Fenng/tech-doc-style-chinese`](https://github.com/Fenng/tech-doc-style-chinese) | 本项目只是一份面向中文技术文档、产品文案与界面文案的写作 Skill. 这份 Skill 的目标很明确: 中文技术写作应更克制、更准确、更易读. 不追求宣传感, 也不试图把所有内容都写成统一模板, 而是聚焦几类高频问题. |
+
 
 ### PPT/Office
 -------
@@ -167,6 +177,15 @@ https://github.com/win4r/agent-skills-code-review-router
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`seedance-prompt-skill`](https://github.com/songguoxs/seedance-prompt-skill) | [`songguoxs/seedance-prompt-skill`](https://github.com/songguoxs/seedance-prompt-skill) | 专业的 Seedance 2.0(即梦)视频提示词生成技能, 支持纯文本生成、一致性控制、相机动作复制、创意模板复制、故事补全、视频延长、声音控制、一镜到底长镜头、视频编辑和音乐节拍同步等十大核心能力, 提供多模态参考系统和场景特定提示策略, 生成可直接粘贴到 Seedance 2.0 平台的专业级中文提示词.  | `git clone https://github.com/songguoxs/seedance-prompt-skill.git && cp /path/to/seedance-prompt-skill/.claude/skills/seedance/SKILL.md ~/.claude/skills/seedance/SKILL.md`
+
+### 知识库
+-------
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/kepano/obsidian-skills) | 配合 [Obsidian 微信读书 插件](https://github.com/zhaohongxuan/obsidian-weread-plugin)
+
 
 ## ⚙️ 配置管理
 -------
@@ -414,7 +433,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 一个可安装的 GitHub 库, 包含 1,400+ 个代理技能, 适用于 Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity 等多个平台. 包含安装器 CLI、技能包、工作流和官方/社区技能集合, 提供了丰富的技能资源. |
 | [Nanford/Nanford-skills](https://github.com/Nanford/Nanford-skills) | 个人技能工程集合, 持续沉淀个人高频工作流与实战方法论的 Skill 资产仓库. 通过 Git Submodule 引入了 Anthropic Official Skills 的核心规范与模板, 包含公众号爆款文章分析、PPT 生成、架构图生成、AI 信息差日报生成、原型设计等多种原创技能. |
 | [helloianneo/awesome-claude-code-skills](https://github.com/helloianneo/awesome-claude-code-skills) | Claude Code 最实用的 Skills/Agents/Plugins 精选合集, 按场景分类, 带安装命令. 50+ 精选 Skills, 按场景分类, 带推荐等级, 持续更新. |
-
+| [](https://github.com/rohitg00/skillkit) |
 
 ## 专用场景 Skills 合集
 -------
