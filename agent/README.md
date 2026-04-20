@@ -18,6 +18,11 @@
 
 [2026/04/07, Will Yang @Will_Yang_, Hermes Agent 完全指南: 从 OpenClaw 转投的自我进化 AI Agent](https://x.com/Will_Yang_/status/2041507883876233312)
 
+[2026/04/11, Hermes Agent Self-Evolution System: A Detailed Similarity Analysis with Evolver](https://evomap.ai/blog/hermes-agent-evolver-similarity-analysis)
+
+
+[AI WhatChelin? — AI Tool Recommendation & Comparison Guide](https://github.com/tykimos/ai-whatchelin)
+
 ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式. 
 Plan-and-Solve: 先规划再执行的解耦式架构, 适合需要长远规划的复杂任务. 
 Reflection: 执行→反思→优化的三步循环, 适合追求高精度的关键任务. 
@@ -122,6 +127,8 @@ https://banwagong1.com/claude-code.html
 | [](https://github.com/openchamber/openchamber)
 | [](https://github.com/different-ai/openwork)
 | [CodexMonitor](https://github.com/Dimillian/CodexMonitor)
+| [JonathanRosado/cowork](https://github.com/JonathanRosado/cowork)
+
 
 ## 个人桌面
 -------
@@ -131,7 +138,7 @@ https://banwagong1.com/claude-code.html
 | [牛马 AI](https://niuma.limyai.com) | NA | 让 AI 当牛做马, 而我们终成牛人. |
 | [BitFun](https://openbitfun.com) | NA | 工作交给它, 生活留给你. |
 | [AQBot](https://github.com/AQBot-Desktop/AQBot) | 轻量级高性能跨平台 AI 对话 + AI 网关桌面客户端. |
-| [Superconductor]() | Agent 聚合软件, 支持在一个软件里面启动比如 Claude Code、Codex、Gemini CLI 等其他编码 Agent Cali 工具. 完全用 Rust 写的, 目前只有 MacOS 版本
+
 
 ## 其他
 --------
@@ -155,6 +162,10 @@ https://banwagong1.com/claude-code.html
 | [career-ops]()
 | [](https://github.com/kingskuan/Claudebot-vibe)
 | [](https://open.longbridge.com/docs/cli/)
+| [](https://github.com/ourongxing/newsnow)
+| [](https://github.com/ChatPRD/tradclaw)
+| [](https://github.com/mkurman/tamux)
+| [](https://github.com/luohy15/y-agent)
 
 
 # Agent 框架

@@ -138,7 +138,22 @@ https://github.com/win4r/agent-skills-code-review-router
 |:-------:|:------:|:-------:|:-------:|
 | [lore-mirror](https://github.com/pengdonglin137/lore-mirror/tree/master/docs/skills) | [pengdonglin137/lore-mirror](https://github.com/pengdonglin137/lore-mirror) | `lore-mirror`: 搜索内核邮件列表 API — inbox 发现、搜索语法、邮件/线程读取<br>`kernel-dev`: 内核开发辅助 — 代码阅读、特性演进、补丁回移 (backport)、动态跟踪. |
 | [linux-kernel-development](https://github.com/oywjun/opencode-skills/tree/main/skills/linux-kernel-development) |
-| [](https://github.com/h0x0er/ebpf-skill) | | [An eBPF skill for coding agents](https://www.reddit.com/r/eBPF/comments/1sjd34d/an_ebpf_skill_for_coding_agents/)
+| [h0x0er/ebpf-skill](https://github.com/h0x0er/ebpf-skill) | [h0x0er/ebpf-skill](https://github.com/h0x0er/ebpf-skill) | [An eBPF skill for coding agents](https://www.reddit.com/r/eBPF/comments/1sjd34d/an_ebpf_skill_for_coding_agents/)
+| [ebpf](https://skills.sh/mohitmishra786/low-level-dev-skills/ebpf) | [mohitmishra786/low-level-dev-skills](https://github.com/mohitmishra786/low-level-dev-skills) | 内核 eBPF 开发指导 | `npx skills add https://github.com/mohitmishra786/low-level-dev-skills --skill ebpf` |
+| [low-level-dev-skills/ebpf-rust](https://skills.sh/mohitmishra786/low-level-dev-skills/ebpf-rust) | rust 的内核 eBPF 开发指导 | `npx skills add https://github.com/mohitmishra786/low-level-dev-skills --skill ebpf-rust` |
+| [discover-ebpf](https://skills.sh/rand/cc-polymath/discover-ebpf) | [rand/cc-polymath](https://github.com/rand/cc-polymath) | 内核 eBPF 开发指导 | `npx skills add https://github.com/rand/cc-polymath --skill discover-ebpf` |
+| [ebpf-observability](https://skills.sh/bagelhole/devops-security-agent-skills/ebpf-observability) | [bagelhole/devops-security-agent-skills](https://github.com/bagelhole/devops-security-agent-skills) | 内核 eBPF 开发指导 | `npx skills add https://github.com/bagelhole/devops-security-agent-skills --skill ebpf-observability` |
+| [rust-ebpf](https://skills.sh/huiali/rust-skills/rust-ebpf) | [huiali/rust-skills](https://github.com/huiali/rust-skills) | rust 的内核 eBPF 开发指导| `npx skills add https://github.com/huiali/rust-skills --skill rust-ebpf` |
+
+
+#### ANDROID
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/SimoneAvogadro/android-reverse-engineering-skill)
+| [](https://github.com/android/skills)
+
 
 ## ✍️ 办公
 -------
@@ -225,6 +240,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | [`hao-cyber/skill-evolution`](https://github.com/hao-cyber/skill-evolution) | 让 AI 技能自己会长的系统——创建、反思、评测、发布、搜索、安装、Fork、合并、评审、卸载, 全自动. 核心功能离线可用, 支持技能变体系统和渐进式加载.  | `git clone https://github.com/hao-cyber/skill-evolution.git .claude/skills/skill-dev` |
 | [`skill-evolution-manager`](https://github.com/KKKKhazix/Khazix-Skills/tree/main/skill-evolution-manager) | [`KKKKhazix/Khazix-Skills`](https://github.com/KKKKhazix/Khazix-Skills) | 技能进化管理器 | NA |
 | [`AgentHandover`](https://github.com/sandroandric/AgentHandover) | [`sandroandric/AgentHandover`](https://github.com/sandroandric/AgentHandover) | 观察用户, 学习并教导代理具有自我改进的技能, 让AI能够在无需明确指示的情况下完成工作 | NA |
+| [](https://github.com/AMAP-ML/SkillClaw)
+
 
 ### Skills 路由
 -------
@@ -257,7 +274,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
 | `OpenSkills` | [`numman-ali/openskills`](https://github.com/numman-ali/openskills) | 为所有 AI 编码代理(Claude Code、Cursor、Windsurf、Aider、Codex 等)提供通用的技能加载器, 采用与 Claude Code 相同的 SKILL.md 格式, 支持技能的按需加载和管理. | `npx openskills install <source>` (如 `npx openskills install anthropics/skills`) |
 | [midudev/autoskills](https://github.com/midudev/autoskills) | [midudev/autoskills](https://github.com/midudev/autoskills) | 扫描你的项目, 检测你的技术栈, 并自动安装 skills.sh 中最优秀的 AI 代理技能. [官网](https://www.autoskills.sh) |
-
+| [](https://github.com/runkids/skillshare)
 
 ## 科研相关
 -------
@@ -276,7 +293,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
 | [`paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | [`sellerbubble/paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | 用于深入理解学术论文的 Claude Code Skill, 基于多 Agent 架构, 从 HuggingFace Papers 搜索相似论文, 提取研究方向和核心概念, 基于 Bloom 分类法生成问题, 提供交互式学习体验 | `npx paper-mentor-skill install` 或 `git clone https://github.com/sellerbubble/paper-mentor-skill.git ~/.claude/skills/paper-mentor` |
 
-## 数字员工
+## 数字员工(蒸馏)
 -------
 
 
@@ -339,6 +356,13 @@ https://github.com/win4r/agent-skills-code-review-router
 | [](https://github.com/Trailblazer-Aha/vengeful-ghost-skill)
 
 
+### 书籍思想
+-------
+
+
+| [](https://github.com/kangarooking/cangjie-skill)
+
+
 ## 互联
 -------
 
@@ -375,6 +399,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`claude-meta-skill/daily-ai-news`](https://skills.sh/yyh211/claude-meta-skill/daily-ai-news) | 每日 AI 新闻简报: 汇总来自多个来源的最新 AI 新闻, 提供带有直接链接的简明摘要. | `npx skills add https://github.com/yyh211/claude-meta-skill --skill daily-ai-news` |
 | [opencli](https://github.com/jackwener/opencli) | [jackwener/opencli](https://github.com/jackwener/opencli) | 一个将任何网站、Electron 应用或本地工具转变为命令行界面的工具, 支持 50+ 站点(包括 B 站、知乎、小红书、Twitter/X、Reddit 等), 提供 66+ 适配器, 内置反检测措施, 支持 AI 代理自动发现和调用工具, 还可以作为 CLI 中心管理外部工具 | `npm install -g @jackwener/opencli` |
 | [Horizon](https://github.com/Thysrael/Horizon) | [Thysrael/Horizon](https://github.com/Thysrael/Horizon) | 多源信息聚合与 AI 评分工具, 收集 Hacker News、RSS、Reddit、Telegram、GitHub 等平台的内容, 使用 AI 评分过滤噪音, 生成双语摘要报告, 支持静态网站部署和邮件订阅 | `git clone https://github.com/Thysrael/Horizon.git && cd horizon && uv sync` 或 `docker-compose run --rm horizon` |
+| [autocli](https://skills.sh/nashsu/autocli-skill/autocli) | [nashsu/AutoCLI-skill](https://github.com/nashsu/AutoCLI-skill) | 将 [AutoCLI](https://github.com/nashsu/AutoCLI) 封装成 Claude Code 的能 Skills, AutoCLI(原名 opencli-rs) 是参考 opencli 用 Rust 重写的极速 CLI 工具, 把 55+ 个主流平台变成命令行接口, 直接复用你 Chrome 浏览器里已有的登录态. 零配置, 零 API Key, 零运行时依赖. | `npx skills add https://github.com/nashsu/autocli-skill --skill autocli` |
+| [opencli](https://skills.sh/joeseesun/opencli-skill/opencli) | [joeseesun/opencli-skill](https://github.com/joeseesun/opencli-skill) | [opencli](https://github.com/jackwener/opencli) 的 Claude Code Skills. | `npx skills add https://github.com/joeseesun/opencli-skill --skill opencli` |
+
 
 ## 设计
 -------
@@ -435,6 +462,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [helloianneo/awesome-claude-code-skills](https://github.com/helloianneo/awesome-claude-code-skills) | Claude Code 最实用的 Skills/Agents/Plugins 精选合集, 按场景分类, 带安装命令. 50+ 精选 Skills, 按场景分类, 带推荐等级, 持续更新. |
 | [](https://github.com/rohitg00/skillkit) |
 
+
 ## 专用场景 Skills 合集
 -------
 
@@ -452,11 +480,13 @@ https://github.com/win4r/agent-skills-code-review-router
 | [huxiang1126/amass-roundtable](https://github.com/huxiang1126/amass-roundtable) | 一个基于 Claude Code 的圆桌会议工具, 三位集团高管(HR总监、总顾问、COO)围绕问题展开多视角讨论、博弈与决策. v1.1 新特性: Agent Teams 驱动 — 每位高管运行在独立上下文中, 真正的多角色独立思考, 不共享记忆, 避免观点趋同. 核心功能: 支持跨会话记忆、会议纪要自动归档、行动项追踪、可视化图表输出、动态角色扩展. 技术上通过安装脚本自动配置 Agent Teams 功能, 创建角色库和数据目录. 使用场景: 企业管理决策、问题分析、战略规划等需要多视角思考的复杂场景, 可用于讨论绩效考核、组织架构调整、业绩下滑原因分析、预算分配等议题.  | ⭐⭐⭐⭐ |
 | [199-biotechnologies/claude-deep-research-skill](https://github.com/199-biotechnologies/claude-deep-research-skill) | 企业级研究引擎, 为Claude Code生成有引用支持的报告, 具有来源可信度评分、多提供商搜索和自动验证功能. 核心功能: 4种研究模式(Quick/Standard/Deep/UltraDeep)、8阶段研究流程、并行检索(5-10个并发搜索+2-3个专注子代理)、多提供商搜索集成(Brave/Serper/Exa/Jina/Firecrawl)、自动验证和引用检查、多格式输出(Markdown/HTML/PDF). 技术架构: 模块化设计, 包含SKILL.md入口点、参考文档、模板和脚本目录. 适用于需要深度研究和引用支持的场景, 如学术研究、市场分析、技术评估等.  | ⭐⭐⭐⭐⭐ |
 | [himself65/finance-skills](https://github.com/himself65/finance-skills) | 一个为金融分析和交易提供的代理技能集合, 包含多种金融相关功能. 核心功能: 期权收益曲线图表生成(支持多种期权策略)、股票相关性分析(发现相关公司和配对交易 candidate)、金融数据获取(通过yfinance获取股票价格、财务报表等)、霍尔木兹海峡实时监控(航运、油价影响等)、社交媒体金融信息读取(Discord、Telegram、Twitter). 技术上遵循Agent Skills开放标准, 支持多种平台(Claude.ai、Claude Code等), 模块化设计, 支持交互式UI. 适用于金融分析、交易策略制定、市场情绪分析、地缘政治风险监控、投资决策支持等场景.  | ⭐⭐⭐ |
-| [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) | 一个为AI代理提供金融分析能力的即插即用技能集合, 包含实时新闻、股票数据、情感分析、逻辑可视化和市场预测功能. 核心功能: 实时财经新闻聚合(10+信源)、逻辑链路可视化(传导链路图)、AI智能预测(Kronos模型)、股票数据查询(A股/港股/美股)、情感分析(FinBERT/LLM)、投资信号追踪、专业研报生成、全网搜索与本地RAG. 技术上支持多种Agent框架(Antigravity、OpenCode、OpenClaw、Claude Code等), 模块化设计, 每个技能包含SKILL.md文件. 适用于金融市场分析、投资决策支持、市场趋势预测、财经新闻监控等场景.  | ⭐⭐⭐⭐ |
+| [RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills) | 一个为AI代理提供金融分析能力的即插即用技能集合, 包含实时新闻、股票数据、情感分析、逻辑可视化和市场预测功能. 核心功能: 实时财经新闻聚合(10+信源)、逻辑链路可视化(传导链路图)、AI智能预测([shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos))、股票数据查询(A股/港股/美股)、情感分析(FinBERT/LLM)、投资信号追踪、专业研报生成、全网搜索与本地RAG. 技术上支持多种Agent框架(Antigravity、OpenCode、OpenClaw、Claude Code等), 模块化设计, 每个技能包含SKILL.md文件. 适用于金融市场分析、投资决策支持、市场趋势预测、财经新闻监控等场景.  | ⭐⭐⭐⭐ |
 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 一个为Claude Code提供的同事技能生成工具, 可将同事的原材料(飞书消息、钉钉文档、邮件、截图等)转化为能替他工作的AI Skill. 核心功能: 支持多种数据来源(飞书、钉钉、PDF、图片、邮件、Markdown等)、生成包含Work Skill(工作能力)和Persona(性格)的完整Skill、支持多种个性标签和企业文化、具有进化机制(增量分析、对话纠正、版本管理). 技术上遵循AgentSkills开放标准, 包含飞书/钉钉自动采集工具、邮件解析、Skill文件管理和版本管理等功能. 适用于同事离职后知识传承、项目交接、经验积累等场景, 可生成具有同事技术规范和语气的AI Skill.  | ⭐⭐ |
 | [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) | 为营销和销售团队提供开源的Claude Code技能, 包括完整的工作流程、脚本、评分算法、专家面板和自动化管道 | ericosiu | 营销实验、销售线索转化、内容质量评分、自动化外呼、SEO优化、财务分析 | ⭐⭐ |
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | PM Skills Marketplace: 为产品经理提供AI操作系统, 用于做出更好的产品决策. 包含65个PM技能和36个链式工作流, 分布在8个插件中, 涵盖从发现、策略、执行、发布到增长的完整产品管理流程. 基于Teresa Torres、Marty Cagan、Alberto Savoia等的proven PM框架, 为Claude Code和Cowork设计, 同时技能兼容其他AI助手.  | ⭐⭐ |
 | [](https://github.com/coreyhaines31/marketingskills)
+| [](https://github.com/alirezarezvani/claude-skills)
+
 
 # 安装 Skills
 -------
