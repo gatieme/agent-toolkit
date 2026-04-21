@@ -23,6 +23,11 @@
 
 [AI WhatChelin? — AI Tool Recommendation & Comparison Guide](https://github.com/tykimos/ai-whatchelin)
 
+[Implementation of 17+ agentic architectures designed for practical use across different stages of AI system development.](https://github.com/FareedKhan-dev/all-agentic-architectures)
+
+[agents-radar](https://github.com/duanyytop/agents-radar) 一套每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 聚合 10 个 AI 生态数据源, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告. 
+
+
 ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式. 
 Plan-and-Solve: 先规划再执行的解耦式架构, 适合需要长远规划的复杂任务. 
 Reflection: 执行→反思→优化的三步循环, 适合追求高精度的关键任务. 
@@ -51,6 +56,7 @@ https://academy.dair.ai/claude-code-cheat-sheet
 https://cc.storyfox.cz
 https://cchistory.mariozechner.at
 https://banwagong1.com/claude-code.html
+https://github.com/claude-code-best/claude-code
 
 
 
@@ -101,6 +107,8 @@ https://banwagong1.com/claude-code.html
 | [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | 构建系统和工具链 | 开发 | ⭐⭐⭐ |
 | [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | 多智能体协作平台 | 协作 | ⭐⭐⭐ |
 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Claude Code 20260401 代码泄露后, 增长最快的重写版本. | 协作 | ⭐⭐⭐ |
+| [](https://github.com/lsdefine/GenericAgent)
+
 
 ## Just for Fun(个人开源项目)
 -------
@@ -139,7 +147,6 @@ https://banwagong1.com/claude-code.html
 | [BitFun](https://openbitfun.com) | NA | 工作交给它, 生活留给你. |
 | [AQBot](https://github.com/AQBot-Desktop/AQBot) | 轻量级高性能跨平台 AI 对话 + AI 网关桌面客户端. |
 
-
 ## 其他
 --------
 
@@ -166,7 +173,10 @@ https://banwagong1.com/claude-code.html
 | [](https://github.com/ChatPRD/tradclaw)
 | [](https://github.com/mkurman/tamux)
 | [](https://github.com/luohy15/y-agent)
-
+| [](https://github.com/quiet-node/thuki) | [2026/04/19, 奥利弗提示 @oliviscusAI, 有人刚刚做了一个免费的AI助手, 它会直接漂浮在你的屏幕上, 并且100%本地运行.](https://x.com/oliviscusAI/status/2045823236538339562)
+| [](https://github.com/athasdev/athas)
+| [](https://github.com/thatsme/AlexClaw)
+| [](https://github.com/cosmicstack-labs/mercury-agent)
 
 # Agent 框架
 -------
@@ -180,7 +190,7 @@ https://banwagong1.com/claude-code.html
 | [CrewAI](https://github.com/crewAIInc/crewai) | 用于编排角色扮演自主智能体的框架 | 42.3K+ |
 | [](https://github.com/xiaotonng/pikiclaw)
 
-
+https://github.com/kaushikb11/awesome-llm-agents
 
 
 ## 参考

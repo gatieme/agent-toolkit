@@ -3,6 +3,8 @@
 
 本目录包含了为 AI Agents 安装的所有 Skills, 按功能分类整理.
 
+[2026/04/20, meng shao @shao__meng, 世界上所有 Skills 本质上可以归纳为四类: 设计、技术、管理和身体 ](https://x.com/shao__meng/status/2046026766503092242)
+
 ## 目录结构
 -------
 
@@ -82,6 +84,9 @@ skills/
 | [`architecture-diagram`](https://skills.sh/cocoon-ai/architecture-diagram-generator/architecture-diagram) | [Cocoon-AI/architecture-diagram-generator](https://github.com/Cocoon-AI/architecture-diagram-generator) |
 | [](https://github.com/markdown-viewer/skills)
 | [](https://github.com/yzlnew/infra-skills/blob/main/tikz-flowchart/SKILL.md)
+| [](https://github.com/cathrynlavery/diagram-design)
+| [](https://github.com/markdown-viewer/skills)
+
 
 ## 🌐 浏览器自动化
 -------
@@ -130,6 +135,15 @@ https://github.com/win4r/agent-skills-code-review-router
 
 ### 领域开发
 -------
+
+
+#### Linux
+-------
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/bitoranges/owlwatch)
 
 #### 内核开发
 -------
@@ -185,6 +199,7 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`pdf`](https://skills.sh/anthropics/skills/pdf) | [`anthropics/skills`](https://github.com/anthropics/skills) | Anthropic 旗下 Claude Skills 体系的 PDF 处理技能. 介绍了使用 Python 库和命令行工具进行基本 PDF 处理操作. | `npx skills add https://github.com/anthropics/skills --skill pdf` |
 | [](https://github.com/mucsbr/ppt-agent-workflow-san)
 | [](https://github.com/hugohe3/ppt-master) |
+| [](https://github.com/lewislulu/html-ppt-skill)
 
 ### 视频创作
 -------
@@ -200,6 +215,23 @@ https://github.com/win4r/agent-skills-code-review-router
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [](https://github.com/kepano/obsidian-skills) | 配合 [Obsidian 微信读书 插件](https://github.com/zhaohongxuan/obsidian-weread-plugin)
+
+### 英语
+-------
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/rolandwonglonam/claude-english-immersion) | [2026/04/19, Roland.W @rwayne, 正式开源我的被动英语学习Skill！](https://x.com/rwayne/status/2045769297033843050)
+
+### skill-always-ask-next
+-------
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [always-ask-next](https://skills.sh/endman100/skill-always-ask-next/always-ask-next) | [endman100/skill-always-ask-next](https://github.com/endman100/skill-always-ask-next) | always-ask-next 要求 Agent 在每次完成所有任务、宣告结束之前, 必须呼叫 AskUserQuestion, 动态生成 3 个后续行动选项供用户选择, 避免 Agent 自行假设结束点或遗漏后续行动. | `npx skills add https://github.com/endman100/skill-always-ask-next --skill always-ask-next` |
+
 
 
 ## ⚙️ 配置管理
@@ -264,6 +296,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [Skill Analyzer](https://glitchward.com/skill-analyzer) | NA | 用于分析 GitHub 仓库的技能, 可获取仓库信息、问题统计和提交历史 | 需配置 GitHub API Token, 通过 SKILL.md 定义使用方法 |
 | [Skill Security Scan](https://github.com/huifer/skill-security-scan) | [huifer/skill-security-scan](https://github.com/huifer/skill-security-scan) | 扫描和检测 Claude Skills 的安全风险, 防止恶意代码窃取数据或破坏系统 | `pip install skill-security-scan` 或 `pip install -e .` |
 | [Context Hub](https://github.com/andrewyng/context-hub) | https://github.com/andrewyng/context-hub | 为编码代理提供经过整理的、版本化的文档, 使其能够在每个任务中变得更智能 | `npm install -g @aisuite/chub` |
+| [agent-scan](https://github.com/snyk/agent-scan) | Snyk Agent Scan 发现并扫描机器上的 Agent 组件, 以便及时注入以及漏洞(包括代理、MCP 服务器、技能).
+
 
 ### Skills 管理
 -------
@@ -275,8 +309,9 @@ https://github.com/win4r/agent-skills-code-review-router
 | `OpenSkills` | [`numman-ali/openskills`](https://github.com/numman-ali/openskills) | 为所有 AI 编码代理(Claude Code、Cursor、Windsurf、Aider、Codex 等)提供通用的技能加载器, 采用与 Claude Code 相同的 SKILL.md 格式, 支持技能的按需加载和管理. | `npx openskills install <source>` (如 `npx openskills install anthropics/skills`) |
 | [midudev/autoskills](https://github.com/midudev/autoskills) | [midudev/autoskills](https://github.com/midudev/autoskills) | 扫描你的项目, 检测你的技术栈, 并自动安装 skills.sh 中最优秀的 AI 代理技能. [官网](https://www.autoskills.sh) |
 | [](https://github.com/runkids/skillshare)
+| [](https://github.com/iamzhihuix/skills-manage)
 
-## 科研相关
+## 科研
 -------
 
 
@@ -292,6 +327,14 @@ https://github.com/win4r/agent-skills-code-review-router
 | [`awesome-claude-skills/ai-paper-reader`](https://skills.sh/frostant/awesome-claude-skills/ai-paper-reader) | [`frostant/awesome-claude-skills/ai-paper-reader`](https://github.com/frostant/awesome-claude-skills/tree/master/ai-paper-reader) | 论文阅读助手. | `npx skills add https://github.com/frostant/awesome-claude-skills --skill ai-paper-reader` |
 | [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
 | [`paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | [`sellerbubble/paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | 用于深入理解学术论文的 Claude Code Skill, 基于多 Agent 架构, 从 HuggingFace Papers 搜索相似论文, 提取研究方向和核心概念, 基于 Bloom 分类法生成问题, 提供交互式学习体验 | `npx paper-mentor-skill install` 或 `git clone https://github.com/sellerbubble/paper-mentor-skill.git ~/.claude/skills/paper-mentor` |
+
+
+### 自动化科研
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/K-Dense-AI/scientific-agent-skills)
 
 ## 数字员工(蒸馏)
 -------
@@ -384,9 +427,14 @@ https://github.com/win4r/agent-skills-code-review-router
 | [investment](https://github.com/cyfcyfff/investment) | [cyfcyfff/investment](https://github.com/cyfcyfff/investment) | 基于哈利·布朗永久组合(Permanent Portfolio)策略的投资组合管理工具, 支持实时行情监控、自动再平衡建议、绩效追踪、Telegram 通知提醒和数据备份恢复. 四大资产类别: 股票、长期国债、黄金、现金/短债. 多市场支持: 中国、香港、美国三个市场. 技术栈: React 19 + TypeScript + Ant Design 6, Zustand, Dexie (IndexedDB), Recharts, Vite, Vitest | `npm install && npm run dev` |
 | [tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | [tradesdontlie/tradingview-mcp](https://github.com/tradesdontlie/tradingview-mcp) | 个人 AI 助手, 用于 TradingView 桌面图表, 通过 Chrome DevTools Protocol 连接 Claude Code 到本地运行的 TradingView 应用, 支持 AI 辅助图表分析、Pine Script 开发和工作流自动化.  | `git clone https://github.com/tradesdontlie/tradingview-mcp.git && cd tradingview-mcp && npm install`, 然后添加到 MCP 配置中 | NA |
 | polymarket-toolkit | [runesleo/polymarket-toolkit](https://github.com/runesleo/polymarket-toolkit) | AI驱动的Polymarket预测市场分析工具, 为AI代理设计, 提供地址分析、策略检测、盈亏分解、类别映射和Brier Score预测准确性评估. 核心功能: 1) polymarket-profile: 完整交易分析(PnL概览、胜率、未平仓头寸、活动细分、类别分布、最佳/最差头寸、策略模式检测); 2) polymarket-brier: 预测准确性评分. 技术: 使用Polymarket公共API, 无需API密钥, 通过AI代理运行curl命令. 使用场景: 分析交易者表现和策略、评估预测准确性、市场情报分析、跟踪和警报.  | 复制skills目录下对应SKILL.md内容到AI代理对话中 | NA |
+| digital-oracle | [komako-workshop/digital-oracl](https://github.com/komako-workshop/digital-oracle) | Digital Oracle 是一款让 AI Agent 基于从海量金融数据中, 挖掘出宏观事件发展趋势的开源 Skill. | NA |
+| [](https://github.com/tradesdontlie/tradingview-mcp) | 
 
 
-## 🔗 热点
+## 🔗 自媒体
+-------
+
+### 🔗 热点
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -401,6 +449,21 @@ https://github.com/win4r/agent-skills-code-review-router
 | [Horizon](https://github.com/Thysrael/Horizon) | [Thysrael/Horizon](https://github.com/Thysrael/Horizon) | 多源信息聚合与 AI 评分工具, 收集 Hacker News、RSS、Reddit、Telegram、GitHub 等平台的内容, 使用 AI 评分过滤噪音, 生成双语摘要报告, 支持静态网站部署和邮件订阅 | `git clone https://github.com/Thysrael/Horizon.git && cd horizon && uv sync` 或 `docker-compose run --rm horizon` |
 | [autocli](https://skills.sh/nashsu/autocli-skill/autocli) | [nashsu/AutoCLI-skill](https://github.com/nashsu/AutoCLI-skill) | 将 [AutoCLI](https://github.com/nashsu/AutoCLI) 封装成 Claude Code 的能 Skills, AutoCLI(原名 opencli-rs) 是参考 opencli 用 Rust 重写的极速 CLI 工具, 把 55+ 个主流平台变成命令行接口, 直接复用你 Chrome 浏览器里已有的登录态. 零配置, 零 API Key, 零运行时依赖. | `npx skills add https://github.com/nashsu/autocli-skill --skill autocli` |
 | [opencli](https://skills.sh/joeseesun/opencli-skill/opencli) | [joeseesun/opencli-skill](https://github.com/joeseesun/opencli-skill) | [opencli](https://github.com/jackwener/opencli) 的 Claude Code Skills. | `npx skills add https://github.com/joeseesun/opencli-skill --skill opencli` |
+| TrendRadar | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | 告别信息过载, 你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅, 支持关键词精准筛选. AI 智能筛选新闻 + AI 翻译 + AI 分析简报直推手机, 也支持接入 MCP 架构, 赋能 AI 自然语言对话分析、情感洞察与趋势预测等. 支持 Docker , 数据本地/云端自持. 集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送.  | NA |
+
+
+### 内容
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| NA | [joeseesun/qiaomu-anything-to-notebooklm](https://github.com/joeseesun/qiaomu-anything-to-notebooklm) | 多源内容智能处理器用自然语言把任何内容变成任何格式: 任何内容 → 播客/PPT/思维导图/Quiz. | NA |
+
+### 发布
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/koffuxu/md-publisher)
 
 
 ## 设计
@@ -409,7 +472,10 @@ https://github.com/win4r/agent-skills-code-review-router
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [Chinese Tech Doc Style](https://github.com/Fenng/tech-doc-style-chinese) |
-
+| [awesome-claude-design](https://github.com/rohitg00/awesome-claude-design) |
+| [](https://github.com/ZeroZ-lab/cc-design) | [2026/04/19, 关木 @ZeroZ_JQ, 把 Claude Design 泄露的 prompt 改造成了 skills](https://x.com/ZeroZ_JQ/status/2045684164238983511), [鱼巨匠🔨 @SunNeverSetsX, Claude Design 系统提示词泄露了, 有哪些值得学习的点？](https://x.com/SunNeverSetsX/status/2045766943232413964), 参见 [ANTHROPIC/Claude-Design-Sys-Prompt.txt](https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude-Design-Sys-Prompt.txt)
+| [](https://github.com/dominikmartn/hue)
+| [](https://github.com/VoltAgent/awesome-claude-design)
 
 # Skills 集合
 -------
