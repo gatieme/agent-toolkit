@@ -16,6 +16,8 @@
 
 [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto), 一份可视化、以示例驱动的 Claude Code 指南——从基础概念到高级代理, 配有复制粘贴模板, 立即带来价值.
 
+[diet103/claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase), 一个经过生产测试的 Claude Code 基础设施精选参考库.
+
 [2026/04/07, Will Yang @Will_Yang_, Hermes Agent 完全指南: 从 OpenClaw 转投的自我进化 AI Agent](https://x.com/Will_Yang_/status/2041507883876233312)
 
 [2026/04/11, Hermes Agent Self-Evolution System: A Detailed Similarity Analysis with Evolver](https://evomap.ai/blog/hermes-agent-evolver-similarity-analysis)
@@ -82,7 +84,6 @@ https://github.com/claude-code-best/claude-code
 | [goose](https://github.com/aaif-goose/goose)
 | [qwen-code](https://github.com/QwenLM/qwen-code) |
 | [trae-cli](https://docs.trae.cn/cli/get-started-with-trae-cli) |
-| []( charmbracelet/crush)
 | [Kiro Code]()
 
 
@@ -114,7 +115,7 @@ https://github.com/claude-code-best/claude-code
 -------
 
 
-## 平台
+# Desktop
 -------
 
 ## Claw 系列
@@ -136,7 +137,6 @@ https://github.com/claude-code-best/claude-code
 | [](https://github.com/different-ai/openwork)
 | [CodexMonitor](https://github.com/Dimillian/CodexMonitor)
 | [JonathanRosado/cowork](https://github.com/JonathanRosado/cowork)
-
 
 ## 个人桌面
 -------
@@ -177,6 +177,15 @@ https://github.com/claude-code-best/claude-code
 | [](https://github.com/athasdev/athas)
 | [](https://github.com/thatsme/AlexClaw)
 | [](https://github.com/cosmicstack-labs/mercury-agent)
+
+
+# Design
+-------
+
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:---:|:----:|:---:|:-------:|:--------:|
+| [](https://github.com/OpenCoworkAI/open-codesign)
+
 
 # Agent 框架
 -------

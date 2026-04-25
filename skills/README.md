@@ -112,9 +112,16 @@ skills/
 ### 代码检视
 -------
 
-[Mieluoxxx/code-review](https://github.com/Mieluoxxx/opcd/tree/opencode/.opencode/skill/code-review)
-[sanyuan0704/sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills/tree/main/skills/code-review-expert)
-https://github.com/win4r/agent-skills-code-review-router
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [Mieluoxxx/code-review](https://github.com/Mieluoxxx/opcd/tree/opencode/.opencode/skill/code-review)
+| [sanyuan0704/sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills/tree/main/skills/code-review-expert)
+| [agent-skills-code-review-router](https://github.com/win4r/agent-skills-code-review-router)
+| [review-implementation/SKILL.md](https://github.com/golbin/agent-skills/blob/main/skills/review-implementation/SKILL.md)
+| [](https://github.com/ehmo/code-overhaul-skill) | NA | 每次完成重要任务后都会运行它, 用于清理代码、生成测试、验证逻辑等. 它在清理错误模式、冗余和幻觉方面非常出色. [2026/04/21, Rasty Turek @synopsi](https://x.com/synopsi/status/2046361328831570185) |
+
 
 ### 代码重构
 -------
@@ -262,6 +269,8 @@ https://github.com/win4r/agent-skills-code-review-router
 | [skills-best-practices](https://github.com/mgechev/skills-best-practices) | [`mgechev/skills-best-practices`](https://github.com/mgechev/skills-best-practices) | 技能最佳实践指南 | NA |
 | [`repo2skill`](https://skills.sh/zhangyanxs/repo2skill/repo2skill) | [`zhangyanxs/repo2skill`](https://github.com/zhangyanxs/repo2skill) | 将 GitHub/GitLab/Gitee 仓库转换为综合的 OpenCode Skills, 支持多镜像和速率限制处理 | `npx skills add https://github.com/zhangyanxs/repo2skill --skill repo2skill` |
 | [github-skill-forge](https://github.com/YuJunZhiXue/github-skill-forge) | [`YuJunZhiXue/github-skill-forge`](https://github.com/YuJunZhiXue/github-skill-forge) | 将 GitHub 仓库一键转换为 AI 助手可直接理解和调用的技能包, 支持云端扫描、核心提取、镜像加速和质量初筛 | NA |
+| [](https://github.com/FrancyJGLisboa/agent-skill-creator)
+
 
 ### Skills 进化
 -------
