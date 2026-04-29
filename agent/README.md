@@ -22,12 +22,13 @@
 
 [2026/04/11, Hermes Agent Self-Evolution System: A Detailed Similarity Analysis with Evolver](https://evomap.ai/blog/hermes-agent-evolver-similarity-analysis)
 
-
 [AI WhatChelin? — AI Tool Recommendation & Comparison Guide](https://github.com/tykimos/ai-whatchelin)
 
 [Implementation of 17+ agentic architectures designed for practical use across different stages of AI system development.](https://github.com/FareedKhan-dev/all-agentic-architectures)
 
 [agents-radar](https://github.com/duanyytop/agents-radar) 一套每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 聚合 10 个 AI 生态数据源, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告. 
+
+[Believe in Inference](https://inferri.com/zh-CN/projects) Inferri 是一个面向 AI 领域的高维开源项目金字塔, 通过分类、度量与深刻解析, 将分散的仓库代码结构化, 帮助顶级工程师与研究员更快定位方向、横向对比并确立技术选型. [2026/04/24, 微信公众号--idea 小时--国内首个AI开源项目分析平台正式发布！6k+AI开源项目大搜罗！](https://mp.weixin.qq.com/s/cGpkYeu3QOd0I1Ij7xeA-A).
 
 
 ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式. 
@@ -146,6 +147,8 @@ https://github.com/claude-code-best/claude-code
 | [牛马 AI](https://niuma.limyai.com) | NA | 让 AI 当牛做马, 而我们终成牛人. |
 | [BitFun](https://openbitfun.com) | NA | 工作交给它, 生活留给你. |
 | [AQBot](https://github.com/AQBot-Desktop/AQBot) | 轻量级高性能跨平台 AI 对话 + AI 网关桌面客户端. |
+| [](https://github.com/lukilabs/craft-agents-oss)
+| [](https://github.com/dohooo/helmor)
 
 ## 其他
 --------
@@ -177,7 +180,9 @@ https://github.com/claude-code-best/claude-code
 | [](https://github.com/athasdev/athas)
 | [](https://github.com/thatsme/AlexClaw)
 | [](https://github.com/cosmicstack-labs/mercury-agent)
-
+| [con-terminal](https://github.com/nowledge-co/con-terminal) | 开源、GPU 加速的原生终端模拟器, 内置 AI Agent Harness. 基于 Rust + GPUI + Ghostty 构建, 支持 13+ 大模型提供商(OpenAI、Anthropic、Gemini、Groq 等). 核心特性包括: 终端原生 AI 工作流(SSH/tmux 感知)、可见终端执行(命令在用户可见的 PTY 中运行, 非隐藏子进程)、每请求审批通道(危险工具如 shell_exec/file_write 需显式允许)、Per-tab Agent 会话、流式响应与取消、会话持久化、Mermaid/LaTeX 富渲染、垂直标签栏与 AI 智能命名. 受 Warp 启发但定位更轻量, 专为追求终端优先、AI 辅助适度的用户设计. 目前 macOS 已发布 beta, Windows 早期 beta, Linux 预览版.  | 终端模拟器, AI Agent | ⭐ | 221 |
+| [wrap](https://github.com/warpdotdev/warp)
+| [](https://github.com/Gitlawb/openclaude)
 
 # Design
 -------

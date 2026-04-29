@@ -71,6 +71,8 @@ skills/
 | [`pretty-mermaid`](https://skills.sh/imxv/pretty-mermaid-skills/pretty-mermaid) | [`imxv/pretty-mermaid-skills`](https://github.com/imxv/pretty-mermaid-skills) |对 beautiful-mermaid 进一步封装, 使用 beautiful-mermaid 库渲染 Mermaid 图表为 SVG 或 ASCII, 支持 15+ 主题. | `npx skills add https://github.com/imxv/pretty-mermaid-skills --skill pretty-mermaid` |
 | [`beautiful-mermaid`]https://skills.sh/intellectronica/agent-skills/beautiful-mermaid) | [`intellectronica/agent-skills`](https://github.com/intellectronica/agent-skills) | 借助 `beautiful-mermaid` SKILLS 来渲染 Mermaid 图表为 SVG 和 PNG. | `npx skills add https://github.com/intellectronica/agent-skills --skill beautiful-mermaid` |
 | [`smart-illustrator`](https://skills.sh/axtonliu/smart-illustrator/smart-illustrator) | [`axtonliu/smart-illustrator`](https://github.com/axtonliu/smart-illustrator) | 智能配图与 PPT 信息图生成器, 支持文章配图、PPT 批量生成、封面图. | `npx skills add https://github.com/axtonliu/smart-illustrator --skill smart-illustrator` |
+| [`okooo5km/beautiful-mermaid-cli`](https://github.com/okooo5km/beautiful-mermaid-cli) | [`okooo5km/beautiful-mermaid-cli`](https://github.com/okooo5km/beautiful-mermaid-cli) | 通过命令行渲染美人鱼图, 使用 beautiful-mermaid, 以漂亮的 SVG/PNG/ASCII 形式呈现. | NA |
+
 
 ### 其他绘图
 -------
@@ -317,8 +319,10 @@ skills/
 | [`skill-flow`](https://github.com/VintLin/skill-flow) | [`VintLin/skill-flow`](https://github.com/VintLin/skill-flow) | 基于工作流的AI代理技能管理工具, 支持技能分组、多代理部署、交互式配置和健康诊断.  | `npm install -g skill-flow` |
 | `OpenSkills` | [`numman-ali/openskills`](https://github.com/numman-ali/openskills) | 为所有 AI 编码代理(Claude Code、Cursor、Windsurf、Aider、Codex 等)提供通用的技能加载器, 采用与 Claude Code 相同的 SKILL.md 格式, 支持技能的按需加载和管理. | `npx openskills install <source>` (如 `npx openskills install anthropics/skills`) |
 | [midudev/autoskills](https://github.com/midudev/autoskills) | [midudev/autoskills](https://github.com/midudev/autoskills) | 扫描你的项目, 检测你的技术栈, 并自动安装 skills.sh 中最优秀的 AI 代理技能. [官网](https://www.autoskills.sh) |
-| [](https://github.com/runkids/skillshare)
-| [](https://github.com/iamzhihuix/skills-manage)
+| [`skillshare`](https://github.com/runkids/skillshare) | [`runkids/skillshare`](https://github.com/runkids/skillshare) | AI CLI 技能、代理、规则、命令的统一管理工具, 一个命令同步到 50+ 平台. 目标: 解决每个 AI CLI 都有独立技能目录导致的同步问题. 技术: Go 语言开发的单二进制工具, 无依赖, 支持离线运行, 内置安全审计功能(提示词注入和数据窃取检测). 使用场景: 个人/团队技能统一管理、新机器快速配置、多平台技能同步、项目级技能管理、技能安全审计.  | `curl -fsSL https://raw.githubusercontent.com/runkids/skillshare/main/install.sh | sh` 或 `brew install skillshare` |
+| [`skills-manage`](https://github.com/iamzhihuix/skills-manage) | [`iamzhihuix/skills-manage`](https://github.com/iamzhihuix/skills-manage) | 跨平台 AI 编码代理技能管理桌面应用, 遵循 Agent Skills 开放模式. 目标: 提供中心化技能库 + 多平台安装卸载流程. 技术: Tauri v2 + React 19 + TypeScript + Tailwind CSS 4 + Rust 后端 + SQLite, 支持双语界面. 使用场景: 技能集中管理、跨平台批量安装、技能集合组织、本地项目技能发现、Marketplace 浏览、GitHub 仓库导入.  | 从 [Releases](https://github.com/iamzhihuix/skills-manage/releases/latest) 下载, 或从源码运行 `pnpm install && pnpm tauri dev` |
+| [`CodexSkillManager`](https://github.com/Dimillian/CodexSkillManager) | [`Dimillian/CodexSkillManager`](https://github.com/Dimillian/CodexSkillManager) | 原生 macOS SwiftUI 应用, 用于管理 Codex 和 Claude Code 的本地技能, 支持从 Clawdhub 浏览远程技能. 目标: 为 macOS 用户提供原生体验的技能管理工具. 技术: SwiftUI + SwiftPM(无需 Xcode 项目), Markdown 渲染使用 swift-markdown-ui, 远程技能目录来自 Clawdhub. 使用场景: 浏览本地技能、Markdown 渲染预览、导入技能、删除技能、搜索和下载 Clawdhub 远程技能.  | `swift build && swift run CodexSkillManager` 或使用打包脚本 `./Scripts/compile_and_run.sh` |
+
 
 ## 科研
 -------
@@ -467,13 +471,14 @@ skills/
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | NA | [joeseesun/qiaomu-anything-to-notebooklm](https://github.com/joeseesun/qiaomu-anything-to-notebooklm) | 多源内容智能处理器用自然语言把任何内容变成任何格式: 任何内容 → 播客/PPT/思维导图/Quiz. | NA |
+| [](https://github.com/tw93/kami)
+
 
 ### 发布
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [](https://github.com/koffuxu/md-publisher)
-
 
 ## 设计
 -------
@@ -485,6 +490,8 @@ skills/
 | [](https://github.com/ZeroZ-lab/cc-design) | [2026/04/19, 关木 @ZeroZ_JQ, 把 Claude Design 泄露的 prompt 改造成了 skills](https://x.com/ZeroZ_JQ/status/2045684164238983511), [鱼巨匠🔨 @SunNeverSetsX, Claude Design 系统提示词泄露了, 有哪些值得学习的点？](https://x.com/SunNeverSetsX/status/2045766943232413964), 参见 [ANTHROPIC/Claude-Design-Sys-Prompt.txt](https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude-Design-Sys-Prompt.txt)
 | [](https://github.com/dominikmartn/hue)
 | [](https://github.com/VoltAgent/awesome-claude-design)
+| [](https://github.com/alchaincyf/huashu-design)
+
 
 # Skills 集合
 -------
@@ -510,6 +517,8 @@ skills/
 | [SkillsGate](https://skillsgate.ai) | 一站式 AI Agent 技能管理平台, 核心定位为「AI 技能的统一管理枢纽」, 支持 18+ 个 AI 编码代理(Claude Code、Cursor、Windsurf、GitHub Copilot、Codex CLI 等), 提供桌面应用、终端 UI 和 CLI 三种接口. 平台索引了 80,000+ 技能, 支持 AI 驱动的语义搜索, 实现跨代理技能管理、远程服务器连接、设置同步等核心功能. 安全方面提供技能扫描功能, 可检测提示注入、数据泄露等 8 类威胁, 并支持社区共享扫描结果, 是一个集发现、安装、管理、安全于一体的综合性 AI 技能平台. |
 | [Claude Marketplaces](https://claudemarketplaces.com/) | 为 Claude Code 提供精选的插件、技能和 MCP 服务器的手工挑选目录, 通过安装次数、GitHub 星标和社区投票来维护质量, 确保只列出活跃使用的扩展. 核心功能包括: 提供可重用的 Claude Code 技能指令集(可通过单命令安装), 以及通过工具、API 和外部服务集成扩展代理的 MCP 服务器. 完全免费和开放, 即将支持社区投票和评论功能. |
 | [YangSir Skills - Persona](https://skills.yangsir.net/domains/persona) | 专注于人格蒸馏与角色扮演的 AI Agent 技能平台, 核心定位为「人物认知操作系统的数字蒸馏器」. 该平台收录了 50+ 个人格相关技能, 涵盖决策制定、专家协作、创新思维、数字永生等多个维度, 支持将名人、导师、亲人、同事等各类人物的思维模式、决策框架、表达风格蒸馏成可运行的 AI 技能. 核心技术包括: 多源数据蒸馏(聊天记录、社交媒体、著作访谈等)、心智模型提取、人格特征建模、持续学习进化等. 典型使用场景包括: 模拟名人思维方式分析问题(如巴菲特投资视角、乔布斯产品思维)、数字永生与亲情陪伴、向上管理与职场沟通、个人决策质量提升、学术导师指导等. 平台技能普遍采用评分机制, 部分热门技能如「求是 Skill」(17.2K 使用)、「童锦程 Skill」(12.3K 使用)等已获得广泛用户认可. |
+| [agent-skill.co](https://agent-skill.co) | 由 Hailey Cheng (Cheng Hei Lam) 维护的社区驱动型 AI Agent 技能索引仓库, 是 SKILL.md 开放标准的重要贡献者, 核心定位为「AI 智能体技能百科全书」. 该仓库收集了全球工程团队实际创建和使用的真实 Agent Skills, 区别于批量生成的技能库, 所有技能均经过社区验证和质量把控. 技术上采用纯文本 SKILL.md 格式, 无需安装配置即可使用, 兼容 Claude Code、Codex、Antigravity、Gemini CLI、Cursor、GitHub Copilot、Windsurf 等 10+ 主流 AI 工具. 内容覆盖 AI 平台模型、云基础设施、开发者工具、Google 生态、商业生产力、安全网络智能等 6 大领域, 收录了 Anthropic、OpenAI、Google、Cloudflare、Vercel、Microsoft 等 50+ 官方技能库及数百个社区技能, 是 AI 开发者发现、使用和分享高质量 Agent Skills 的核心枢纽. 参见 [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills). |
+
 
 ## Skills 集合仓库
 -------
@@ -535,8 +544,9 @@ skills/
 | [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 一个可安装的 GitHub 库, 包含 1,400+ 个代理技能, 适用于 Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity 等多个平台. 包含安装器 CLI、技能包、工作流和官方/社区技能集合, 提供了丰富的技能资源. |
 | [Nanford/Nanford-skills](https://github.com/Nanford/Nanford-skills) | 个人技能工程集合, 持续沉淀个人高频工作流与实战方法论的 Skill 资产仓库. 通过 Git Submodule 引入了 Anthropic Official Skills 的核心规范与模板, 包含公众号爆款文章分析、PPT 生成、架构图生成、AI 信息差日报生成、原型设计等多种原创技能. |
 | [helloianneo/awesome-claude-code-skills](https://github.com/helloianneo/awesome-claude-code-skills) | Claude Code 最实用的 Skills/Agents/Plugins 精选合集, 按场景分类, 带安装命令. 50+ 精选 Skills, 按场景分类, 带推荐等级, 持续更新. |
-| [](https://github.com/rohitg00/skillkit) |
-
+| [rohitg00/skillkit](https://github.com/rohitg00/skillkit) | SkillKit 是 AI Agent 技能的包管理器, 目标是解决不同 AI Agent(46+ 个)技能格式不兼容的问题. 技术特点: 1) 支持 31+ 个技能源, 可访问 400K+ 技能; 2) 自动在不同 Agent 格式间翻译转换; 3) 提供 REST API、MCP 服务器、Python 客户端等多种接口; 4) 支持技能会话记忆、AI 技能生成、团队协作等高级功能. 使用场景: 为 Claude Code、Cursor、Copilot 等多个 Agent 统一安装管理技能、跨平台技能分享、项目栈自动推荐技能、技能安全扫描与质量检测. |
+| [am-will/codex-skills](https://github.com/am-will/codex-skills) | CodexSkills 是为 Codex/Agent 设计的技能集合, 目标是提供规划、文档访问、前端开发和浏览器自动化等核心能力. 技术特点: 1) Agent 编排技能(planner、plan-harder、parallel-task、llm-council)实现多 Agent 协同规划; 2) 文档访问技能支持 Context7、OpenAI Docs、GitHub 仓库等; 3) 包含 51 个 Codex Hook 捆绑包, 覆盖自动化、开发工具、Git 工作流、安全等; 4) 提供浏览器自动化(gemini-computer-use、agent-browser). 使用场景: 复杂项目规划与并行执行、多 Agent 协作决策、文档智能访问、前端开发最佳实践指导、浏览器自动化测试. |
+| [ComposioHQ/awesome-codex-skills](https://github.com/ComposioHQ/awesome-codex-skills) | 一个精心策划的 Codex 实用技能集合, 目标是为 Codex CLI 和 API 提供自动化工作流的技能, 让 Codex 不仅生成文本, 还能发送邮件、创建 issue、发布 Slack 消息并在 1000+ 应用中执行操作. 技术特点: 1) 模块化技能设计, 每个技能包含 SKILL.md (带 YAML frontmatter)、scripts/、references/、assets/; 2) 提供技能安装器, 支持从 GitHub 一键安装; 3) 集成 Composio CLI 连接 1000+ 应用; 4) 渐进式披露设计, 保持上下文精简. 包含 6 大类别: 开发与代码工具(代码审查、代码库迁移、CI 修复、PR 审查等)、生产力与协作(会议记录、Notion 集成、工单分诊、发票整理等)、通信与写作(邮件润色、简历生成、变更日志等)、数据与分析(电子表格公式、竞争广告提取、Datadog 日志等)、Meta 与实用工具(品牌指南、画布设计、图片增强等)、以及 Bernstein 多 Agent 编排器. 使用场景: 多 Agent 协同开发、代码库迁移与重构、会议智能分析与行动追踪、Notion 知识管理与规范实现、跨 1000+ 应用的工作流自动化、CI/CD 问题自动修复、支持与工单智能处理、以及各种开发与办公场景的自动化任务.  |
 
 ## 专用场景 Skills 合集
 -------
@@ -559,9 +569,9 @@ skills/
 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 一个为Claude Code提供的同事技能生成工具, 可将同事的原材料(飞书消息、钉钉文档、邮件、截图等)转化为能替他工作的AI Skill. 核心功能: 支持多种数据来源(飞书、钉钉、PDF、图片、邮件、Markdown等)、生成包含Work Skill(工作能力)和Persona(性格)的完整Skill、支持多种个性标签和企业文化、具有进化机制(增量分析、对话纠正、版本管理). 技术上遵循AgentSkills开放标准, 包含飞书/钉钉自动采集工具、邮件解析、Skill文件管理和版本管理等功能. 适用于同事离职后知识传承、项目交接、经验积累等场景, 可生成具有同事技术规范和语气的AI Skill.  | ⭐⭐ |
 | [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) | 为营销和销售团队提供开源的Claude Code技能, 包括完整的工作流程、脚本、评分算法、专家面板和自动化管道 | ericosiu | 营销实验、销售线索转化、内容质量评分、自动化外呼、SEO优化、财务分析 | ⭐⭐ |
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | PM Skills Marketplace: 为产品经理提供AI操作系统, 用于做出更好的产品决策. 包含65个PM技能和36个链式工作流, 分布在8个插件中, 涵盖从发现、策略、执行、发布到增长的完整产品管理流程. 基于Teresa Torres、Marty Cagan、Alberto Savoia等的proven PM框架, 为Claude Code和Cowork设计, 同时技能兼容其他AI助手.  | ⭐⭐ |
-| [](https://github.com/coreyhaines31/marketingskills)
-| [](https://github.com/alirezarezvani/claude-skills)
-
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 专注于营销任务的AI代理技能集合, 包含40+技能, 覆盖CRO(转化率优化)、文案写作、SEO、付费广告、增长工程、邮件营销、社区营销等营销全流程, 适配Claude Code、OpenAI Codex、Cursor、Windsurf等12种AI编码工具. 技术上以product-marketing-context为核心基础, 所有技能先读取产品营销上下文再执行任务, 技能间相互引用形成完整工作流(如copywriting ↔ page-cro ↔ ab-test-setup). 适用于技术营销人员、创始人、营销机构, 可用于销售前分析、客户提案、网站优化等场景.  | ⭐⭐⭐⭐ |
+| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 最全面的开源Claude Code技能库, 包含235个生产级技能和305个Python工具, 覆盖工程、产品、营销、合规、C级顾问等9大领域, 支持Claude Code、OpenAI Codex、Cursor、Aider等12种AI编码工具, 是最大的开源技能生态之一(5,200+ Stars). 技术特色: 所有Python工具纯stdlib(零依赖pip安装)、多工具自动转换脚本、技能安全审计、自我改进循环、Persona角色系统、轻量级编排协议. 适用于从 solo founder 到企业级的全场景AI代理赋能.  | ⭐⭐⭐⭐⭐ |
+| [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) | 为股票投资者和交易者精心设计的Claude技能集合, 包含40+专业技能, 覆盖市场分析、技术分析、基本面分析、策略回测、投资组合管理等全交易流程. 技术上集成FMP(Financial Modeling Prep)、FINVIZ、Alpaca API, 支持Claude Web App和Claude Code双工作流, 包含自动技能改进流水线和自动技能生成流水线. 核心技能包括: Sector Analyst(板块轮动分析)、Technical Analyst(纯技术分析)、US Stock Analysis(美股深度研究)、Backtest Expert(专业回测框架)、CANSLIM Screener(成长股筛选)、Options Strategy Advisor(期权策略)等. 适用于系统化交易、市场研究、投资组合管理等场景.  | ⭐⭐⭐⭐ |
 
 # 安装 Skills
 -------
