@@ -229,3 +229,4 @@ https://github.com/kaushikb11/awesome-llm-agents
 3. **资源合集**: 
    - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
    - [Awesome Generative AI](https://github.com/aishwaryanr/awesome-generative-ai)
+   - [Awesome DeepSeek Agent](https://github.com/deepseek-ai/awesome-deepseek-agent)

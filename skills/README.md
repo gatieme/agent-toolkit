@@ -271,7 +271,9 @@ skills/
 | [skills-best-practices](https://github.com/mgechev/skills-best-practices) | [`mgechev/skills-best-practices`](https://github.com/mgechev/skills-best-practices) | 技能最佳实践指南 | NA |
 | [`repo2skill`](https://skills.sh/zhangyanxs/repo2skill/repo2skill) | [`zhangyanxs/repo2skill`](https://github.com/zhangyanxs/repo2skill) | 将 GitHub/GitLab/Gitee 仓库转换为综合的 OpenCode Skills, 支持多镜像和速率限制处理 | `npx skills add https://github.com/zhangyanxs/repo2skill --skill repo2skill` |
 | [github-skill-forge](https://github.com/YuJunZhiXue/github-skill-forge) | [`YuJunZhiXue/github-skill-forge`](https://github.com/YuJunZhiXue/github-skill-forge) | 将 GitHub 仓库一键转换为 AI 助手可直接理解和调用的技能包, 支持云端扫描、核心提取、镜像加速和质量初筛 | NA |
-| [](https://github.com/FrancyJGLisboa/agent-skill-creator)
+| [](https://github.com/FrancyJGLisboa/agent-skill-creator) |
+| [](https://github.com/sivaprasadreddy/learning-skill) |
+| [](https://github.com/yaojingang/yao-open-skills/tree/main)
 
 
 ### Skills 进化
@@ -307,8 +309,8 @@ skills/
 | [Skill Analyzer](https://glitchward.com/skill-analyzer) | NA | 用于分析 GitHub 仓库的技能, 可获取仓库信息、问题统计和提交历史 | 需配置 GitHub API Token, 通过 SKILL.md 定义使用方法 |
 | [Skill Security Scan](https://github.com/huifer/skill-security-scan) | [huifer/skill-security-scan](https://github.com/huifer/skill-security-scan) | 扫描和检测 Claude Skills 的安全风险, 防止恶意代码窃取数据或破坏系统 | `pip install skill-security-scan` 或 `pip install -e .` |
 | [Context Hub](https://github.com/andrewyng/context-hub) | https://github.com/andrewyng/context-hub | 为编码代理提供经过整理的、版本化的文档, 使其能够在每个任务中变得更智能 | `npm install -g @aisuite/chub` |
-| [agent-scan](https://github.com/snyk/agent-scan) | Snyk Agent Scan 发现并扫描机器上的 Agent 组件, 以便及时注入以及漏洞(包括代理、MCP 服务器、技能).
-
+| [agent-scan](https://github.com/snyk/agent-scan) | Snyk Agent Scan 发现并扫描机器上的 Agent 组件, 以便及时注入以及漏洞(包括代理、MCP 服务器、技能). |
+| [`bug-hunter`](https://github.com/codexstar69/bug-hunter) | [`codexstar69/bug-hunter`](https://github.com/codexstar69/bug-hunter) | AI 驱动的对抗性 Bug 发现工具, 通过三个 AI 代理互相辩论(Hunter 发现 Bug、Skeptic 质疑发现、Referee 最终裁决)来发现真实漏洞并安全地自动修复它们, 消除误报和修复引入的回归问题. 支持 STRIDE 威胁建模、CWE/CVSS 评分、依赖 CVE 扫描、战略性修复规划, 兼容 TypeScript、JavaScript、Python、Go、Rust 等多种语言和主流框架.  | `npx skills add codexstar69/bug-hunter` 或 `npm install -g @codexstar/bug-hunter` |
 
 ### Skills 管理
 -------
@@ -322,7 +324,7 @@ skills/
 | [`skillshare`](https://github.com/runkids/skillshare) | [`runkids/skillshare`](https://github.com/runkids/skillshare) | AI CLI 技能、代理、规则、命令的统一管理工具, 一个命令同步到 50+ 平台. 目标: 解决每个 AI CLI 都有独立技能目录导致的同步问题. 技术: Go 语言开发的单二进制工具, 无依赖, 支持离线运行, 内置安全审计功能(提示词注入和数据窃取检测). 使用场景: 个人/团队技能统一管理、新机器快速配置、多平台技能同步、项目级技能管理、技能安全审计.  | `curl -fsSL https://raw.githubusercontent.com/runkids/skillshare/main/install.sh | sh` 或 `brew install skillshare` |
 | [`skills-manage`](https://github.com/iamzhihuix/skills-manage) | [`iamzhihuix/skills-manage`](https://github.com/iamzhihuix/skills-manage) | 跨平台 AI 编码代理技能管理桌面应用, 遵循 Agent Skills 开放模式. 目标: 提供中心化技能库 + 多平台安装卸载流程. 技术: Tauri v2 + React 19 + TypeScript + Tailwind CSS 4 + Rust 后端 + SQLite, 支持双语界面. 使用场景: 技能集中管理、跨平台批量安装、技能集合组织、本地项目技能发现、Marketplace 浏览、GitHub 仓库导入.  | 从 [Releases](https://github.com/iamzhihuix/skills-manage/releases/latest) 下载, 或从源码运行 `pnpm install && pnpm tauri dev` |
 | [`CodexSkillManager`](https://github.com/Dimillian/CodexSkillManager) | [`Dimillian/CodexSkillManager`](https://github.com/Dimillian/CodexSkillManager) | 原生 macOS SwiftUI 应用, 用于管理 Codex 和 Claude Code 的本地技能, 支持从 Clawdhub 浏览远程技能. 目标: 为 macOS 用户提供原生体验的技能管理工具. 技术: SwiftUI + SwiftPM(无需 Xcode 项目), Markdown 渲染使用 swift-markdown-ui, 远程技能目录来自 Clawdhub. 使用场景: 浏览本地技能、Markdown 渲染预览、导入技能、删除技能、搜索和下载 Clawdhub 远程技能.  | `swift build && swift run CodexSkillManager` 或使用打包脚本 `./Scripts/compile_and_run.sh` |
-
+| [`skillsgate`](https://github.com/skillsgate/skillsgate) | [`skillsgate/skillsgate`](https://github.com/skillsgate/skillsgate) | AI 代理技能的可视化管理器, 提供桌面应用和终端 UI 两种界面. 目标: 让用户从单一界面浏览、安装和管理 20+ 个 AI 代理的技能, 拥有 91,000+ 技能目录. 技术: 前端使用 React Router v7, 桌面应用用 Electron, API 基于 Hono (Cloudflare Workers), 终端 UI 是 npm 包 `skillsgate`, 使用 SQLite 本地存储. 使用场景: 统一管理多个 AI 代理的技能、一键安装技能到多个代理、浏览和搜索大量技能目录、私有技能管理和团队共享、远程服务器技能同步. | `npx skillsgate` (TUI) 或从官网下载桌面应用 (macOS/Windows/Linux) |
 
 ## 科研
 -------
@@ -472,7 +474,7 @@ skills/
 |:-------:|:------:|:-------:|:-------:|
 | NA | [joeseesun/qiaomu-anything-to-notebooklm](https://github.com/joeseesun/qiaomu-anything-to-notebooklm) | 多源内容智能处理器用自然语言把任何内容变成任何格式: 任何内容 → 播客/PPT/思维导图/Quiz. | NA |
 | [](https://github.com/tw93/kami)
-
+| [](https://github.com/AgriciDaniel/claude-blog)
 
 ### 发布
 
