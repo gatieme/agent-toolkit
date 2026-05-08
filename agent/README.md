@@ -60,7 +60,7 @@ https://cc.storyfox.cz
 https://cchistory.mariozechner.at
 https://banwagong1.com/claude-code.html
 https://github.com/claude-code-best/claude-code
-
+https://github.com/thtskaran/claude-code-analysis/tree/master
 
 
 ## 三豪杰
@@ -110,7 +110,7 @@ https://github.com/claude-code-best/claude-code
 | [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) | 多智能体协作平台 | 协作 | ⭐⭐⭐ |
 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Claude Code 20260401 代码泄露后, 增长最快的重写版本. | 协作 | ⭐⭐⭐ |
 | [](https://github.com/lsdefine/GenericAgent)
-
+| [](https://github.com/1jehuang/jcode) | 4,326 |
 
 ## Just for Fun(个人开源项目)
 -------
@@ -169,7 +169,7 @@ https://github.com/claude-code-best/claude-code
 | [](https://github.com/charmbracelet/crush)
 | [](https://github.com/yologdev/yoyo-evolve)
 | [](https://github.com/walkinglabs/awesome-harness-engineering)
-| [career-ops]()
+| [career-ops](https://github.com/santifer/career-ops)
 | [](https://github.com/kingskuan/Claudebot-vibe)
 | [](https://open.longbridge.com/docs/cli/)
 | [](https://github.com/ourongxing/newsnow)
@@ -183,6 +183,13 @@ https://github.com/claude-code-best/claude-code
 | [con-terminal](https://github.com/nowledge-co/con-terminal) | 开源、GPU 加速的原生终端模拟器, 内置 AI Agent Harness. 基于 Rust + GPUI + Ghostty 构建, 支持 13+ 大模型提供商(OpenAI、Anthropic、Gemini、Groq 等). 核心特性包括: 终端原生 AI 工作流(SSH/tmux 感知)、可见终端执行(命令在用户可见的 PTY 中运行, 非隐藏子进程)、每请求审批通道(危险工具如 shell_exec/file_write 需显式允许)、Per-tab Agent 会话、流式响应与取消、会话持久化、Mermaid/LaTeX 富渲染、垂直标签栏与 AI 智能命名. 受 Warp 启发但定位更轻量, 专为追求终端优先、AI 辅助适度的用户设计. 目前 macOS 已发布 beta, Windows 早期 beta, Linux 预览版.  | 终端模拟器, AI Agent | ⭐ | 221 |
 | [wrap](https://github.com/warpdotdev/warp)
 | [](https://github.com/Gitlawb/openclaude)
+| [feynman](https://github.com/getcompanion-ai/feynman)
+| [](https://github.com/Hmbown/DeepSeek-TUI)
+| [](air.dev)
+| [](https://github.com/aattaran/deepclaude) | 1,411 |
+| [](https://github.com/anvie/evonic)
+| [](https://github.com/MervinPraison/PraisonAI)
+| [](https://github.com/swarmclawai/swarmclaw)
 
 # Design
 -------
@@ -225,8 +232,11 @@ https://github.com/kaushikb11/awesome-llm-agents
 2. **进阶学习**: 
    - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)
    - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+   - [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide)
 
 3. **资源合集**: 
    - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
    - [Awesome Generative AI](https://github.com/aishwaryanr/awesome-generative-ai)
    - [Awesome DeepSeek Agent](https://github.com/deepseek-ai/awesome-deepseek-agent)
+   - [The most comprehensive list of AI agents, frameworks, and tools in 2026.](https://github.com/caramaschiHG/awesome-ai-agents-2026)
+   - [Awesome AI Agents: Tools, Resources, and Projects](https://github.com/jim-schwoebel/awesome_ai_agents)
