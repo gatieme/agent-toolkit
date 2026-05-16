@@ -12,7 +12,7 @@
 
 [e2b-dev/awesome-ai-agents, AI 自主代理(AI Autonomous Agents)领域的精选资源列表](https://github.com/e2b-dev/awesome-ai-agents)
 
-[龙虾导航](https://www.claw123.com/)
+[龙虾导航](https://www.claw123.com)
 
 [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto), 一份可视化、以示例驱动的 Claude Code 指南——从基础概念到高级代理, 配有复制粘贴模板, 立即带来价值.
 
@@ -26,14 +26,15 @@
 
 [Implementation of 17+ agentic architectures designed for practical use across different stages of AI system development.](https://github.com/FareedKhan-dev/all-agentic-architectures)
 
-[agents-radar](https://github.com/duanyytop/agents-radar) 一套每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 聚合 10 个 AI 生态数据源, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告. 
+[agents-radar](https://github.com/duanyytop/agents-radar) 一套每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 聚合 10 个 AI 生态数据源, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告.
+
+[Big Model Radar](https://github.com/gsscsd/big_model_radar) 每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 追踪主流 AI CLI 工具的 GitHub 动态、OpenClaw 及其同赛道项目的生态活动、Anthropic 和 OpenAI 官网最新资讯, 并每日监测 GitHub AI 热门仓库趋势, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告.
 
 [Believe in Inference](https://inferri.com/zh-CN/projects) Inferri 是一个面向 AI 领域的高维开源项目金字塔, 通过分类、度量与深刻解析, 将分散的仓库代码结构化, 帮助顶级工程师与研究员更快定位方向、横向对比并确立技术选型. [2026/04/24, 微信公众号--idea 小时--国内首个AI开源项目分析平台正式发布！6k+AI开源项目大搜罗！](https://mp.weixin.qq.com/s/cGpkYeu3QOd0I1Ij7xeA-A).
 
-
-ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式. 
-Plan-and-Solve: 先规划再执行的解耦式架构, 适合需要长远规划的复杂任务. 
-Reflection: 执行→反思→优化的三步循环, 适合追求高精度的关键任务. 
+ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式.
+Plan-and-Solve: 先规划再执行的解耦式架构, 适合需要长远规划的复杂任务.
+Reflection: 执行→反思→优化的三步循环, 适合追求高精度的关键任务.
 
 
 
@@ -62,6 +63,7 @@ https://banwagong1.com/claude-code.html
 https://github.com/claude-code-best/claude-code
 https://github.com/thtskaran/claude-code-analysis/tree/master
 
+[2026/04/06, Akshay 🚀 @akshay_pachaar, The Anatomy of an Agent Harness](https://x.com/akshay_pachaar/status/2041146899319971922)
 
 ## 三豪杰
 -------
@@ -72,7 +74,7 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [Codex]()
 | [OpenCode](https://github.com/anomalyco/opencode)
 | [Droid]()
-| []()
+| [AmpCode](https://ampcode.com/news/neo)
 
 
 ## N 巨头
@@ -131,6 +133,8 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 ## Cowork 系列
 -------
 
+[Introduction to Claude Cowork 学习笔记](https://note.mowen.cn/detail/Dd3pzMDdmrHnuocMLrWWt)
+
 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
 |:---:|:----:|:---:|:-------:|:--------:|
 | [QoderWork]() | QoderWork 团队 | 协作开发平台 | ⭐⭐⭐ |
@@ -138,6 +142,8 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/different-ai/openwork)
 | [CodexMonitor](https://github.com/Dimillian/CodexMonitor)
 | [JonathanRosado/cowork](https://github.com/JonathanRosado/cowork)
+| [Mavis](https://agent.minimaxi.com)  |
+
 
 ## 个人桌面
 -------
@@ -149,6 +155,9 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [AQBot](https://github.com/AQBot-Desktop/AQBot) | 轻量级高性能跨平台 AI 对话 + AI 网关桌面客户端. |
 | [](https://github.com/lukilabs/craft-agents-oss)
 | [](https://github.com/dohooo/helmor)
+| [](https://github.com/iOfficeAI/AionUi)
+| [](https://github.com/Fosowl/agenticSeek) |
+| [](https://github.com/tinyhumansai/openhuman) |
 
 ## 其他
 --------
@@ -185,11 +194,15 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/Gitlawb/openclaude)
 | [feynman](https://github.com/getcompanion-ai/feynman)
 | [](https://github.com/Hmbown/DeepSeek-TUI)
-| [](air.dev)
+| [](https://air.dev)
 | [](https://github.com/aattaran/deepclaude) | 1,411 |
 | [](https://github.com/anvie/evonic)
 | [](https://github.com/MervinPraison/PraisonAI)
 | [](https://github.com/swarmclawai/swarmclaw)
+| [](https://github.com/Joe-Huber/AI-For-Brokies)
+| [](https://github.com/ComposioHQ/trustclaw)
+| [](https://github.com/yizhimish/codereview-ai) |
+| [](https://github.com/jihe520/MathModelAgent) |
 
 # Design
 -------
@@ -225,18 +238,22 @@ https://github.com/kaushikb11/awesome-llm-agents
 ## 学习资源
 -------
 
-1. **入门课程**: 
+1. **入门课程**:
    - [AI Agents for Beginners(微软官方)](https://github.com/microsoft/ai-agents-for-beginners)
    - [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
 
-2. **进阶学习**: 
+2. **进阶学习**:
    - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)
    - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
    - [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide)
+   - [AI Agent 学习路径](https://github.com/WenyuChiou/awesome-agentic-ai-zh)
 
-3. **资源合集**: 
+3. **资源合集**:
    - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
    - [Awesome Generative AI](https://github.com/aishwaryanr/awesome-generative-ai)
    - [Awesome DeepSeek Agent](https://github.com/deepseek-ai/awesome-deepseek-agent)
    - [The most comprehensive list of AI agents, frameworks, and tools in 2026.](https://github.com/caramaschiHG/awesome-ai-agents-2026)
    - [Awesome AI Agents: Tools, Resources, and Projects](https://github.com/jim-schwoebel/awesome_ai_agents)
+
+4. **经典案例**
+   -  [Awesome One Person Company](https://github.com/chen103226/awesome-one-person-company)

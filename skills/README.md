@@ -1,47 +1,15 @@
-# Skills 目录说明
--------
-
 本目录包含了为 AI Agents 安装的所有 Skills, 按功能分类整理.
 
 [2026/04/20, meng shao @shao__meng, 世界上所有 Skills 本质上可以归纳为四类: 设计、技术、管理和身体 ](https://x.com/shao__meng/status/2046026766503092242)
 
-## 目录结构
+
+# 1Skills 清单
 -------
 
-```
-skills/
-├── 图表与可视化/
-│   ├── excalidraw-diagram-generator/
-│   ├── excalidraw-diagram/
-│   ├── excalidraw/
-│   ├── drawio/
-│   ├── mermaid-diagrams/
-│   ├── pretty-mermaid/
-│   ├── beautiful-mermaid/
-│   └── smart-illustrator/
-├── 浏览器自动化/
-│   └── agent-browser/
-├── 代码与开发工具/
-│   ├── git-commit/
-│   ├── repo2skill/
-│   └── skill-creator/
-├── 文本处理/
-│   └── humanizer-zh/
-├── 配置管理/
-│   └── oh-my-opencode-config/
-└── 技能发现与管理/
-    ├── find-skills/
-    └── claudeception/
-```
-
-
-# Skills 清单
+## 📊 1.1 图表与可视化
 -------
 
-## 📊 图表与可视化
--------
-
-### excalidraw
+### 1.1.1 excalidraw
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -53,8 +21,9 @@ skills/
 | [`yctimlin/mcp_excalidraw`](https://github.com/yctimlin/mcp_excalidraw) | [`yctimlin/mcp_excalidraw`](https://github.com/yctimlin/mcp_excalidraw) | 运行一个实时的 Excalidraw 画布, 并由 AI 代理控制. 该仓库提供 MCP Server 和 Agent Skill. | NA |
 | [`bruc3van/bruce-drawio`](https://github.com/bruc3van/bruce-drawio) | [`bruc3van/bruce-drawio`](https://github.com/bruc3van/bruce-drawio) | 图表生成技能, 适用于 OpenClaw. 用自然语言生成流程图、架构图等, 并发回文件给你. | NA |
 | [](https://github.com/liujuntao123/smart-excalidraw-next) |
+| [](https://github.com/kostyay/pi-k-excalidraw) | 
 
-### draw-io
+### 1.1.2 draw-io
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -62,7 +31,7 @@ skills/
 | [`drawio`](https://skills.sh/bahayonghang/drawio-skills/drawio) | [`bahayonghang/drawio-skills`](https://github.com/bahayonghang/drawio-skills) | AI 驱动的 Draw.io 图表生成, 支持设计系统、实时浏览器预览. | `npx skills add https://github.com/bahayonghang/drawio-skills --skill drawio` |
 | [](https://github.com/Agents365-ai/drawio-skill)
 
-### mermaid
+### 1.1.3 mermaid
 -------
 
 
@@ -75,7 +44,22 @@ skills/
 | [`okooo5km/beautiful-mermaid-cli`](https://github.com/okooo5km/beautiful-mermaid-cli) | [`okooo5km/beautiful-mermaid-cli`](https://github.com/okooo5km/beautiful-mermaid-cli) | 通过命令行渲染美人鱼图, 使用 beautiful-mermaid, 以漂亮的 SVG/PNG/ASCII 形式呈现. | NA |
 
 
-### 其他绘图
+### 1.1.4 paper-framework-figure-studio-pro
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/Yuan1z0825/nature-skills) |
+| [](https://github.com/c-narcissus/paper-framework-figure-studio-pro) | 250 |
+
+### 1.1.5 科研绘图
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/c-narcissus/paper-framework-figure-studio-pro) | 
+
+### 1.1.6 其他绘图
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -89,15 +73,17 @@ skills/
 | [](https://github.com/yzlnew/infra-skills/blob/main/tikz-flowchart/SKILL.md)
 | [](https://github.com/cathrynlavery/diagram-design)
 | [](https://github.com/markdown-viewer/skills)
+| [](https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/blob/main/2_DDC_Book/3.3-4D-BIM-CO2-Simulation/gantt-chart) |
 
 
-## 🌐 浏览器自动化
+## 2 🌐 浏览器自动化
 -------
 
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`agent-browser`](https://skills.sh/vercel-labs/agent-browser/agent-browser) | [`vercel-labs/agent-browser`](https://github.com/vercel-labs/agent-browser) | 浏览器自动化 CLI, 用于 AI agents 与网站交互、导航、填写表单、截图、提取数据. | `npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser` |
+| [](https://github.com/anysearch-ai/anysearch-skill) | 
 
 ## 🔧 代码与开发工具
 -------
@@ -141,6 +127,22 @@ skills/
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [yzddmr6/repo-analyzer](https://github.com/yzddmr6/repo-analyzer) |
+
+
+### 技术学习
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/DrCatHicks/learning-opportunities) | 
+
+
+### HandOff
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/anthropics/knowledge-work-plugins/blob/65f6fdbb53be937a3611c9648db985b79fb8782d/design/skills/design-handoff/SKILL.md) |
 
 
 ### 领域开发
@@ -207,11 +209,14 @@ skills/
 | [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [`jimliu/baoyu-skills`](https://github.com/jimliu/baoyu-skills) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
 | [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
 | [`pdf`](https://skills.sh/anthropics/skills/pdf) | [`anthropics/skills`](https://github.com/anthropics/skills) | Anthropic 旗下 Claude Skills 体系的 PDF 处理技能. 介绍了使用 Python 库和命令行工具进行基本 PDF 处理操作. | `npx skills add https://github.com/anthropics/skills --skill pdf` |
-| [](https://github.com/mucsbr/ppt-agent-workflow-san)
+| [](https://github.com/mucsbr/ppt-agent-workflow-san) |
 | [](https://github.com/hugohe3/ppt-master) |
-| [](https://github.com/lewislulu/html-ppt-skill)
-| [](https://github.com/helloianneo/ian-handdrawn-ppt)
-| [](https://github.com/1weiho/open-slide)
+| [](https://github.com/lewislulu/html-ppt-skill) |
+| [](https://github.com/helloianneo/ian-handdrawn-ppt) |
+| [](https://github.com/1weiho/open-slide) |
+| [](https://github.com/op7418/guizang-ppt-skill) |
+| [](https://github.com/CRui5in/paper-ppt-agent) | 
+| [](https://github.com/zarazhangrui/frontend-slides) |
 
 ### 视频创作
 -------
@@ -244,6 +249,13 @@ skills/
 |:-------:|:------:|:-------:|:-------:|
 | [always-ask-next](https://skills.sh/endman100/skill-always-ask-next/always-ask-next) | [endman100/skill-always-ask-next](https://github.com/endman100/skill-always-ask-next) | always-ask-next 要求 Agent 在每次完成所有任务、宣告结束之前, 必须呼叫 AskUserQuestion, 动态生成 3 个后续行动选项供用户选择, 避免 Agent 自行假设结束点或遗漏后续行动. | `npx skills add https://github.com/endman100/skill-always-ask-next --skill always-ask-next` |
 
+### 浏览器
+-------
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| []() | [browserbase/skills](https://github.com/browserbase/skills) | 
 
 
 ## ⚙️ 配置管理
@@ -268,6 +280,8 @@ skills/
 ### Skills 创建
 -------
 
+[2026/05/15, 金尘马 @jinchenma_ai, 你都不知道自己的经验有多值钱！一行代码不用写，三招把你日常的工作沉淀为skill。](https://x.com/jinchenma_ai/status/2055266758735671703)
+
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`skill-creator`](https://skills.sh/anthropics/skills/skill-creator) | [`anthropics/skills`](https://github.com/anthropics/skills) | 创建有效 Skills 的指南, 用于扩展 Claude 的特定领域知识、工作流程或工具集成. | `npx skills add https://github.com/anthropics/skills --skill skill-creator` |
@@ -276,8 +290,8 @@ skills/
 | [github-skill-forge](https://github.com/YuJunZhiXue/github-skill-forge) | [`YuJunZhiXue/github-skill-forge`](https://github.com/YuJunZhiXue/github-skill-forge) | 将 GitHub 仓库一键转换为 AI 助手可直接理解和调用的技能包, 支持云端扫描、核心提取、镜像加速和质量初筛 | NA |
 | [](https://github.com/FrancyJGLisboa/agent-skill-creator) |
 | [](https://github.com/sivaprasadreddy/learning-skill) |
-| [](https://github.com/yaojingang/yao-open-skills/tree/main)
-
+| [](https://github.com/yaojingang/yao-open-skills) |
+| [](https://github.com/Romanescu11/hermes-skill-factory) |
 
 ### Skills 进化
 -------
@@ -315,7 +329,9 @@ skills/
 | [Context Hub](https://github.com/andrewyng/context-hub) | https://github.com/andrewyng/context-hub | 为编码代理提供经过整理的、版本化的文档, 使其能够在每个任务中变得更智能 | `npm install -g @aisuite/chub` |
 | [agent-scan](https://github.com/snyk/agent-scan) | Snyk Agent Scan 发现并扫描机器上的 Agent 组件, 以便及时注入以及漏洞(包括代理、MCP 服务器、技能). |
 | [`bug-hunter`](https://github.com/codexstar69/bug-hunter) | [`codexstar69/bug-hunter`](https://github.com/codexstar69/bug-hunter) | AI 驱动的对抗性 Bug 发现工具, 通过三个 AI 代理互相辩论(Hunter 发现 Bug、Skeptic 质疑发现、Referee 最终裁决)来发现真实漏洞并安全地自动修复它们, 消除误报和修复引入的回归问题. 支持 STRIDE 威胁建模、CWE/CVSS 评分、依赖 CVE 扫描、战略性修复规划, 兼容 TypeScript、JavaScript、Python、Go、Rust 等多种语言和主流框架.  | `npx skills add codexstar69/bug-hunter` 或 `npm install -g @codexstar/bug-hunter` |
-| NA | [thedaviddias/skill-check](https://github.com/thedaviddias/skill-check) | Skill-Check 通过清晰的诊断、自动修复支持、质量评分和可选的安全扫描来验证客服技能.  | NA |
+| NA | [thedaviddias/skill-check](https://github.com/thedaviddias/skill-check) | Skill-Check 通过清晰的诊断、自动修复支持、质量评分和可选的安全扫描来验证客服技能. | NA |
+| NA | [darkrishabh/agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval) | agent-skills-eval 给同一个 prompt 跑两遍——一遍带技能、一遍不带——再用评审模型对照断言打分, 看技能到底有没有实际效果. CLI 一行命令就能跑, SDK 可以嵌入 CI 或自定义流水线, 任何走 OpenAI chat API 的后端都能接. 输出是 JSON 制品加静态 HTML 报告, 目录结构完全贴合 agentskills 规范. |
+| []() | [](https://skillguard.vip)
 
 
 ### Skills 管理
@@ -333,6 +349,7 @@ skills/
 | [`skillsgate`](https://github.com/skillsgate/skillsgate) | [`skillsgate/skillsgate`](https://github.com/skillsgate/skillsgate) | AI 代理技能的可视化管理器, 提供桌面应用和终端 UI 两种界面. 目标: 让用户从单一界面浏览、安装和管理 20+ 个 AI 代理的技能, 拥有 91,000+ 技能目录. 技术: 前端使用 React Router v7, 桌面应用用 Electron, API 基于 Hono (Cloudflare Workers), 终端 UI 是 npm 包 `skillsgate`, 使用 SQLite 本地存储. 使用场景: 统一管理多个 AI 代理的技能、一键安装技能到多个代理、浏览和搜索大量技能目录、私有技能管理和团队共享、远程服务器技能同步. | `npx skillsgate` (TUI) 或从官网下载桌面应用 (macOS/Windows/Linux) |
 | [`skills-hub`](https://github.com/QuentinHsu/skills-hub) | [`QuentinHsu/skills-hub`](https://github.com/QuentinHsu/skills-hub) | AI 代理技能的可视化管理平台, 核心理念是"Install Once, Sync Everywhere". 目标: 解决 Skills 碎片化问题, 让用户只需维护一份 Skill 代码, 所有工具都能同时享受到最新更新, 避免重复安装和版本不一致. 技术: 引入中心仓库概念(默认位于 ~/.skillshub), 通过 Symlink(软链接)或 Junction(Windows 下的联接点)将 Skill 映射到各个 AI 工具的配置目录, 基于 Tauri + React 开发桌面端界面, 使用目录指纹(Content Hash)技术识别重复 Skill. 使用场景: 在多个 AI 工具间同步 Skills、可视化管理所有 Skills、智能扫描和接管已安装的 Skills、从本地/Git 导入 Skills. |
 | [](https://github.com/tiangolo/library-skills)
+| [](https://github.com/Autoloops/upskill) |
 
 ## 科研
 -------
@@ -350,6 +367,8 @@ skills/
 | [`awesome-claude-skills/ai-paper-reader`](https://skills.sh/frostant/awesome-claude-skills/ai-paper-reader) | [`frostant/awesome-claude-skills/ai-paper-reader`](https://github.com/frostant/awesome-claude-skills/tree/master/ai-paper-reader) | 论文阅读助手. | `npx skills add https://github.com/frostant/awesome-claude-skills --skill ai-paper-reader` |
 | [`dailypaper-skills/paper-reader`](https://skills.sh/huangkiki/dailypaper-skills/paper-reader) | [`huangkiki/dailypaper-skills`](https://github.com/huangkiki/dailypaper-skills) | 学术论文阅读助手(Paper Reader), 专注 CV/DL 领域, 支持 Zotero 集成和 Obsidian 笔记保存. 按优先级获取: arXiv HTML > arXiv PDF > DOI > WebSearch 标题 的顺序获取和下载论文. | `npx skills add https://github.com/huangkiki/dailypaper-skills --skill paper-reader` |
 | [`paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | [`sellerbubble/paper-mentor-skill`](https://github.com/sellerbubble/paper-mentor-skill) | 用于深入理解学术论文的 Claude Code Skill, 基于多 Agent 架构, 从 HuggingFace Papers 搜索相似论文, 提取研究方向和核心概念, 基于 Bloom 分类法生成问题, 提供交互式学习体验 | `npx paper-mentor-skill install` 或 `git clone https://github.com/sellerbubble/paper-mentor-skill.git ~/.claude/skills/paper-mentor` |
+| [`huggingface/skills/hf-cli`](https://skills.sh/huggingface/skills/hf-cli) | [huggingface/skills](https://github.com/huggingface/skills) | [向阳乔木 @vista8, 如果你喜欢到 Huggingface 读最新的AI论文. 可以安装官方的 cli](https://x.com/vista8/status/2053489584009552020) | 
+
 
 ### 论文撰写
 -------
@@ -505,7 +524,11 @@ skills/
 | [](https://github.com/tw93/kami)
 | [](https://github.com/AgriciDaniel/claude-blog)
 | [](https://github.com/Kappaemme-git/codex-startup-pressure-test-skill)
-
+| [](https://github.com/geekjourneyx/md2wechat-skill) |
+| [](https://github.com/study8677/Readme.skill) | 63 |
+| [](https://github.com/JCodesMore/ai-website-cloner-template) | 14,669 |
+| [](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-wechat-summary) | 
+| [](https://github.com/alchaincyf/huashu-design) | 
 
 ### 发布
 
@@ -534,6 +557,15 @@ skills/
 | [alibaba-flyai/flyai-skill](https://github.com/alibaba-flyai/flyai-skill)
 
 
+## 知识产权
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/Fokkyp/SoftwareCopyright-Skill) | 
+| [](https://github.com/handsomestWei/patent-disclosure-skill) | 
+
+
 # Skills 集合
 -------
 
@@ -550,7 +582,7 @@ skills/
 | [agent-skills.md](https://agent-skills.md) | agent-skills.md 是一款轻量型 AI Agent 技能市集, 核心定位为 AI 智能体模块化能力的发现与检索平台, 所有技能均遵循 SKILL.md 开放标准, 适配 Claude、OpenClaw、Codex 等主流 AI 智能体/编码助手, 主打技能场景化标注、快速检索、轻量化使用, 聚焦开发调试、终端工具调用、办公自动化、本地软硬件控制等实操性场景, 是偏向开发者和技术型用户的 AI 技能实用工具库. |
 | [SkillsDirectory](https://skillsdirectory.com) | Reddit 社区推荐的 SKILLs 集合, 由社区驱动的大型 AI Agent 技能目录平台, 核心定位为一站式的技能发现、安装与交流平台, 覆盖编码、研究、写作等全场景, 主打 Reddit 社区真实推荐、用户验证、终端一键安装, 区别于其他平台的算法推荐或官方审核, 该平台的技能价值由真实用户使用体验背书, 更贴合实际使用需求. |
 | [agentskills](https://agentskills.me) | 开源 AI 智能体技能平台, 核心定位是为 Claude Code、Cursor、OpenCode、Codex CLI、Gemini CLI 等主流 AI 开发工具提供精选技能库, 帮助 AI 智能体快速掌握特定任务能力, 覆盖开发、设计、营销、办公等多场景需求. |
-| [AgentSkillsHub](https://agentskillshub.top) | [@zhuyansen](https://github.com/zhuyansen) 搭建的 [AgentSkillsHub](https://github.com/ZhuYansen/agent-skills-hub). 设计了一套评价指标, 参考了 skillsbench, github 活跃度等对 skills 进行总和评价. |
+| [AgentSkillsHub](https://agentskillshub.top) | [@zhuyansen](https://github.com/zhuyansen) 搭建的 [AgentSkillsHub](https://github.com/ZhuYansen/agent-skills-hub). 设计了一套评价指标, 参考了 skillsbench, github 活跃度等对 skills 进行总和评价. 此外提供 [AI Skill Arena](https://agentskillshub.top/arena). |
 | [SkillsFast](https://skills.fast/zh) | 面向中文用户的 AI Agent 技能快速分发与社区协作平台, 核心定位为 "AI 技能的高效流通枢纽" —— 以 "秒速发现、一键集成、社区共建" 为核心优势, 聚焦数据分析、内容创作、自动化等高频场景, 为 AI 开发者、爱好者及办公人群提供高质量 Agent 技能的查找、分享与复用服务, 完美适配 Claude Code、Cursor、Gemini CLI 等主流 AI 工具, 是连接技能创作者与使用者的轻量化桥梁. |
 | [skills.homes](https://skills.homes/zh-CN) | 多语言 AI Agent 技能平台, 提供生产力工具、LLM & AI、自动化工具、调试、架构和测试等分类, 拥有大量技能资源. |
 | [SkillHub](https://skillhub.club) | 统一的 AI Agent 技能包管理系统, 提供中央仓库概念, 支持 18+ 个 AI Agents(Claude Code、Codex、Cursor、Windsurf、Gemini 等), 实现技能的统一安装、管理和同步. 核心功能包括交互式搜索、跨项目技能管理、批量同步等, 提供类似 pip 的技能管理体验, 解决多 Agent 技能重复安装和版本不一致的问题.  |
@@ -591,7 +623,11 @@ skills/
 | [waybarrios/opencode-power-pack](https://github.com/waybarrios/opencode-power-pack) | OpenCode Power Pack 是将 Anthropic 官方 Claude Code 技能完整移植到 OpenCode 平台的技能包, 核心目标是解决 OpenCode 原生支持 SKILL.md 格式但 Claude Code 官方插件多依赖 commands/agents 机制导致的兼容性问题. 技术特点: 1) 完整翻译 Claude Code 多 Agent 工作流为 OpenCode 兼容格式; 2) 包含 11 个精选技能, 覆盖代码审查(code-review)、安全审计(security-review)、功能开发(feature-dev)、前端设计(frontend-design)、技能创作(skill-creator)等核心场景; 3) 提供一键安装和自动更新机制, 支持从 GitHub 或本地克隆两种安装方式; 4) 与 obra/superpowers 完美配合, 前者提供元工作流技能, 后者补充领域专业能力. 使用场景: 高质量代码审查与安全审计、七阶段功能开发工作流、非 AI 审美化的前端设计、MCP 服务器构建、SKILL.md 文件创作、AGENTS.md/CLAUDE.md 文档审计与更新.  |
 | [](https://github.com/sanjay3290/ai-skills) | 255 |
 | [](https://github.com/openai/skills) | 18,507 |
-| [](https://github.com/KKKKhazix/khazix-skills/tree/main) | 数字生命卡兹克开源的 AI Skills 合集 | 8,287 |
+| [](https://github.com/KKKKhazix/khazix-skills) | 数字生命卡兹克开源的 AI Skills 合集 | 8,287 |
+| [](https://github.com/easychen/opc-methodology) | 15,660 |
+| [](https://github.com/335812350/cyber-skills) | 2 |
+| [](https://github.com/warpdotdev/oz-skills) | 785 |
+
 
 ## 专用场景 Skills 合集
 -------

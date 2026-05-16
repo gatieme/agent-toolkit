@@ -1,75 +1,58 @@
 {
-  "preset": "dynamic",
+  "preset": "ZhiPuGLM",
   "presets": {
-    "dynamic": {
-      "oracle": {
-        "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-        "variant": "high",
-        "skills": [],
-        "mcps": []
-      },
-      "orchestrator": {
-        "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
-        "skills": [
-          "*"
-        ],
-        "mcps": [
-          "websearch"
-        ]
-      },
-      "fixer": {
-        "model": "opencode/minimax-m2.5-free",
-        "variant": "low",
-        "skills": [],
-        "mcps": []
-      },
-      "designer": {
-        "model": "ZhiPuGLM-ZWZ/ep-20260212143352-vtb7j",
-        "variant": "medium",
-        "skills": [
-          "agent-browser"
-        ],
-        "mcps": []
-      },
-      "librarian": {
-        "model": "ZhiPuGLM-CGS/ep-20260212143331-qbknz",
-        "variant": "low",
-        "skills": [],
-        "mcps": [
-          "websearch",
-          "context7",
-          "grep_app"
-        ]
-      },
-      "explorer": {
-        "model": "opencode/minimax-m2.5-free",
-        "variant": "low",
-        "skills": [],
-        "mcps": []
-      }
+    "ZhiPuGLM": {
+      "orchestrator": { "model": "ZhiPuGLM-CJ/GLM-5", "skills": [ "*" ], "mcps": [ "websearch" ] },
+      "oracle": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "high", "skills": [], "mcps": [] },
+      "council": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "high", "skills": [], "mcps": [] },
+      "librarian": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "medium", "skills": [], "mcps": [ "websearch", "context7", "grep_app" ] },
+      "explorer": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "medium", "skills": [], "mcps": [] },
+      "designer": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "medium", "skills": [ "agent-browser" ], "mcps": [] },
+      "fixer": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "low", "skills": [], "mcps": [] }
+    },
+    "OpenCode-GO": {
+      "orchestrator": { "model": "opencode-go/glm-5.1", "skills": [ "*" ], "mcps": [ "*", "!context7" ] },
+      "oracle": { "model": "opencode-go/deepseek-v4-pro", "variant": "max", "skills": ["simplify"], "mcps": [] },
+      "council": { "model": "opencode-go/deepseek-v4-pro", "variant": "high", "skills": [], "mcps": [] },
+      "librarian": { "model": "opencode-go/minimax-m2.7", "skills": [], "mcps": [ "websearch", "context7", "grep_app" ] },
+      "explorer": { "model": "opencode-go/minimax-m2.7", "skills": [], "mcps": [] },
+      "designer": { "model": "opencode-go/kimi-k2.6", "variant": "medium", "skills": [ "agent-browser" ], "mcps": [] },
+      "fixer": { "model": "opencode-go/deepseek-v4-flash", "variant": "high", "skills": [], "mcps": [] }
+    },
+    "OpenCode-Free": {
+      "orchestrator": { "model": "opencode/big-pickle", "skills": [ "*" ], "mcps": [ "*" ] },
+      "oracle": { "model": "opencode/ring-2.6-1t-free", "variant": "high", "skills": [ "simplify" ], "mcps": [] },
+      "council": { "model": "opencode/ring-2.6-1t-free", "variant": "high", "skills": [], "mcps": [] },
+      "librarian": { "model": "opencode/minimax-m2.5-free", "skills": [], "mcps": [ "websearch", "context7", "grep_app" ] },
+      "explorer": { "model": "opencode/minimax-m2.5-free", "skills": [], "mcps": [] },
+      "designer": { "model": "opencode/ring-2.6-1t-free", "variant": "medium", "skills": [ "agent-browser" ], "mcps": [] },
+      "fixer": { "model": "opencode/nemotron-3-super-free", "variant": "high", "skills": [], "mcps": [] }
     }
   },
-  "balanceProviderUsage": true,
+  "balanceProviderUsage": false,
   "fallback": {
     "enabled": true,
     "timeoutMs": 15000,
     "chains": {
       "oracle": [
+        "ZhiPuGLM-CGS/GLM-5",
         "opencode/gpt-5-nano"
       ],
       "orchestrator": [
+        "ZhiPuGLM-CGS/GLM-5",
         "opencode/gpt-5-nano"
       ],
       "fixer": [
-        "opencode/minimax-m2.5-free",
+        "opencode/nemotron-3-super-free",
         "opencode/gpt-5-nano"
       ],
       "designer": [
+        "ZhiPuGLM-CGS/GLM-5",
         "opencode/gpt-5-nano"
       ],
       "librarian": [
-        "opencode/minimax-m2.5-free",
-        "opencode/gpt-5-nano"
+        "ZhiPuGLM-CGS/GLM-5",
+        "opencode/minimax-m2.5-free"
       ],
       "explorer": [
         "opencode/minimax-m2.5-free",
