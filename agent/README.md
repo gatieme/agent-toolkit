@@ -194,6 +194,7 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/Gitlawb/openclaude)
 | [feynman](https://github.com/getcompanion-ai/feynman)
 | [](https://github.com/Hmbown/DeepSeek-TUI)
+| [](https://github.com/LichAmnesia/openseek) |
 | [](https://air.dev)
 | [](https://github.com/aattaran/deepclaude) | 1,411 |
 | [](https://github.com/anvie/evonic)
@@ -203,6 +204,9 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/ComposioHQ/trustclaw)
 | [](https://github.com/yizhimish/codereview-ai) |
 | [](https://github.com/jihe520/MathModelAgent) |
+| [](https://github.com/Zoo-Code-Org/Zoo-Code) |
+| [](https://github.com/echonoshy/ripple) |
+
 
 # Design
 -------
@@ -241,6 +245,8 @@ https://github.com/kaushikb11/awesome-llm-agents
 1. **入门课程**:
    - [AI Agents for Beginners(微软官方)](https://github.com/microsoft/ai-agents-for-beginners)
    - [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
+   - [AI Agent 全栈学习课程](https://github.com/Callous-0923/agent-study)
+   - [Learn AI Engineering](https://github.com/ashishps1/learn-ai-engineering)
 
 2. **进阶学习**:
    - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)
