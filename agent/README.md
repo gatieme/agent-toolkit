@@ -26,11 +26,10 @@
 
 [Implementation of 17+ agentic architectures designed for practical use across different stages of AI system development.](https://github.com/FareedKhan-dev/all-agentic-architectures)
 
-[agents-radar](https://github.com/duanyytop/agents-radar) 一套每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 聚合 10 个 AI 生态数据源, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告.
 
-[Big Model Radar](https://github.com/gsscsd/big_model_radar) 每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 追踪主流 AI CLI 工具的 GitHub 动态、OpenClaw 及其同赛道项目的生态活动、Anthropic 和 OpenAI 官网最新资讯, 并每日监测 GitHub AI 热门仓库趋势, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告.
 
-[Believe in Inference](https://inferri.com/zh-CN/projects) Inferri 是一个面向 AI 领域的高维开源项目金字塔, 通过分类、度量与深刻解析, 将分散的仓库代码结构化, 帮助顶级工程师与研究员更快定位方向、横向对比并确立技术选型. [2026/04/24, 微信公众号--idea 小时--国内首个AI开源项目分析平台正式发布！6k+AI开源项目大搜罗！](https://mp.weixin.qq.com/s/cGpkYeu3QOd0I1Ij7xeA-A).
+
+[2026/05/17, sitin @sitinme, 在 prompt 里写了 10 遍 mandatory 还是翻车, 直到我改了一行代码！](https://x.com/sitinme/status/2055830942875631877)
 
 ReAct 框架(Reasoning + Acting, 推理 + 行动), 是一种让 AI 智能体通过"思考 - 行动 - 观察"循环与外部工具交互、逐步解决复杂任务的核心架构范式.
 Plan-and-Solve: 先规划再执行的解耦式架构, 适合需要长远规划的复杂任务.
@@ -84,7 +83,7 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 |:---:|:----:|:---:|:-------:|:--------:|
 | [grok-cli](https://github.com/superagent-ai/grok-cli)
 | [](https://github.com/chatgptprojects/clear-code)
-| [goose](https://github.com/aaif-goose/goose)
+| [goose](https://github.com/aaif-goose/goose) | [Minions: Stripe’s one-shot, end-to-end coding agents—Part 2](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2)
 | [qwen-code](https://github.com/QwenLM/qwen-code) |
 | [trae-cli](https://docs.trae.cn/cli/get-started-with-trae-cli) |
 | [Kiro Code]()
@@ -98,6 +97,7 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) | 终端 AI 编码代理, 基于 badlogic/pi-mono, 提供完整的开发工具链. | Pi | ⭐⭐⭐ |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | LangChain 官方出品的、专门做「深度自主研究」的实验级 AI Agent 框架, 核心能力是让 AI 自动完成复杂的长流程调研、分析、总结. 提供 [deepagents CLI](https://github.com/langchain-ai/deepagents/tree/main/libs/cli) | deepagents | *** |
 | [HKUDS/AutoAgent](https://github.com/HKUDS/AutoAgent) | 香港大学数据科学实验室开发的开源大语言模型代理框架, 实现了完全自动化和零代码的LLM代理创建与部署 | 多模型 | ⭐⭐⭐⭐ |
+| [](https://github.com/earendil-works/pi) | 58,524 |
 
 ## 成熟项目
 -------
@@ -114,8 +114,29 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/lsdefine/GenericAgent)
 | [](https://github.com/1jehuang/jcode) | 4,326 |
 
+## DeepSeek 系列
+-------
+
+
+[Awesome DeepSeek Integrations](https://github.com/raullenchai/awesome-deepseek-integration) 将 DeepSeek API 集成到流行软件中.
+
+
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:---:|:----:|:---:|:-------:|:--------:|
+| [](https://github.com/XingYu-Zhong/DeepSeek-GUI) |
+| [](https://github.com/usewhale/DeepSeek-Code-Whale) |
+| [](https://github.com/veryyoldman/Genspark-AI) |
+| [](https://github.com/esengine/deepseek-reasonix) |
+| [](https://github.com/paean-ai/deeptide) |
+| [](https://github.com/Yapie0/carboncode) |
+| [](https://github.com/233i/ore-code) |
+| [](https://github.com/Hmbown/CodeWhale) |
+| [](https://github.com/KunAgent/Kun) |
+
+
 ## Just for Fun(个人开源项目)
 -------
+
 
 
 # Desktop
@@ -138,11 +159,14 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
 |:---:|:----:|:---:|:-------:|:--------:|
 | [QoderWork]() | QoderWork 团队 | 协作开发平台 | ⭐⭐⭐ |
-| [](https://github.com/openchamber/openchamber)
-| [](https://github.com/different-ai/openwork)
-| [CodexMonitor](https://github.com/Dimillian/CodexMonitor)
-| [JonathanRosado/cowork](https://github.com/JonathanRosado/cowork)
-| [Mavis](https://agent.minimaxi.com)  |
+| [](https://github.com/openchamber/openchamber) |
+| [](https://github.com/different-ai/openwork) |
+| [CodexMonitor](https://github.com/Dimillian/CodexMonitor) |
+| [JonathanRosado/cowork](https://github.com/JonathanRosado/cowork) |
+| [Mavis](https://agent.minimaxi.com) |
+| [](https://github.com/OpenBMB/PilotDeck) |
+| [](https://claw.360.cn) |
+| [](https://www.kimi.com/products/kimi-work) |
 
 
 ## 个人桌面
@@ -206,7 +230,16 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/jihe520/MathModelAgent) |
 | [](https://github.com/Zoo-Code-Org/Zoo-Code) |
 | [](https://github.com/echonoshy/ripple) |
-
+| [](https://www.helio.im) |
+| [](https://github.com/lwmxiaobei/xbcode) |
+| [](https://github.com/sediman-agent/OpenSkynet) |
+| [](https://github.com/Kilo-Org/kilocode) |
+| [](https://github.com/evotai/evot) | [2026/06/08, Bohu @BohuTANG, 经过量化, 发现 pi 现在这 4 个 tool(read / bash / edit / write)再加上 glob 和 grep, 还能再上一个台阶](https://x.com/BohuTANG/status/2063842222307704944) |
+| [](https://github.com/opensquilla/opensquilla) | 让 Agent 学会自己组织技能. 它的核心方向是 Harness 层优化, 通过智能模型路由来降低 token 成本.
+最新推出的 MetaSkill 3.0, 更是把 Agent 从「会调用工具」推进到了「会自组织技能、稳定交付工作流」. 传统的 Agent 工作流, 要么是硬编码的脚本, 要么是人工拖拽的节点图. 你得提前告诉它: 第一步做什么, 第二步做什么, 如果失败怎么办. 但 MetaSkill 的思路完全不一样. 它是一份「元 markdown」, 本质上是在告诉模型: 如何检索、筛选、组合原子 Skill. 参见 [2026/06/11, 苍何 @canghe, 一个令人惊艳的开源项目, Agent Skill 开始自进化了?](https://x.com/canghe/status/2064983863349403998) |
+| [](https://weclaw.im) | 别的 AI 让你去找它, WeClaw 就在你的微信里 |
+| freebuff |
+| [](https://github.com/Agions/synerix) |
 
 # Design
 -------
@@ -243,23 +276,43 @@ https://github.com/kaushikb11/awesome-llm-agents
 -------
 
 1. **入门课程**:
-   - [AI Agents for Beginners(微软官方)](https://github.com/microsoft/ai-agents-for-beginners)
-   - [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
-   - [AI Agent 全栈学习课程](https://github.com/Callous-0923/agent-study)
-   - [Learn AI Engineering](https://github.com/ashishps1/learn-ai-engineering)
+    - [AI Agents for Beginners(微软官方)](https://github.com/microsoft/ai-agents-for-beginners)
+    - [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
+    - [AI Agent 全栈学习课程](https://github.com/Callous-0923/agent-study)
+    - [Learn AI Engineering](https://github.com/ashishps1/learn-ai-engineering)
+    - [Pi Agent 原理与实现: 从零到一实现一个 AI Agent](https://github.com/cellinlab/how-pi-agent-works)
+    - [ai engineering from scratch](https://github.com/rohitg00/ai-engineering-from-scratch)
+    - [ai-engineering-from-scratch-zh](https://github.com/fancyboi999/ai-engineering-from-scratch-zh) 从零开始，亲手实现每一个 AI 算法
+    - [Machine Learning Q and AI Beyond the Basics Book](https://github.com/rasbt/MachineLearning-QandAI-book)
+    - [14 天手搓 Claude Code CLI](https://github.com/bozhouDev/14days-build-claude-code-cli)
+    - [Codex for Open Source](https://openai.com/zh-Hans-CN/form/codex-for-oss)
+    - [Welcome to Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/zh)
+    - [Agent Learning Hub](https://github.com/datawhalechina/Agent-Learning-Hub)
+    - [人工智能小白书](https://lixiaolai.com/books/little-book-of-ai)
+    - [Agentic AI Engineering](https://github.com/agenticloops-ai/agentic-ai-engineering), 别再只是阅读智能体了, 开始动手构建它们.
 
 2. **进阶学习**:
-   - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)
-   - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
-   - [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide)
-   - [AI Agent 学习路径](https://github.com/WenyuChiou/awesome-agentic-ai-zh)
+    - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)
+    - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+    - [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide)
+    - [AI Agent 学习路径](https://github.com/WenyuChiou/awesome-agentic-ai-zh)
+    - [Agentic Architectures, Thirty-five production-grade agentic AI patterns. End to end.](https://github.com/FareedKhan-dev/all-agentic-architectures)
 
 3. **资源合集**:
-   - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
-   - [Awesome Generative AI](https://github.com/aishwaryanr/awesome-generative-ai)
-   - [Awesome DeepSeek Agent](https://github.com/deepseek-ai/awesome-deepseek-agent)
-   - [The most comprehensive list of AI agents, frameworks, and tools in 2026.](https://github.com/caramaschiHG/awesome-ai-agents-2026)
-   - [Awesome AI Agents: Tools, Resources, and Projects](https://github.com/jim-schwoebel/awesome_ai_agents)
+    - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
+    - [Awesome Generative AI](https://github.com/aishwaryanr/awesome-generative-ai)
+    - [Awesome DeepSeek Agent](https://github.com/deepseek-ai/awesome-deepseek-agent)
+    - [The most comprehensive list of AI agents, frameworks, and tools in 2026.](https://github.com/caramaschiHG/awesome-ai-agents-2026)
+    - [Awesome AI Agents: Tools, Resources, and Projects](https://github.com/jim-schwoebel/awesome_ai_agents)
 
 4. **经典案例**
-   -  [Awesome One Person Company](https://github.com/chen103226/awesome-one-person-company)
+    - [Awesome One Person Company](https://github.com/chen103226/awesome-one-person-company)
+    - [Headcount Zero, How to Build an AI-Run Company with Paperclip](https://github.com/AnthonyDavidAdams/zero-employee-company-book)
+    - [12-Factor Agents - Principles for building reliable LLM applications](https://github.com/humanlayer/12-factor-agents) 很多 AI Agent Demo 看起来很酷, 但一到生产环境就各种崩？ HumanLayer 开源的 12-factor-agents, 讲的就是: 怎么把 Agent 从 Demo 做成真正可上线的工程系统. 它不是教你“套一个框架”. 而是总结了 12 条构建可靠 LLM 应用的原则: 别把 Agent 想成"一个模型 + 一堆工具 + 无限循环". 真正能上线的 Agent, 往往是大部分确定性软件工程, 加上少量关键 LLM 决策.
+    - [500+ AI Agent Projects & Use Cases](https://github.com/ashishpatel26/500-AI-Agents-Projects)
+
+5. **最新资讯**
+    - [agents-radar](https://github.com/duanyytop/agents-radar) 一套每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 聚合 10 个 AI 生态数据源, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告.
+    - [Big Model Radar](https://github.com/gsscsd/big_model_radar) 每天早上 08:00 CST 自动运行的 GitHub Actions 工作流. 追踪主流 AI CLI 工具的 GitHub 动态、OpenClaw 及其同赛道项目的生态活动、Anthropic 和 OpenAI 官网最新资讯, 并每日监测 GitHub AI 热门仓库趋势, 以中英双语每日简报的形式发布为 GitHub Issues 并提交为 Markdown 文件. 每周和每月自动生成汇总报告.
+
+[Believe in Inference](https://inferri.com/zh-CN/projects) Inferri 是一个面向 AI 领域的高维开源项目金字塔, 通过分类、度量与深刻解析, 将分散的仓库代码结构化, 帮助顶级工程师与研究员更快定位方向、横向对比并确立技术选型. [2026/04/24, 微信公众号--idea 小时--国内首个AI开源项目分析平台正式发布！6k+AI开源项目大搜罗！](https://mp.weixin.qq.com/s/cGpkYeu3QOd0I1Ij7xeA-A).

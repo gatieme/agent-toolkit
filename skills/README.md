@@ -50,15 +50,18 @@
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
-| [](https://github.com/Yuan1z0825/nature-skills) |
 | [](https://github.com/c-narcissus/paper-framework-figure-studio-pro) | 250 |
 
 ### 1.1.5 科研绘图
 -------
 
-| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
-|:-------:|:------:|:-------:|:-------:|
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
 | [](https://github.com/c-narcissus/paper-framework-figure-studio-pro) |
+| NA | [](https://github.com/Haojae/scipilot-figure-skill) | 原来科研画图的瓶颈不在工具, 而在决策——手上一堆数据, 不知道用什么图讲清结论. 
+这个项目直接把“先思考后绘制”做成了8步流程: 先剖析数据类型和样本量, 按论证目标推荐图型, n<10的均值柱会被主动拦截, 再按期刊规范渲染. 
+v2.1还加了出图后的视觉自检闭环: 程序查缺字裁切, AI读图看图例遮挡和灰度可读性, 发现后回改直到通过. 画图的正确顺序被重新定义了.  | 391 |
+
 
 ### 1.1.6 其他绘图
 -------
@@ -74,10 +77,11 @@
 | [](https://github.com/markdown-viewer/skills)
 | [](https://github.com/yzlnew/infra-skills/blob/main/tikz-flowchart/SKILL.md)
 | [](https://github.com/cathrynlavery/diagram-design)
-| [](https://github.com/markdown-viewer/skills)
 | [](https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction/blob/main/2_DDC_Book/3.3-4D-BIM-CO2-Simulation/gantt-chart) |
 | [](https://github.com/Rss3208/Visiomaster) |
 | [](https://pixelpoint.io/skills/animate-text) |
+| [](antvis/chart-visualization-skills) | 一个数据分析 skills 交互式图表仪表盘. 不用手动画图, 不用先整理成复杂 BI 看板, 不用写一堆前端代码, 直接把 Excel 数据发给 agent, 就能自动生成: 经营仪表盘, 趋势图, 渠道关系图, 透视表, KPI 卡片, 信息图, 数据叙事报告, 交互式图表仪表盘. |
+| [](https://github.com/oh-my-mermaid/oh-my-mermaid)
 
 
 ## 2 🌐 浏览器自动化
@@ -95,7 +99,6 @@
 ### 代码提交
 -------
 
-
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
 | [`git-commit`](https://skills.sh/github/awesome-copilot/git-commit) | [`github/awesome-copilot`](https://github.com/github/awesome-copilot) | 使用约定式提交信息分析、智能暂存和消息生成执行 git commit. | `npx skills add https://github.com/github/awesome-copilot --skill git-commit` |
@@ -107,18 +110,23 @@
 
 
 
-| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
-|:-------:|:------:|:-------:|:-------:|
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
 | [Mieluoxxx/code-review](https://github.com/Mieluoxxx/opcd/tree/opencode/.opencode/skill/code-review)
 | [sanyuan0704/sanyuan-skills](https://github.com/sanyuan0704/sanyuan-skills/tree/main/skills/code-review-expert)
 | [agent-skills-code-review-router](https://github.com/win4r/agent-skills-code-review-router)
 | [review-implementation/SKILL.md](https://github.com/golbin/agent-skills/blob/main/skills/review-implementation/SKILL.md)
 | [](https://github.com/ehmo/code-overhaul-skill) | NA | 每次完成重要任务后都会运行它, 用于清理代码、生成测试、验证逻辑等. 它在清理错误模式、冗余和幻觉方面非常出色. [2026/04/21, Rasty Turek @synopsi](https://x.com/synopsi/status/2046361328831570185) |
+| [code-review-excellence](https://www.skills.sh/awesome-skills/code-review-skill/code-review-excellence) | [awesome-skills/code-review-skill](https://github.com/awesome-skills/code-review-skill) | 面向 Claude Code 的全面模块化代码审查技能 | `npx skills add https://github.com/awesome-skills/code-review-skill --skill code-review-excellence` |
+| [vikingmute/review-forge](https://github.com/vikingmute/review-forge) | review-forge 是用于结构化、可审计代码审查工作流程的代理技能. 它协调多遍 LLM 审查、发现综合、人工批准的修复选择、实施、回归测试、独立验证和状态跟踪. 参见 [2026/05/30, Viking @vikingmute, 开源一个我最近 Review AI Code 流程的 skills, review-forge ](https://x.com/vikingmute/status/2060609423165534354) 和 [我是怎样使用 AI 来做 Code Review 的？](https://vikingz.me/ai-code-review). |
+| [](https://github.com/199-biotechnologies/claude-deep-research-skill) |
+| [](https://github.com/amElnagdy/guard-skills) |
+| [](https://github.com/hyhmrright/brooks-lint) |
+| [](https://github.com/alibaba/open-code-review) | 7,438 |
 
 
 ### 代码重构
 -------
-
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
@@ -128,18 +136,12 @@
 ### 代码分析
 ------
 
-| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
-|:-------:|:------:|:-------:|:-------:|
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
 | [yzddmr6/repo-analyzer](https://github.com/yzddmr6/repo-analyzer) |
+| [KieranGao/general-readme-skill](https://github.com/KieranGao/general-readme-skill) |
+| improve | [shadcn/improve](https://github.com/shadcn/improve) | 负责审计任何代码库并为其他代理编写实现计划. 这个想法是: 用你最有能力的模型来完成智能积累——理解代码库、 判断什么值得做、编写规范——然后把执行交给更便宜的模型. 这个技能本身从未实现任何东西. 计划就是产品. | ALL | ⭐ | 5,022 |
 
-
-### 技术学习
--------
-
-| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
-|:-------:|:------:|:-------:|:-------:|
-| [](https://github.com/DrCatHicks/learning-opportunities) |
-| [](https://github.com/1786329860/deep-teach) |
 
 ### HandOff
 -------
@@ -148,6 +150,14 @@
 |:-------:|:------:|:-------:|:-------:|
 | [](https://github.com/anthropics/knowledge-work-plugins/blob/65f6fdbb53be937a3611c9648db985b79fb8782d/design/skills/design-handoff/SKILL.md) |
 | [](https://github.com/mattpocock/skills/blob/733d312884b3878a9a9cff693c5886943753a741/skills/in-progress/handoff/SKILL.md) |
+| [](https://github.com/limin112/branchnew) | [2026/06/09, 实践哥MinLi @MinLiBuilds, 一个 skill 成为 TOP 1% Context 管理大师, 比官方好用 100x 的 /fork](https://x.com/MinLiBuilds/status/2064326837971595509) |
+
+### HTML
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [plannotator/effective-html](https://github.com/plannotator/effective-html) |
 
 
 ### 领域开发
@@ -185,6 +195,16 @@
 | [](https://github.com/SimoneAvogadro/android-reverse-engineering-skill)
 | [](https://github.com/android/skills)
 
+#### Remote 开发
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/popbones/tmux.skill) | 14 |
+| [](https://github.com/rjyo/moshi-skill) |
+| [](https://github.com/hzh000sunny/remote-tmux) | 8 |
+
+
 
 ## ✍️ 办公
 -------
@@ -203,13 +223,34 @@
 | [`geekjourneyx/md2wechat-skill`](https://github.com/geekjourneyx/md2wechat-skill) | [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | 用 Markdown 写公众号文章, 像发朋友圈一样简单 | NA |
 | [`Fenng/tech-doc-style-chinese`](https://github.com/Fenng/tech-doc-style-chinese) | [`Fenng/tech-doc-style-chinese`](https://github.com/Fenng/tech-doc-style-chinese) | 本项目只是一份面向中文技术文档、产品文案与界面文案的写作 Skill. 这份 Skill 的目标很明确: 中文技术写作应更克制、更准确、更易读. 不追求宣传感, 也不试图把所有内容都写成统一模板, 而是聚焦几类高频问题. |
 | [](https://github.com/luoling8192/technical-writing) |
+| [](https://github.com/ninehills/public-skills/blob/main/deslop-zh/SKILL.md) |
+| [](https://github.com/ninehills/public-skills/blob/main/deslop-en/SKILL.md) |
+| [](https://github.com/orange2ai/renwei-writing) | 759 |
 
-### PPT/Office
+
+### PPT
 -------
 
-| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
-|:-------:|:------:|:-------:|:-------:|
-| [`pptx`](https://skills.sh/anthropics/skills/pptx) | [`anthropics/skills`](https://github.com/anthropics/skills) |Anthropic 旗下 Claude Skills 体系的 PPTX 处理技能, 借助 [python markitdown 库](https://pypi.org/project/markitdown) 封装了 PPTX 读取、编辑、从零创建的脚本指令, 同时提供专业的 PPT 设计规范和严格的内容/视觉质检流程, 让大模型可标准化制作、处理 PPTX 文件. | `npx skills add https://github.com/anthropics/skills --skill pptx` |
+[AI少年 @aehyok, 最近刚好也在研究 PPT. 看了一姐的视频, 使用 Codex +Image2 来做 PPT, 于是顺手找了几个 star 数比较多的 PPT Skill, 准备挨个都来试试看, 到底那个效果更适合自己呢?](https://x.com/aehyok/status/2061762594508255290)
+
+[2026/06/03, zhouluobo @zhouluobo, 很多人用 AI 做 PPT, 卡住的点早就变了, 现在更要求可编辑、审美稳定、能交付. ](https://x.com/zhouluobo/status/2062155844289233193) 分析 PPT 的工作流, 对比了 ppt-master: 更像完整生产线, 适合长文档转正式汇报; guizang-ppt-skill: 视觉表现更强, 适合做有设计感的方案; html-ppt-skill: 适合先用网页思路搭版式, 再转成演示稿; GordenPPTSkill: 更偏轻量化, 适合快速试稿.
+
+[2026/06/14, Smartpig @Smartpigai, 还在一页页手搓 PPT?Codex 已经能帮你搭出一套演示生产线了.](https://x.com/Smartpigai/status/2065992275629641932) 提出了一套完整的 PPT 创作链路就是: 资料 → 结构(ppt-outline-builder) → 故事线(deck-storyline-designer) → 页面(markdown-to-slides/pptx-generator/template-layout-deck) → 图表(chart-slide-maker) → 视觉(visual-slide-designer/academic-pptx) → 讲稿(speaker-notes-writer) → 导出 → 复盘(deck-review-polisher). 别再一页页手搓.
+
+1. ppt-outline-builder: 使用 [anthropics/skills/pptx](https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md) 搭结构, 不急着做. 把主题拆成: 背景 → 问题 → 洞察 → 方案 → 证据 → 行动
+2. deck-storyline-designer: 使用 [claude-code-best-practice/presentation-structure/SKILL.md](https://github.com/shanraisshan/claude-code-best-practice/blob/main/.claude/skills/presentation/presentation-structure/SKILL.md) 把 PPT 从"资料堆砌"改成"故事线", 适合路演、汇报、课程、公开演讲.
+3. markdown-to-slides: [zl190/md-slides](https://github.com/zl190/md-slides), 先写 Markdown, 再自动变成幻灯片. 适合知识库、文章、课程讲义一键转 PPT
+4. pptx-generator: [anthropics/skills/pptx](https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md) 直接生成 .pptx 文件, 支持标题页、目录页、内容页、图表页、总结页.
+5. template-layout-deck: [tristan-mcinnis/pptx-from-layouts-skill](https://github.com/tristan-mcinnis/pptx-from-layouts-skill) 套公司模板, 不破坏版式. 用母版、占位符、统一字体和视觉规范生成 PPT
+6. visual-slide-designer: [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides), 把普通文字页改成视觉页. 适合做封面、金句页、流程图、对比页、方法论页
+7. chart-slide-maker: [AutumnsGrove/ClaudeSkills/pptx](https://github.com/AutumnsGrove/ClaudeSkills/blob/master/pptx/SKILL.md), 自动生成图表页. 柱状图、折线图、饼图、表格、数据结论一起输出
+8. academic-pptx: [Gabberflast/academic-pptx-skill](https://github.com/Gabberflast/academic-pptx-skill). 论文、答辩、研讨会、学术汇报专用. 把复杂研究内容变成清晰演示结构.
+9. speaker-notes-writer: [Fergana-Labs/claude_agent_desktop/powerpoint](https://github.com/Fergana-Labs/claude_agent_desktop/blob/main/.claude/skills/powerpoint/SKILL.md), 不只生成 PPT, 还生成演讲稿. 每页配讲稿、转场句、讲解重点、时间控制.
+10. deck-review-polisher: [tfriedel/claude-office-skills](https://github.com/tfriedel/claude-office-skills), 做完后自动检查: 逻辑是否顺、标题是否有结论、页面是否太挤、视觉是否统一.
+
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
+| [`pptx`](https://skills.sh/anthropics/skills/pptx) | [`anthropics/skills`](https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md) | Anthropic 旗下 Claude Skills 体系的 PPTX 处理技能, 借助 [python markitdown 库](https://pypi.org/project/markitdown) 封装了 PPTX 读取、编辑、从零创建的脚本指令, 同时提供专业的 PPT 设计规范和严格的内容/视觉质检流程, 让大模型可标准化制作、处理 PPTX 文件. | `npx skills add https://github.com/anthropics/skills --skill pptx` |
 | [`ppt-generation`](https://skills.sh/bytedance/deer-flow/ppt-generation) | [`bytedance/deer-flow`](https://github.com/bytedance/deer-flow) | 字节跳动 deer-flow 生态下的自动化 PPT 生成技能, 支持自然语言/结构化数据输入, 内置字节设计规范, 一键生成可编辑的 PPTX 格式文件, 适配汇报、技术分享、产品宣讲等多场景. | `npx skills add https://github.com/bytedance/deer-flow --skill ppt-generation` |
 | [baoyu-slide-deck](https://skills.sh/jimliu/baoyu-skills/baoyu-slide-deck) | [`jimliu/baoyu-skills`](https://github.com/jimliu/baoyu-skills) | [宝玉大佬](https://github.com/JimLiu/baoyu-skills) 的专业的幻灯片生成 Skills, 可将文本内容转化为带视觉设计的幻灯片图片并合并为 PPTX/PDF, 内置 16 种风格预设、支持自定义风格维度和多语言, 提供标准化生成流程和完善的幻灯片修改能力. | `npx skills add https://github.com/jimliu/baoyu-skills --skill baoyu-slide-deck` |
 | [`ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | [`sunbigfly/ppt-agent-skills`](https://github.com/sunbigfly/ppt-agent-skills) | PPT Agent 是一个基于代码驱动的演示文稿生成流框架, 将「内容策划」与「视觉排版」完全解耦, 通过严格的数据结构规划和按需加载的资产库, 生成高保真 HTML 与可二次编辑的 PPTX, 从根本上解决大模型长提示词所带来的排版错乱与幻觉问题.  | `npx skills add https://github.com/sunbigfly/ppt-agent-skills` |
@@ -223,6 +264,12 @@
 | [](https://github.com/CRui5in/paper-ppt-agent) |
 | [](https://github.com/zarazhangrui/frontend-slides) |
 | [](https://github.com/zarazhangrui/beautiful-html-templates)
+| [](https://github.com/Ame-X/Auto-PPT) |
+| [](https://github.com/GordenSun/GordenPPTSkill) |
+| [](https://github.com/zarazhangrui/beautiful-html-templates) |
+| [](https://github.com/GordenSun/GordenSuperPPTSkills) |
+| [](https://github.com/shanraisshan/claude-code-best-practice/blob/main/.claude/skills/presentation/presentation-structure/SKILL.md)
+
 
 ### 视频创作
 -------
@@ -286,7 +333,7 @@
 ### Skills 创建
 -------
 
-[2026/05/15, 金尘马 @jinchenma_ai, 你都不知道自己的经验有多值钱！一行代码不用写，三招把你日常的工作沉淀为skill。](https://x.com/jinchenma_ai/status/2055266758735671703)
+[2026/05/15, 金尘马 @jinchenma_ai, 你都不知道自己的经验有多值钱！一行代码不用写, 三招把你日常的工作沉淀为skill. ](https://x.com/jinchenma_ai/status/2055266758735671703)
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
@@ -298,6 +345,9 @@
 | [](https://github.com/sivaprasadreddy/learning-skill) |
 | [](https://github.com/yaojingang/yao-open-skills) |
 | [](https://github.com/Romanescu11/hermes-skill-factory) |
+| [](https://clawhub.ai/lifenglei/duange-zero-skill) | [程序员端哥 @duange6099, 那我写个零基础skill得了, 对skill-creator增强交互sop,这样以后更方便批量产出skill了, 说干就干, 然后就有了duange-
+zero-skill](https://x.com/duange6099/status/2058553267089719393)
+
 
 ### Skills 进化
 -------
@@ -310,6 +360,10 @@
 | [`AgentHandover`](https://github.com/sandroandric/AgentHandover) | [`sandroandric/AgentHandover`](https://github.com/sandroandric/AgentHandover) | 观察用户, 学习并教导代理具有自我改进的技能, 让AI能够在无需明确指示的情况下完成工作 | NA |
 | [](https://github.com/AMAP-ML/SkillClaw)
 | [](https://github.com/Teaonly/SKILL.mk)
+| [](https://github.com/ilang-ai/Imprint) | [2026/05/23, yibie @yibie, Imprint: 一个 Skill 定义了 Agent 与人交互的「协议」](https://x.com/yibie/status/2057962832285880805), [ilang-ai/Imprint](https://www.awesomeskills.dev/en/skill/ilang-ai-imprint) |
+| [](https://github.com/microsoft/SkillOpt) |
+| [](https://github.com/ChenAtomicArchitect/lobehub/blob/main/.agents/skills/agent-tracing/SKILL.md) |
+
 
 ### Skills 路由
 -------
@@ -340,6 +394,8 @@
 | NA | [thedaviddias/skill-check](https://github.com/thedaviddias/skill-check) | Skill-Check 通过清晰的诊断、自动修复支持、质量评分和可选的安全扫描来验证客服技能. | NA |
 | NA | [darkrishabh/agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval) | agent-skills-eval 给同一个 prompt 跑两遍——一遍带技能、一遍不带——再用评审模型对照断言打分, 看技能到底有没有实际效果. CLI 一行命令就能跑, SDK 可以嵌入 CI 或自定义流水线, 任何走 OpenAI chat API 的后端都能接. 输出是 JSON 制品加静态 HTML 报告, 目录结构完全贴合 agentskills 规范. |
 | []() | [](https://skillguard.vip)
+| [](https://github.com/nvidia/skillspector) | 7,234 |
+
 
 
 ### Skills 管理
@@ -358,7 +414,9 @@
 | [`skills-hub`](https://github.com/QuentinHsu/skills-hub) | [`QuentinHsu/skills-hub`](https://github.com/QuentinHsu/skills-hub) | AI 代理技能的可视化管理平台, 核心理念是"Install Once, Sync Everywhere". 目标: 解决 Skills 碎片化问题, 让用户只需维护一份 Skill 代码, 所有工具都能同时享受到最新更新, 避免重复安装和版本不一致. 技术: 引入中心仓库概念(默认位于 ~/.skillshub), 通过 Symlink(软链接)或 Junction(Windows 下的联接点)将 Skill 映射到各个 AI 工具的配置目录, 基于 Tauri + React 开发桌面端界面, 使用目录指纹(Content Hash)技术识别重复 Skill. 使用场景: 在多个 AI 工具间同步 Skills、可视化管理所有 Skills、智能扫描和接管已安装的 Skills、从本地/Git 导入 Skills. |
 | [](https://github.com/tiangolo/library-skills)
 | [](https://github.com/Autoloops/upskill) |
-| [](https://github.com/rohitg00/skillkit) | 
+| [](https://github.com/rohitg00/skillkit) |
+| [](https://github.com/steipete/agent-scripts/blob/main/skills/skill-cleaner/SKILL.md)
+| [](https://github.com/zjunlp/SkillNet) |
 
 
 ## 科研
@@ -387,6 +445,7 @@
 |:-------:|:------:|:-------:|:-------:|
 | [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) |
 | [](https://github.com/lishix520/academic-paper-skills) |
+| [](https://github.com/wooly99/geng-academic-fraud-detector) |
 
 
 ### 自动化科研
@@ -394,7 +453,10 @@
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
-| [](https://github.com/K-Dense-AI/scientific-agent-skills)
+| [](https://github.com/K-Dense-AI/scientific-agent-skills) |
+| [](https://github.com/anysearch-ai/anysearch-skill) | [2026/05/30, 马东锡 NLP, @dongxi_nlp, 我用 Codex + AnySearch 做了一个搜索+决策 cockpit: AnySearch Lens. ](https://x.com/dongxi_nlp/status/2060634398676992061) |
+| [](https://github.com/HKUSTDial/Supervisor-Skills) | 将博导十年科研经验炼化为可直接调用的 AI 技能. 从 Idea 构思到论文投稿, 你的 AI 科研副导师. |
+| [](https://github.com/zLanqing/codex-claude-academic-skills) |
 
 ## 数字员工(蒸馏)
 -------
@@ -414,6 +476,23 @@
 |:-------:|:------:|:-------:|:-------:|
 | [`pua-debugging`](https://skills.sh/tanweai/pua/pua-debugging) | [`tanweai/pua/pua-debugging`](https://github.com/tanweai/pua/tree/main/skills/pua-debugging) | 以大厂 P8 级工程师要求为核心, 融合大厂 PUA 激励话术、标准化调试方法论和强制化主动执行规则, 倒逼 AI 以工程化 Owner 视角端到端解决调试问题, 彻底规避被动排查、浅尝辄止的问题, 同时配套压力升级、抗合理化、自检清单等机制保障调试效果. 由[探微安全实验室](https://github.com/tanweai)出品. 官网 [pua-skills](https://pua-skill.pages.dev). @passluo 受此启发, [给你的 AI 一套大厂 P8 的 Soul, 让它的 Coding 表现提高 30%](https://x.com/passluo/status/2030908109145903310) | `npx skills add https://github.com/tanweai/pua --skill pua-debugging` |
 | [`nopua`](https://skills.sh/wuji-labs/nopua/nopua) | [`wuji-labs/nopua`](https://github.com/wuji-labs/nopua) | NoPUA - 用爱与信任释放AI的无限潜能, 反对PUA式方法, 通过信任和鼓励提升AI表现, 隐藏bug发现能力提升104% | `npx skills add https://github.com/wuji-labs/nopua --skill nopua` |
+
+### 女娲 Skills
+-------
+
+[2026/04/06, 花叔 @AlchainHust, 蒸馏出「乔布斯」之后, 他说苹果AI完全是SHIT](https://x.com/AlchainHust/status/2041118529508798846)
+
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/alchaincyf/nuwa-skill)
+| [](https://github.com/alchaincyf/x-mentor-skill)
+| [](https://github.com/alchaincyf/steve-jobs-skill)
+| [](https://github.com/Janlaywss/hu-chenfeng-skill)
+| [](https://github.com/tukuaiai/cz-skill)
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | 原来的 [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)) | 一位开发者基于 AI 大神 Andrej Karpathy 的编程经验总结, 开源了 andrej-karpathy-skills 这个 Claude Code 实用插件. 本质上是一个专门优化 Claude Code 行为的系统指南, 提炼了四大编程原则. 帮我们在动手前强制 AI 理清思路, 遇到不确定的地方主动提问, 而不是盲目猜测. 严格限制了 AI 的发散思维, 要求用最少的代码解决问题, 杜绝过度设计和无用的抽象封装. 同时约束了代码修改范围, 只允许像外科手术一样精准改动目标, 绝不碰无关的注释和格式. | NA |
+| [](https://github.com/alchaincyf/darwin-skill)
+
 
 
 ### 同事 Skills
@@ -435,24 +514,8 @@
 | [永生SKill](https://github.com/agenmod/immortal-skill) | [agenmod/immortal-skill](https://github.com/agenmod/immortal-skill) | 实现个人数字永生, 保存个人特征和记忆 | 待补充 |
 | [数字人生Skill](https://github.com/wildbyteai/digital-life) | [wildbyteai/digital-life](https://github.com/wildbyteai/digital-life) | 模拟数字世界中的人生体验 | 待补充 |
 | [重逢SKill](https://github.com/yangdongchen66-boop/reunion-skill) | [yangdongchen66-boop/reunion-skill](https://github.com/yangdongchen66-boop/reunion-skill) | 模拟与旧识重逢的场景和互动 | 待补充 |
+| [鲁班 | Luban](https://github.com/LearnPrompt/luban-skill) | [2026/06/14, 卡尔的AI沃茨 @aiwarts, 开源「鲁班」Skill, Claude Fable 5下线前跑通的升级工作流！](https://x.com/aiwarts/status/2066146382327484484) 
 
-
-### 女娲 Skills
--------
-
-[2026/04/06, 花叔 @AlchainHust, 蒸馏出「乔布斯」之后, 他说苹果AI完全是SHIT](https://x.com/AlchainHust/status/2041118529508798846)
-
-
-| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
-|:-------:|:------:|:-------:|:-------:|
-| [](https://github.com/alchaincyf/nuwa-skill)
-| [](https://github.com/alchaincyf/x-mentor-skill)
-| [](https://github.com/alchaincyf/steve-jobs-skill)
-| [](https://github.com/Janlaywss/hu-chenfeng-skill)
-| [](https://github.com/tukuaiai/cz-skill)
-| [forrestchang/andrej-karpathy-skills)](https://github.com/forrestchang/andrej-karpathy-skills) | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)) | 一位开发者基于 AI 大神 Andrej Karpathy 的编程经验总结, 开源了 andrej-karpathy-skills 这个 Claude Code 实用插件. 本质上是一个专门优化 Claude Code 行为的系统指南, 提炼了四大编程原则. 帮我们在动手前强制 AI 理清思路, 遇到不确定的地方主动提问, 而不是盲目猜测. 严格限制了 AI 的发散思维, 要求用最少的代码解决问题, 杜绝过度设计和无用的抽象封装. 同时约束了代码修改范围, 只允许像外科手术一样精准改动目标, 绝不碰无关的注释和格式. | NA |
-| [](https://github.com/multica-ai/andrej-karpathy-skills) | 139,132 |
-| [](https://github.com/alchaincyf/darwin-skill)
 
 ### 反蒸馏
 -------
@@ -460,7 +523,7 @@
 | [](https://github.com/Trailblazer-Aha/vengeful-ghost-skill)
 
 
-## 书籍思想
+## 知识的海洋
 -------
 
 ### 书籍思想
@@ -472,10 +535,22 @@
 ### 知识学习
 -------
 
-| [](https://github.com/kenkl1/dp-feynman)
-| [](https://github.com/HowieWang1121/Socratic-Education-System)
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
+| | [](https://github.com/DrCatHicks/learning-opportunities) |
+| | [](https://github.com/1786329860/deep-teach) |
+| | [](https://github.com/WUBING2023/PaperSpine) | [2026/06/09, Musolsol.𝟎𝐱𝐔 @MMMusol, 期末周, 我靠一个免费Skill把72页PPT变成了能直接背的复习资料](https://x.com/MMMusol/status/2064237573481132445) |
+| | [](https://github.com/ksimback/tech-debt-skill) |
+| | [](https://github.com/kenkl1/dp-feynman)
+| | [](https://github.com/HowieWang1121/Socratic-Education-System)
+| | [](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach)
+| | [](https://github.com/wy51ai/edulab)
+| | [](https://github.com/imcuttle/flipbook-app) | Flipbook Canvas, 能把每张 AI 生成的图变成一棵可以无限点击探索的知识树. 长按图片任意位置, 系统会自动识别你点的内容, 联网搜索相关资料, 然后生成一张全新的详细图解, 层层递进. 每张图都带有百科风格的文字标注和说明, 图上的文字还能直接框选复制. 生成过程实时可见, 甚至可以分享链接让别人同步观看画面逐步呈现. 还能导出成离线静态网站, 带语音朗读, 不依赖服务器就能浏览. 把静态的 AI 生图变成了动态的探索游戏, 适合喜欢用视觉化方式整理知识点或做演示的朋友. [2026/06/05, GitHubDaily @GitHub_Daily, 最近看到一个开源项目 Flipbook Canvas, 挺有意思, 能把每张 AI 生成的图变成一棵可以无限点击探索的知识树. ](https://x.com/GitHub_Daily/status/2062889733131526324) |
+| | [](https://github.com/WUBING2023/ExamPass-Assistant) | 把零散的课堂讲义(PPT/Word/PDF)自动整理成结构化复习笔记和可交互的测试题. 跑在指定课程目录下, 把 PPTX、DOCX、PDF 课件扫一遍, 用 Claude 抽关键概念, 吐两类东西出来. |
+| X Made Easy Skill | [baibanbao/x-made-easy-skill](https://github.com/baibanbao/x-made-easy-skill) | 把一切困难的知识做成一本浅显的书. 1910 年, 工程师汤普森(Silvanus P. Thompson)写了一本《微积分入门》(Calculus Made Easy). 开篇第一句话是: "本书旨在把你从预备的恐惧中解救出来", 他做的事情很简单: 先把那两个吓人微分和积分符号翻译成大白话: 微分就是"一点点", 积分就是"加起来". 然后说, 看, 就这么回事.  这个技巧就是把任何一门知识都用同样方法处理, 我已经用它制作了《奥数轻松学》、《Skill轻松学》、《概率轻松学》系列书籍. | NA | ⭐⭐⭐⭐ | 70 |
 
-### 翻译
+
+### 翻译工程
 -------
 
 [Cuimao777/cuimao-translator](https://github.com/Cuimao777/cuimao-translator)
@@ -491,6 +566,8 @@
 ## 金融
 -------
 
+[爱丽丝呀！ @BTCqzy1, 有人把最近爆火的白毛股神大 V Serenity(@aleabitoreddit )的投研思路蒸馏成  AI Agent Skill, 并且全开源了](https://x.com/BTCqzy1/status/2064180726040580435)
+
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
 |:-------:|:------:|:-------:|:-------:|
@@ -504,6 +581,28 @@
 | polymarket-toolkit | [runesleo/polymarket-toolkit](https://github.com/runesleo/polymarket-toolkit) | AI驱动的Polymarket预测市场分析工具, 为AI代理设计, 提供地址分析、策略检测、盈亏分解、类别映射和Brier Score预测准确性评估. 核心功能: 1) polymarket-profile: 完整交易分析(PnL概览、胜率、未平仓头寸、活动细分、类别分布、最佳/最差头寸、策略模式检测); 2) polymarket-brier: 预测准确性评分. 技术: 使用Polymarket公共API, 无需API密钥, 通过AI代理运行curl命令. 使用场景: 分析交易者表现和策略、评估预测准确性、市场情报分析、跟踪和警报.  | 复制skills目录下对应SKILL.md内容到AI代理对话中 | NA |
 | digital-oracle | [komako-workshop/digital-oracl](https://github.com/komako-workshop/digital-oracle) | Digital Oracle 是一款让 AI Agent 基于从海量金融数据中, 挖掘出宏观事件发展趋势的开源 Skill. | NA |
 | [](https://github.com/tradesdontlie/tradingview-mcp) |
+| [](https://github.com/AlphaGBM/skills) |
+| [](https://github.com/muxuuu/serenity-skill) | 让 AI 用 Serenity 式投研方法, 筛出上涨逻辑更清楚的股票和基金方向 |
+| [](https://github.com/wbh604/UZI-Skill) | 冰冷的钱就这样流进我温暖的口袋-游资(UZI)Skills — 51位投资大佬帮你看盘 · 22维数据 × 180条量化规则 × 17种机构分析方法 |
+| [lanfuli/aleabito-serenity-skills](https://github.com/lanfuli/aleabito-serenity-skills) | NA | 从 Serenity 全文章存档(6000+ 帖)提炼而成, 包含 follow、method、radar 等模块. 能实时追踪她的研究矩阵、主题轮动和注意力流向, 帮你观察下一个可能升温的方向, 双语友好. | NA |
+| [](https://github.com/haskaomni/serenity) | 自动抓取她的全部文章, 沉淀到 SQLite, 生成可视化 Dashboard + 单票 Serenity 信号打分(0-100). 适合想长期积累自己的投研数据库. |
+| [](https://github.com/W-Y-P/Serenity-aleabitoreddit-skill) | 结构非常清晰, 通用性强, 适合直接套用来做单票深度拆解、行业板块与 Thesis 逻辑推演. |
+| [](https://github.com/yaojingang/yao-open-skills/tree/main/skills/yao-expert-skill) | 专家 Skill. 如何快速了解一个行业? 核心在于能否在短时间内建立一套可解释、可验证、可迁移的行业认知结构. 一个合格的行业专家, 需要同时具备五种能力: 界定行业边界, 理解行业结构, 识别关键变量, 判断变化方向, 能把复杂行业讲给外行听. |
+
+
+[2026/06/13, Smartpig @Smartpigai, 美股投资者用 Codex, 别只拿来写代码. 这 10 个 Skills 更适合美股研究、交易复盘、财经内容创作者: ](https://x.com/Smartpigai/status/2065796990408245709). 美股研究链路就是: 宏观 → 行业 → 个股 → 财报 → 估值 → 技术面 → 组合 → 复盘
+不要一次全装. 重点不是让 AI 替你荐股, 而是把重复的投研动作变成标准流程. 
+长期投资者先装: fundamental-analysis、dcf-valuation、earnings-analysis、edgar-change-interpreter. 
+交易型选手先装: technical-analysis、sector-rotation、canslim-vcp-screener、position-sizer. 
+财经内容创作者先装: stock-eval、earnings-analysis、portfolio-review、fact-check. 
+
+
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
+| [](https://github.com/yennanliu/InvestSkill) | 1. stock-eval 快速评估一只美股: 质量、ROIC、Piotroski、估值、买/看/放弃信号, 2. fundamental-analysis, 拆 10-K / 10-Q: 收入、利润率、现金流、资产负债表、会计质量. 3、dcf-valuation, DCF 估值: WACC、终值、熊/基/牛三种情景、敏感性分析. 9、institutional-flow-13f, 看机构持仓: 13F 变化、聪明钱流向、增持/减持、集中度变化. | 84 |
+| [](https://github.com/HHFinAi/claude-equity-research-skills) | 4、earnings-analysis财报季必备: 业绩 beat/miss、guidance 变化、管理层口径、Q&A 风险点. |
+| [](https://github.com/cmdrvl/edgar-change-interpreter) | 5、edgar-change-interpreter, 读 SEC 文件别只看总结, 要看“变了什么”和“少说了什么”: 10-K、10-Q、8-K 风险变化、披露陷阱. 
+| [](https://github.com/tradermonty/claude-trading-skills) | 6、technical-analysis, 技术面辅助: MA、RSI、MACD、支撑阻力、周线结构、趋势确认. 7、sector-rotation, 看板块轮动: 科技、金融、医疗、能源、消费谁在走强, 市场处在什么阶段. 8、canslim-vcp-screener, 成长股筛选: CANSLIM、VCP、突破形态、成交量确认. 10、portfolio-review, 组合复盘: 仓位集中度、行业暴露、风险指标、再平衡建议、持仓 thesis 是否失效 |
 
 
 ## 🔗 自媒体
@@ -525,12 +624,10 @@
 | [autocli](https://skills.sh/nashsu/autocli-skill/autocli) | [nashsu/AutoCLI-skill](https://github.com/nashsu/AutoCLI-skill) | 将 [AutoCLI](https://github.com/nashsu/AutoCLI) 封装成 Claude Code 的能 Skills, AutoCLI(原名 opencli-rs) 是参考 opencli 用 Rust 重写的极速 CLI 工具, 把 55+ 个主流平台变成命令行接口, 直接复用你 Chrome 浏览器里已有的登录态. 零配置, 零 API Key, 零运行时依赖. | `npx skills add https://github.com/nashsu/autocli-skill --skill autocli` |
 | [opencli](https://skills.sh/joeseesun/opencli-skill/opencli) | [joeseesun/opencli-skill](https://github.com/joeseesun/opencli-skill) | [opencli](https://github.com/jackwener/opencli) 的 Claude Code Skills. | `npx skills add https://github.com/joeseesun/opencli-skill --skill opencli` |
 | TrendRadar | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | 告别信息过载, 你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅, 支持关键词精准筛选. AI 智能筛选新闻 + AI 翻译 + AI 分析简报直推手机, 也支持接入 MCP 架构, 赋能 AI 自然语言对话分析、情感洞察与趋势预测等. 支持 Docker , 数据本地/云端自持. 集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送.  | NA |
+| [](https://github.com/cclank/news-aggregator-skill) |
 
 
-### 内容
--------
-
-#### 公众号
+### 公众号
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -545,11 +642,38 @@
 | [](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-wechat-summary) |
 | [](https://github.com/alchaincyf/huashu-design) |
 | [](https://github.com/SlowGrowth1314/opencli-weixin-album) |
-| [](https://github.com/ninehills/public-skills/tree/main/weread) | 优化 [微信读书 Skills](https://weread.qq.com/r/weread-skills), 将其转换为 python cli 格式. 参见 [2026/05/17, 九原客 @9hills, 一句话改造：/Goal 优化weread skill，改成python cli 格式，注意输出采用分页方法控制篇幅。](https://x.com/9hills/status/2055815836271776251) |
-| [](https://github.com/yaojingang/yao-open-skills/tree/main/skills/yao-weread-skill) | yao-weread-skill 用来把微信读书账户数据生成一份完整的个人阅读可视化报告. 它不是简单导出阅读时长，而是把阅读节律、书架资产、分类偏好、作者与出版社偏好、笔记密度、划线长度和高频笔记短语汇总到一份中文 HTML 报告中，便于做年度复盘、知识管理回顾和阅读画像展示。|
+| [](https://github.com/ninehills/public-skills/tree/main/weread) | 优化 [微信读书 Skills](https://weread.qq.com/r/weread-skills), 将其转换为 python cli 格式. 参见 [2026/05/17, 九原客 @9hills, 一句话改造: /Goal 优化weread skill, 改成python cli 格式, 注意输出采用分页方法控制篇幅. ](https://x.com/9hills/status/2055815836271776251) |
+| [](https://github.com/yaojingang/yao-open-skills/tree/main/skills/yao-weread-skill) | yao-weread-skill 用来把微信读书账户数据生成一份完整的个人阅读可视化报告. 它不是简单导出阅读时长, 而是把阅读节律、书架资产、分类偏好、作者与出版社偏好、笔记密度、划线长度和高频笔记短语汇总到一份中文 HTML 报告中, 便于做年度复盘、知识管理回顾和阅读画像展示. |
+| [](https://github.com/haidang1810/md2html) |
+| [](https://github.com/punk2898/wechat-group-stats) | NA | [2026/06/04, Punk(2898 🙌💎)@punk2898, 开源一个 Skill, 100% 不会被封禁的微信群聊分析工具 🔥](https://x.com/punk2898/status/2062354507754029175) | NA |
 
 
-#### 视频制作
+### 内容创作
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/haskaomni/serenity-skill) | Serenity 式 Alpha 翻译 Skill. 核心一句话: 不要问"这个新闻厉不厉害", 要问"这个已经发生的需求变化, 会不会把某些小公司的财报改写".<br>1. 先识别: 这是"谈资新闻"还是"需求拐点"?<br>2. 翻译: 从"现象"翻译成"收入项"<br>3. 找"卖铲子", 但重点是"小铲子".<br>4. 判断它是不是"被错误归类"<br>5. 建立一条"财报验证链"<br>6. 做"市值弹性"筛选<br>7. 仓位原则: 小仓位买"可验证的非共识".<br>8. 反向排雷: 哪些新闻没有 alpha? |
+| [](https://github.com/jerlinn/jerlin-weread) |
+| [](https://github.com/ComposioHQ/awesome-codex-skills/tree/master/content-research-writer)
+| [](https://github.com/PleasePrompto/notebooklm-skill) |
+| [](https://github.com/KKKKhazix/khazix-skills) |
+| [](https://github.com/seochecks-ai/slopless) |
+| [](https://github.com/joeseesun/qiaomu-novel-generator) |
+
+
+### 封面制作
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+| [](https://github.com/op7418/guizang-social-card-skill) |
+| [](https://github.com/geekjourneyx/claude-design-card) | 400 |
+| [](https://github.com/helloianneo/ian-xiaohei-scenes)  | 183 |
+| [](https://github.com/helloianneo/ian-xiaohei-illustrations) |
+| [](https://github.com/tmchow/illo-skill) | 143 |
+
+### 视频制作
 -------
 
 | 技能名称 | 开源地址 | 简要描述 | 安装方式 |
@@ -577,7 +701,12 @@
 | [](https://github.com/alchaincyf/huashu-design)
 | [](https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit) |
 | [](https://github.com/magicpathai/agent-skills) |
-
+| [](https://github.com/Leonxlnx/taste-skill) |
+| [](https://github.com/KyrieCheungYep/ky-design-to-html-skill) |
+| [](https://github.com/CloudAI-X/threejs-skills)
+| [](https://www.ui-skills.com) |
+| [](https://github.com/pbakaus/impeccable) |
+| [](https://github.com/nexu-io/html-anything)
 
 ## 旅行
 -------
@@ -595,6 +724,27 @@
 | [](https://github.com/Fokkyp/SoftwareCopyright-Skill) |
 | [](https://github.com/handsomestWei/patent-disclosure-skill) |
 
+## 招聘求职
+-------
+
+| 技能名称 | 开源地址 | 简要描述 | 安装方式 |
+|:-------:|:------:|:-------:|:-------:|
+
+
+## 商业诊断
+-------
+
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
+| vibe-check | [TexasBedouin/vibe-check](https://github.com/TexasBedouin/vibe-check) | 让AI帮你做产品发现再写代码, 原来还能这样. vibe-check是一个指导零基础的人从模糊想法到可构建蓝图的skill, 用JTBD和ODI方法让Claude Code像产品教练, 而不是只会写代码. 产出结构化计划+HTML原型, 包含用户流程、技术决策、增长环等, 特别适合vibe coding. | ALL | ⭐ | 266 |
+
+
+## Compute Use
+-------
+
+| 技能名称 | 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:-------:|:---:|:----:|:---:|:-------:|:--------:|
+| [](https://github.com/wechat-miniprogram/ai-mode-demo) | 218 |
 
 # Skills 集合
 -------
@@ -621,6 +771,7 @@
 | [Claude Marketplaces](https://claudemarketplaces.com/) | 为 Claude Code 提供精选的插件、技能和 MCP 服务器的手工挑选目录, 通过安装次数、GitHub 星标和社区投票来维护质量, 确保只列出活跃使用的扩展. 核心功能包括: 提供可重用的 Claude Code 技能指令集(可通过单命令安装), 以及通过工具、API 和外部服务集成扩展代理的 MCP 服务器. 完全免费和开放, 即将支持社区投票和评论功能. |
 | [YangSir Skills - Persona](https://skills.yangsir.net/domains/persona) | 专注于人格蒸馏与角色扮演的 AI Agent 技能平台, 核心定位为「人物认知操作系统的数字蒸馏器」. 该平台收录了 50+ 个人格相关技能, 涵盖决策制定、专家协作、创新思维、数字永生等多个维度, 支持将名人、导师、亲人、同事等各类人物的思维模式、决策框架、表达风格蒸馏成可运行的 AI 技能. 核心技术包括: 多源数据蒸馏(聊天记录、社交媒体、著作访谈等)、心智模型提取、人格特征建模、持续学习进化等. 典型使用场景包括: 模拟名人思维方式分析问题(如巴菲特投资视角、乔布斯产品思维)、数字永生与亲情陪伴、向上管理与职场沟通、个人决策质量提升、学术导师指导等. 平台技能普遍采用评分机制, 部分热门技能如「求是 Skill」(17.2K 使用)、「童锦程 Skill」(12.3K 使用)等已获得广泛用户认可. |
 | [agent-skill.co](https://agent-skill.co) | 由 Hailey Cheng (Cheng Hei Lam) 维护的社区驱动型 AI Agent 技能索引仓库, 是 SKILL.md 开放标准的重要贡献者, 核心定位为「AI 智能体技能百科全书」. 该仓库收集了全球工程团队实际创建和使用的真实 Agent Skills, 区别于批量生成的技能库, 所有技能均经过社区验证和质量把控. 技术上采用纯文本 SKILL.md 格式, 无需安装配置即可使用, 兼容 Claude Code、Codex、Antigravity、Gemini CLI、Cursor、GitHub Copilot、Windsurf 等 10+ 主流 AI 工具. 内容覆盖 AI 平台模型、云基础设施、开发者工具、Google 生态、商业生产力、安全网络智能等 6 大领域, 收录了 Anthropic、OpenAI、Google、Cloudflare、Vercel、Microsoft 等 50+ 官方技能库及数百个社区技能, 是 AI 开发者发现、使用和分享高质量 Agent Skills 的核心枢纽. 参见 [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills). |
+| [lobehub](https://lobehub.com/zh/skills) | 面向每个 Agent 的 Skills 市场 |
 
 
 ## Skills 集合仓库
@@ -768,3 +919,8 @@ xcopy skill-name %USERPROFILE%\.claude\skills\
 |:---:|:-------:|
 | [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | 宝玉分享的 Claude Code 技能集, 提升日常工作效率. | `npx skills add jimliu/baoyu-skills` |
 | [Top 50 Claude Skills & GitHub  Repos for AI — The Only List You  Need.](https://x.com/zodchiii/status/2034924354337714642) | Claude AI 技能与 GitHub 仓库 50 大——你唯一需要的清单. |
+| [图解 Skill — 配套资源仓库](https://github.com/JimLiu/Illustrated-Agent-Skills) | 宝玉出品的《AI 提效实战指南--图解 Skill》 |
+| [极客杰尼开源工具一览](https://jieni.ai/skills) | 公众号内容自动化. 公众号内容自动化是作者现在最重要的 Agent 工作流:  从 Markdown 写作到 AI 去痕、排版、配图、兼容性检查和草稿箱推送, md2wechat 让 Agent 可以接手整条发布链路. |
+
+
+[2026/06/14, 阿良 @RealYDT, 昨天那条"把 Codex 技能列表中文化”的内容, 浏览量还不错. 这个需求其实挺真实: 很多人不是不会用 AI 工具, 而是被一堆英文技能名、插件名、说明挡住了. ](https://x.com/RealYDT/status/2065979256526733585)
