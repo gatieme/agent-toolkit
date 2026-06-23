@@ -137,6 +137,14 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 ## Just for Fun(个人开源项目)
 -------
 
+## 自进化体系
+-------
+
+
+| 项目 | 描述 | 支持 | 推荐星级 | Star 数量 |
+|:---:|:----:|:---:|:-------:|:--------:|
+| [hermes]() |
+| [koppx/Evolva](https://github.com/koppx/Evolva) | 本地运行的工业级 Agent 框架, 可观测、可评测、能自我进化. Evolva 一个本地优先的 Agent 工程框架, 基于 LangGraph 的 StateGraph 运行时. 默认入口是 TUI 工作台, 把对话、工具调用、MCP 接入、Trace 回放、Eval 评测、安全防护和自我进化都集成在一个界面里. 核心循环是 Plan → Act → Observe → Evaluate → Evolve, 通过 Loop Engineering 把重复工作固化成可运行、可设质量门、可回放、可进化的 Agent Loop. |
 
 
 # Desktop
@@ -167,7 +175,8 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/OpenBMB/PilotDeck) |
 | [](https://claw.360.cn) |
 | [](https://www.kimi.com/products/kimi-work) |
-
+| [](https://github.com/ybgwon96/easyclaw) |
+| [](https://github.com/zhayujie/CowAgent) | 开源超级 AI 助手, 能规划任务、跑工具、维护记忆和知识, 前身是 chatgpt-on-wechat 路线, 国内用户很好理解. 
 
 ## 个人桌面
 -------
@@ -182,6 +191,9 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://github.com/iOfficeAI/AionUi)
 | [](https://github.com/Fosowl/agenticSeek) |
 | [](https://github.com/tinyhumansai/openhuman) |
+| [](https://github.com/Liuchun-oss/codelf-agent) | 3 |
+| [](https://github.com/lizyoko9/bitdance-agenthub) | 140 |
+
 
 ## 其他
 --------
@@ -240,6 +252,9 @@ https://github.com/thtskaran/claude-code-analysis/tree/master
 | [](https://weclaw.im) | 别的 AI 让你去找它, WeClaw 就在你的微信里 |
 | freebuff |
 | [](https://github.com/Agions/synerix) |
+| [](https://github.com/ruvnet/agent-harness-generator) | 把任何一个 GitHub 仓库变成它自己的 AI Agent——带专属 CLI、MCP 服务、记忆和签名认证, 能直接 npm 发布. 你通过浏览器或者命令行告诉它你要什么, 它生成一个完整的 npm 包, 里面有专属的 npx 命令、MCP 服务、项目记忆、权限策略和 Ed25519 签名认证. 这套框架可以跑在 Claude Code、Codex、pi、Hermes 等 8 个 Agent 平台上, 还内置了 19 种垂直场景模板(开发、研究、交易、法律等)| NA | ⭐ | 272 |
+| [](https://github.com/topcheer/ggcode) |
+
 
 # Design
 -------
@@ -282,21 +297,22 @@ https://github.com/kaushikb11/awesome-llm-agents
     - [Learn AI Engineering](https://github.com/ashishps1/learn-ai-engineering)
     - [Pi Agent 原理与实现: 从零到一实现一个 AI Agent](https://github.com/cellinlab/how-pi-agent-works)
     - [ai engineering from scratch](https://github.com/rohitg00/ai-engineering-from-scratch)
-    - [ai-engineering-from-scratch-zh](https://github.com/fancyboi999/ai-engineering-from-scratch-zh) 从零开始，亲手实现每一个 AI 算法
+    - [ai-engineering-from-scratch-zh](https://github.com/fancyboi999/ai-engineering-from-scratch-zh) 从零开始, 亲手实现每一个 AI 算法
     - [Machine Learning Q and AI Beyond the Basics Book](https://github.com/rasbt/MachineLearning-QandAI-book)
     - [14 天手搓 Claude Code CLI](https://github.com/bozhouDev/14days-build-claude-code-cli)
     - [Codex for Open Source](https://openai.com/zh-Hans-CN/form/codex-for-oss)
     - [Welcome to Learn Harness Engineering](https://walkinglabs.github.io/learn-harness-engineering/zh)
     - [Agent Learning Hub](https://github.com/datawhalechina/Agent-Learning-Hub)
     - [人工智能小白书](https://lixiaolai.com/books/little-book-of-ai)
-    - [Agentic AI Engineering](https://github.com/agenticloops-ai/agentic-ai-engineering), 别再只是阅读智能体了, 开始动手构建它们.
+    - [Agentic AI Engineering](https://github.com/agenticloops-ai/agentic-ai-engineering), 别再只是阅读智能体了, 开始动手构建它们. [2026/06/14, YuChen 大王 @YuChen, 入门 AI Agent, 这个开源项目值得收藏](https://x.com/YuChen/status/2066114119242244255)
 
 2. **进阶学习**:
     - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)
     - [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
     - [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide)
-    - [AI Agent 学习路径](https://github.com/WenyuChiou/awesome-agentic-ai-zh)
+    - [AI Agent 学习路径](https://github.com/WenyuChiou/awesome-agentic-ai-zh) 这份开源的学习地图, 能带你从零开始硬核啃下AI Agent. 它把学习路径切成了7个阶段, 前三个阶段专心打地基, 死磕Python、LLM、Prompt Engineering. 之后分两条轨道并行: Track A是CLI Power User, 专教你怎么用现成的Agent工具把效率拉满. Track B是Agent Builder, 从零手搓Agent一直干到Multi-Agent编排. 总时长预估14到19周. 最赞的是三语对照, 繁中、简中、英文三个版本全给你配齐了. 每阶段配1到5个mini project, 还附带成功标准, 绝不是光看文档不动手的那种虚把式. 总共收录了145个精选项目和资源, 还有5条按身份分流的延伸路线, 研究员、开发者、老师、知识工作者、日常使用者各有一条专属路径.
     - [Agentic Architectures, Thirty-five production-grade agentic AI patterns. End to end.](https://github.com/FareedKhan-dev/all-agentic-architectures)
+    - [Agent Learning Hub](https://github.com/datawhalechina/Agent-Learning-Hub), 构建可靠 AI Agent 的系统学习路线图与资源宝库. DataWhale 出品的 AI Agent 学习路线与资料库, 系统整理了官方文档、顶会论文、开源项目和工程实践, 帮助开发者从零开始构建实用、可靠的 AI 代理. 避免碎片化学习, 直接给你一条可执行的成长路径.
 
 3. **资源合集**:
     - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
