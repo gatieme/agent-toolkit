@@ -1,63 +1,150 @@
 {
   "preset": "ZhiPuGLM",
+  //"preset": "OpenCode-Free",
   "presets": {
     "ZhiPuGLM": {
-      "orchestrator": { "model": "ZhiPuGLM-CJ/GLM-5", "skills": [ "*" ], "mcps": [ "websearch" ] },
-      "oracle": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "high", "skills": [], "mcps": [] },
-      "council": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "high", "skills": [], "mcps": [] },
-      "librarian": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "medium", "skills": [], "mcps": [ "websearch", "context7", "grep_app" ] },
-      "explorer": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "medium", "skills": [], "mcps": [] },
-      "designer": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "medium", "skills": [ "agent-browser" ], "mcps": [] },
-      "fixer": { "model": "ZhiPuGLM-CJ/GLM-5", "variant": "low", "skills": [], "mcps": [] }
+      "orchestrator": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/gpt-5-nano",
+        "skills": [ "*" ],
+        "mcps": [ "websearch" ]
+      },
+      "oracle": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/gpt-5-nano",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "council": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/gpt-5-nano",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/minimax-m2.5-free",
+        "variant": "medium",
+        "skills": [],
+        "mcps": [ "websearch", "context7", "grep_app" ],
+      },
+      "explorer": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/minimax-m2.5-free",
+        "variant": "medium",
+        "skills": [],
+        "mcps": [],
+      },
+      "designer": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/gpt-5-nano",
+        "variant": "medium",
+        "skills": [ "agent-browser" ],
+        "mcps": [],
+      },
+      "fixer": {
+        "model": "ZhiPuGLM-CJ/GLM-5.1",
+        "model": "ZhiPuGLM-CJ/GLM-5",
+        "model": "opencode/nemotron-3-super-free",
+        "variant": "medium",
+        "variant": "low",
+        "skills": [],
+        "mcps": [],
+      }
     },
     "OpenCode-GO": {
-      "orchestrator": { "model": "opencode-go/glm-5.1", "skills": [ "*" ], "mcps": [ "*", "!context7" ] },
-      "oracle": { "model": "opencode-go/deepseek-v4-pro", "variant": "max", "skills": ["simplify"], "mcps": [] },
-      "council": { "model": "opencode-go/deepseek-v4-pro", "variant": "high", "skills": [], "mcps": [] },
-      "librarian": { "model": "opencode-go/minimax-m2.7", "skills": [], "mcps": [ "websearch", "context7", "grep_app" ] },
-      "explorer": { "model": "opencode-go/minimax-m2.7", "skills": [], "mcps": [] },
-      "designer": { "model": "opencode-go/kimi-k2.6", "variant": "medium", "skills": [ "agent-browser" ], "mcps": [] },
-      "fixer": { "model": "opencode-go/deepseek-v4-flash", "variant": "high", "skills": [], "mcps": [] }
+      "orchestrator": {
+        "model": "opencode-go/glm-5.1",
+        "skills": [ "*" ],
+        "mcps": [ "*", "!context7" ],
+      },
+      "oracle": {
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "max",
+        "skills": ["simplify"],
+        "mcps": [],
+      },
+      "council": {
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "opencode-go/minimax-m2.7",
+        "skills": [],
+        "mcps": [ "websearch", "context7", "grep_app" ],
+      },
+      "explorer": {
+        "model": "opencode-go/minimax-m2.7",
+        "skills": [],
+        "mcps": [],
+      },
+      "designer": {
+        "model": "opencode-go/kimi-k2.6",
+        "variant": "medium",
+        "skills": [ "agent-browser" ],
+        "mcps": [],
+      },
+      "fixer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "variant": "high",
+        "skills": [],
+        "mcps": [],
+      }
     },
     "OpenCode-Free": {
-      "orchestrator": { "model": "opencode/big-pickle", "skills": [ "*" ], "mcps": [ "*" ] },
-      "oracle": { "model": "opencode/ring-2.6-1t-free", "variant": "high", "skills": [ "simplify" ], "mcps": [] },
-      "council": { "model": "opencode/ring-2.6-1t-free", "variant": "high", "skills": [], "mcps": [] },
-      "librarian": { "model": "opencode/minimax-m2.5-free", "skills": [], "mcps": [ "websearch", "context7", "grep_app" ] },
-      "explorer": { "model": "opencode/minimax-m2.5-free", "skills": [], "mcps": [] },
-      "designer": { "model": "opencode/ring-2.6-1t-free", "variant": "medium", "skills": [ "agent-browser" ], "mcps": [] },
-      "fixer": { "model": "opencode/nemotron-3-super-free", "variant": "high", "skills": [], "mcps": [] }
+      "orchestrator": {
+        "model": "opencode/big-pickle",
+        "skills": [ "*" ],
+        "mcps": [ "*" ],
+      },
+      "oracle": {
+        "model": "opencode/ring-2.6-1t-free",
+        "variant": "high",
+        "skills": [ "simplify" ],
+        "mcps": [],
+      },
+      "council": {
+        "model": "opencode/ring-2.6-1t-free",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "opencode/minimax-m2.5-free",
+        "skills": [],
+        "mcps": [ "websearch", "context7", "grep_app" ],
+      },
+      "explorer": {
+        "model": "opencode/minimax-m2.5-free",
+        "skills": [],
+        "mcps": [],
+      },
+      "designer": {
+        "model": "opencode/ring-2.6-1t-free",
+        "variant": "medium",
+        "skills": [ "agent-browser" ],
+        "mcps": [],
+      },
+      "fixer": {
+        "model": "opencode/nemotron-3-super-free",
+        "variant": "high",
+        "skills": [],
+        "mcps": [],
+      }
     }
   },
   "balanceProviderUsage": false,
   "fallback": {
-    "enabled": true,
-    "timeoutMs": 15000,
-    "chains": {
-      "oracle": [
-        "ZhiPuGLM-CGS/GLM-5",
-        "opencode/gpt-5-nano"
-      ],
-      "orchestrator": [
-        "ZhiPuGLM-CGS/GLM-5",
-        "opencode/gpt-5-nano"
-      ],
-      "fixer": [
-        "opencode/nemotron-3-super-free",
-        "opencode/gpt-5-nano"
-      ],
-      "designer": [
-        "ZhiPuGLM-CGS/GLM-5",
-        "opencode/gpt-5-nano"
-      ],
-      "librarian": [
-        "ZhiPuGLM-CGS/GLM-5",
-        "opencode/minimax-m2.5-free"
-      ],
-      "explorer": [
-        "opencode/minimax-m2.5-free",
-        "opencode/gpt-5-nano"
-      ]
-    }
+    "enabled": true
   }
 }
