@@ -1,76 +1,60 @@
 {
   "preset": "ZhiPuGLM",
-  //"preset": "OpenCode-Free",
   "presets": {
     "ZhiPuGLM": {
       "orchestrator": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/gpt-5-nano",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/gpt-5-nano"],
         "skills": [ "*" ],
         "mcps": [ "websearch" ]
       },
       "oracle": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/gpt-5-nano",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/gpt-5-nano"],
         "variant": "high",
         "skills": [],
         "mcps": []
       },
       "council": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/gpt-5-nano",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/gpt-5-nano"],
         "variant": "high",
         "skills": [],
         "mcps": []
       },
       "librarian": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/minimax-m2.5-free",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/minimax-m2.5-free"],
         "variant": "medium",
         "skills": [],
-        "mcps": [ "websearch", "context7", "grep_app" ],
+        "mcps": [ "websearch", "context7", "grep_app" ]
       },
       "explorer": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/minimax-m2.5-free",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/minimax-m2.5-free"],
         "variant": "medium",
         "skills": [],
-        "mcps": [],
+        "mcps": []
       },
       "designer": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/gpt-5-nano",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/gpt-5-nano"],
         "variant": "medium",
         "skills": [ "agent-browser" ],
-        "mcps": [],
+        "mcps": []
       },
       "fixer": {
-        "model": "ZhiPuGLM-CJ/GLM-5.1",
-        "model": "ZhiPuGLM-CJ/GLM-5",
-        "model": "opencode/nemotron-3-super-free",
-        "variant": "medium",
+        "model": ["ZhiPuGLM-CJ/GLM-5.1", "ZhiPuGLM-CJ/GLM-5", "opencode/nemotron-3-super-free"],
         "variant": "low",
         "skills": [],
-        "mcps": [],
+        "mcps": []
       }
     },
     "OpenCode-GO": {
       "orchestrator": {
         "model": "opencode-go/glm-5.1",
         "skills": [ "*" ],
-        "mcps": [ "*", "!context7" ],
+        "mcps": [ "*", "!context7" ]
       },
       "oracle": {
         "model": "opencode-go/deepseek-v4-pro",
         "variant": "max",
         "skills": ["simplify"],
-        "mcps": [],
+        "mcps": []
       },
       "council": {
         "model": "opencode-go/deepseek-v4-pro",
@@ -81,37 +65,37 @@
       "librarian": {
         "model": "opencode-go/minimax-m2.7",
         "skills": [],
-        "mcps": [ "websearch", "context7", "grep_app" ],
+        "mcps": [ "websearch", "context7", "grep_app" ]
       },
       "explorer": {
         "model": "opencode-go/minimax-m2.7",
         "skills": [],
-        "mcps": [],
+        "mcps": []
       },
       "designer": {
         "model": "opencode-go/kimi-k2.6",
         "variant": "medium",
         "skills": [ "agent-browser" ],
-        "mcps": [],
+        "mcps": []
       },
       "fixer": {
         "model": "opencode-go/deepseek-v4-flash",
         "variant": "high",
         "skills": [],
-        "mcps": [],
+        "mcps": []
       }
     },
     "OpenCode-Free": {
       "orchestrator": {
         "model": "opencode/big-pickle",
         "skills": [ "*" ],
-        "mcps": [ "*" ],
+        "mcps": [ "*" ]
       },
       "oracle": {
         "model": "opencode/ring-2.6-1t-free",
         "variant": "high",
         "skills": [ "simplify" ],
-        "mcps": [],
+        "mcps": []
       },
       "council": {
         "model": "opencode/ring-2.6-1t-free",
@@ -122,29 +106,32 @@
       "librarian": {
         "model": "opencode/minimax-m2.5-free",
         "skills": [],
-        "mcps": [ "websearch", "context7", "grep_app" ],
+        "mcps": [ "websearch", "context7", "grep_app" ]
       },
       "explorer": {
         "model": "opencode/minimax-m2.5-free",
         "skills": [],
-        "mcps": [],
+        "mcps": []
       },
       "designer": {
         "model": "opencode/ring-2.6-1t-free",
         "variant": "medium",
         "skills": [ "agent-browser" ],
-        "mcps": [],
+        "mcps": []
       },
       "fixer": {
         "model": "opencode/nemotron-3-super-free",
         "variant": "high",
         "skills": [],
-        "mcps": [],
+        "mcps": []
       }
     }
   },
   "balanceProviderUsage": false,
   "fallback": {
-    "enabled": true
+    "enabled": true,
+    "timeoutMs": 60000,
+    "retryDelayMs": 1000,
+    "retry_on_empty": true
   }
 }
